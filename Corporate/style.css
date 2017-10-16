@@ -2,16 +2,17 @@
 CSS indexing 
 01. header 
 ====================================================*/
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 25px; }
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.5em;
   color: #333;
   font-weight: 400; }
-
-h1, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.5em; }
 
 h1 {
   font-size: 32px; }
@@ -31,18 +32,17 @@ h5 {
 h6 {
   font-size: 15px; }
 
-h1, h2, h3, h4, h5, h6, p, ol, table, dl {
+p, ol, table, dl {
   margin-bottom: 25px; }
 
 dd {
   margin-bottom: 15px; }
 
-blockquote {
-  font-size: 1em;
+address, blockquote {
   font-style: italic; }
 
-address {
-  font-style: italic; }
+blockquote {
+  font-size: 16px; }
 
 td, th {
   padding: 10px; }
@@ -90,9 +90,6 @@ ul {
 /* =================================================
  common css 
 ====================================================*/
-img {
-  max-width: 100%; }
-
 /* =================================================
 01. header 
 ====================================================*/

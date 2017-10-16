@@ -6,43 +6,53 @@ body {
     color: $text-color;
     font-weight: $base-font-weight;
 }
-
-
-h1,h3,h4,h5, h6, .h1, .h2,.h3, .h4,.h5,.h6 {
-    font-family: $font-primary ;
-    line-height: $line-height ;
+.h1, .h2,.h3, .h4,.h5,.h6{
+    @extend %default-heading ;
 }
 
-h1 { font-size: 32px; }
-h2 { font-size: 28px }
-h3 { font-size: 24px }
-h4 { font-size: 21px; }
-h5 { font-size: 18px; }
-h6 { font-size: 15px; }
-
-h1, h2, h3, h4, h5, h6, p,ol, table, dl {
-    margin-bottom: 25px;
+h1 { 
+    font-size: 32px; 
+    @extend %default-heading ;
 }
-
+h2 { 
+    font-size: 28px ;
+    @extend %default-heading ;
+}
+h3 { 
+    font-size: 24px ;
+    @extend %default-heading ;
+}
+h4 { 
+    font-size: 21px; 
+    @extend %default-heading ;
+}
+h5 { 
+    font-size: 18px; 
+    @extend %default-heading ;
+}
+h6 { 
+    font-size: 15px; 
+    @extend %default-heading ;
+}
+p,ol, table, dl {
+    margin-bottom:  $heading-margin-bottom;
+}
 dd {
     margin-bottom: 15px;
 }
-
+address ,blockquote  {
+    font-style: italic;
+}
 blockquote {
-    font-size: 1em;
-    font-style: italic;
+    font-size: $fsize;
 }
-
-address {
-    font-style: italic;
-}
-
 td, th {
     padding: 10px;
 }
-
-img {max-width:100%;height:auto}
-
+img {
+    max-width:100%;
+    height:auto
+}
 a {
     @include  transition-all($transition)
     text-decoration:none;

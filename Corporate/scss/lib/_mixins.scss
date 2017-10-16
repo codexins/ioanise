@@ -27,23 +27,23 @@
 ///* only time based transition */
 
 @mixin transition-all($time) {
-    -webkit-transition: all $time;
-    -moz-transition: all $time;
-    -ms-transition: all $time;
-    -o-transition: all $time;
-    transition: all $time;
+    -webkit-transition:  $time;
+    -moz-transition:  $time;
+    -ms-transition:  $time;
+    -o-transition:  $time;
+    transition:  $time;
 }
 
 
 ///* property, time and timing function based transition */
 
-@mixin functional-transition($property, $time, $function) {
-    -webkit-transition: $property $time $function;
-    -moz-transition: $property $time $function;
-    -ms-transition: $property $time $function;
-    -o-transition: $property $time $function;
-    transition: $property $time $function;
-}
+// @mixin functional-transition($property, $time, $function) {
+//     -webkit-transition: $property $time $function;
+//     -moz-transition: $property $time $function;
+//     -ms-transition: $property $time $function;
+//     -o-transition: $property $time $function;
+//     transition: $property $time $function;
+// }
 
 ///* converts font sizes into rem */
 
@@ -301,19 +301,6 @@ filter: alpha(opacity=$opacity-ie); //IE8
     }
 
 }
-
-
-
-// // mixin only for max and min width 
-
-// @mixin mq-mx-min($width) {
-//     @if map_has_key($break, $width) {
-//         $width: map_get($break, $width);
-//         @media only screen and (#{$type}-width: $width) {
-//             @content;
-//         }
-//     }
-// }
 
 
 

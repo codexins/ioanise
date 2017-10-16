@@ -1,53 +1,17 @@
-
-//bye sel theme 
-
-///*bye sel theme */
-
-
-
-
-$black: #303030;
-
-$white: #ffffff;
-
-$text-color: $white;
-$mmenu-fcolor:#000;
-$text-hover: #644C02 ;
-
-$mmenu-fsize:14px;
-
-$theme-color: #03a9f4 ;
-
-$lightgrey: #ededed;
-
-$darkgrey: #e2e2e2;
-
-$orange: #ff5d30;
-
-$vpadding: 40px;
-
-$font-primary: Georgia;
-
+// typography 
+$font-primary: 'Poppins', sans-serif;;
 $fsize: 16px;
-
 $line-height: 1.5em;
-
-$bodybg-color:$white ;
-
-$accent-color-1: $orange;
-
-$accent-color-2: $black;
-
-$bg-primary: $theme-color;
-
-$light-color: $white;
-
-$bg-secondary:$lightgrey;
-
-$bg-tertiary: $darkgrey;
-
+$base-font-weight : 400 ;
+// colors 
+$theme-color: #03a9f4 ;
+$text-color : #333 ;
+// default speacing 
+$vpadding: 40px;
 $button-padding : 10px 15px ;
 
+// default transition 
+$transition: all 0.3s ease ;
 //* screen size */
 //* screen min width */
 

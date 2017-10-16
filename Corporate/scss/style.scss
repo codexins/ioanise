@@ -3,12 +3,12 @@
 CSS indexing 
 01. header 
 ====================================================*/
-@import 'lib/typography';
-@import 'lib/color';
 @import 'lib/variables';
 @import 'lib/partials';
 @import 'lib/mixins';
 @import 'lib/function';
+@import 'theme/typography';
+@import 'theme/color';
 
 
 

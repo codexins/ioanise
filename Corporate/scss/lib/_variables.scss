@@ -1,12 +1,22 @@
 // typography 
-$font-primary: 'Poppins', sans-serif;;
-$fsize: 16px;
-$line-height: 1.5em;
-$base-font-weight : 400 ;
+$body-font: 'Poppins', sans-serif;
+$heading-font: 'Poppins', sans-serif;
+$tertiary-font: 'Poppins', sans-serif;
+
+$body-f-size: 16px;
+$body-l-height: 1.5em;
+$body-f-weight : 400 ;
 
 // colors 
+$body-color: #333 ;
+$primary-color:  #03a9f4 ;
+$secondary-color: #03a9f4 ; 
+$border-color:	#03a9f4 ; 
+$section-bg-color:#03a9f4 ; 
+
+
 $theme-color: #03a9f4 ;
-$text-color : #333 ;
+
 
 // default speacing 
 $vpadding: 40px;
@@ -19,19 +29,19 @@ $transition: all 0.3s ease ;
 //* screen size */
 //* screen min width */
 
-$larg-screen:1200px;
+$large-screen:1200px;
 
-$mediam-screen: 992px;
+$medium-screen: 992px;
 
 $tablet-screen:768px;
 
-$sm-medium-screen:500px;
+$sm-medium-screen:480px;
 
 // $break: (
 //     "larg-screen":      1200px,
 //     "mediam-screen":    992px,
 //     "tablet-screen":      768px,
-//     "sm-medium-screen": 500px, 
+//     "sm-medium-screen": 480px, 
 // );
 
 $breakpoints: (

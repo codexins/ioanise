@@ -1,10 +1,10 @@
 
 body {
-    font-family: $font-primary ;
-    font-size: $fsize;
-    line-height:$line-height;
-    color: $text-color;
-    font-weight: $base-font-weight;
+    font-family: $body-font ;
+    font-size: $body-f-size;
+    line-height:$body-l-height;
+    color: $body-color;
+    font-weight: $body-f-weight;
 }
 h1,h2,h3,h4,h5,h6,.h1, .h2,.h3, .h4,.h5,.h6{
     @extend %default-heading ;
@@ -29,7 +29,7 @@ h6 {
     font-size: 15px; 
 }
 p,ol, table, dl {
-    margin-bottom:  $heading-margin-bottom;
+    margin-bottom:  $heading-margin-bottom ;
 }
 dd {
     margin-bottom: 15px;
@@ -38,7 +38,7 @@ address ,blockquote  {
     font-style: italic;
 }
 blockquote {
-    font-size: $fsize;
+    font-size: $body-f-size;
 }
 td, th {
     padding: 10px;

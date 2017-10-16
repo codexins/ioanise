@@ -1,0 +1,52 @@
+
+/* ===============================================================
+CSS indexing 
+01. header 
+====================================================*/
+@import 'lib/typography';
+@import 'lib/color';
+@import 'lib/variables';
+@import 'lib/partials';
+@import 'lib/mixins';
+@import 'lib/function';
+
+
+
+/* =================================================
+ common css 
+====================================================*/
+@import 'theme/common';
+/* =================================================
+01. header 
+====================================================*/
+@import 'theme/header';
+/*==================end header ======================*/
+
+	
+.skill{
+	background:url("../img/skill-placeholder.jpg")
+}
+.column-gap-0{
+	padding:0 ;
+}
+
+
+section.call-to-action {
+    background: #000;
+    padding: 50px 0;
+}
+.testimonial{
+	padding:50px  0; 
+	background:#000 ;
+}
+.item-50-inline{
+    float: left;
+    width: 50%;
+}
+.skill_p {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  // border-radius: 50%;
+}

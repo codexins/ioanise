@@ -1,0 +1,37 @@
+/* ===============================================================
+CSS indexing 
+01. header 
+====================================================*/
+/* =================================================
+ common css 
+====================================================*/
+img {
+  max-width: 100%; }
+
+/* =================================================
+01. header 
+====================================================*/
+/*==================end header ======================*/
+.skill {
+  background: url("../img/skill-placeholder.jpg"); }
+
+.column-gap-0 {
+  padding: 0; }
+
+section.call-to-action {
+  background: #000;
+  padding: 50px 0; }
+
+.testimonial {
+  padding: 50px  0;
+  background: #000; }
+
+.item-50-inline {
+  float: left;
+  width: 50%; }
+
+.skill_p {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  position: relative; }

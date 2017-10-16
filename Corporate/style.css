@@ -122,14 +122,40 @@ ul {
 /* =================================================
 02. common section  
 ====================================================*/
-/*
- section  title 
-*/
+.skill {
+  position: relative;
+}
+
+.skill:before {
+  content: "";
+  background: rgba(160, 120, 120, 0.63);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.column-gap-0 {
+  padding: 0;
+}
+
+.center {
+  text-align: center;
+}
+
 .section-title {
   text-align: center;
   display: block;
   max-width: 650px;
-  margin: 0px auto 90px;
+  margin: 0px auto 50px;
 }
 
 .section-title .primary-title {
@@ -264,9 +290,9 @@ ul {
 
 .our-details:before {
   background: #f5f5f5;
-  -webkit-transform: scale(1.1) skew(14deg);
-  -ms-transform: scale(1.1) skew(14deg);
-  transform: scale(1.1) skew(14deg);
+  -webkit-transform: scale(1.1) skew(7deg);
+  -ms-transform: scale(1.1) skew(7deg);
+  transform: scale(1.1) skew(7deg);
   z-index: 1;
 }
 
@@ -285,7 +311,7 @@ ul {
   padding: 90px 0;
 }
 
-/*==================end header ======================*/
+/*==================end about ======================*/
 /* =================================================
 04. servicex 
 ====================================================*/
@@ -293,15 +319,138 @@ ul {
   text-align: center;
 }
 
-/*==================end header ======================*/
+.thmb-icon {
+  color: #7a6b64;
+  margin-bottom: 16px;
+  font-size: 23px;
+}
+
+.service-name .secondary-title {
+  margin-bottom: 16px;
+}
+
+/*==================end services ======================*/
+/* =================================================
+04. skils 
+====================================================*/
 .skill {
-  background: url("../img/skill-placeholder.jpg");
+  background-image: url(img/bg-progressbar.jpg);
 }
 
-.column-gap-0 {
-  padding: 0;
+.skill:before {
+  background: rgba(0, 0, 0, 0.31);
 }
 
+.progressbar {
+  width: 20%;
+  float: left;
+}
+
+/*==================end skils ======================*/
+/* =================================================
+04. recent project 
+====================================================*/
+.project-item {
+  position: relative;
+}
+
+.project-item .img {
+  display: block;
+  position: relative;
+}
+
+.project-item .img:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  bottom: 10%;
+  left: 10%;
+  background: rgba(0, 0, 0, 0.76);
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.project-item .img img {
+  width: 100%;
+}
+
+.project-item:hover .img:before {
+  opacity: 1;
+}
+
+.project-item:hover .project-contant {
+  opacity: 1;
+}
+
+.project-contant {
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  text-align: center;
+}
+
+.project-contant a {
+  color: #fff;
+}
+
+.project-contant h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 7px;
+  padding-bottom: 15px;
+}
+
+.project-contant h3:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  margin: auto;
+  background: #fff;
+}
+
+.project-contant p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.btn-portfolio {
+  margin-top: 70px;
+}
+
+/*==================end recent project ======================*/
+/* =================================================
+04. call to action  
+====================================================*/
+.cta-content {
+  text-align: center;
+  color: #fff;
+}
+
+.cta-content h3 {
+  text-transform: uppercase;
+}
+
+/*==================end call to action  ======================*/
 section.call-to-action {
   background: #000;
   padding: 50px 0;

@@ -1,12 +1,18 @@
-/*
- section  title 
-*/
+%overlay{
+	@include section-overly();
+}
+.column-gap-0{
+	padding: 0;
+}
+.center{
+	text-align:center;
+}
 
 .section-title{
 	text-align:center;
 	display: block;
     max-width: 650px;
-    margin: 0px auto 90px;
+    margin: 0px auto 50px;
 	.primary-title{
 		position:  relative ;
 		padding-bottom: 20px;

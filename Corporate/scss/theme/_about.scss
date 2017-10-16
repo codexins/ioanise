@@ -10,7 +10,7 @@
 	 &:before{
 	 	@extend %before ;
 	 	background:$section-bg-color ;	
-    	transform: scale(1.1) skew(14deg);
+    	transform: scale(1.1) skew(7deg);
     	z-index: 1;
 	 }
 	 &:after{

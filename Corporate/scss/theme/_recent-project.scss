@@ -1,0 +1,60 @@
+.recent-project{}
+.project-item{
+	position:relative;
+	.img{
+		display: block;
+		position:relative;
+		&:before{
+			@include  absolute-position(10%,10%,10%,10%);
+		    background: rgba(0, 0, 0, 0.76);
+		    color: #fff;
+		    opacity: 0 ;
+		    @include transition-all(0.3s)
+		}
+		img{
+			width: 100% ;
+		}
+	}
+	&:hover{
+		.img {
+			&:before{
+				opacity: 1 ;
+			}
+		}
+		.project-contant{
+			opacity: 1 ;
+		}
+	}
+}
+.project-contant{
+	opacity:0 ;
+	color: #fff ;
+	@include position-center(both);
+	max-width: 80%;
+	text-align: center;
+	a{
+		color: #fff ;
+	}
+	h3{
+		font-size: 15px;
+		text-transform: uppercase;
+		position:relative;
+		margin-bottom: 7px;
+		padding-bottom: 15px;
+		&:before{
+			@include  absolute-position(auto,0,0,0);
+			width: 30px;
+			height: 2px;
+			margin:auto;
+			background:$body-bg-color ;
+		}
+	}
+	p{
+		margin: 0 ;
+		// line-height: 1em;
+		text-transform: uppercase;
+	}
+}
+.btn-portfolio{
+	margin-top:70px;
+}

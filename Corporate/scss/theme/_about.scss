@@ -1,0 +1,31 @@
+%before{
+	@include absolute-position(0,50%,0,-10%);
+}
+.about{
+	// padding:90px 0 ;
+}
+.our-details{
+	position:relative ;
+	overflow: hidden;
+	 &:before{
+	 	@extend %before ;
+	 	background:$section-bg-color ;	
+    	transform: scale(1.1) skew(14deg);
+    	z-index: 1;
+	 }
+	 &:after{
+	 	@extend %before ;
+	    right: 0;
+	    left: 50%;
+		background-image: url(img/about.png);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+	 }
+}
+.content{
+	position: relative;
+    z-index: 9;
+    padding:90px 0; 
+}

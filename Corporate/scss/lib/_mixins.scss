@@ -26,24 +26,15 @@
 
 ///* only time based transition */
 
-@mixin transition-all($time) {
-    -webkit-transition:  $time;
-    -moz-transition:  $time;
-    -ms-transition:  $time;
-    -o-transition:  $time;
-    transition:  $time;
+@mixin transition-all($transition) {
+    -webkit-transition:  $transition;
+    -moz-transition:  $transition;
+    -ms-transition:  $transition;
+    -o-transition:  $transition;
+    transition:  $transition;
 }
 
 
-///* property, time and timing function based transition */
-
-// @mixin functional-transition($property, $time, $function) {
-//     -webkit-transition: $property $time $function;
-//     -moz-transition: $property $time $function;
-//     -ms-transition: $property $time $function;
-//     -o-transition: $property $time $function;
-//     transition: $property $time $function;
-// }
 
 ///* converts font sizes into rem */
 
@@ -62,7 +53,7 @@
 @mixin opacity($opacity) {
     opacity: $opacity;
     $opacity-ie: $opacity * 100;
-filter: alpha(opacity=$opacity-ie); //IE8
+    filter: alpha(opacity=$opacity-ie); //IE8
 }
 
 
@@ -139,11 +130,11 @@ filter: alpha(opacity=$opacity-ie); //IE8
 
 
 @mixin absolute-position ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  @include pseudo ;
   top: $top;
   right: $right;
   bottom: $bottom;
   left: $left;
-  position: absolute;
 }
 //  for section overlay 
 
@@ -192,7 +183,7 @@ filter: alpha(opacity=$opacity-ie); //IE8
 }
 
 // button 
- @mixin button($padding:10px 15px,$border:1px solid #000,$text-color:#000){
+ @mixin button($padding:15px 20px,$border:1px solid $primary-border-color,$text-color:#000){
     padding:$padding;
     display: inline-block;
     border: $border;
@@ -307,8 +298,8 @@ filter: alpha(opacity=$opacity-ie); //IE8
 // mixin only for max or min width 
 
 @mixin mq($width, $type: min) {
-    @if map_has_key($breakpoints, $width) {
-        $width: map_get($breakpoints, $width);
+    @if map_has_key($break, $width) {
+        $width: map_get($break, $width);
         @if $type == max {
             $width: $width - 1px;
         }

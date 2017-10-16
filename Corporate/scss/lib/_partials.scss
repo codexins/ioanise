@@ -1,7 +1,9 @@
 %default-heading{
     font-family: $heading-font ;
-    line-height: $body-l-height ;
+    line-height: 1.2 ;
     margin-bottom: $heading-margin-bottom;
+    margin-top:  0;
+
 }
 
 %center-block {
@@ -54,3 +56,4 @@
 	
 	justify-content:  flex-end ;
 }
+

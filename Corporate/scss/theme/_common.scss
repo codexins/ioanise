@@ -1,0 +1,46 @@
+/*
+ section  title 
+*/
+
+.section-title{
+	text-align:center;
+	display: block;
+    max-width: 650px;
+    margin: 0px auto 90px;
+	.primary-title{
+		position:  relative ;
+		padding-bottom: 20px;
+		color: $secondary-color ;
+		text-transform: uppercase;
+		font-weight: 600;
+		&:after{
+			@include  absolute-position(auto,0,0,0);
+			background:$secondary-color;
+			margin: auto;
+			width: 45px;
+			height: 2px;
+		}
+	}
+}
+/*
+	default secondary title
+*/
+.secondary-title{
+	color: $secondary-color ;
+	text-transform: uppercase;
+}
+/*
+	default-btn
+*/
+.default-btn{
+	line-height: 100%;
+	@include button(15px 20px , 2px solid $primary-border-color , $secondary-border-color);
+	text-transform:uppercase;
+	&:hover{
+		border-color:$secondary-border-color ;
+		color:$secondary-border-color; 
+	}
+	i{
+		margin-left: 10px;
+	}
+}

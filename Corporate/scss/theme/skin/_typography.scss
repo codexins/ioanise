@@ -5,7 +5,9 @@ body {
     line-height:$body-l-height;
     color: $body-color;
     font-weight: $body-f-weight;
+    background: $body-bg-color;
 }
+
 h1,h2,h3,h4,h5,h6,.h1, .h2,.h3, .h4,.h5,.h6{
     @extend %default-heading ;
 }
@@ -51,13 +53,16 @@ a {
     @include  transition-all($transition)
     text-decoration:none;
 }
-a:hover {
+a:hover ,a:focus {
   text-decoration: none;
 }
 a:active, a:hover {
   outline: 0 none;
+  text-decoration: none;
 }
-a:focus {outline:0px solid}
+a:focus {
+    outline:0px solid;
+}
 ul{
     list-style: outside none none;
     margin: 0;

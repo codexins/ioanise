@@ -21,7 +21,9 @@
 	display: block;
     max-width: 650px;
     margin: 0px auto 50px;
-	.primary-title{
+	
+}
+.primary-title{
 		position:  relative ;
 		padding-bottom: 20px;
 		color: $secondary-color ;
@@ -43,7 +45,6 @@
 			height: 2px;
 		}
 	}
-}
 /*
 	default secondary title
 */

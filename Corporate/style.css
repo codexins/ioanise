@@ -194,10 +194,10 @@ ul {
   margin: 0px auto 50px;
 }
 
-.section-title .primary-title {
+.primary-title {
   position: relative;
   padding-bottom: 20px;
-  color: #7a6b64;
+  color: #FF404C;
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 15px;
@@ -205,18 +205,18 @@ ul {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .section-title .primary-title {
+  .primary-title {
     font-size: 30px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .section-title .primary-title {
+  .primary-title {
     font-size: 20px;
   }
 }
 
-.section-title .primary-title:after {
+.primary-title:after {
   content: "";
   display: block;
   position: absolute;
@@ -224,7 +224,7 @@ ul {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #7a6b64;
+  background: #FF404C;
   margin: auto;
   width: 45px;
   height: 2px;
@@ -234,7 +234,7 @@ ul {
 	default secondary title
 */
 .secondary-title {
-  color: #7a6b64;
+  color: #FF404C;
   text-transform: uppercase;
 }
 
@@ -290,7 +290,7 @@ ul {
 }
 
 .main-menu-area {
-  background: #303030;
+  background: #012C40;
   padding: 20px 0;
 }
 
@@ -325,7 +325,7 @@ ul {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #7a6b64;
+  background: #FF404C;
   width: 40px;
   height: 2px;
   margin: auto;
@@ -405,7 +405,7 @@ ul {
 }
 
 .thmb-icon {
-  color: #7a6b64;
+  color: #FF404C;
   font-size: 23px;
   margin-bottom: 20px;
 }
@@ -698,7 +698,7 @@ ul {
 
 .testimonial-wrap .client-name {
   margin: 0;
-  color: #7a6b64;
+  color: #FF404C;
 }
 
 .testimonial-wrap .website-link {
@@ -766,7 +766,7 @@ ul {
 .blog-post-content .post-date {
   text-transform: capitalize;
   margin: 0;
-  color: #7a6b64;
+  color: #FF404C;
   line-height: 20px;
   margin-bottom: 10px;
 }
@@ -776,7 +776,7 @@ ul {
 }
 
 .blog-post-content a:hover {
-  color: #7a6b64;
+  color: #FF404C;
 }
 
 .blog-item {
@@ -914,13 +914,13 @@ ul {
   right: 5px;
   bottom: 5px;
   position: absolute;
-  background: #7a6b64;
+  background: #FF404C;
   z-index: -1;
   border-radius: 50%;
 }
 
 .blog-separator .blog-button:hover a {
-  color: #7a6b64;
+  color: #FF404C;
 }
 
 .blog-separator .blog-button:hover:before {
@@ -1043,7 +1043,7 @@ ul {
 ====================================================*/
 footer {
   padding-top: 90px;
-  background: #303030;
+  background: #012C40;
   color: #929292;
 }
 
@@ -1065,7 +1065,7 @@ footer {
 .list-element li {
   padding-bottom: 15px;
   margin-bottom: 15px;
-  border-bottom: 1px solid #7a6b64;
+  border-bottom: 1px solid #FF404C;
 }
 
 .list-element li p {
@@ -1081,7 +1081,7 @@ footer {
 }
 
 .list-element .publish-date a {
-  color: #7a6b64;
+  color: #FF404C;
 }
 
 .footer-content i {

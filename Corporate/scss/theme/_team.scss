@@ -1,3 +1,7 @@
+.team-section{
+	padding-bottom:10px;
+	margin-bottom: 60px;
+}
 .team-image{
 	position:relative ;
 	overflow: hidden;
@@ -8,6 +12,9 @@
 		&:before{
 			background: $team-overlay-color;
 			opacity: 0 ;
+			@include respond-to(xs-screens){
+				opacity: 1 ;
+			};
 		}	
 	}
 	img{
@@ -15,9 +22,15 @@
 		@extend %transition-all ;
 	}
 	.social-icon{
-	    @include position-center(both)
+	    @include position-center(vertical)
 	    top: -50%;
+	    left: 0;
+	    right: 0;
+	    text-align: center;
 		@extend %transition-all ;
+		@include respond-to(xs-screens){
+			top: 50%;
+		};
 	}
 }
 
@@ -50,6 +63,9 @@
 	h2{
 		margin-bottom: 0;
 		text-transform: uppercase;
+		@include respond-to(tablet-screens){
+			font-size: 20px;
+		};
 	}
 	p{
 		margin-bottom: 0 ;
@@ -59,6 +75,8 @@
 }
 
 .team-member{
+	margin-bottom: 30px;
+	
 	&:hover{
 		a{
 			&:before{

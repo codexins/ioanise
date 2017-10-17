@@ -10,6 +10,10 @@
 		    color: #fff;
 		    opacity: 0 ;
 			@extend %transition-all ;
+			@include respond-to(xs-screens){
+				 opacity: 1;
+				 @include  absolute-position(5%,5%,5%,5%);
+			};
 		}
 		img{
 			width: 100% ;
@@ -34,7 +38,9 @@
 	max-width: 80%;
 	text-align: center;
 	@extend %transition-all ;
-
+		@include respond-to(xs-screens){
+			 opacity: 1;
+		};
 
 	a{
 		color: #fff ;

@@ -1,0 +1,84 @@
+.contact-section{
+	background : $section-bg-color;
+	padding: 90px 0;
+	margin-bottom:0 ;
+}
+// .contact-form{
+// 	.form-inline .form-group {
+// 	    display: block;
+// 	    margin-bottom: 0;
+// 	    vertical-align: middle;
+// 	    width: 50%;
+// 	    float: left;
+// 	}
+// }
+.name-email{
+	.form-group {
+	    display: block;
+	    margin-bottom: 0;
+	    vertical-align: middle;
+	    width: 50%;
+	    float: left;
+	    input{
+	    	width: 100%;
+	    }
+	    @include respond-to(xs-screens){
+			width: 100%;
+		};
+	}
+	.sender-name , .sender-email{
+		input{
+			width: 95%;
+			border: 0;
+			height: 60px;
+    		border-top: 2px solid #000;
+    		border-radius: 0;
+    		@include respond-to(xs-screens){
+				width: 100%;
+			};
+		}
+	}
+	.sender-name {
+		input{
+			float: left;
+		}
+	}
+	.sender-email{
+		input{
+			float: right;
+		}
+	}
+}
+.contact-form{
+
+	.message {
+	    width: 100%;
+	    margin-top: 30px;
+	}
+	textarea{
+		width: 100%;
+	    border: 0;
+	    border-top: 2px solid #000;
+	    height: 150px;
+	    border-bottom: 1px solid #000;
+	}
+	input,textarea{
+		background:transparent;
+		box-shadow: none;
+		outline: 0;
+		    &:focus{
+		    	box-shadow: none;
+		    	outline: 0;
+
+		    }
+	}
+	.button-wrap{
+		text-align: center;
+	}
+	button.submit-button{
+		@extend .default-btn ;
+		padding: 8px 40px;
+		background:transparent;
+		text-transform: capitalize;
+	}
+}

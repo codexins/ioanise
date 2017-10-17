@@ -10,6 +10,10 @@
 	 	background:$section-bg-color ;	
     	transform: scale(1.1) skew(7deg);
     	z-index: 1;
+    	@include respond-to(xs-screens){
+			transform: inherit;
+			right: 0 ;
+		};
 	 }
 	 &:after{
 	 	@extend %before ;

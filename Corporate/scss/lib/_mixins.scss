@@ -279,16 +279,16 @@
     }
 
     @else if $media == tablet-screens {
-        @media only screen and (min-width: $tablet-screen) and (max-width: $mediam-screen - 1) { @content; }
+        @media only screen and (min-width: $tablet-screen) and (max-width: $medium-screen - 1) { @content; }
     }
 
     @else if $media == medium-screens {
-        @media only screen and (min-width: $mediam-screen) and (max-width: $larg-screen - 1) { @content; }
+        @media only screen and (min-width: $medium-screen) and (max-width: $large-screen - 1) { @content; }
     }
 
     ///* not importent */
     @else if $media == wide-screens {
-        @media only screen and (min-width: $larg-screen) { @content; }
+        @media only screen and (min-width: $large-screen) { @content; }
     }
 
 }

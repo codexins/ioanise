@@ -1,3 +1,6 @@
+.blog-section{
+	margin-bottom:99px;
+}
 .blog-separator {}
 .post-thambnail-img {
 	img{
@@ -5,10 +8,15 @@
 	}
 }
 .blog-post-content {
+	@include respond-to(xs-screens){
+		margin-top:20px ;
+	};
 	.post-date{
 		text-transform: capitalize;
 		margin:0 ;
 		color: $secondary-color ;
+		line-height: 20px;
+    	margin-bottom: 10px;
 	}
 	a{
 		color: #333 ;
@@ -33,6 +41,9 @@
 		    z-index: 9999;
 		    transform: translateX(50%);
 		    border-radius: 50%;
+		    @include respond-to(xs-screens){
+				content: none;
+			};
     	}
 	}
 }
@@ -40,21 +51,38 @@
 .left-thmb{
 	.blog-image{
 		padding-right:30px;
+		@include respond-to(xs-screens){
+			padding-right:15px;
+		};
 	}
 	.blog-content{
 		padding-left:30px;
+		@include respond-to(xs-screens){
+			padding-left:15px;
+			padding-right:15px;
+
+		};
 	}
 }
 .right-thmb{
 	.blog-post-content{
 		text-align: right;
+		@include respond-to(xs-screens){
+			text-align: left;
+		};
 	}
 	.blog-content{
 		padding-right:30px;
+		@include respond-to(xs-screens){
+			padding-right:15px;
+		};
 	}
 	.blog-image{
 		padding-left:30px;
 		position:relative;
+		@include respond-to(xs-screens){
+			padding-left:15px;
+		};
     	&:after{ 
 		    left: 0;
 		    transform: translateX(-50%);
@@ -70,6 +98,9 @@
 	    width: 2px;
 	    background: #ebebeb;
 	    transform: translateX(-50%);
+	    @include respond-to(xs-screens){
+				content: none;
+		};
 	}
 	.blog-button {
 		width: 70px;

@@ -8,6 +8,7 @@ CSS indexing
   05. team 
   06. testimonial 
   07. blog 
+  08. contect 
 
 ====================================================*/
 @import 'lib/variables';
@@ -78,10 +79,14 @@ CSS indexing
 @import 'theme/blog';
 /*==================end blog  section  ======================*/
 
+/* =================================================
+  08. contact 
+====================================================*/
+@import 'theme/contact';
+/*==================end contact  section  ======================*/
 
-.skill_p {
-  margin: 20px;
-  width: 100px;
-  height: 100px;
-  position: relative;
-}
+/* =================================================
+  08. footer 
+====================================================*/
+@import 'theme/footer';
+/*==================end footer  section  ======================*/

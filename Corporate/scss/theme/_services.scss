@@ -1,10 +1,18 @@
+.services{
+	@include respond-to(xs-screens){
+		margin-bottom: 70px;
+	};
+}
 .service-item{
 	text-align:center;
+	@include respond-to(xs-screens){
+		margin-bottom: 30px;
+	};
 }
 .thmb-icon{
 	color:$secondary-color ;
-	margin-bottom: 16px;
 	font-size: 23px;
+	margin-bottom: 20px;
 }
 .service-name{
 	.secondary-title{

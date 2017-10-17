@@ -4,9 +4,15 @@
 section{
 	@extend .header ;
 }
+.logo {
+    padding: 8px 0;
+	a{
+		display: inline-block;
+	}
+}
 .main-menu-area{
 	background: $primary-color;
-	padding: 25px 0;
+	padding: 20px 0;
 }
 .main-menu{
 	display: inline-block;
@@ -19,6 +25,9 @@ section{
 			color:$body-bg-color ;
 			position: relative;
 			text-transform: uppercase;
+			@include respond-to(tablet-screens){
+				padding: 10px 15px;
+			};
 			&:after{
 				@include absolute-position(auto ,0,0,0) ;
 				background:$secondary-color;

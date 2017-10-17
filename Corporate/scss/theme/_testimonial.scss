@@ -1,6 +1,6 @@
 
 .testimonial{
-	padding:50px  0; 
+	padding:100px  0; 
 	background:#000 ;
 }
 .testimonial-wrap {
@@ -9,6 +9,7 @@
 .testimonial-wrap{
 	.secondary-title{
 		color: $body-bg-color;
+		margin-bottom: 30px;
 	}
 	.testimonial-item{
 		p{
@@ -27,13 +28,18 @@
 		}
 	}
 	.slick-dots{
-		 li button {
-		 	position: relative;
-		    border-radius: 50%;
-		    background: transparent;
-		    border: 2px solid #fff;
-		    width: 5px;
-		    height: 5px;
+		bottom: -34px;
+		 li{
+		 	width: auto;
+		 	height: inherit ;
+			  button {
+			 	position: relative;
+			    border-radius: 50%;
+			    background: transparent;
+			    border: 2px solid #fff;
+			    width: 5px;
+			    height: 5px;
+			}
 		}
 		li.slick-active button{
 			background:#fff ;

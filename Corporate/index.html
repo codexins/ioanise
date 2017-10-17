@@ -178,7 +178,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-3 column-gap-0">
+                <div class="col-md-3 col-sm-6 column-gap-0">
                     <div class="project-item">
                         <div class="img">
                             <img src="img/project-img.jpg" alt="project img">
@@ -189,7 +189,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 column-gap-0">
+                <div class="col-md-3 col-sm-6 column-gap-0">
                     <div class="project-item">
                         <div class="img">
                             <img src="img/project-img.jpg" alt="project img">
@@ -200,7 +200,8 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 column-gap-0">
+                <div class="clearfix visible-sm"></div>
+                <div class="col-md-3 col-sm-6 column-gap-0">
                     <div class="project-item">
                         <div class="img">
                             <img src="img/project-img.jpg" alt="project img">
@@ -211,8 +212,8 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
                         </div>
                     </div>
                 </div>
-
-                <div class="col-sm-3 column-gap-0">
+                
+                <div class="col-md-3 col-sm-6 column-gap-0">
                     <div class="project-item">
                         <div class="img">
                             <img src="img/project-img.jpg" alt="project img">
@@ -223,20 +224,8 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
                         </div>
                     </div>
                 </div>
-
-                <div class="col-sm-3 column-gap-0">
-                    <div class="project-item">
-                        <div class="img">
-                            <img src="img/project-img.jpg" alt="project img">
-                        </div>
-                        <div class="project-contant">
-                            <a href="#"><h3 class="primary-title">project name </h3></a>
-                            <p>Lorem, ipsum, dolor.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-3 column-gap-0">
+                <div class="clearfix visible-sm"></div>
+                <div class="col-md-3 col-sm-6 column-gap-0">
                     <div class="project-item">
                         <div class="img">
                             <img src="img/project-img.jpg" alt="project img">
@@ -248,7 +237,19 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
                     </div>
                 </div>
 
-                <div class="col-sm-3 column-gap-0">
+                <div class="col-md-3 col-sm-6 column-gap-0">
+                    <div class="project-item">
+                        <div class="img">
+                            <img src="img/project-img.jpg" alt="project img">
+                        </div>
+                        <div class="project-contant">
+                            <a href="#"><h3 class="primary-title">project name </h3></a>
+                            <p>Lorem, ipsum, dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-md-3 col-sm-6 column-gap-0">
                     <div class="project-item">
                         <div class="img">
                             <img src="img/project-img.jpg" alt="project img">
@@ -260,7 +261,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
                     </div>
                 </div>
 
-                <div class="col-sm-3 column-gap-0">
+                <div class="col-md-3 col-sm-6 column-gap-0">
                     <div class="project-item">
                         <div class="img">
                             <img src="img/project-img.jpg" alt="project img">
@@ -485,32 +486,33 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
             </div>
         </div>  
     </section>
-    <section class="contact">
+    <section class="contact-section">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="title">
-                        <h2>Contact </h2>
+                    <div class="section-title">
+                        <h1 class="primary-title">Contect  </h1>
                     </div>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-md-offset-3  col-md-6 col-sm-offset-2 col-sm-8">
                     <div class="contact-form">
                         <form class="">
-                            <div class="form-inline">
-                                <div class="form-group">
+                            <div class="form-inline clearfix name-email ">
+                                <div class="form-group sender-name">
 
-                                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                                    <input type="text" class="form-control"  placeholder="Name*">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group sender-email">
 
-                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                                    <input type="email" class="form-control" placeholder="Email*">
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <div class="form-group clearfix message ">
+                                <textarea name=""  cols="30" rows="10" placeholder="message"></textarea>
                             </div>
-
-                            <button type="submit" class="btn btn-default">Submit </button>
+                            <div class="button-wrap">
+                                <button type="submit" class="submit-button">Submit </button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -520,74 +522,62 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="footer-content">
-                    <img src="img/logo.jpg" alt="Logo ">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem repellendus unde in at, voluptates ea enim, tenetur eum vel placeat, eveniet veniam nisi ipsum ad voluptatem tempore accusamus ducimus quos earum nesciunt animi, explicabo? Illo ab ipsam nisi cumque obcaecati.</p>
+                    <div class="footer-logo"><img src="img/logo.png" alt="Logo "></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem repellendus unde in at,
+                    </p><p> tenetur eum vel placeat, eveniet veniam nisi ipsum advolu ptatem tempore accusamus ducimus  volup tatem tempore accusamus ducimus</p>
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="list-element">
-                    <h1>Recent POst</h1>
+                    <h2 class="footer-title">Recent POst</h2>
                     <ul>
                         <li>
-                            <div class="publish-date">10/12/17</div>
+                            <p class="publish-date">10/12/17</p>
                             <a href="#">Lorem ipsum dolor sit amet.</a>
                         </li>
                         <li>
-                            <div class="publish-date">10/12/17</div>
+                            <p class="publish-date">10/12/17</p>
                             <a href="#">Lorem ipsum dolor sit amet.</a>
                         </li>
                         <li>
-                            <div class="publish-date">10/12/17</div>
+                            <p class="publish-date">10/12/17</p>
                             <a href="#">Lorem ipsum dolor sit amet.</a>
                         </li>
-                        <li>
-                            <div class="publish-date">10/12/17</div>
-                            <a href="#">Lorem ipsum dolor sit amet.</a>
-                        </li>
+                        
+                        
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="clearfix visible-sm "></div>
+            <div class="col-md-3 col-sm-6">
                 <div class="list-element">
-                    <h1>twiter Feeds</h1>
+                    <h2 class="footer-title" >twiter Feeds</h2>
                     <ul>
                         <li>
-                            <div class="publish-date">about 7 hour ago @krisgailiona</div>
+                            <p class="publish-date">about 7 hour ago <a href="#">@krisgailiona</a></p>
                             <a href="#">Lorem ipsum dolor sit amet.</a>
                         </li>
-                        <li>
-                            <div class="publish-date">about 7 hour ago @krisgailiona</div>
+                         <li>
+                            <p class="publish-date">about 7 hour ago <a href="#">@krisgailiona</a></p>
                             <a href="#">Lorem ipsum dolor sit amet.</a>
                         </li>
-                        <li>
-                            <div class="publish-date">about 7 hour ago @krisgailiona</div>
+                         <li>
+                            <p class="publish-date">about 7 hour ago <a href="#">@krisgailiona</a></p>
                             <a href="#">Lorem ipsum dolor sit amet.</a>
                         </li>
 
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="footer-content">
-                    <h2>Address </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem repellendus unde in at, voluptates ea enim, tenetur eum vel placeat, eveniet veniam nisi ipsum ad voluptatem tempore accusamus ducimus quos earum nesciunt animi, explicabo? Illo ab ipsam nisi cumque obcaecati.</p>
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</p>
+                    <h2 class="footer-title" >Address </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem repellendus unde in at, voluptates ea enim, tenetur eum vel placeat, eveniet veniam </p>
                     <p><i class="fa fa-map-marker" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</p>
                     <p><i class="fa fa-map-marker" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</p>
                     <p><i class="fa fa-map-marker" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</p>
@@ -596,7 +586,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
         </div>
     </div> 
     <div class="copyright-section">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error porro in modi quae dolore eum, itaque velit cupiditate ab. Quos.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
     </div>       
 </footer>
 

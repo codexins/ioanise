@@ -1,13 +1,21 @@
 %overlay{
 	@include section-overly();
 }
+%transition-all{
+	@include transition-all($transition)
+}
+%before{
+	@include absolute-position(0,50%,0,-10%);
+}
 .column-gap-0{
 	padding: 0;
 }
 .center{
 	text-align:center;
 }
-
+.clearfix{
+	@extend %clearfix ;
+}
 .section-title{
 	text-align:center;
 	display: block;
@@ -19,6 +27,7 @@
 		color: $secondary-color ;
 		text-transform: uppercase;
 		font-weight: 600;
+		margin-bottom: 15px;
 		&:after{
 			@include  absolute-position(auto,0,0,0);
 			background:$secondary-color;

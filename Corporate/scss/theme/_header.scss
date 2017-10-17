@@ -28,7 +28,7 @@ section{
 				// @include opacity(0) ;
 				transform: scale(0);
 				transform-origin: center ;
-				@include transition-all($transition);
+				@extend %transition-all ;
 			}
 			&:hover{
 				&:after{

@@ -1,0 +1,135 @@
+.blog-separator {}
+.post-thambnail-img {
+	img{
+		width: 100%;
+	}
+}
+.blog-post-content {
+	.post-date{
+		text-transform: capitalize;
+		margin:0 ;
+		color: $secondary-color ;
+	}
+	a{
+		color: #333 ;
+		&:hover{
+			color: $secondary-color ;
+		}
+	}
+}
+.blog-item {
+    margin-bottom: 60px;
+    .blog-image{
+		padding-right:30px;
+    	position:relative;
+    	&:after{ 
+    		content: "";
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    width: 20px;
+		    height: 20px;
+		    background: #ebebeb;
+		    z-index: 9999;
+		    transform: translateX(50%);
+		    border-radius: 50%;
+    	}
+	}
+}
+
+.left-thmb{
+	.blog-image{
+		padding-right:30px;
+	}
+	.blog-content{
+		padding-left:30px;
+	}
+}
+.right-thmb{
+	.blog-post-content{
+		text-align: right;
+	}
+	.blog-content{
+		padding-right:30px;
+	}
+	.blog-image{
+		padding-left:30px;
+		position:relative;
+    	&:after{ 
+		    left: 0;
+		    transform: translateX(-50%);
+    	}
+	}
+}
+.blog-separator{
+	position:relative;
+	&:before{
+		@extend %before ;
+	    left: 50%;
+	    right: initial;
+	    width: 2px;
+	    background: #ebebeb;
+	    transform: translateX(-50%);
+	}
+	.blog-button {
+		width: 70px;
+		height: 70px;
+		background: rgba(122, 107, 100, 0.68);
+		line-height: 25px;
+		text-align: center;
+		border-radius: 50%;
+		margin: auto;
+		position: relative;
+		z-index: 11;
+		text-transform: capitalize;
+		padding: 10px;
+
+		a{
+			color: #fff;
+			display: block ;
+		}
+		
+		&:before {
+		    content: "";
+		    top: 5px;
+		    left: 5px;
+		    right: 5px;
+		    bottom: 5px;
+		    position: absolute;
+		    background:$secondary-color ;
+		    z-index: -1;
+		    border-radius: 50%;
+		    @extend %transition-all ;
+		    
+		}
+		&:hover{
+			a{
+				color: $secondary-color ;
+			}
+			&:before{
+				background:#ebebeb ;
+			}
+		}
+	}
+}
+.gallery-carosel{
+	.slick-arrow{
+		z-index: 99;
+	}
+	.slick-arrow.slick-next {
+		right: 10px;
+		&:before {
+		    content: "\f105";
+		    font-family: FontAwesome;
+		    font-size: 35px;
+		}
+	}
+	.slick-arrow.slick-prev {
+		left: 10px;
+		&:before {
+			content: "\f104";
+			font-family: FontAwesome;
+			font-size: 35px;
+		}
+	}
+}

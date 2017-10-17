@@ -5,6 +5,10 @@ CSS indexing
   02. header 
   03. about 
   04. servicex 
+  05. team 
+  06. testimonial 
+  07. blog 
+
 ====================================================*/
 @import 'lib/variables';
 @import 'lib/partials';
@@ -57,24 +61,27 @@ CSS indexing
 ====================================================*/
 @import 'theme/cta-content';
 /*==================end call to action  ======================*/
+/* =================================================
+05. team 
+====================================================*/
+@import 'theme/team';
+/*==================end team section  ======================*/
+
+/* =================================================
+06. testimonial 
+====================================================*/
+@import 'theme/testimonial';
+/*==================end testimonial  section  ======================*/
+/* =================================================
+07. blog 
+====================================================*/
+@import 'theme/blog';
+/*==================end blog  section  ======================*/
 
 
-section.call-to-action {
-    background: #000;
-    padding: 50px 0;
-}
-.testimonial{
-	padding:50px  0; 
-	background:#000 ;
-}
-.item-50-inline{
-    float: left;
-    width: 50%;
-}
 .skill_p {
   margin: 20px;
   width: 100px;
   height: 100px;
   position: relative;
-  // border-radius: 50%;
 }

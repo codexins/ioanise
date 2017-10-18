@@ -1,0 +1,12 @@
+%overlay{
+	@include section-overly();
+}
+%transition-all{
+	@include transition-all($transition)
+}
+%before{
+	@include absolute-position(0,50%,0,-10%);
+}
+.column-gap-0{
+	padding: 0;
+}

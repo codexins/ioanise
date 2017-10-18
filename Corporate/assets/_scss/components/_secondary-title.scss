@@ -1,0 +1,11 @@
+
+	// default secondary title
+
+.secondary-title{
+	color: $secondary-color ;
+	text-transform: uppercase;
+	@include respond-to(xs-screens){
+		font-size: 20px;
+		margin-bottom: 30px;
+	};
+}

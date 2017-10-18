@@ -1,0 +1,14 @@
+
+@charset "UTF-8";
+//Vendor
+@import "_scss/vendor/__vendor-dir";
+
+//Abstracts
+@import "_scss/abstracts/__abstracts-dir";
+
+//Base Styles
+@import "_scss/base/__base-dir";
+//Components
+@import "_scss/components/__components-dir";
+//Layout
+@import "_scss/layouts/__layouts-dir";

@@ -48,7 +48,7 @@
     font-size: calculateRem($fsize);
 }
 
-///* Cross browser opacity */
+// Cross browser opacity
 
 @mixin opacity($opacity) {
     opacity: $opacity;

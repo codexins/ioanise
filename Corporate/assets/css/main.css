@@ -11076,20 +11076,10 @@ button.close {
   opacity: 0.75;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.2;
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-
 /*
 This file is used to contain all base imports.
 Files inside this folder can contain global styles used in
 the project.
-*/
-/*
-This file can be used to overwrite any normailze settings.
 */
 html,
 body {
@@ -11106,9 +11096,9 @@ body * {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
-  line-height: 2em;
+  line-height: 1.9em;
   color: #333;
   font-weight: 400;
   background: #fff;
@@ -11139,7 +11129,7 @@ h6 {
 }
 
 p, ol, table, dl {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 dd {
@@ -11208,6 +11198,13 @@ ul {
   padding: 0.2em 0;
 }
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
 /*
 This file is used to contain all component imports.
 Files inside this folder should contain all styles relating
@@ -11217,9 +11214,11 @@ to a reusable component.
   line-height: 100%;
   padding: 15px 20px;
   display: inline-block;
-  border: 2px solid #e4e4e4;
-  color: #000;
+  border: 2px solid #000;
+  color: #e4e4e4;
   text-transform: uppercase;
+  margin-top: 10px;
+  color: #000;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11231,8 +11230,8 @@ to a reusable component.
 }
 
 .default-btn:hover, .contact-form button.submit-button:hover {
-  border-color: #000;
-  color: #000;
+  border-color: #e4e4e4;
+  color: #333333;
 }
 
 .default-btn i, .contact-form button.submit-button i {
@@ -11242,12 +11241,12 @@ to a reusable component.
 .secondary-title {
   color: #FF404C;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 767px) {
   .secondary-title {
     font-size: 20px;
-    margin-bottom: 30px;
   }
 }
 
@@ -11294,6 +11293,45 @@ to a reusable component.
   margin: 0px auto 50px;
 }
 
+.circle-button {
+  width: 70px;
+  height: 70px;
+  background: rgba(122, 107, 100, 0.68);
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  z-index: 11;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+.circle-button a {
+  color: #fff;
+  display: block;
+}
+
+.circle-button:before {
+  content: "";
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  position: absolute;
+  background: #FF404C;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.circle-button:hover a {
+  color: #FF404C;
+}
+
+.circle-button:hover:before {
+  background: #ebebeb;
+}
+
 .skill, .team-image > a {
   position: relative;
 }
@@ -11315,7 +11353,7 @@ to a reusable component.
   left: 0;
 }
 
-.main-menu li a:after, .project-item .img:before, .project-contant, .team-image img, .team-image .social-icon, .team-details, .blog-separator .blog-button:before {
+.circle-button:before, .main-menu li a:after, .project-item .img:before, .project-contant, .team-image img, .team-image .social-icon, .team-details {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -11668,13 +11706,13 @@ to a reusable component.
 }
 
 .social-icon a:hover {
-  border-color: #000;
+  border-color: #e4e4e4;
   background: #000;
 }
 
 .team-details {
   text-align: center;
-  border: 1px solid #e4e4e4;
+  border: 1px solid #000;
   padding: 10px;
 }
 
@@ -11707,7 +11745,7 @@ to a reusable component.
 }
 
 .team-member:hover .team-details {
-  border-color: #000;
+  border-color: #e4e4e4;
 }
 
 .testimonial {
@@ -11915,45 +11953,6 @@ to a reusable component.
   }
 }
 
-.blog-separator .blog-button {
-  width: 70px;
-  height: 70px;
-  background: rgba(122, 107, 100, 0.68);
-  line-height: 25px;
-  text-align: center;
-  border-radius: 50%;
-  margin: auto;
-  position: relative;
-  z-index: 11;
-  text-transform: capitalize;
-  padding: 10px;
-}
-
-.blog-separator .blog-button a {
-  color: #fff;
-  display: block;
-}
-
-.blog-separator .blog-button:before {
-  content: "";
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  position: absolute;
-  background: #FF404C;
-  z-index: -1;
-  border-radius: 50%;
-}
-
-.blog-separator .blog-button:hover a {
-  color: #FF404C;
-}
-
-.blog-separator .blog-button:hover:before {
-  background: #ebebeb;
-}
-
 .gallery-carosel .slick-arrow {
   z-index: 99;
 }
@@ -12042,6 +12041,7 @@ to a reusable component.
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: 0;
+  padding: 6px 12px;
 }
 
 .contact-form input:focus, .contact-form textarea:focus {

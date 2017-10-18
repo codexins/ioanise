@@ -3,15 +3,6 @@
 	padding: 90px 0;
 	margin-bottom:0 ;
 }
-// .contact-form{
-// 	.form-inline .form-group {
-// 	    display: block;
-// 	    margin-bottom: 0;
-// 	    vertical-align: middle;
-// 	    width: 50%;
-// 	    float: left;
-// 	}
-// }
 .name-email{
 	.form-group {
 	    display: block;
@@ -66,11 +57,13 @@
 		background:transparent;
 		box-shadow: none;
 		outline: 0;
+		padding: 6px 12px;
 		    &:focus{
 		    	box-shadow: none;
 		    	outline: 0;
 
 		    }
+
 	}
 	.button-wrap{
 		text-align: center;

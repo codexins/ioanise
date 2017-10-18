@@ -1,0 +1,37 @@
+.circle-button {
+	width: 70px;
+	height: 70px;
+	background: rgba(122, 107, 100, 0.68);
+	line-height: 25px;
+	text-align: center;
+	border-radius: 50%;
+	margin: auto;
+	position: relative;
+	z-index: 11;
+	text-transform: capitalize;
+	padding: 10px;
+	a{
+		color: #fff;
+		display: block ;
+	}
+	&:before {
+	    content: "";
+	    top: 5px;
+	    left: 5px;
+	    right: 5px;
+	    bottom: 5px;
+	    position: absolute;
+	    background:$secondary-color ;
+	    z-index: -1;
+	    border-radius: 50%;
+	    @extend %transition-all ; 
+	}
+	&:hover{
+		a{
+			color: $secondary-color ;
+		}
+		&:before{
+			background:#ebebeb ;
+		}
+	}
+}

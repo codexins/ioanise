@@ -1,0 +1,31 @@
+.social-icon{
+
+    @include position-center(vertical)
+    // top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+	@extend %transition-all ;
+	@include respond-to(xs-screens){
+		top: 50%;
+	};
+
+	a{
+	    width: 35px;
+	    height: 35px;
+	    display: inline-block;
+	    color: $body-bg-color;
+	    line-height: 35px;
+	    text-align: center;
+	    @include border-radius(50%)
+	    border: 2px solid $body-bg-color;
+	    + a {
+	    	margin-left: 10px;
+	    }
+	    &:hover{
+	    	border-color : $secondary-color;
+	    	background:$secondary-color;
+	    }
+	}
+
+}

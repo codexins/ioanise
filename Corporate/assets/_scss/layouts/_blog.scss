@@ -98,6 +98,7 @@
 	    width: 2px;
 	    background: #ebebeb;
 	    transform: translateX(-50%);
+	    bottom: 10px;
 	    @include respond-to(xs-screens){
 				content: none;
 		};
@@ -124,4 +125,7 @@
 			font-size: 35px;
 		}
 	}
+}
+.post-pagination{
+	overflow: hidden;
 }

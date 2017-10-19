@@ -4,7 +4,7 @@
 .secondary-title{
 	color: $secondary-color ;
 	text-transform: uppercase;
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 	@include respond-to(xs-screens){
 		font-size: 20px;
 	};

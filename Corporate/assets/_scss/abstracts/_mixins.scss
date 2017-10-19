@@ -38,10 +38,7 @@
 
 ///* converts font sizes into rem */
 
-@function calculateRem($size) {
-    $remSize: $size / 16px;
-    @return $remSize * 1rem;
-}
+
 
 @mixin font-size($fsize) {
     font-size: $fsize;

@@ -3,9 +3,9 @@
 
 .default-btn{
 	line-height: 100%;
-	@include button(15px 20px , 2px solid  $primary-border-color ,$secondary-border-color );
+	@include button(15px 20px , 2px solid  $secondary-color ,$secondary-border-color );
 	text-transform:uppercase;
-	margin-top: 10px;
+	margin-top: 12px;
 	color:$primary-border-color ; 
 	@include respond-to(xs-screens){
 		padding:10px;

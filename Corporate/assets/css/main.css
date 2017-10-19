@@ -11098,7 +11098,7 @@ body * {
 body {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  line-height: 1.9em;
+  line-height: 1.65em;
   color: #333;
   font-weight: 400;
   background: #fff;
@@ -11214,10 +11214,10 @@ to a reusable component.
   line-height: 100%;
   padding: 15px 20px;
   display: inline-block;
-  border: 2px solid #000;
+  border: 2px solid #FF404C;
   color: #e4e4e4;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 12px;
   color: #000;
 }
 
@@ -11241,7 +11241,7 @@ to a reusable component.
 .secondary-title {
   color: #FF404C;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11290,13 +11290,13 @@ to a reusable component.
   text-align: center;
   display: block;
   max-width: 650px;
-  margin: 0px auto 50px;
+  margin: 0px auto 85px;
 }
 
 .circle-button {
-  width: 70px;
-  height: 70px;
-  background: rgba(122, 107, 100, 0.68);
+  width: 85px;
+  height: 85px;
+  background: #ebebeb;
   line-height: 25px;
   text-align: center;
   border-radius: 50%;
@@ -11305,11 +11305,14 @@ to a reusable component.
   z-index: 11;
   text-transform: capitalize;
   padding: 10px;
+  margin-top: 30px;
 }
 
 .circle-button a {
   color: #fff;
   display: block;
+  font-weight: 600;
+  padding: 7px;
 }
 
 .circle-button:before {
@@ -11329,7 +11332,47 @@ to a reusable component.
 }
 
 .circle-button:hover:before {
-  background: #ebebeb;
+  background: #fff;
+}
+
+.social-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .social-icon {
+    top: 50%;
+  }
+}
+
+.social-icon a {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.social-icon a + a {
+  margin-left: 10px;
+}
+
+.social-icon a:hover {
+  border-color: #FF404C;
+  background: #FF404C;
 }
 
 .skill, .team-image > a {
@@ -11353,7 +11396,7 @@ to a reusable component.
   left: 0;
 }
 
-.circle-button:before, .main-menu li a:after, .project-item .img:before, .project-contant, .team-image img, .team-image .social-icon, .team-details {
+.circle-button:before, .social-icon, .main-menu li a:after, .project-item .img:before, .project-contant, .team-image img, .team-details {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -11448,9 +11491,9 @@ to a reusable component.
 
 .our-details:before {
   background: #f5f5f5;
-  -webkit-transform: scale(1.1) skew(7deg);
-  -ms-transform: scale(1.1) skew(7deg);
-  transform: scale(1.1) skew(7deg);
+  -webkit-transform: scale(1.1) skew(18deg) translateX(50px);
+  -ms-transform: scale(1.1) skew(18deg) translateX(50px);
+  transform: scale(1.1) skew(18deg) translateX(50px);
   z-index: 1;
 }
 
@@ -11655,7 +11698,7 @@ to a reusable component.
 }
 
 .team-image > a:before {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   opacity: 0;
 }
 
@@ -11670,55 +11713,19 @@ to a reusable component.
 }
 
 .team-image .social-icon {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   top: -50%;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
-@media only screen and (max-width: 767px) {
-  .team-image .social-icon {
-    top: 50%;
-  }
-}
-
-.social-icon a {
-  width: 35px;
-  height: 35px;
-  display: inline-block;
-  color: #fff;
-  line-height: 35px;
-  text-align: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  border: 1px solid #fff;
-}
-
-.social-icon a + a {
-  margin-left: 10px;
-}
-
-.social-icon a:hover {
-  border-color: #e4e4e4;
-  background: #000;
 }
 
 .team-details {
   text-align: center;
   border: 1px solid #000;
-  padding: 10px;
+  padding: 20px;
 }
 
 .team-details h2 {
-  margin-bottom: 0;
+  margin-bottom: 7px;
   text-transform: uppercase;
+  color: #000;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -11727,9 +11734,14 @@ to a reusable component.
   }
 }
 
+.team-details h2:hover {
+  color: #FF404C;
+}
+
 .team-details p {
   margin-bottom: 0;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .team-member {
@@ -11745,7 +11757,7 @@ to a reusable component.
 }
 
 .team-member:hover .team-details {
-  border-color: #e4e4e4;
+  border-color: #FF404C;
 }
 
 .testimonial {
@@ -11945,6 +11957,7 @@ to a reusable component.
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+  bottom: 10px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11975,6 +11988,10 @@ to a reusable component.
   content: "\f104";
   font-family: FontAwesome;
   font-size: 35px;
+}
+
+.post-pagination {
+  overflow: hidden;
 }
 
 .contact-section {

@@ -1,6 +1,6 @@
 %default-heading{
     font-family: $heading-font ;
-    line-height: 1.2 ;
+    line-height: 1.2em;
     margin-bottom: $heading-margin-bottom;
     margin-top:  0;
 
@@ -34,7 +34,6 @@
 
 %flex_end {
 	@extend %display-flex ;
-	
 	justify-content:  flex-end ;
 }
 

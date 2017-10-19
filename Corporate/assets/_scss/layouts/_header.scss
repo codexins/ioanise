@@ -1,16 +1,10 @@
-.header{
-	margin-bottom:90px ;
-}
-section{
-	@extend .header ;
-}
 .logo {
     padding: 8px 0;
 	a{
 		display: inline-block;
 	}
 }
-.main-menu-area{
+.header-wrapper {
 	background: $primary-color;
 	padding: 20px 0;
 }

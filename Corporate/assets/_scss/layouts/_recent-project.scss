@@ -41,28 +41,27 @@
 		@include respond-to(xs-screens){
 			 opacity: 1;
 		};
-
-	a{
-		color: #fff ;
-	}
 	h3{
-		font-size: 15px;
 		text-transform: uppercase;
 		position:relative;
-		margin-bottom: 7px;
-		padding-bottom: 15px;
-		&:before{
-			@include  absolute-position(auto,0,0,0);
-			width: 30px;
-			height: 2px;
-			margin:auto;
-			background:$body-bg-color ;
+		margin-bottom: 10px;
+		padding-bottom: 13px;
+		font-size: 18px;
+		letter-spacing: 3px;
+		&:after{
+			height: 3px;
 		}
+	}
+	
+	a{
+		color:$secondary-color ; 
 	}
 	p{
 		margin: 0 ;
-		// line-height: 1em;
 		text-transform: uppercase;
+		font-size: 14px;
+		letter-spacing: 3px;
+		font-weight: 300;
 	}
 }
 .btn-portfolio{

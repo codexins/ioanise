@@ -5,17 +5,19 @@
 }
 .service-item{
 	text-align:center;
+	overflow:hidden ;
 	@include respond-to(xs-screens){
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 	};
 }
 .thmb-icon{
 	color:$secondary-color ;
 	font-size: 23px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
-.service-name{
-	.secondary-title{
-		margin-bottom: 16px;
+.service-content{
+	p:last-child{
+		margin: 0;
 	}
+
 }

@@ -11140,6 +11140,7 @@ a {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   text-decoration: none;
+  color: #212121;
 }
 
 a:hover, a:focus {
@@ -11149,6 +11150,10 @@ a:hover, a:focus {
 a:active, a:hover {
   outline: 0 none;
   text-decoration: none;
+}
+
+a:hover {
+  color: #FF404C;
 }
 
 a:focus {
@@ -11190,32 +11195,33 @@ This file is used to contain all component imports.
 Files inside this folder should contain all styles relating
 to a reusable component.
 */
-.default-btn, .contact-form button.submit-button {
+.default-btn {
   line-height: 100%;
   padding: 15px 20px;
   display: inline-block;
   border: 2px solid #FF404C;
   color: #e4e4e4;
   text-transform: uppercase;
-  margin-top: 12px;
+  margin-top: 20px;
   color: #000;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 767px) {
-  .default-btn, .contact-form button.submit-button {
+  .default-btn {
     padding: 10px;
     font-size: 14px;
     margin-top: 30px;
   }
 }
 
-.default-btn:hover, .contact-form button.submit-button:hover {
+.default-btn:hover {
   border-color: #e4e4e4;
   color: #333333;
 }
 
-.default-btn i, .contact-form button.submit-button i {
-  margin-left: 10px;
+.default-btn i {
+  margin-left: 5px;
 }
 
 .secondary-title {
@@ -11494,22 +11500,23 @@ to a reusable component.
 
 .service-item {
   text-align: center;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 767px) {
   .service-item {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 }
 
 .thmb-icon {
   color: #FF404C;
   font-size: 23px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.service-name .secondary-title {
-  margin-bottom: 16px;
+.service-content p:last-child {
+  margin: 0;
 }
 
 .skill {
@@ -11598,35 +11605,29 @@ to a reusable component.
   }
 }
 
-.project-contant a {
-  color: #fff;
-}
-
 .project-contant h3 {
-  font-size: 15px;
   text-transform: uppercase;
   position: relative;
-  margin-bottom: 7px;
-  padding-bottom: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 13px;
+  font-size: 18px;
+  letter-spacing: 3px;
 }
 
-.project-contant h3:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: auto;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 30px;
-  height: 2px;
-  margin: auto;
-  background: #fff;
+.project-contant h3:after {
+  height: 3px;
+}
+
+.project-contant a {
+  color: #FF404C;
 }
 
 .project-contant p {
   margin: 0;
   text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 300;
 }
 
 .btn-portfolio {
@@ -11645,6 +11646,10 @@ to a reusable component.
 
 .cta-content h3 {
   text-transform: uppercase;
+}
+
+.cta-content a {
+  color: #29c5f2;
 }
 
 .team-section {
@@ -11703,6 +11708,10 @@ to a reusable component.
   color: #FF404C;
 }
 
+.team-details a {
+  font-size: 20px;
+}
+
 .team-details p {
   margin-bottom: 0;
   text-transform: uppercase;
@@ -11746,6 +11755,7 @@ to a reusable component.
 .testimonial-wrap .client-name {
   margin: 0;
   color: #FF404C;
+  margin-bottom: 11px;
 }
 
 .testimonial-wrap .website-link {
@@ -11790,6 +11800,10 @@ to a reusable component.
 .testimonial-wrap .slick-dotted.slick-slider {
   margin-bottom: 30px;
   padding-bottom: 25px;
+}
+
+.client-meta {
+  margin-top: 35px;
 }
 
 .blog-section {
@@ -12029,7 +12043,8 @@ to a reusable component.
 }
 
 .contact-form button.submit-button {
-  padding: 8px 40px;
+  padding: 15px 40px;
+  border-radius: 0px;
   background: transparent;
   text-transform: capitalize;
 }

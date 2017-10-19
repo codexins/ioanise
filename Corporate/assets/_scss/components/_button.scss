@@ -5,8 +5,9 @@
 	line-height: 100%;
 	@include button(15px 20px , 2px solid  $secondary-color ,$secondary-border-color );
 	text-transform:uppercase;
-	margin-top: 12px;
+	margin-top: 20px;
 	color:$primary-border-color ; 
+	border-radius: 5px;
 	@include respond-to(xs-screens){
 		padding:10px;
 		font-size: 14px;
@@ -17,6 +18,6 @@
 		color:rgb(51, 51, 51); 
 	}
 	i{
-		margin-left: 10px;
+		margin-left: 5px;
 	}
 }

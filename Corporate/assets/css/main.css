@@ -11104,7 +11104,11 @@ h6 {
   font-size: 15px;
 }
 
-p, ol, table, dl {
+p {
+  margin: 0 0 15px;
+}
+
+ol, table, dl {
   margin-bottom: 25px;
 }
 
@@ -11174,7 +11178,7 @@ ul {
   padding: 0.2em 0;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   line-height: 1.2em;
   margin-bottom: 25px;
@@ -11217,7 +11221,6 @@ to a reusable component.
 .secondary-title {
   color: #FF404C;
   text-transform: uppercase;
-  margin-bottom: 32px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11232,7 +11235,6 @@ to a reusable component.
   color: #FF404C;
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 15px;
   font-size: 40px;
 }
 
@@ -11260,6 +11262,7 @@ to a reusable component.
   margin: auto;
   width: 45px;
   height: 2px;
+  transform: translateY(50%);
 }
 
 .section-title {
@@ -11457,13 +11460,7 @@ to a reusable component.
 
 .our-details:before {
   background: #f5f5f5;
-<<<<<<< HEAD
-  -webkit-transform: scale(1.1) skew(18deg) translateX(50px);
-  -ms-transform: scale(1.1) skew(18deg) translateX(50px);
   transform: scale(1.1) skew(18deg) translateX(50px);
-=======
-  transform: scale(1.1) skew(7deg);
->>>>>>> 4f91b68d4a1e6a913482458fb536ad8f11f4bcdb
   z-index: 1;
 }
 

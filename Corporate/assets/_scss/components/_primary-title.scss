@@ -4,7 +4,6 @@
 		color: $secondary-color ;
 		text-transform: uppercase;
 		font-weight: 600;
-		margin-bottom: 15px;
 		font-size: 40px;
 		@include respond-to(tablet-screens){
 			font-size: 30px;
@@ -18,5 +17,6 @@
 			margin: auto;
 			width: 45px;
 			height: 2px;
+			transform: translateY(50%);
 		}
 }

@@ -10,7 +10,7 @@
 		display: block ;
 		@extend %overlay ;
 		&:before{
-			background: $team-overlay-color;
+			background: $cx-team-overlay-color;
 			opacity: 0 ;
 			@include respond-to(xs-screens){
 				opacity: 1 ;
@@ -30,7 +30,7 @@
 
 .team-details{
 	text-align: center;
-    border: 1px solid $primary-border-color;
+    border: 1px solid $cx-primary-border-color;
     padding: 20px;
 	@extend %transition-all ;
 
@@ -68,7 +68,7 @@
 			top: 50%;
 		}
 		.team-details{
-    		border-color:$secondary-color
+    		border-color:$cx-secondary-color
 		}
 	}
 }

@@ -1,17 +1,17 @@
 %default-heading{
-    font-family: $heading-font ;
+    font-family: $cx-heading-font ;
     line-height: 1.2em;
-    margin-bottom: $heading-margin-bottom;
+    margin-bottom: $cx-heading-margin-bottom;
     margin-top:  0;
 
 }
 
 
-///* top and bottom padding of a section, $vpadding variable is coming from _variables.scss */
+///* top and bottom padding of a section, $cx-vpadding variable is coming from _variables.scss */
 
 %section-vpadding {
-	padding-top: $vpadding;
-	padding-bottom: $vpadding;
+	padding-top: $cx-vpadding;
+	padding-bottom: $cx-vpadding;
 }
 
 ///* Vertically and Horizantally Centering */

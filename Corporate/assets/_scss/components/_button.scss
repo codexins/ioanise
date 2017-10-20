@@ -3,10 +3,10 @@
 
 .default-btn{
 	line-height: 100%;
-	@include button(15px 35px , 2px solid  $secondary-color ,$secondary-border-color );
+	@include button(15px 35px , 2px solid  $cx-secondary-color ,$cx-secondary-border-color );
 	text-transform:uppercase;
 	margin-top: 20px;
-	color:$primary-border-color ; 
+	color:$cx-primary-border-color ; 
 	border-radius: 5px;
 	@include transition-all(0.3s)
 	@include respond-to(xs-screens){
@@ -15,7 +15,7 @@
 		margin-top: 30px;
 	};
 	&:hover{
-		border-color:$secondary-border-color ;
+		border-color:$cx-secondary-border-color ;
 		color:rgb(51, 51, 51); 
 	}
 	i{

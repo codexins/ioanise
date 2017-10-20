@@ -1,76 +1,70 @@
 
 // typography 
-$body-font: 'Raleway', sans-serif; 
-$heading-font: 'Raleway', sans-serif; 
-$tertiary-font: 'Raleway', sans-serif; 
+$cx-body-font: 'Raleway', sans-serif; 
 
-// Font Sizing
+$cx-heading-font: 'Raleway', sans-serif; 
 
+$cx-tertiary-font: 'Raleway', sans-serif; 
 // Colors
-$black : rgba(51,51,51,1);
-$red   : #d52b1e;
-$blue  : #00a1de; 
-$body-color: #333 ;
-$body-bg-color: #fff ;
-//$primary-color:  #303030 ;
-$primary-color:  #012C40 ;
-//$secondary-color: #7a6b64 ;
-$secondary-color: #FF404C ;
-$section-bg-color:#f5f5f5 ; 
-$primary-border-color:	 #000;  
-$secondary-border-color: #e4e4e4	 ; 
-$team-overlay-color: rgba(0, 0, 0, 0.9);
 
-// Spacing
-$pad : 1em;
+$cx-border-color: #ccc;
 
-// Breakpoints
+$cx-text-color: #333 ;
 
-$smallBreakpoint : 600px;
-$largeBreakpoint : 1080px;
+$cx-body-bg-color: #fff ; // white 
+
+$cx-primary-color:  #012C40 ;
+
+$cx-secondary-color: #FF404C ;
+
+$cx-tertiaty-color:#f5f5f5 ; 
+
+$cx-primary-border-color:	 #000; 
+
+$cx-secondary-border-color: #e4e4e4	 ; 
+
+$cx-team-overlay-color: rgba(0, 0, 0, 0.9);
 
 
-$body-f-size: 16px;
-$body-l-height: 1.65em;
-$body-f-weight : 400 ;
+$cx-link-color: $cx-primary-color;
+
+$cx-link-hover-color: $cx-secondary-color;
+
+// line height  
+$cx-body-font-size: 16px;
+
+$cx-body-line-height: 1.65em;
+
+$cx-body-font-weight : 400 ;
 
 
 // default speacing 
-$vpadding: 40px;
-$button-padding : 15px 20px ;
-$heading-margin-bottom : 25px ;
+$cx-vpadding: 40px;
+$cx-button-padding : 15px 20px ;
+$cx-heading-margin-bottom : 25px ;
 
+$cx-section-speacing : 90px ;
 // default transition 
-$transition: all 0.3s ease ;
+$cx-transition: all 0.3s ease ;
 
 //* screen size */
 //* screen min width */
 
-$large-screen:1200px;
+$cx-large-screen:1200px;
 
-$medium-screen: 992px;
+$cx-medium-screen: 992px;
 
-$tablet-screen:768px;
+$cx-tablet-screen:768px;
 
-$sm-medium-screen:480px;
+$cx-sm-medium-screen:480px;
 
-$break: (
-    "larg-screen":      1200px,
-    "mediam-screen":    992px,
-    "tablet-screen":      768px,
-    "sm-medium-screen": 480px, 
+$cx-breakpoints: (
+    "larg-screen":     $cx-large-screen,
+    "mediam-screen":    $cx-medium-screen,
+    "tablet-screen":      $cx-tablet-screen,
+    "sm-medium-screen": $cx-sm-medium-screen, 
 );
 
-// $breakpoints: (
-//     "phone":        400px,
-//     "phone-wide":   480px,
-//     "phablet":      560px,
-//     "tablet-small": 640px,
-//     "tablet":       768px,
-//     "tablet-wide":  1024px,
-//     "desktop":      1248px,
-//     "desktop-wide": 1440px
-// );
 
 
 

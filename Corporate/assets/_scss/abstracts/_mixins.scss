@@ -268,24 +268,24 @@
 @mixin respond-to($media) {
 
     @if $media == xs-screens {
-        @media only screen and (max-width: $tablet-screen - 1) { @content; }
+        @media only screen and (max-width: $cx-tablet-screen - 1) { @content; }
     }
 
     @else if $media == xs-medium-screens {
-        @media only screen and (min-width: $sm-medium-screen) and (max-width: $tablet-screen - 1) { @content; }
+        @media only screen and (min-width: $cx-sm-medium-screen) and (max-width: $cx-tablet-screen - 1) { @content; }
     }
 
     @else if $media == tablet-screens {
-        @media only screen and (min-width: $tablet-screen) and (max-width: $medium-screen - 1) { @content; }
+        @media only screen and (min-width: $cx-tablet-screen) and (max-width: $cx-medium-screen - 1) { @content; }
     }
 
     @else if $media == medium-screens {
-        @media only screen and (min-width: $medium-screen) and (max-width: $large-screen - 1) { @content; }
+        @media only screen and (min-width: $cx-medium-screen) and (max-width: $cx-large-screen - 1) { @content; }
     }
 
     ///* not importent */
     @else if $media == wide-screens {
-        @media only screen and (min-width: $large-screen) { @content; }
+        @media only screen and (min-width: $cx-large-screen) { @content; }
     }
 
 }
@@ -295,8 +295,8 @@
 // mixin only for max or min width 
 
 @mixin mq($width, $type: min) {
-    @if map_has_key($break, $width) {
-        $width: map_get($break, $width);
+    @if map_has_key($cx-breakpoints, $width) {
+        $width: map_get($cx-breakpoints, $width);
         @if $type == max {
             $width: $width - 1px;
         }

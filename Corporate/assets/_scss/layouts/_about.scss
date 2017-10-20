@@ -7,7 +7,7 @@
 	overflow: hidden;
 	 &:before{
 	 	@extend %before ;
-	 	background:$section-bg-color ;	
+	 	background:$cx-tertiaty-color ;	
     	transform: scale(1.1) skew(18deg) translateX(50px);
     	z-index: 1;
     	@include respond-to(xs-screens){

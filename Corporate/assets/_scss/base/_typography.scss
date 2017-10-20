@@ -1,11 +1,11 @@
 
 body {
-    font-family: $body-font ;
-    font-size: $body-f-size;
-    line-height:$body-l-height;
-    color: $body-color;
-    font-weight: $body-f-weight;
-    background: $body-bg-color;
+    font-family: $cx-body-font ;
+    font-size: $cx-body-font-size;
+    line-height:$cx-body-line-height;
+    color: $cx-text-color;
+    font-weight: $cx-body-font-weight;
+    background: $cx-body-bg-color;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -35,7 +35,7 @@ p {
 }
 
 ol, table, dl {
-    margin-bottom:  $heading-margin-bottom ;
+    margin-bottom:  $cx-heading-margin-bottom ;
 }
 dd {
     margin-bottom: 15px;
@@ -44,7 +44,7 @@ address ,blockquote  {
     font-style: italic;
 }
 blockquote {
-    font-size: $body-f-size;
+    font-size: $cx-body-font-size;
 }
 td, th {
     padding: 10px;
@@ -54,7 +54,7 @@ img {
     height:auto
 }
 a {
-    @include  transition-all($transition)
+    @include  transition-all($cx-transition)
     text-decoration:none;
     color:#212121 ;
 }
@@ -66,7 +66,7 @@ a:active, a:hover {
   text-decoration: none;
 }
 a:hover {
-    color: $secondary-color;
+    color: $cx-secondary-color;
 }
 a:focus {
     outline:0px solid;

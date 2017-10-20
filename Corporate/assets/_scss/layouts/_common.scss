@@ -2,7 +2,7 @@
 	@include section-overly();
 }
 %transition-all{
-	@include transition-all($transition)
+	@include transition-all($cx-transition)
 }
 %before{
 	@include absolute-position(0,50%,0,-10%);

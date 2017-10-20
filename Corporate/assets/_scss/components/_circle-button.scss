@@ -25,17 +25,17 @@
 	    right: 5px;
 	    bottom: 5px;
 	    position: absolute;
-	    background:$secondary-color ;
+	    background:$cx-secondary-color ;
 	    z-index: -1;
 	    border-radius: 50%;
 	    @extend %transition-all ; 
 	}
 	&:hover{
 		a{
-			color: $secondary-color ;
+			color: $cx-secondary-color ;
 		}
 		&:before{
-			background:$body-bg ;
+			background:$cx-body-bg-color ;
 		}
 	}
 }

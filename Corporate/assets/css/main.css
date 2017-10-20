@@ -11406,12 +11406,12 @@ to a reusable component.
   background: #FF404C;
 }
 
-.slick-dots li {
+.circle-dot .slick-dots li {
   width: auto;
   height: inherit;
 }
 
-.slick-dots li button {
+.circle-dot .slick-dots button {
   position: relative;
   border-radius: 50%;
   background: transparent;
@@ -11420,20 +11420,24 @@ to a reusable component.
   height: 5px;
 }
 
-.slick-dots li.slick-active button {
-  background: #fff;
-}
-
-.slick-dots li.slick-active button:before {
+.circle-dot .slick-dots button:before {
   content: "";
 }
 
-.slick-slide:focus {
+.circle-dot .slick-dots li.slick-active button {
+  background: #fff;
+}
+
+.circle-dot .slick-dots li.slick-active button:before {
+  content: "";
+}
+
+.circle-dot .slick-slide:focus {
   border: 0;
   outline: 0;
 }
 
-.slick-dotted.slick-slider {
+.circle-dot .slick-dotted.slick-slider {
   margin-bottom: 30px;
   padding-bottom: 25px;
 }

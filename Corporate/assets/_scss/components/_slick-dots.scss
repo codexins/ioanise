@@ -1,18 +1,20 @@
-
+.circle-dot {
 	.slick-dots{
 		// bottom: -34px;
 		 li{
 		 	width: auto;
-		 	height: inherit ;
-			  button {
-			 	position: relative;
-			    border-radius: 50%;
-			    background: transparent;
-			    border: 2px solid #fff;
-			    width: 5px;
-			    height: 5px;
-			}
+		 	height: inherit ; 
 		}
+		 button {
+		 	position: relative;
+		    border-radius: 50%;
+		    background: transparent;
+		    border: 2px solid #fff;
+		    width: 5px;
+		    height: 5px;
+		    &:before{
+				content: "";
+			}		}
 		li.slick-active button{
 			background:#fff ;
 			&:before{
@@ -28,3 +30,4 @@
 	    margin-bottom: 30px;
 	    padding-bottom: 25px;
 	}
+}

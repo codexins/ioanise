@@ -3,7 +3,7 @@
 
 .default-btn{
 	line-height: 100%;
-	@include button(15px 20px , 2px solid  $secondary-color ,$secondary-border-color );
+	@include button(15px 35px , 2px solid  $secondary-color ,$secondary-border-color );
 	text-transform:uppercase;
 	margin-top: 20px;
 	color:$primary-border-color ; 

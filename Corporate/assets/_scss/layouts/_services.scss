@@ -6,7 +6,8 @@
 .service-item{
 	text-align:center;
 	overflow:hidden ;
-	@include respond-to(xs-screens){
+	margin-bottom: 5px;
+		@include respond-to(xs-screens){
 		margin-bottom: 40px;
 	};
 }

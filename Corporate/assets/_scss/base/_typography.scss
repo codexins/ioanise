@@ -86,19 +86,16 @@ input[type="password"],
 input[type="search"],
 input[type="tel"] {
     padding:8px 10px;
-    border: 1px solid #ddd;
 }
 
 input[type="submit"] {
-    border:1px solid #295970;
+    border:1px solid $cx-text-color;
 }
 
 
 button,
 input[type="submit"],
 input[type="button"]{
-    background: #295970;
-    color: #fff;
     font-size: 85%;
     padding: 8px 20px;
     text-transform: uppercase;
@@ -112,14 +109,16 @@ input:-ms-input-placeholder,
 input[placeholder] {
     color: #ddd ;
 }
+button:focus,
 input:focus,
 textarea:focus {
-    border-color: #95E1D3;
+    border-color: transparent;
+    outline: 0;
 }
 button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover{
-    background: #333;
+    background: $cx-text-color;
 }
 ::-moz-selection {
     background: #b3d4fc;

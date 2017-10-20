@@ -11175,18 +11175,15 @@ input[type="password"],
 input[type="search"],
 input[type="tel"] {
   padding: 8px 10px;
-  border: 1px solid #ddd;
 }
 
 input[type="submit"] {
-  border: 1px solid #295970;
+  border: 1px solid #333;
 }
 
 button,
 input[type="submit"],
 input[type="button"] {
-  background: #295970;
-  color: #fff;
   font-size: 85%;
   padding: 8px 20px;
   text-transform: uppercase;
@@ -11201,9 +11198,11 @@ input[placeholder] {
   color: #ddd;
 }
 
+button:focus,
 input:focus,
 textarea:focus {
-  border-color: #95E1D3;
+  border-color: transparent;
+  outline: 0;
 }
 
 button:hover,
@@ -11267,7 +11266,7 @@ to a reusable component.
 }
 
 .default-btn:hover {
-  border-color: #e4e4e4;
+  border-color: #e0e0e0;
   color: #333333;
 }
 
@@ -11332,7 +11331,7 @@ to a reusable component.
 .circle-button {
   width: 85px;
   height: 85px;
-  background: #ebebeb;
+  background: #e0e0e0;
   line-height: 25px;
   text-align: center;
   border-radius: 50%;
@@ -11923,7 +11922,7 @@ to a reusable component.
   right: 0;
   width: 20px;
   height: 20px;
-  background: #ebebeb;
+  background: #e0e0e0;
   z-index: 9999;
   transform: translateX(50%);
   border-radius: 50%;

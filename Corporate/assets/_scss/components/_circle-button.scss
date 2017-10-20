@@ -2,7 +2,8 @@
 .circle-button {
 	width: 85px;
 	height: 85px;
-	background: #ebebeb;
+	// background: #ebebeb;
+	background: darken($cx-secondary-border-color,1.5%);
 	line-height: 25px;
 	text-align: center;
 	border-radius: 50%;

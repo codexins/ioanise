@@ -37,7 +37,9 @@
 		    right: 0;
 		    width: 20px;
 		    height: 20px;
-		    background: #ebebeb;
+		    // background: #ebebeb;
+			background: darken($cx-secondary-border-color,1.5%);
+
 		    z-index: 9999;
 		    transform: translateX(50%);
 		    border-radius: 50%;

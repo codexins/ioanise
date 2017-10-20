@@ -11439,6 +11439,34 @@ to a reusable component.
   padding-bottom: 25px;
 }
 
+.list-element h2 {
+  color: #fff;
+}
+
+.list-element li {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #FF404C;
+}
+
+.list-element li p {
+  margin: 0;
+}
+
+.list-element li a {
+  color: #8d8d8d;
+}
+
+.list-element .publish-date {
+  color: #5f5f5f;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.list-element .publish-date a {
+  color: #FF404C;
+}
+
 .skill, .team-image > a {
   position: relative;
 }
@@ -12104,10 +12132,6 @@ footer {
   margin-bottom: 30px;
 }
 
-.list-element h2 {
-  color: #fff;
-}
-
 .footer-title {
   margin-bottom: 50px;
   color: #fff;
@@ -12115,26 +12139,8 @@ footer {
   text-transform: uppercase;
 }
 
-.list-element li {
-  padding-bottom: 25px;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #FF404C;
-}
-
-.list-element li p {
-  margin: 0;
-}
-
-.list-element li a {
-  color: #8d8d8d;
-}
-
-.list-element .publish-date {
-  color: #5f5f5f;
-}
-
-.list-element .publish-date a {
-  color: #FF404C;
+.list-element.twiter-feeds .publish-date {
+  text-transform: unset;
 }
 
 .footer-content i {

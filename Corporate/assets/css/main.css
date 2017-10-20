@@ -11205,6 +11205,11 @@ to a reusable component.
   margin-top: 20px;
   color: #000;
   border-radius: 5px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11276,10 +11281,6 @@ to a reusable component.
   display: block;
   max-width: 650px;
   margin: 0px auto 85px;
-}
-
-.post-pagination {
-  padding-top: 30px;
 }
 
 .circle-button {
@@ -11962,6 +11963,7 @@ to a reusable component.
 
 .post-pagination {
   overflow: hidden;
+  padding-top: 30px;
 }
 
 .contact-section {
@@ -11970,7 +11972,7 @@ to a reusable component.
   margin-bottom: 0;
 }
 
-.name-email .form-group {
+.name-email-field .form-group {
   display: block;
   margin-bottom: 0;
   vertical-align: middle;
@@ -11978,17 +11980,17 @@ to a reusable component.
   float: left;
 }
 
-.name-email .form-group input {
+.name-email-field .form-group input {
   width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
-  .name-email .form-group {
+  .name-email-field .form-group {
     width: 100%;
   }
 }
 
-.name-email .sender-name input, .name-email .sender-email input {
+.name-email-field .sender-name input, .name-email-field .sender-email input {
   width: 95%;
   border: 0;
   height: 60px;
@@ -11997,16 +11999,16 @@ to a reusable component.
 }
 
 @media only screen and (max-width: 767px) {
-  .name-email .sender-name input, .name-email .sender-email input {
+  .name-email-field .sender-name input, .name-email-field .sender-email input {
     width: 100%;
   }
 }
 
-.name-email .sender-name input {
+.name-email-field .sender-name input {
   float: left;
 }
 
-.name-email .sender-email input {
+.name-email-field .sender-email input {
   float: right;
 }
 

@@ -8,6 +8,7 @@
 	margin-top: 20px;
 	color:$primary-border-color ; 
 	border-radius: 5px;
+	@include transition-all(0.3s)
 	@include respond-to(xs-screens){
 		padding:10px;
 		font-size: 14px;

@@ -20,7 +20,7 @@
 	.client-name{
 		margin:0 ;
 		color: $secondary-color;
-		margin-bottom: 11px;
+		margin-bottom: 15px;
 	}
 	.website-link{
 		margin:0 ;
@@ -28,35 +28,7 @@
 			color: #26a6cd ;
 		}
 	}
-	.slick-dots{
-		bottom: -34px;
-		 li{
-		 	width: auto;
-		 	height: inherit ;
-			  button {
-			 	position: relative;
-			    border-radius: 50%;
-			    background: transparent;
-			    border: 2px solid #fff;
-			    width: 5px;
-			    height: 5px;
-			}
-		}
-		li.slick-active button{
-			background:#fff ;
-			&:before{
-				content: "";
-			}
-		}
-	}
-	.slick-slide:focus{
-	    border: 0;
-	    outline: 0;
-	}
-	.slick-dotted.slick-slider {
-	    margin-bottom: 30px;
-	    padding-bottom: 25px;
-	}
+
 }
 .client-meta{
 	margin-top:35px;

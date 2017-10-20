@@ -11360,6 +11360,42 @@ to a reusable component.
   background: #FF404C;
 }
 
+.slick-dots {
+  bottom: -34px;
+}
+
+.slick-dots li {
+  width: auto;
+  height: inherit;
+}
+
+.slick-dots li button {
+  position: relative;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #fff;
+  width: 5px;
+  height: 5px;
+}
+
+.slick-dots li.slick-active button {
+  background: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+  content: "";
+}
+
+.slick-slide:focus {
+  border: 0;
+  outline: 0;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+}
+
 .skill, .team-image > a {
   position: relative;
 }
@@ -11755,7 +11791,7 @@ to a reusable component.
 .testimonial-wrap .client-name {
   margin: 0;
   color: #FF404C;
-  margin-bottom: 11px;
+  margin-bottom: 15px;
 }
 
 .testimonial-wrap .website-link {
@@ -11764,42 +11800,6 @@ to a reusable component.
 
 .testimonial-wrap .website-link a {
   color: #26a6cd;
-}
-
-.testimonial-wrap .slick-dots {
-  bottom: -34px;
-}
-
-.testimonial-wrap .slick-dots li {
-  width: auto;
-  height: inherit;
-}
-
-.testimonial-wrap .slick-dots li button {
-  position: relative;
-  border-radius: 50%;
-  background: transparent;
-  border: 2px solid #fff;
-  width: 5px;
-  height: 5px;
-}
-
-.testimonial-wrap .slick-dots li.slick-active button {
-  background: #fff;
-}
-
-.testimonial-wrap .slick-dots li.slick-active button:before {
-  content: "";
-}
-
-.testimonial-wrap .slick-slide:focus {
-  border: 0;
-  outline: 0;
-}
-
-.testimonial-wrap .slick-dotted.slick-slider {
-  margin-bottom: 30px;
-  padding-bottom: 25px;
 }
 
 .client-meta {

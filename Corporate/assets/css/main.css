@@ -11283,7 +11283,7 @@ img {
  * awkward document scrolling.
  */
 body.has-active-menu {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /**

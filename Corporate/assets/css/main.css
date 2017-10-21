@@ -3066,7 +3066,6 @@ main,
 menu,
 nav,
 section,
-.slider-wrapper,
 summary {
   display: block;
 }
@@ -11713,12 +11712,12 @@ body * {
   box-sizing: inherit;
 }
 
-section, .slider-wrapper {
+section {
   margin-bottom: 90px;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.65em;
   color: #333;
@@ -11799,11 +11798,12 @@ a:active, a:hover {
 }
 
 a:hover {
-  color: #FF404C;
+  color: #ff646c;
 }
 
 a:focus {
   outline: 0px solid;
+  color: #fff;
 }
 
 ul {
@@ -11875,10 +11875,18 @@ input[type="button"]:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Exo 2", sans-serif;
   line-height: 1.2em;
   margin-bottom: 25px;
   margin-top: 0;
+}
+
+.skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .top-content a, .project-item .img:before, .project-contant, .team-image img, .team-details {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 /*
@@ -11888,19 +11896,13 @@ to a reusable component.
 */
 .default-btn {
   line-height: 100%;
-  padding: 15px 35px;
+  padding: 12px 35px;
   display: inline-block;
-  border: 2px solid #FF404C;
-  color: #e4e4e4;
+  border: 0px solid #ccc;
+  color: #fff;
   text-transform: uppercase;
   margin-top: 20px;
-  color: #000;
-  border-radius: 5px;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  background: #1ca5b8;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11912,16 +11914,100 @@ to a reusable component.
 }
 
 .default-btn:hover {
-  border-color: #e0e0e0;
-  color: #333333;
+  border-color: #c8c8c8;
+  color: #fff;
 }
 
 .default-btn i {
   margin-left: 5px;
 }
 
+.skew-right, .skew-left {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.skew-right:before, .skew-left:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #0b4249;
+  transform-origin: center;
+  z-index: -1;
+  transform: scaleX(1) skew(-40deg);
+}
+
+.skew-right:hover, .skew-left:hover {
+  border-color: #c8c8c8;
+  color: #fff;
+}
+
+.skew-right:hover:before, .skew-left:hover:before {
+  transform: scaleX(0) skew(40deg);
+}
+
+.skew-left:before {
+  transform: scaleX(1) skew(40deg);
+}
+
+.skew-left:hover:before {
+  transform: scaleX(0) skew(40deg);
+}
+
+.cx_btn {
+  margin-top: 20px;
+  width: 140px;
+  float: left;
+  margin-right: 15px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+  background: #015989;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cx_btn:before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  left: 0%;
+  top: 0;
+  background: #009dc8;
+  display: block;
+  position: absolute;
+  transition: all .3s;
+  z-index: -1;
+}
+
+.cx_btn span {
+  color: #fff;
+}
+
+.cx_btn.cx_centerSwipe::before,
+.cx_btn.cx_skewSwipe::before {
+  left: 50%;
+}
+
+.cx_btn.cx_skewSwipe:hover::before {
+  transform: skewX(30deg);
+}
+
+.cx_btn:hover::before {
+  width: 100%;
+  left: 0%;
+}
+
 .secondary-title {
-  color: #FF404C;
+  color: #333;
   text-transform: uppercase;
 }
 
@@ -11934,7 +12020,7 @@ to a reusable component.
 .primary-title {
   position: relative;
   padding-bottom: 20px;
-  color: #FF404C;
+  color: #ff646c;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 40px;
@@ -11960,7 +12046,7 @@ to a reusable component.
   right: 0;
   bottom: 0;
   left: 0;
-  background: #FF404C;
+  background: #ff646c;
   margin: auto;
   width: 45px;
   height: 2px;
@@ -11977,7 +12063,7 @@ to a reusable component.
 .circle-button {
   width: 85px;
   height: 85px;
-  background: #e0e0e0;
+  background: #c8c8c8;
   line-height: 25px;
   text-align: center;
   border-radius: 50%;
@@ -12002,13 +12088,13 @@ to a reusable component.
   right: 5px;
   bottom: 5px;
   position: absolute;
-  background: #FF404C;
+  background: #ff646c;
   z-index: -1;
   border-radius: 50%;
 }
 
 .circle-button:hover a {
-  color: #FF404C;
+  color: #ff646c;
 }
 
 .circle-button:hover:before {
@@ -12016,40 +12102,29 @@ to a reusable component.
 }
 
 .social-icon {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
-@media only screen and (max-width: 767px) {
-  .social-icon {
-    top: 50%;
-  }
+  overflow: hidden;
 }
 
 .social-icon a {
   width: 35px;
   height: 35px;
   display: inline-block;
-  color: #fff;
   line-height: 35px;
   text-align: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  margin: 0 5px;
+  margin-right: 2px;
+  background-color: #eaeaea;
+  color: #333;
+  float: left;
 }
 
 .social-icon a:hover {
-  border-color: #FF404C;
-  background: #FF404C;
+  border-color: #ff646c;
+  background: #ff646c;
+  color: #fff;
+}
+
+.social-icon a:last-child {
+  margin-right: 0px;
 }
 
 .circle-dot .slick-dots li {
@@ -12095,7 +12170,7 @@ to a reusable component.
 .list-element li {
   padding-bottom: 25px;
   margin-bottom: 25px;
-  border-bottom: 1px solid #FF404C;
+  border-bottom: 1px solid #ff646c;
 }
 
 .list-element li p {
@@ -12113,7 +12188,7 @@ to a reusable component.
 }
 
 .list-element .publish-date a {
-  color: #FF404C;
+  color: #ff646c;
 }
 
 .skill, .team-image > a {
@@ -12137,7 +12212,7 @@ to a reusable component.
   left: 0;
 }
 
-.circle-button:before, .social-icon, .main-menu li a:after, .project-item .img:before, .project-contant, .team-image img, .team-details {
+.skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .top-content a, .project-item .img:before, .project-contant, .team-image img, .team-details {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -12145,7 +12220,7 @@ to a reusable component.
   transition: all 0.3s ease;
 }
 
-.our-details:before, .our-details:after, .blog-separator:before {
+.blog-separator:before {
   content: "";
   display: block;
   position: absolute;
@@ -12159,8 +12234,24 @@ to a reusable component.
   padding: 0;
 }
 
-.logo {
-  padding: 8px 0;
+.header-top {
+  padding: 10px 0;
+}
+
+.top-content {
+  line-height: 35px;
+}
+
+.top-content .bar {
+  margin: 0 5px;
+}
+
+.top-content a {
+  font-size: 14px;
+}
+
+.top-content a:hover {
+  color: #ff646c;
 }
 
 .logo a {
@@ -12168,8 +12259,16 @@ to a reusable component.
 }
 
 .header-wrapper {
-  background: #012C40;
-  padding: 20px 0;
+  background: #1ca5b8;
+  position: relative;
+}
+
+.header-inline {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  padding: 30px 0;
 }
 
 .main-menu {
@@ -12195,57 +12294,33 @@ to a reusable component.
   }
 }
 
-.main-menu li a:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: auto;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #FF404C;
-  width: 40px;
-  height: 2px;
-  margin: auto;
-  transform: scale(0);
-  transform-origin: center;
+.main-menu li a:hover {
+  color: #ff646c;
 }
 
-.main-menu li a:hover:after {
-  transform: scale(1);
-}
-
-.our-details {
-  position: relative;
-  overflow: hidden;
-}
-
-.our-details:before {
-  background: #f5f5f5;
-  transform: scale(1.1) skew(18deg) translateX(50px);
-  z-index: 1;
+.mobile-menu {
+  display: none;
 }
 
 @media only screen and (max-width: 767px) {
-  .our-details:before {
-    transform: inherit;
-    right: 0;
+  .mobile-menu {
+    display: block;
   }
 }
 
-.our-details:after {
-  right: 0;
-  left: 50%;
-  background-image: url("../img/about.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.about {
+  padding: 100px 0;
+  background: #f0fbfd;
 }
 
 .content {
   position: relative;
   z-index: 9;
-  padding: 90px 0;
+}
+
+.image {
+  padding: 10px;
+  background: #e3f8fb;
 }
 
 @media only screen and (max-width: 767px) {
@@ -12267,7 +12342,7 @@ to a reusable component.
 }
 
 .thmb-icon {
-  color: #FF404C;
+  color: #ff646c;
   font-size: 23px;
   margin-bottom: 30px;
 }
@@ -12381,7 +12456,7 @@ to a reusable component.
 }
 
 .project-contant a {
-  color: #FF404C;
+  color: #ff646c;
 }
 
 .project-contant p {
@@ -12426,7 +12501,8 @@ to a reusable component.
 }
 
 .team-image > a:before {
-  background: rgba(0, 0, 0, 0.9);
+  background: black;
+  background: rgba(0, 0, 0, 0.8);
   opacity: 0;
 }
 
@@ -12446,7 +12522,7 @@ to a reusable component.
 
 .team-details {
   text-align: center;
-  border: 1px solid #000;
+  border: 1px solid #333;
   padding: 20px;
 }
 
@@ -12489,7 +12565,7 @@ to a reusable component.
 }
 
 .team-member:hover .team-details {
-  border-color: #FF404C;
+  border-color: #ff646c;
 }
 
 .testimonial {
@@ -12511,7 +12587,7 @@ to a reusable component.
 
 .testimonial-wrap .client-name {
   margin: 0;
-  color: #FF404C;
+  color: #ff646c;
   margin-bottom: 15px;
 }
 
@@ -12544,7 +12620,7 @@ to a reusable component.
 .blog-post-content .post-date {
   text-transform: capitalize;
   margin: 0;
-  color: #FF404C;
+  color: #ff646c;
   line-height: 20px;
   margin-bottom: 10px;
 }
@@ -12554,7 +12630,7 @@ to a reusable component.
 }
 
 .blog-post-content a:hover {
-  color: #FF404C;
+  color: #ff646c;
 }
 
 .blog-item {
@@ -12572,7 +12648,7 @@ to a reusable component.
   right: 0;
   width: 20px;
   height: 20px;
-  background: #e0e0e0;
+  background: #2f2f2f;
   z-index: 9999;
   transform: translateX(50%);
   border-radius: 50%;
@@ -12690,7 +12766,7 @@ to a reusable component.
 }
 
 .contact-section {
-  background: #f5f5f5;
+  background: #eaeaea;
   padding: 90px 0;
   margin-bottom: 0;
 }
@@ -12773,7 +12849,7 @@ to a reusable component.
 
 footer {
   padding-top: 90px;
-  background: #012C40;
+  background: #1ca5b8;
   color: #929292;
 }
 

@@ -1,28 +1,24 @@
+
 .social-icon{
-
-    @include position-center(vertical)
-    // top: 50%;
-    left: 0;
-    right: 0;
-    text-align: center;
-	@extend %transition-all ;
-	@include respond-to(xs-screens){
-		top: 50%;
-	};
-
+	overflow:hidden ;
 	a{
-	    width: 35px;
-	    height: 35px;
+	    width: $cx-social-icon-size;
+	    height: $cx-social-icon-size;
 	    display: inline-block;
-	    color: $cx-body-bg-color;
-	    line-height: 35px;
+	    line-height: $cx-social-icon-size;
 	    text-align: center;
-	    @include border-radius(50%)
-	    border: 2px solid $cx-body-bg-color;
-	    margin: 0 5px;
+	    margin-right:2px;
+	    background-color:$cx-tertiaty-color ;
+	    color: $cx-text-color ;
+	    float: left;
+	    @extend %transition-all ;
 	    &:hover{
 	    	border-color : $cx-secondary-color;
 	    	background:$cx-secondary-color;
+	    	color: $cx-body-bg-color ;
+	    }
+	    &:last-child{
+	    	margin-right:0px;
 	    }
 	}
 

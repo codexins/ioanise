@@ -1,0 +1,16 @@
+.header-top{
+	padding:10px 0;
+}
+.top-content{
+	line-height: $cx-social-icon-size;
+	.bar{
+		margin:0 5px;
+	}
+	a{
+		font-size: 14px;
+		@extend %transition-all ;
+		&:hover{
+			color: $cx-secondary-color ;
+		}
+	}
+}

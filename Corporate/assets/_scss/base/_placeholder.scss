@@ -5,7 +5,9 @@
     margin-top:  0;
 
 }
-
+%transition-all{
+	@include transition-all(0.3s)
+}
 
 ///* top and bottom padding of a section, $cx-vpadding variable is coming from _variables.scss */
 

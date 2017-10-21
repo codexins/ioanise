@@ -1,33 +1,15 @@
 
 .about{
-	// padding:90px 0 ;
+	padding:100px 0 ;
+	background:lighten($cx-primary-color,55%) ;
 }
-.our-details{
-	position:relative ;
-	overflow: hidden;
-	 &:before{
-	 	@extend %before ;
-	 	background:$cx-tertiaty-color ;	
-    	transform: scale(1.1) skew(18deg) translateX(50px);
-    	z-index: 1;
-    	@include respond-to(xs-screens){
-			transform: inherit;
-			right: 0 ;
-		};
-	 }
-	 &:after{
-	 	@extend %before ;
-	    right: 0;
-	    left: 50%;
-		background-image: url("../img/about.png");
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		
-	 }
-}
+
 .content{
 	position: relative;
     z-index: 9;
-    padding:90px 0; 
+}
+.image{
+	padding:10px;
+	background:lighten($cx-primary-color,52%);
+
 }

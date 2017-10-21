@@ -1,0 +1,30 @@
+.main-menu{
+	display: inline-block;
+    float: right;
+	li{
+		display: inline-block;
+		a{
+			padding: 10px 20px;
+			display: block; 
+			color:$cx-body-bg-color ;
+			position: relative;
+			text-transform: uppercase;
+			@include respond-to(tablet-screens){
+				padding: 10px 15px;
+			};
+			
+			&:hover{
+				color:$cx-secondary-color ;
+			}
+
+
+		}
+	}
+}
+
+.mobile-menu{
+	display:none;
+	@include respond-to(xs-screens){
+		display:block;
+	};
+}

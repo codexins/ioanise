@@ -1,42 +1,28 @@
-
 // typography 
-$cx-body-font: 'Raleway', sans-serif; 
+$cx-body-font: 'Roboto', sans-serif;
+$cx-heading-font: 'Exo 2', sans-serif;
+// $cx-tertiary-font: 'Raleway', sans-serif; 
 
-$cx-heading-font: 'Raleway', sans-serif; 
-
-$cx-tertiary-font: 'Raleway', sans-serif; 
 // Colors
+$cx-text-color: #333 ;
+$cx-body-bg-color: #fff ; // white 
+
+$cx-primary-color:  #1ca5b8 ;
+$cx-secondary-color: #ff646c ;
+$cx-tertiaty-color:#eaeaea ;
+
 
 $cx-border-color: #ccc;
 
-$cx-text-color: #333 ;
-
-$cx-body-bg-color: #fff ; // white 
-
-$cx-primary-color:  #012C40 ;
-
-$cx-secondary-color: #FF404C ;
-
-$cx-tertiaty-color:#f5f5f5 ; 
-// #ebebeb
-$cx-primary-border-color:	 #000; 
-
-$cx-secondary-border-color: #e4e4e4	 ; 
-
-$cx-team-overlay-color: rgba(0, 0, 0, 0.9);
-
-
 $cx-link-color: $cx-primary-color;
-
 $cx-link-hover-color: $cx-secondary-color;
 
 // line height  
 $cx-body-font-size: 16px;
-
 $cx-body-line-height: 1.65em;
-
 $cx-body-font-weight : 400 ;
 
+$cx-social-icon-size: 35px ;
 
 // default speacing 
 $cx-vpadding: 40px;
@@ -51,11 +37,8 @@ $cx-transition: all 0.3s ease ;
 //* screen min width */
 
 $cx-large-screen:1200px;
-
 $cx-medium-screen: 992px;
-
 $cx-tablet-screen:768px;
-
 $cx-sm-medium-screen:480px;
 
 $cx-breakpoints: (

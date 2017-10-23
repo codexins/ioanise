@@ -70,7 +70,7 @@ a:hover {
 }
 a:focus {
     outline:0px solid;
-    color: $cx-body-bg-color;
+    color: initial  ;
 }
 ul{
     list-style: outside none none;

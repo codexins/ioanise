@@ -5,7 +5,9 @@ to a reusable component.
 */
 //Import Component files
 
+@import 'slick-global';
 @import 'button';
+@import 'title-bar';
 @import 'secondary-title';
 @import 'primary-title';
 @import 'section-title';

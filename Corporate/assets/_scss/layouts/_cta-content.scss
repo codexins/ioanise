@@ -1,14 +1,38 @@
 .call-to-action {
-    background: #000;
+    // background: #000;
     padding: 100px 0;
+    position: relative;
+    overflow: hidden ;
+    &:after , &:before{
+    	@include  absolute-position(0,51%,0,-100px);
+    	background:$cx-primary-color ;
+    	transform: skewX(-35deg);
+
+    }
+    &:before{
+    	left:51%;
+    	right: -100px;
+		background:darken($cx-primary-color,25%) ;
+    }
 }
-.cta-content{
-	text-align:center ;
-	color:$cx-body-bg-color;
-	h3{
-		text-transform: uppercase ;
-	}
-	a{
-		color: #29c5f2 ;
-	}
+
+.cta-left-side,
+.cta-right-side{
+	
+	width:50%;
+	position:relative;
+	z-index: 1;
+}
+.cta-right-side{
+	float:right ;
+    padding-left: 15%;
+    h2{
+    	color: $cx-body-bg-color ;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    a{
+        color: $cx-secondary-color ;
+        font-size: 24px;
+    }
 }

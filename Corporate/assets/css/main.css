@@ -11803,7 +11803,7 @@ a:hover {
 
 a:focus {
   outline: 0px solid;
-  color: #fff;
+  color: initial;
 }
 
 ul {
@@ -11894,6 +11894,11 @@ This file is used to contain all component imports.
 Files inside this folder should contain all styles relating
 to a reusable component.
 */
+.slick-initialized .slick-slide:focus {
+  border: 0;
+  outline: 0;
+}
+
 .default-btn {
   line-height: 100%;
   padding: 12px 35px;
@@ -12006,6 +12011,43 @@ to a reusable component.
   left: 0%;
 }
 
+.title-bar {
+  position: relative;
+}
+
+.title-bar:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ff646c;
+  margin: auto;
+  width: 45px;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+.title-bar.leftalign-bar:after {
+  margin-left: 0;
+}
+
+.title-bar.rightalign-bar:after {
+  margin-right: 0;
+}
+
+.title-bar.fullwide-bar:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #000;
+}
+
 .secondary-title {
   color: #333;
   text-transform: uppercase;
@@ -12018,9 +12060,8 @@ to a reusable component.
 }
 
 .primary-title {
-  position: relative;
   padding-bottom: 20px;
-  color: #ff646c;
+  color: #333;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 40px;
@@ -12036,21 +12077,6 @@ to a reusable component.
   .primary-title {
     font-size: 20px;
   }
-}
-
-.primary-title:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: auto;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #ff646c;
-  margin: auto;
-  width: 45px;
-  height: 2px;
-  transform: translateY(50%);
 }
 
 .section-title {
@@ -12323,16 +12349,14 @@ to a reusable component.
   background: #e3f8fb;
 }
 
-@media only screen and (max-width: 767px) {
-  .services {
-    margin-bottom: 70px;
-  }
+.services {
+  margin-bottom: 15px;
 }
 
 .service-item {
   text-align: center;
   overflow: hidden;
-  margin-bottom: 5px;
+  margin-bottom: 80px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -12342,13 +12366,129 @@ to a reusable component.
 }
 
 .thmb-icon {
-  color: #ff646c;
-  font-size: 23px;
-  margin-bottom: 30px;
+  line-height: 0;
+  margin-bottom: 20px;
+}
+
+.thmb-icon i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  color: #333;
+}
+
+.thmb-icon i:after {
+  content: "";
 }
 
 .service-content p:last-child {
   margin: 0;
+}
+
+span.icon-border {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+span.icon-border:after {
+  position: absolute;
+  background: #fff;
+  width: 40%;
+  transform: translate(0px, -9px) rotate(-76deg) skew(163deg, 51deg);
+  height: 44%;
+  left: 0;
+  right: 0;
+  top: 68%;
+  margin: auto;
+  z-index: -1;
+  border: 1px solid #ccc;
+}
+
+.counter-section {
+  background-image: url(../img/counter-up.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 90px;
+}
+
+.counter-section {
+  position: relative;
+}
+
+.counter-section:before {
+  content: "";
+  background: rgba(28, 165, 184, 0.8);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.counter-item {
+  text-align: center;
+}
+
+.counter-icon {
+  margin-bottom: 30px;
+}
+
+.counter-icon i {
+  width: 75px;
+  height: 75px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  line-height: 75px;
+}
+
+.counter-item .counter {
+  font-size: 50px;
+  line-height: 100%;
+}
+
+.reason i {
+  font-size: 60px;
+}
+
+.reason-item {
+  text-align: center;
+}
+
+.reason-icon {
+  margin-bottom: 7px;
+}
+
+.reasons-to-choose {
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+}
+
+.reasons-to-choose .slick-dots li.slick-active button:before {
+  color: #ff646c;
+  opacity: 1;
+}
+
+.reasons-to-choose .slick-dots li button:before {
+  font-size: 10px;
+}
+
+.reasons-to-choose .slick-dots li button:hover:before {
+  color: #ff646c;
 }
 
 .skill {
@@ -12362,11 +12502,6 @@ to a reusable component.
 .progressbar {
   width: 20%;
   float: left;
-}
-
-.portfolio-wrape .default-btn {
-  margin-top: 70px;
-  margin-bottom: 10px;
 }
 
 .project-item {
@@ -12397,10 +12532,10 @@ to a reusable component.
     content: "";
     display: block;
     position: absolute;
-    top: 5%;
-    right: 5%;
-    bottom: 5%;
-    left: 5%;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
   }
 }
 
@@ -12412,10 +12547,10 @@ to a reusable component.
   content: "";
   display: block;
   position: absolute;
-  top: 5%;
-  right: 5%;
-  bottom: 5%;
-  left: 5%;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
   opacity: 1;
 }
 
@@ -12468,21 +12603,50 @@ to a reusable component.
 }
 
 .call-to-action {
-  background: #000;
   padding: 100px 0;
+  position: relative;
+  overflow: hidden;
 }
 
-.cta-content {
-  text-align: center;
+.call-to-action:after, .call-to-action:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 51%;
+  bottom: 0;
+  left: -100px;
+  background: #1ca5b8;
+  transform: skewX(-35deg);
+}
+
+.call-to-action:before {
+  left: 51%;
+  right: -100px;
+  background: #0b4249;
+}
+
+.cta-left-side,
+.cta-right-side {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-right-side {
+  float: right;
+  padding-left: 15%;
+}
+
+.cta-right-side h2 {
   color: #fff;
-}
-
-.cta-content h3 {
+  font-size: 24px;
   text-transform: uppercase;
 }
 
-.cta-content a {
-  color: #29c5f2;
+.cta-right-side a {
+  color: #ff646c;
+  font-size: 24px;
 }
 
 .team-section {

@@ -1,9 +1,4 @@
-.portfolio-wrape{
-	.default-btn {
-		margin-top:70px;
-		margin-bottom: 10px;
-	}
-}
+
 .recent-project{}
 .project-item{
 	position:relative;
@@ -18,7 +13,7 @@
 			@extend %transition-all ;
 			@include respond-to(xs-screens){
 				 opacity: 1;
-				 @include  absolute-position(5%,5%,5%,5%);
+				 @include  absolute-position(10px,10px,10px,10px);
 			};
 		}
 		img{
@@ -28,7 +23,8 @@
 	&:hover{
 		.img {
 			&:before{
-				@include  absolute-position(5%,5%,5%,5%);
+				 @include  absolute-position(10px,10px,10px,10px);
+				
 				opacity: 1 ;
 			}
 		}

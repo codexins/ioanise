@@ -1,0 +1,30 @@
+
+.counter-section{
+	background-image: url(../img/counter-up.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include section-overly(rgba($cx-primary-color,0.8));
+    padding: 90px ;
+}
+
+.counter-item {
+	text-align:center;
+}
+.counter-icon{
+	margin-bottom: 30px;
+	i{
+		width: 75px;
+		height: 75px;
+		font-size: 20px;
+		border-radius: 50%;
+		border: 1px solid #000;
+		line-height: 75px;
+	}
+}
+.counter-item{
+	.counter {
+	    font-size: 50px;
+    	line-height: 100%;
+	}
+}

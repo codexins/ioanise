@@ -1,0 +1,32 @@
+
+.reason {
+	.reason-icon {
+
+	}
+	i{
+		font-size: 60px;
+	}
+}
+.reason-item {
+    text-align: center;
+}
+.reason-icon {
+    margin-bottom: 7px;
+}
+.reasons-to-choose {
+	margin-bottom: 30px;
+    padding-bottom: 40px;
+	.slick-dots li.slick-active button:before {
+		color: $cx-secondary-color;
+		opacity: 1;
+	}
+	.slick-dots li button{
+		&:before{
+			font-size: 10px;
+		}
+		&:hover:before{
+			color: $cx-secondary-color;
+		}
+	}
+	
+}

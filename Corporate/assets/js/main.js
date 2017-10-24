@@ -4,45 +4,36 @@ $(function() {
 
 
 
-
-
-      $('.counter').counterUp({
-         delay: 100,
-         time: 3000
-      });
-
-
-
-
-
+    $('.counter').counterUp({
+        delay: 100,
+        time: 3000
+    });
     $('.portfolio-wrape').isotope({
-      // options
-      itemSelector: '.item',
-      // layoutMode: 'fitColumns',
-      columnWidth:  '.item',
-      
+        // options
+        itemSelector: '.item',
+        // layoutMode: 'fitColumns',
+        columnWidth:  '.item',
+
     });
 
-  /**
-   * Slide left instantiation and action.
-   */
-      var slideLeft = new Menu({
+    /**
+    * Slide left instantiation and action.
+    */
+    var slideLeft = new Menu({
         wrapper: '#o-wrapper',
         type: 'slide-left',
         menuOpenerClass: '.c-button',
         maskId: '#c-mask'
-      });
+    });
 
-      var slideLeftBtn = document.querySelector('#c-button--slide-left');
-      
-      slideLeftBtn.addEventListener('click', function(e) {
+    var slideLeftBtn = document.querySelector('#c-button--slide-left');
+
+    slideLeftBtn.addEventListener('click', function(e) {
         e.preventDefault;
         slideLeft.open();
-      });
+    });
 
-
-
-    // reason-reason-to-choose
+    // reason-to-choose
 
     $('.reasons-to-choose').slick({
         infinite: true,
@@ -53,44 +44,31 @@ $(function() {
     });
     // testimonial 
 
-  $('.testimonial-carosel').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    asNavFor: '.testimonial-nav'
-  });
-  $('.testimonial-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.testimonial-carosel',
-    centerMode: true,
-    focusOnSelect: true
-    
-  });
-
-
-
-
-  
-    //  post gallery carosel 
-    $('.gallery-carosel').slick({
-        infinite: true,
+    $('.testimonial-carosel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: false,
-        arrows: true ,
-      
+        arrows: false,
+        asNavFor: '.testimonial-nav'
+    });
+    $('.testimonial-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.testimonial-carosel',
+        centerMode: true,
+        focusOnSelect: true
+
     });
 
-   
-    // $('.odometer').innerHTML = 500 // Native, or...
-    // $('.odometer').html(123) // with jQuery
-    // setTimeout(function(){
-    //     $('.odometer').html(500);
-    // }, 1000);
+    //  client  carosel 
+    $('.client-carosel').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 3,
+        dots: true,
+        arrows: false ,
+        autoplay :true 
 
-
-
+    });
 
 
 })

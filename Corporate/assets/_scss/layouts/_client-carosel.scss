@@ -1,0 +1,26 @@
+.client-section{
+	background : lighten($cx-primary-color , 55% );
+	 padding: 100px 0 80px;
+}
+.client-carosel {
+	padding-bottom: 80px;
+   .slick-dots li button:before{
+   	font-size: 15px;
+   	color: $cx-tertiaty-color ;
+   	opacity: 1 ;
+   }
+   .slick-dots li.slick-active button:before{
+   	   	color: $cx-secondary-color ;
+   }
+}
+
+.client-carosel{
+	.slick-slide img {
+		display: block;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		max-height: 80px;
+		height: 100%;
+	}
+}

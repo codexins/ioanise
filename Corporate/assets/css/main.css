@@ -12353,6 +12353,17 @@ to a reusable component.
 
 .header-top {
   padding: 10px 0;
+  background: #0b4249;
+  color: white;
+}
+
+.header-top .social-icon a, .header-top .social-icon-large a {
+  background: transparent;
+  color: white;
+}
+
+.header-top .social-icon a:hover, .header-top .social-icon-large a:hover {
+  color: #ff646c;
 }
 
 .top-content {
@@ -12364,6 +12375,7 @@ to a reusable component.
 }
 
 .top-content a {
+  color: white;
   font-size: 14px;
 }
 
@@ -12371,21 +12383,21 @@ to a reusable component.
   color: #ff646c;
 }
 
+.logo {
+  max-width: 235px;
+}
+
 .logo a {
   display: inline-block;
 }
 
 .header-wrapper {
-  background: #1ca5b8;
+  background: white;
   position: relative;
 }
 
 .header-inline {
-  position: absolute;
-  right: 0;
-  top: 0;
-  left: 0;
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 .main-menu {
@@ -12400,7 +12412,6 @@ to a reusable component.
 .main-menu li a {
   padding: 10px 20px;
   display: block;
-  color: #fff;
   position: relative;
   text-transform: uppercase;
 }

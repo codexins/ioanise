@@ -6,7 +6,6 @@
 		a{
 			padding: 10px 20px;
 			display: block; 
-			color:$cx-body-bg-color ;
 			position: relative;
 			text-transform: uppercase;
 			@include respond-to(tablet-screens){

@@ -1,17 +1,14 @@
 .logo {
+	max-width:235px;
 	a{
 		display: inline-block;
 	}
 }
 .header-wrapper {
-	background: $cx-primary-color;
+	background: lighten($cx-body-bg-color, 100%);
 	position:relative ;
 }
 
 .header-inline{
-	position: absolute;
-    right: 0;
-    top: 0;
-    left: 0;
-    padding: 30px 0;
+    padding: 15px 0;
 }

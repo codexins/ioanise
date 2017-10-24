@@ -11881,7 +11881,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
-.skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .top-content a, .project-item .img:before, .project-contant, .team-details, .nav-img img {
+.skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, .top-content a, .project-item .img:before, .project-contant, .team-details, .nav-img img {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -12083,11 +12083,11 @@ to a reusable component.
   background: #fff;
 }
 
-.social-icon {
+.social-icon, .social-icon-large {
   overflow: hidden;
 }
 
-.social-icon a {
+.social-icon a, .social-icon-large a {
   width: 26px;
   height: 26px;
   display: inline-block;
@@ -12099,14 +12099,21 @@ to a reusable component.
   float: left;
 }
 
-.social-icon a:hover {
+.social-icon a:hover, .social-icon-large a:hover {
   border-color: #ff646c;
   background: #ff646c;
   color: #fff;
 }
 
-.social-icon a:last-child {
+.social-icon a:last-child, .social-icon-large a:last-child {
   margin-right: 0px;
+}
+
+.social-icon-large a {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin-right: 2px;
 }
 
 .circle-dot .slick-dots li {
@@ -12194,7 +12201,7 @@ to a reusable component.
   left: 0;
 }
 
-.skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .top-content a, .project-item .img:before, .project-contant, .team-details, .nav-img img {
+.skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, .top-content a, .project-item .img:before, .project-contant, .team-details, .nav-img img {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -12644,20 +12651,20 @@ span.icon-border:after {
   color: #fff;
 }
 
-.team-details .social-icon {
+.team-details .social-icon, .team-details .social-icon-large {
   margin-top: 40px;
 }
 
-.team-details .social-icon a {
+.team-details .social-icon a, .team-details .social-icon-large a {
   background: transparent;
   border: 1px solid #fff;
 }
 
-.team-details .social-icon a + a {
+.team-details .social-icon a + a, .team-details .social-icon-large a + a {
   margin-left: 10px;
 }
 
-.team-details .social-icon a:hover {
+.team-details .social-icon a:hover, .team-details .social-icon-large a:hover {
   background: #1ca5b8;
   border: 1px solid #1ca5b8;
 }

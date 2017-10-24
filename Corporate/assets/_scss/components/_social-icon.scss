@@ -1,5 +1,5 @@
 
-.social-icon{
+.social-icon {
 	overflow:hidden ;
 	a{
 	    width: $cx-social-icon-size-small;
@@ -20,6 +20,17 @@
 	    &:last-child{
 	    	margin-right:0px;
 	    }
+	}
+
+}
+
+.social-icon-large {
+	@extend .social-icon;
+	a {
+		width: $cx-social-icon-size-large;
+		height: $cx-social-icon-size-large;
+		line-height: $cx-social-icon-size-large;
+		margin-right: 2px;
 	}
 
 }

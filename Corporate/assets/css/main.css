@@ -12411,21 +12411,21 @@ to a reusable component.
   color: #ff646c;
 }
 
+.logo {
+  max-width: 235px;
+}
+
 .logo a {
   display: inline-block;
 }
 
 .header-wrapper {
-  background: #1ca5b8;
+  background: white;
   position: relative;
 }
 
 .header-inline {
-  position: absolute;
-  right: 0;
-  top: 0;
-  left: 0;
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 .main-menu {
@@ -12440,7 +12440,6 @@ to a reusable component.
 .main-menu li a {
   padding: 10px 20px;
   display: block;
-  color: #fff;
   position: relative;
   text-transform: uppercase;
 }

@@ -11867,8 +11867,31 @@ body * {
   box-sizing: inherit;
 }
 
+<<<<<<< HEAD
 section, .client-section {
   margin-bottom: 90px;
+=======
+section {
+  padding-top: 70px;
+  padding-bottom: 35px;
+  margin-bottom: 70px;
+}
+
+section div[class*='col-'] {
+  padding-bottom: 35px;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.no-padding {
+  padding: 0;
+>>>>>>> 1f2943818a4e1f0ebb5d1ce63ea6fafd460c1530
 }
 
 body {
@@ -11905,7 +11928,10 @@ h6 {
 }
 
 p {
-  margin: 0 0 15px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 25px;
 }
 
 ol, table, dl {
@@ -11913,7 +11939,7 @@ ol, table, dl {
 }
 
 dd {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 address, blockquote {
@@ -12061,7 +12087,7 @@ to a reusable component.
   border: 0px solid #ccc;
   color: #fff;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 0;
   background: #1ca5b8;
 }
 
@@ -12190,7 +12216,7 @@ to a reusable component.
   text-align: center;
   display: block;
   max-width: 650px;
-  margin: 0px auto 85px;
+  margin: 0px auto 15px;
 }
 
 .color-white {
@@ -12269,6 +12295,12 @@ to a reusable component.
   height: 35px;
   line-height: 35px;
   margin-right: 2px;
+}
+
+.social-icon-large a i {
+  font-size: 16px;
+  line-height: 35px;
+  display: block;
 }
 
 .circle-dot .slick-dots li {
@@ -12426,7 +12458,6 @@ to a reusable component.
 }
 
 .about {
-  padding: 100px 0;
   background: #f0fbfd;
 }
 
@@ -12440,20 +12471,9 @@ to a reusable component.
   background: #e3f8fb;
 }
 
-.services {
-  margin-bottom: 15px;
-}
-
 .service-item {
   text-align: center;
   overflow: hidden;
-  margin-bottom: 80px;
-}
-
-@media only screen and (max-width: 767px) {
-  .service-item {
-    margin-bottom: 40px;
-  }
 }
 
 .thmb-icon {
@@ -12552,6 +12572,12 @@ span.icon-border:after {
 .counter-item .counter {
   font-size: 50px;
   line-height: 100%;
+  font-weight: bold;
+}
+
+.counter-item .counter-text {
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .reason i {
@@ -12638,6 +12664,10 @@ span.icon-border:after {
   opacity: 1;
 }
 
+.portfolio-wrape > div[class*='col-'] {
+  padding-bottom: 0;
+}
+
 .project-contant {
   opacity: 0;
   color: #fff;
@@ -12683,7 +12713,7 @@ span.icon-border:after {
 }
 
 .call-to-action {
-  padding: 100px 0;
+  padding: 70px 0;
   position: relative;
   overflow: hidden;
 }
@@ -12781,6 +12811,10 @@ span.icon-border:after {
 
 .project-item:hover .project-contant {
   opacity: 1;
+}
+
+.portfolio-wrape > div[class*='col-'] {
+  padding-bottom: 0;
 }
 
 .project-contant {
@@ -12887,10 +12921,6 @@ span.icon-border:after {
 .team-details a {
   font-size: 20px;
   color: #fff;
-}
-
-.team-details a i {
-  font-size: 16px;
 }
 
 .team-details p {

@@ -31,14 +31,17 @@ h6 {
     font-size: 15px; 
 }
 p {
-    margin:0 0 15px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: $cx-heading-margin-bottom;
 }
 
 ol, table, dl {
     margin-bottom:  $cx-heading-margin-bottom ;
 }
 dd {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 address ,blockquote  {
     font-style: italic;

@@ -1,17 +1,10 @@
 .services{
-	
-	margin-bottom: 15px;
-	// @include respond-to(xs-screens){
-	// 	margin-bottom: 70px;
-	// };
+
 }
+
 .service-item{
 	text-align:center;
 	overflow:hidden ;
-	margin-bottom: 80px;
-		@include respond-to(xs-screens){
-		margin-bottom: 40px;
-	};
 }
 .thmb-icon{
 	line-height: 0;

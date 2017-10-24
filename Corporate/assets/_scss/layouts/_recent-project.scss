@@ -1,5 +1,6 @@
 
 .recent-project{}
+
 .project-item{
 	position:relative;
 	.img{
@@ -33,6 +34,12 @@
 		}
 	}
 }
+
+.portfolio-wrape >  div[class*='col-'] {
+	padding-bottom:0;
+}
+
+
 .project-contant{
 	opacity:0 ;
 	color: #fff ;

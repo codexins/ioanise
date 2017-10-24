@@ -11888,6 +11888,10 @@ section div[class*='col-'] {
   padding: 0;
 }
 
+.mb-35 {
+  margin-bottom: 35px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -13086,10 +13090,6 @@ span.icon-border:after {
   margin-right: auto;
   max-height: 80px;
   height: 100%;
-}
-
-.blog-section {
-  margin-bottom: 99px;
 }
 
 .blog-item .post-content {

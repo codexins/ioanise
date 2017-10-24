@@ -3066,7 +3066,6 @@ main,
 menu,
 nav,
 section,
-.client-section,
 summary {
   display: block;
 }
@@ -11867,13 +11866,13 @@ body * {
   box-sizing: inherit;
 }
 
-section, .client-section {
+section {
   padding-top: 70px;
   padding-bottom: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 70px;
 }
 
-section div[class*='col-'], .client-section div[class*='col-'] {
+section div[class*='col-'] {
   padding-bottom: 35px;
 }
 
@@ -12578,10 +12577,6 @@ span.icon-border:after {
   font-size: 60px;
 }
 
-.reason-item {
-  text-align: center;
-}
-
 .reason-icon {
   margin-bottom: 7px;
 }
@@ -12595,8 +12590,12 @@ span.icon-border:after {
   opacity: 1;
 }
 
+.reasons-to-choose .slick-dots li {
+  margin: 0;
+}
+
 .reasons-to-choose .slick-dots li button:before {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .reasons-to-choose .slick-dots li button:hover:before {
@@ -12858,10 +12857,6 @@ span.icon-border:after {
   font-size: 60px;
 }
 
-.reason-item {
-  text-align: center;
-}
-
 .reason-icon {
   margin-bottom: 7px;
 }
@@ -12875,8 +12870,12 @@ span.icon-border:after {
   opacity: 1;
 }
 
+.reasons-to-choose .slick-dots li {
+  margin: 0;
+}
+
 .reasons-to-choose .slick-dots li button:before {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .reasons-to-choose .slick-dots li button:hover:before {
@@ -12947,7 +12946,6 @@ span.icon-border:after {
 }
 
 .testimonial {
-  padding: 100px  0;
   background-image: url(../img/testimonial.jpg);
   background-position: center;
   background-size: cover;
@@ -13058,15 +13056,18 @@ span.icon-border:after {
 
 .client-section {
   background: #f0fbfd;
-  padding: 100px 0 80px;
 }
 
 .client-carosel {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
+}
+
+.client-carosel .slick-dots li {
+  margin: 0;
 }
 
 .client-carosel .slick-dots li button:before {
-  font-size: 15px;
+  font-size: 12px;
   color: #0b4249;
   opacity: 1;
 }

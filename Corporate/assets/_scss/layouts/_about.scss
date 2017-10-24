@@ -1,12 +1,15 @@
 
 .about{
-	padding:100px 0 ;
+	padding:80px 0 ;
 	background:lighten($cx-primary-color,55%) ;
 }
 
 .content{
 	position: relative;
     z-index: 9;
+    @include respond-to(xs-screens) {
+    	margin-bottom: 50px;
+    }
 }
 .image{
 	padding:10px;

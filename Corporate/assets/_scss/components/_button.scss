@@ -5,7 +5,7 @@
 	line-height: 100%;
 	@include button(12px 35px , 0px solid  $cx-border-color ,$cx-body-bg-color);
 	text-transform:uppercase;
-	margin-top: 20px;
+	margin-top: 0;
 	background:$cx-primary-color ;
 	@include respond-to(xs-screens){
 		padding:10px;

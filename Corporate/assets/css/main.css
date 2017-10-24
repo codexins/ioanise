@@ -11867,7 +11867,7 @@ body * {
 }
 
 section {
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
 body {
@@ -11904,7 +11904,10 @@ h6 {
 }
 
 p {
-  margin: 0 0 15px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 25px;
 }
 
 ol, table, dl {
@@ -11912,7 +11915,7 @@ ol, table, dl {
 }
 
 dd {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 address, blockquote {
@@ -12060,7 +12063,7 @@ to a reusable component.
   border: 0px solid #ccc;
   color: #fff;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 0;
   background: #1ca5b8;
 }
 
@@ -12189,7 +12192,7 @@ to a reusable component.
   text-align: center;
   display: block;
   max-width: 650px;
-  margin: 0px auto 85px;
+  margin: 0px auto 50px;
 }
 
 .color-white {
@@ -12268,6 +12271,12 @@ to a reusable component.
   height: 35px;
   line-height: 35px;
   margin-right: 2px;
+}
+
+.social-icon-large a i {
+  font-size: 16px;
+  line-height: 35px;
+  display: block;
 }
 
 .circle-dot .slick-dots li {
@@ -12425,13 +12434,19 @@ to a reusable component.
 }
 
 .about {
-  padding: 100px 0;
+  padding: 80px 0;
   background: #f0fbfd;
 }
 
 .content {
   position: relative;
   z-index: 9;
+}
+
+@media only screen and (max-width: 767px) {
+  .content {
+    margin-bottom: 50px;
+  }
 }
 
 .image {
@@ -12446,7 +12461,7 @@ to a reusable component.
 .service-item {
   text-align: center;
   overflow: hidden;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -12551,6 +12566,12 @@ span.icon-border:after {
 .counter-item .counter {
   font-size: 50px;
   line-height: 100%;
+  font-weight: bold;
+}
+
+.counter-item .counter-text {
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .reason i {
@@ -12886,10 +12907,6 @@ span.icon-border:after {
 .team-details a {
   font-size: 20px;
   color: #fff;
-}
-
-.team-details a i {
-  font-size: 16px;
 }
 
 .team-details p {

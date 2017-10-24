@@ -11937,14 +11937,10 @@ p {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 15px;
-}
-
-ol, table, dl {
   margin-bottom: 25px;
 }
 
-dd {
+ul, ol, table, dl, dd {
   margin-bottom: 25px;
 }
 
@@ -12068,7 +12064,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
-.skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, .top-content a, .project-item .img:before, .project-contant, .team-details, .nav-img img {
+.skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, .top-content a, .project-item .img:before, .project-content, .team-details, .nav-img img {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -12221,12 +12217,14 @@ to a reusable component.
 .section-title {
   text-align: center;
   display: block;
-  max-width: 650px;
+  max-width: 70%;
   margin: 0px auto 15px;
 }
 
-.color-white {
-  color: #fff;
+@media only screen and (max-width: 767px) {
+  .section-title {
+    max-width: 95%;
+  }
 }
 
 .circle-button {
@@ -12373,7 +12371,7 @@ to a reusable component.
   color: #ff646c;
 }
 
-.skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, .top-content a, .project-item .img:before, .project-contant, .team-details, .nav-img img {
+.skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, .top-content a, .project-item .img:before, .project-content, .team-details, .nav-img img {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -12532,7 +12530,7 @@ span.icon-border:after {
 
 .counter-section:before {
   content: "";
-  background: rgba(28, 165, 184, 0.8);
+  background: rgba(11, 66, 73, 0.92);
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
@@ -12648,7 +12646,7 @@ span.icon-border:after {
   width: 100%;
 }
 
-.project-item:hover .img:before {
+.project-item:hover .img::before {
   content: "";
   display: block;
   position: absolute;
@@ -12659,15 +12657,15 @@ span.icon-border:after {
   opacity: 1;
 }
 
-.project-item:hover .project-contant {
+.project-item:hover .project-content {
   opacity: 1;
 }
 
-.portfolio-wrape > div[class*='col-'] {
+.portfolio-wrapper > div[class*='col-'] {
   padding-bottom: 0;
 }
 
-.project-contant {
+.project-content {
   opacity: 0;
   color: #fff;
   position: absolute;
@@ -12681,12 +12679,12 @@ span.icon-border:after {
 }
 
 @media only screen and (max-width: 767px) {
-  .project-contant {
+  .project-content {
     opacity: 1;
   }
 }
 
-.project-contant h3 {
+.project-content h3 {
   text-transform: uppercase;
   position: relative;
   margin-bottom: 10px;
@@ -12695,20 +12693,24 @@ span.icon-border:after {
   letter-spacing: 3px;
 }
 
-.project-contant h3:after {
+.project-content h3:after {
   height: 3px;
 }
 
-.project-contant a {
+.project-content a {
   color: #ff646c;
 }
 
-.project-contant p {
+.project-content p {
   margin: 0;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 3px;
   font-weight: 300;
+}
+
+.portfolio-filter ul li {
+  cursor: pointer;
 }
 
 .call-to-action {

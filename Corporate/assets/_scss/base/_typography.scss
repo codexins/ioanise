@@ -9,7 +9,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6{
-    @extend %default-heading ;
+    @extend %default-heading;
 }
 
 h1 { 
@@ -34,24 +34,24 @@ p {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 15px;
+    margin-bottom: $cx-heading-margin-bottom;
 }
 
-ol, table, dl {
-    margin-bottom:  $cx-heading-margin-bottom ;
+ul, ol, table, dl, dd {
+    margin-bottom:  $cx-heading-margin-bottom;
 }
-dd {
-    margin-bottom: 25px;
-}
+
 address ,blockquote  {
     font-style: italic;
 }
+
 blockquote {
     font-size: $cx-body-font-size;
 }
 td, th {
     padding: 10px;
 }
+
 img {
     max-width:100%;
     height:auto

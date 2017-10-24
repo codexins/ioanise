@@ -8,17 +8,35 @@ $(function() {
         delay: 100,
         time: 3000
     });
-    // isotop masonry
-    var $grid = $('.portfolio-wrape').isotope({
-        // options
-        itemSelector: '.item',
-        columnWidth:  '.item',
+
+    /*--------------------------------------------------------------
+    Isotope Js for Portfolio Section
+    ---------------------------------------------------------------- */
+
+    var $isocontainer = $('.portfolio-wrapper');
+
+    $isocontainer.imagesLoaded(function() {
+        $isocontainer.isotope({
+             itemSelector: ".portfolio",
+             layoutMode: 'masonry',
+             //percentPosition: true,
+        });
 
     });
-    // layout Isotope after each image loads
-    $grid.imagesLoaded().progress( function() {
-      $grid.isotope('layout');
-    });  
+
+
+    $('.portfolio-filter li').click(function(e) {
+         var $this = $(this);
+         var $filter = $this.attr('data-filter');
+
+        $isocontainer.isotope({
+            filter: $filter,
+        });
+
+        $('.portfolio-filter li').removeClass('active');
+        $this.addClass('active');
+    });
+
 
     /**
     * Slide left instantiation and action.

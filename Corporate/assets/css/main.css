@@ -12381,6 +12381,17 @@ to a reusable component.
 
 .header-top {
   padding: 10px 0;
+  background: #0b4249;
+  color: white;
+}
+
+.header-top .social-icon a, .header-top .social-icon-large a {
+  background: transparent;
+  color: white;
+}
+
+.header-top .social-icon a:hover, .header-top .social-icon-large a:hover {
+  color: #ff646c;
 }
 
 .top-content {
@@ -12392,6 +12403,7 @@ to a reusable component.
 }
 
 .top-content a {
+  color: white;
   font-size: 14px;
 }
 

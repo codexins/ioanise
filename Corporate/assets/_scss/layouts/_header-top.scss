@@ -1,12 +1,24 @@
 .header-top{
 	padding:10px 0;
+	background: $cx-tertiary-color;
+	color: lighten($cx-text-color, 100%);
+	.social-icon a {
+		background: transparent;
+		color: lighten($cx-text-color, 100%);
+		&:hover {
+			color: $cx-secondary-color;
+		}
+	}
 }
+
+
 .top-content{
 	line-height: $cx-social-icon-size-small;
 	.bar{
 		margin:0 5px;
 	}
 	a{
+		color: lighten($cx-text-color, 100%);	
 		font-size: 14px;
 		@extend %transition-all ;
 		&:hover{
@@ -14,3 +26,5 @@
 		}
 	}
 }
+
+

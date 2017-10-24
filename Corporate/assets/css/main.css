@@ -11963,54 +11963,6 @@ to a reusable component.
   transform: scaleX(0) skew(40deg);
 }
 
-.cx_btn {
-  margin-top: 20px;
-  width: 140px;
-  float: left;
-  margin-right: 15px;
-  height: 40px;
-  display: block;
-  text-align: center;
-  line-height: 40px;
-  font-size: 16px;
-  position: relative;
-  cursor: pointer;
-  background: #015989;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.cx_btn:before {
-  content: "";
-  width: 0%;
-  height: 100%;
-  left: 0%;
-  top: 0;
-  background: #009dc8;
-  display: block;
-  position: absolute;
-  transition: all .3s;
-  z-index: -1;
-}
-
-.cx_btn span {
-  color: #fff;
-}
-
-.cx_btn.cx_centerSwipe::before,
-.cx_btn.cx_skewSwipe::before {
-  left: 50%;
-}
-
-.cx_btn.cx_skewSwipe:hover::before {
-  transform: skewX(30deg);
-}
-
-.cx_btn:hover::before {
-  width: 100%;
-  left: 0%;
-}
-
 .title-bar {
   position: relative;
 }
@@ -12136,13 +12088,13 @@ to a reusable component.
 }
 
 .social-icon a {
-  width: 35px;
-  height: 35px;
+  width: 26px;
+  height: 26px;
   display: inline-block;
-  line-height: 35px;
+  line-height: 26px;
   text-align: center;
-  margin-right: 2px;
-  background-color: #eaeaea;
+  margin-right: 5px;
+  background-color: #e6e6e6;
   color: #333;
   float: left;
 }
@@ -12269,7 +12221,7 @@ to a reusable component.
 }
 
 .top-content {
-  line-height: 35px;
+  line-height: 26px;
 }
 
 .top-content .bar {
@@ -12960,7 +12912,7 @@ span.icon-border:after {
 }
 
 .contact-section {
-  background: #eaeaea;
+  background: #0b4249;
   padding: 90px 0;
   margin-bottom: 0;
 }

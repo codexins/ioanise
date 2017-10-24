@@ -7,8 +7,8 @@
 	    display: inline-block;
 	    line-height: $cx-social-icon-size;
 	    text-align: center;
-	    margin-right:2px;
-	    background-color:$cx-tertiaty-color ;
+	    margin-right:5px;
+	    background-color:darken($cx-body-bg-color, 10%);
 	    color: $cx-text-color ;
 	    float: left;
 	    @extend %transition-all ;

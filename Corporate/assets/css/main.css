@@ -11867,17 +11867,13 @@ body * {
   box-sizing: inherit;
 }
 
-<<<<<<< HEAD
 section, .client-section {
-  margin-bottom: 90px;
-=======
-section {
   padding-top: 70px;
   padding-bottom: 35px;
-  margin-bottom: 70px;
+  margin-bottom: 35px;
 }
 
-section div[class*='col-'] {
+section div[class*='col-'], .client-section div[class*='col-'] {
   padding-bottom: 35px;
 }
 
@@ -11891,7 +11887,6 @@ section div[class*='col-'] {
 
 .no-padding {
   padding: 0;
->>>>>>> 1f2943818a4e1f0ebb5d1ce63ea6fafd460c1530
 }
 
 body {
@@ -11931,7 +11926,7 @@ p {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 ol, table, dl {
@@ -12526,8 +12521,6 @@ span.icon-border:after {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 90px;
-  padding-bottom: 90px;
 }
 
 .counter-section {
@@ -12578,6 +12571,7 @@ span.icon-border:after {
 .counter-item .counter-text {
   text-transform: uppercase;
   font-size: 14px;
+  margin-bottom: 0;
 }
 
 .reason i {
@@ -12594,7 +12588,6 @@ span.icon-border:after {
 
 .reasons-to-choose {
   margin-bottom: 30px;
-  padding-bottom: 40px;
 }
 
 .reasons-to-choose .slick-dots li.slick-active button:before {
@@ -12875,7 +12868,6 @@ span.icon-border:after {
 
 .reasons-to-choose {
   margin-bottom: 30px;
-  padding-bottom: 40px;
 }
 
 .reasons-to-choose .slick-dots li.slick-active button:before {
@@ -12889,11 +12881,6 @@ span.icon-border:after {
 
 .reasons-to-choose .slick-dots li button:hover:before {
   color: #ff646c;
-}
-
-.team-section {
-  padding-bottom: 10px;
-  margin-bottom: 60px;
 }
 
 .team-details {
@@ -12949,7 +12936,6 @@ span.icon-border:after {
 }
 
 .team-member {
-  margin-bottom: 30px;
   position: relative;
   overflow: hidden;
 }

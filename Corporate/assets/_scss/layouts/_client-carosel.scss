@@ -2,20 +2,26 @@
 	background : lighten($cx-primary-color , 55% );
 }
 
-.client-carosel {
-	padding-bottom: 50px;
-   .slick-dots li {
-		margin: 0;
-	   button:before{
-	   	font-size: 12px;
-	   	color: $cx-tertiary-color ;
-	   	opacity: 1 ;
-	   }
-	}   
-	
-   .slick-dots li.slick-active button:before{
-   	   	color: $cx-secondary-color ;
-   }
+.client-carousel {
+
+	.slick-list {
+		padding-bottom: 50px;
+	}
+	.slick-dots li.slick-active button:before {
+		color: $cx-secondary-color;
+		opacity: 1;
+	}
+	.slick-dots li {
+		margin:0;
+		button {
+			&:before{
+				font-size: 12px;
+			}
+			&:hover:before{
+				color: $cx-secondary-color;
+			}
+		}
+	}
    
 }
 

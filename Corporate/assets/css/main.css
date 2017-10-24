@@ -13065,21 +13065,24 @@ span.icon-border:after {
   background: #f0fbfd;
 }
 
-.client-carosel {
+.client-carousel .slick-list {
   padding-bottom: 50px;
 }
 
-.client-carosel .slick-dots li {
-  margin: 0;
-}
-
-.client-carosel .slick-dots li button:before {
-  font-size: 12px;
-  color: #0b4249;
+.client-carousel .slick-dots li.slick-active button:before {
+  color: #ff646c;
   opacity: 1;
 }
 
-.client-carosel .slick-dots li.slick-active button:before {
+.client-carousel .slick-dots li {
+  margin: 0;
+}
+
+.client-carousel .slick-dots li button:before {
+  font-size: 12px;
+}
+
+.client-carousel .slick-dots li button:hover:before {
   color: #ff646c;
 }
 

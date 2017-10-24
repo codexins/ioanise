@@ -100,7 +100,7 @@ $(function() {
         slidesToScroll: 3,
         dots: true,
         arrows: false ,
-        autoplay :true 
+        autoplay :false 
 
     });
 

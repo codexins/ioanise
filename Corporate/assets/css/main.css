@@ -13137,6 +13137,10 @@ footer {
   margin-right: 10px;
 }
 
+.footer-content .social-icon, .footer-content .social-icon-large {
+  margin-top: 20px;
+}
+
 .footer-content .social-icon a, .footer-content .social-icon-large a {
   background: transparent;
   color: white;
@@ -13145,6 +13149,28 @@ footer {
 
 .footer-content .social-icon i, .footer-content .social-icon-large i {
   margin-right: 0;
+}
+
+.subscribe-field {
+  position: relative;
+}
+
+.subscribe-field input {
+  border: 1px solid white;
+  color: white;
+}
+
+.subscribe-field .email {
+  width: 100%;
+  background: transparent;
+}
+
+.subscribe-field .submit-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: transparent;
 }
 
 .copyright-section {

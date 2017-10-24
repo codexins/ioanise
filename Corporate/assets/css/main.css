@@ -11890,8 +11890,8 @@ section div[class*='col-'] {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.65em;
+  font-size: 15px;
+  line-height: 1.6em;
   color: #333;
   font-weight: 400;
   background: #fff;
@@ -11941,7 +11941,7 @@ address, blockquote {
 }
 
 blockquote {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 td, th {

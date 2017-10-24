@@ -12500,10 +12500,6 @@ span.icon-border:after {
   border: 1px solid #ccc;
 }
 
-<<<<<<< HEAD
-.call-to-action {
-  padding: 100px 0;
-=======
 .counter-section {
   background-image: url(../img/counter-up.jpg);
   background-position: center;
@@ -12514,23 +12510,23 @@ span.icon-border:after {
 }
 
 .counter-section {
->>>>>>> 7a06b21d09734c87af91b4483ebb545f01ef1318
   position: relative;
-  overflow: hidden;
 }
 
-.call-to-action:after, .call-to-action:before {
+.counter-section:before {
+  content: "";
+  background: rgba(28, 165, 184, 0.8);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   content: "";
   display: block;
   position: absolute;
   top: 0;
-  right: 51%;
+  right: 0;
   bottom: 0;
-<<<<<<< HEAD
-  left: -100px;
-  background: #1ca5b8;
-  transform: skewX(-35deg);
-=======
   left: 0;
 }
 
@@ -12563,7 +12559,144 @@ span.icon-border:after {
 
 .reason-item {
   text-align: center;
->>>>>>> 7a06b21d09734c87af91b4483ebb545f01ef1318
+}
+
+.reason-icon {
+  margin-bottom: 7px;
+}
+
+.reasons-to-choose {
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+}
+
+.reasons-to-choose .slick-dots li.slick-active button:before {
+  color: #ff646c;
+  opacity: 1;
+}
+
+.reasons-to-choose .slick-dots li button:before {
+  font-size: 10px;
+}
+
+.reasons-to-choose .slick-dots li button:hover:before {
+  color: #ff646c;
+}
+
+.project-item {
+  position: relative;
+}
+
+.project-item .img {
+  display: block;
+  position: relative;
+}
+
+.project-item .img:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.76);
+  color: #fff;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .project-item .img:before {
+    opacity: 1;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+  }
+}
+
+.project-item .img img {
+  width: 100%;
+}
+
+.project-item:hover .img:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  opacity: 1;
+}
+
+.project-item:hover .project-contant {
+  opacity: 1;
+}
+
+.project-contant {
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .project-contant {
+    opacity: 1;
+  }
+}
+
+.project-contant h3 {
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 13px;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.project-contant h3:after {
+  height: 3px;
+}
+
+.project-contant a {
+  color: #ff646c;
+}
+
+.project-contant p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.call-to-action {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.call-to-action:after, .call-to-action:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 51%;
+  bottom: 0;
+  left: -100px;
+  background: #1ca5b8;
+  transform: skewX(-35deg);
 }
 
 .call-to-action:before {
@@ -12721,57 +12854,6 @@ span.icon-border:after {
 
 .reasons-to-choose .slick-dots li button:hover:before {
   color: #ff646c;
-}
-
-.counter-section {
-  background-image: url(../img/counter-up.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 90px;
-}
-
-.counter-section {
-  position: relative;
-}
-
-.counter-section:before {
-  content: "";
-  background: rgba(28, 165, 184, 0.8);
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.counter-item {
-  text-align: center;
-}
-
-.counter-icon {
-  margin-bottom: 30px;
-}
-
-.counter-icon i {
-  width: 75px;
-  height: 75px;
-  font-size: 20px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  line-height: 75px;
-}
-
-.counter-item .counter {
-  font-size: 50px;
-  line-height: 100%;
 }
 
 .team-section {

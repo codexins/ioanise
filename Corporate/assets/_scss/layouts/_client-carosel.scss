@@ -1,6 +1,7 @@
 .client-section{
 	background : lighten($cx-primary-color , 55% );
-	 padding: 100px 0 80px;
+	padding: 100px 0 80px;
+	@extend section ;
 }
 .client-carosel {
 	padding-bottom: 80px;

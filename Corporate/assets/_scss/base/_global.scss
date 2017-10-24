@@ -31,4 +31,7 @@ section div[class*='col-'] {
 .no-padding {
 	padding: 0;
 }
+.mb-35{
+	margin-bottom :$cx-section-margin-bottom-small;
+}
 

@@ -1,6 +1,7 @@
 .client-section{
 	background : lighten($cx-primary-color , 55% );
 }
+
 .client-carosel {
 	padding-bottom: 50px;
    .slick-dots li {
@@ -18,7 +19,7 @@
    
 }
 
-.client-carosel{
+.client-carousel{
 	.slick-slide img {
 		display: block;
 		max-width: 100%;

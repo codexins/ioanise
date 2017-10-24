@@ -1,5 +1,5 @@
 .blog-section{
-	margin-bottom:99px;
+
 }
 .blog-item {
 	.post-content {
@@ -25,8 +25,28 @@
 
 }
 .post-image{
+	position:relative ;
 	.post-date{
-		
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		color: #fff;
+		text-align: center;
+		border-radius: 8%;
+		overflow: hidden;
+	}
+	.date,.month{
+		display: block;
+		background: $cx-tertiaty-color;
+		font-size: 24px;
+    	padding: 5px 12px;
+	}
+	.date{
+
+	}
+	.month{
+		background: darken($cx-tertiaty-color , 20%);
+		font-size: 16px;
 	}
 }
 .post-title{
@@ -34,6 +54,24 @@
 		font-size: 20px;
 	}
 }
+.post-carousel{
+	.slick-arrow {
+	    bottom: -40px;
+	    top: inherit;
+	    background: transparent;
+	    border:1px solid $cx-primary-color;
+	    &.slick-next{
+	    	left: calc(50% + 15px);
+	    }
+	    &.slick-prev{
+		    left: calc(50% - 15px);
+		}
+		&:before{
+			color: $cx-primary-color;
+		}
+	}
+	
 
+}
 
 

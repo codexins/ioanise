@@ -8,13 +8,17 @@ $(function() {
         delay: 100,
         time: 3000
     });
-    $('.portfolio-wrape').isotope({
+    // isotop masonry
+    var $grid = $('.portfolio-wrape').isotope({
         // options
         itemSelector: '.item',
-        // layoutMode: 'fitColumns',
         columnWidth:  '.item',
 
     });
+    // layout Isotope after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.isotope('layout');
+    });  
 
     /**
     * Slide left instantiation and action.
@@ -41,10 +45,40 @@ $(function() {
         slidesToScroll: 2,
         dots: true,
         arrows: false ,
+         responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: false
+              }
+            },
+            {
+              breakpoint: 700,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                dots: false
+
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false
+                
+              }
+            }
+          ]
+
     });
     // testimonial 
 
-    $('.testimonial-carosel').slick({
+    $('.testimonial-carousel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
@@ -53,14 +87,14 @@ $(function() {
     $('.testimonial-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        asNavFor: '.testimonial-carosel',
+        asNavFor: '.testimonial-carousel',
         centerMode: true,
         focusOnSelect: true
 
     });
 
     //  client  carosel 
-    $('.client-carosel').slick({
+    $('.client-carousel').slick({
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 3,
@@ -69,6 +103,5 @@ $(function() {
         autoplay :true 
 
     });
-
 
 })

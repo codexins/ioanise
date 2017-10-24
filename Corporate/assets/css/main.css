@@ -13061,14 +13061,6 @@ span.icon-border:after {
   background: #f0fbfd;
 }
 
-<<<<<<< HEAD
-.client-carousel {
-  padding-bottom: 80px;
-}
-
-.client-carousel .slick-dots li button:before {
-  font-size: 15px;
-=======
 .client-carosel {
   padding-bottom: 50px;
 }
@@ -13079,12 +13071,11 @@ span.icon-border:after {
 
 .client-carosel .slick-dots li button:before {
   font-size: 12px;
->>>>>>> b4e67745bdba164058b09b4467e92c4d3a4810c2
   color: #0b4249;
   opacity: 1;
 }
 
-.client-carousel .slick-dots li.slick-active button:before {
+.client-carosel .slick-dots li.slick-active button:before {
   color: #ff646c;
 }
 

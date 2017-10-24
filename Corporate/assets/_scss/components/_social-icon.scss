@@ -1,11 +1,11 @@
 
-.social-icon{
+.social-icon {
 	overflow:hidden ;
 	a{
-	    width: $cx-social-icon-size;
-	    height: $cx-social-icon-size;
+	    width: $cx-social-icon-size-small;
+	    height: $cx-social-icon-size-small;
 	    display: inline-block;
-	    line-height: $cx-social-icon-size;
+	    line-height: $cx-social-icon-size-small;
 	    text-align: center;
 	    margin-right:5px;
 	    background-color:darken($cx-body-bg-color, 10%);
@@ -20,6 +20,17 @@
 	    &:last-child{
 	    	margin-right:0px;
 	    }
+	}
+
+}
+
+.social-icon-large {
+	@extend .social-icon;
+	a {
+		width: $cx-social-icon-size-large;
+		height: $cx-social-icon-size-large;
+		line-height: $cx-social-icon-size-large;
+		margin-right: 2px;
 	}
 
 }

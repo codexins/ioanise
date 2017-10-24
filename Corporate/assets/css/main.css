@@ -13202,9 +13202,9 @@ span.icon-border:after {
 }
 
 footer {
-  padding-top: 90px;
+  padding-top: 70px;
   background: #1ca5b8;
-  color: #929292;
+  color: white;
 }
 
 .footer-logo {
@@ -13213,7 +13213,7 @@ footer {
 
 .footer-title {
   margin-bottom: 50px;
-  color: #fff;
+  color: white;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -13229,9 +13229,10 @@ footer {
 .copyright-section {
   text-align: center;
   padding: 20px 0;
-  background: #1c1c1c;
+  background: #0b4249;
 }
 
 .copyright-section p {
   margin: 0;
+  color: white;
 }

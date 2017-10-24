@@ -37,6 +37,7 @@
 		@extend %transition-all ;
 		transform: scaleX(1) skew(-40deg);
 	}
+	
 	&:hover{
 		border-color:darken($cx-border-color,1.5%) ;
 		color: $cx-body-bg-color ;
@@ -45,6 +46,7 @@
 		}
 	}
 }
+
 .skew-left{
 	@extend .skew-right ;
 	&:before{

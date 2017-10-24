@@ -8,13 +8,17 @@ $(function() {
         delay: 100,
         time: 3000
     });
-    $('.portfolio-wrape').isotope({
+    var $grid = $('.portfolio-wrape').isotope({
         // options
         itemSelector: '.item',
         // layoutMode: 'fitColumns',
         columnWidth:  '.item',
 
     });
+    // layout Isotope after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.isotope('layout');
+    });  
 
     /**
     * Slide left instantiation and action.

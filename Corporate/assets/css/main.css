@@ -13143,15 +13143,23 @@ footer {
   color: white;
 }
 
-.footer-logo {
-  margin-bottom: 30px;
-}
-
 .footer-title {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   color: white;
   font-size: 20px;
   text-transform: uppercase;
+}
+
+.footer-title.title-bar {
+  padding-bottom: 10px;
+}
+
+.address {
+  margin-top: 25px;
+}
+
+.address p {
+  margin: 10px 0;
 }
 
 .list-element.twiter-feeds .publish-date {

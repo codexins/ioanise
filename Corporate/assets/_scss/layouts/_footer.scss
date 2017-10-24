@@ -3,16 +3,37 @@ footer{
 	background: $cx-primary-color;
 	color: lighten($cx-text-color, 100%);
 }
-.footer-logo{
-	margin-bottom:30px;
-}
 
 .footer-title{
-	margin-bottom:50px;
+	margin-bottom:35px;
 	color: lighten($cx-text-color, 100%);
 	font-size: 20px;
 	text-transform:uppercase;
+	&.title-bar{
+		padding-bottom: 10px
+	}
 }
+
+.address{
+	margin-top: 25px;
+	p {
+	    margin: 10px 0;
+	}
+	span{
+
+	}
+	i{
+
+    }
+
+}
+
+
+
+
+
+
+
 
 .list-element.twiter-feeds{
 	.publish-date{

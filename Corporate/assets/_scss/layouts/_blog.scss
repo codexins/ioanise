@@ -28,42 +28,16 @@
 .blog-item {
     margin-bottom: 60px;
     .blog-image{
-		
-    	position:relative;
-    	&:after{ 
-    		content: "";
-		    position: absolute;
-		    top: 0;
-		    right: 0;
-		    width: 20px;
-		    height: 20px;
-		    // background: #ebebeb;
-			background: darken($cx-text-color,1.5%);
-
-		    z-index: 9999;
-		    transform: translateX(50%);
-		    border-radius: 50%;
-		    @include respond-to(xs-screens){
-				content: none;
-			};
-    	}
+	
 	}
 }
 
 .left-thmb{
 	.blog-image{
-		padding-right:30px;
-		@include respond-to(xs-screens){
-			padding-right:15px;
-		};
+		
 	}
 	.blog-content{
-		padding-left:30px;
-		@include respond-to(xs-screens){
-			padding-left:15px;
-			padding-right:15px;
-
-		};
+		
 	}
 }
 .right-thmb{
@@ -85,50 +59,6 @@
 		@include respond-to(xs-screens){
 			padding-left:15px;
 		};
-    	&:after{ 
-		    left: 0;
-		    transform: translateX(-50%);
-    	}
+    	
 	}
-}
-.blog-separator{
-	position:relative;
-	&:before{
-		@extend %before ;
-	    left: 50%;
-	    right: initial;
-	    width: 2px;
-	    background: #ebebeb;
-	    transform: translateX(-50%);
-	    bottom: 10px;
-	    @include respond-to(xs-screens){
-				content: none;
-		};
-	}
-
-}
-.gallery-carosel{
-	.slick-arrow{
-		z-index: 99;
-	}
-	.slick-arrow.slick-next {
-		right: 10px;
-		&:before {
-		    content: "\f105";
-		    font-family: FontAwesome;
-		    font-size: 35px;
-		}
-	}
-	.slick-arrow.slick-prev {
-		left: 10px;
-		&:before {
-			content: "\f104";
-			font-family: FontAwesome;
-			font-size: 35px;
-		}
-	}
-}
-.post-pagination{
-	overflow: hidden;
-	padding-top: 30px;
 }

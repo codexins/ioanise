@@ -1,1 +1,0 @@
-http://kottenator.github.io/jquery-circle-progress/

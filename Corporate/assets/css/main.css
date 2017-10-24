@@ -11876,6 +11876,14 @@ section div[class*='col-'] {
   padding-bottom: 35px;
 }
 
+.column-gap-0 {
+  padding: 0;
+}
+
+.margin-b-0 {
+  margin-bottom: 0;
+}
+
 .pt-0 {
   padding-top: 0;
 }
@@ -12061,11 +12069,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, .top-content a, .project-item .img:before, .project-contant, .team-details, .nav-img img {
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /*
@@ -12371,14 +12379,6 @@ to a reusable component.
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-.column-gap-0 {
-  padding: 0;
-}
-
-.margin-b-0 {
-  margin-bottom: 0;
 }
 
 .header-top {

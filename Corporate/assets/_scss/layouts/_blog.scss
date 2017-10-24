@@ -37,7 +37,7 @@
 	}
 	.date,.month{
 		display: block;
-		background: $cx-tertiaty-color;
+		background: $cx-tertiary-color;
 		font-size: 24px;
     	padding: 5px 12px;
 	}
@@ -45,7 +45,7 @@
 
 	}
 	.month{
-		background: darken($cx-tertiaty-color , 20%);
+		background: darken($cx-tertiary-color , 20%);
 		font-size: 16px;
 	}
 }

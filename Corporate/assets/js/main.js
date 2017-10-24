@@ -8,10 +8,10 @@ $(function() {
         delay: 100,
         time: 3000
     });
+    // isotop masonry
     var $grid = $('.portfolio-wrape').isotope({
         // options
         itemSelector: '.item',
-        // layoutMode: 'fitColumns',
         columnWidth:  '.item',
 
     });

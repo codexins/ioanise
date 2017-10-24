@@ -12403,6 +12403,7 @@ to a reusable component.
 .main-menu {
   display: inline-block;
   float: right;
+  margin-top: 65px;
 }
 
 .main-menu li {

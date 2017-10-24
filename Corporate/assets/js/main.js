@@ -6,10 +6,10 @@ $(function() {
 
 
 
-$('.counter').counterUp({
-    delay: 100,
-    time: 3000
-});
+      $('.counter').counterUp({
+         delay: 100,
+         time: 3000
+      });
 
 
 
@@ -53,13 +53,25 @@ $('.counter').counterUp({
     });
     // testimonial 
 
-    $('.testimonial-carosel').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: false ,
-    });
+  $('.testimonial-carosel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.testimonial-nav'
+  });
+  $('.testimonial-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.testimonial-carosel',
+    centerMode: true,
+    focusOnSelect: true
+    
+  });
+
+
+
+
+  
     //  post gallery carosel 
     $('.gallery-carosel').slick({
         infinite: true,

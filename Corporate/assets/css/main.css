@@ -12545,6 +12545,9 @@ span.icon-border:after {
 
 .counter-item {
   text-align: center;
+  width: 228px;
+  float: left;
+  padding: 0 25px;
 }
 
 .counter-icon {

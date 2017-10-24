@@ -10,7 +10,25 @@ body {
 }
 
 section {
-	margin-bottom:$cx-section-speacing ;
+	padding-top: $cx-section-padding-top;
+	padding-bottom: $cx-section-padding-bottom;
+	margin-bottom: $cx-section-margin-bottom;
 }
 
+
+section div[class*='col-'] {
+	padding-bottom: $cx-column-padding-bottom;
+}
+
+.pt-0 {
+	padding-top: 0;
+}
+
+.pb-0 {
+	padding-bottom: 0;
+}
+
+.no-padding {
+	padding: 0;
+}
 

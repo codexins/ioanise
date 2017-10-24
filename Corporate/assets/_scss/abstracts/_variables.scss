@@ -31,7 +31,14 @@ $cx-vpadding: 40px;
 $cx-button-padding : 15px 20px ;
 $cx-heading-margin-bottom : 25px ;
 
-$cx-section-speacing: 70px ;
+$cx-section-padding-top: 70px ;
+$cx-section-padding-bottom: 35px;
+$cx-section-margin-bottom: 70px;
+
+// column spacing
+$cx-column-padding-bottom: 35px;
+$cx-column-margin-bottom: 35px; // provided column has a background color assigned
+
 // default transition 
 $cx-transition: all 0.3s ease ;
 

@@ -2,74 +2,62 @@
 	padding-bottom:10px;
 	margin-bottom: 60px;
 }
-.team-image{
-	position:relative ;
-	overflow: hidden;
-	margin-bottom:20px;
-	> a{
-		display: block ;
-		@extend %overlay ;
-		&:before{
-			background: darken($cx-text-color,20%) ;
-			background: rgba(darken($cx-text-color,20%), 0.8);
-			opacity: 0 ;
-			@include respond-to(xs-screens){
-				opacity: 1 ;
-			};
-		}	
-	}
-	img{
-		width: 100% ;
-		@extend %transition-all ;
-	}
-	.social-icon{
-	    top: -50%;
-	}
-	
-}
-
 
 .team-details{
-	text-align: center;
-    border: 1px solid $cx-text-color;
     padding: 20px;
 	@extend %transition-all ;
-
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,10%);
+    max-width: 220px;
+    width: 100%;
+	background:rgba($cx-secondary-color,0.8);
 	h2{
 		margin-bottom: 7px;
 		text-transform: uppercase;
 		@include respond-to(tablet-screens){
 			font-size: 20px;
 		};
-		color: #000 ;
-		&:hover{
-			color: #FF404C ;
-		}
 	}
 	a{
 		font-size: 20px;
+		color: #fff  ;
+
 	}
 	p{
 		margin-bottom: 0 ;
 		text-transform: uppercase;
 		font-size: 14px;
+		color: #fff  ;
+
+	}
+	.social-icon{
+		margin-top: 40px;
+		a{
+			background:transparent ;
+			border: 1px solid #fff;
+			+a{
+				margin-left: 10px;
+			}
+			&:hover{
+				background:$cx-primary-color ;
+				border: 1px solid $cx-primary-color;
+			}
+		}
 	}
 }
 
 .team-member{
 	margin-bottom: 30px;
-	
+	position:relative;
+	overflow: hidden;
 	&:hover{
-		a{
-			&:before{
-				opacity: 1 ;
-			}
-		}
-		.social-icon{
-			top: 50%;
-		}
 		.team-details{
-    		border-color:$cx-secondary-color
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
 		}
 	}
+	
 }

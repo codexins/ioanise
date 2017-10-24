@@ -1,5 +1,9 @@
 .section-title {
   text-align: center;
   display: block;
+<<<<<<< HEAD
   max-width: 650px;
+=======
+  max-width: 70%;
+>>>>>>> ed4f7f1aedc73d0e5a68d91aa6c613469f2dd808
   margin: 0px auto 50px; }

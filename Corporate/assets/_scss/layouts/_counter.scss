@@ -4,7 +4,10 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    @include section-overly(rgba($cx-primary-color,0.8));
+    .primary-title {
+    	color: lighten($cx-text-color, 100%);
+    }
+    @include section-overly(rgba($cx-tertiary-color,0.92));
 }
 
 .counter-item {
@@ -12,6 +15,7 @@
 	width:228px;
 	float: left;
 	padding: 0 25px;
+	color: lighten($cx-text-color, 100%);
 }
 .counter-icon{
 	margin-bottom: 30px;

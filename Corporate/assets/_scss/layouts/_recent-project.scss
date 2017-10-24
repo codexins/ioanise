@@ -1,7 +1,7 @@
 
 .recent-project{}
 
-.project-item{
+.project-item {
 	position:relative;
 	.img{
 		display: block;
@@ -23,24 +23,23 @@
 	}
 	&:hover{
 		.img {
-			&:before{
+			&::before{
 				 @include  absolute-position(10px,10px,10px,10px);
-				
 				opacity: 1 ;
 			}
 		}
-		.project-contant{
+		.project-content{
 			opacity: 1 ;
 		}
 	}
 }
 
-.portfolio-wrape >  div[class*='col-'] {
+.portfolio-wrapper >  div[class*='col-'] {
 	padding-bottom:0;
 }
 
 
-.project-contant{
+.project-content{
 	opacity:0 ;
 	color: #fff ;
 	@include position-center(both);
@@ -72,4 +71,8 @@
 		letter-spacing: 3px;
 		font-weight: 300;
 	}
+}
+
+.portfolio-filter ul li {
+	cursor: pointer;
 }

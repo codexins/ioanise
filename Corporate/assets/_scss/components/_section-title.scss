@@ -1,10 +1,9 @@
 .section-title{
 	text-align:center;
 	display: block;
-    max-width: 650px;
-    margin: 0px auto 15px;
-	
-}
-.color-white{
-	color : #fff ;
+    max-width: 70%;
+    margin: 0px auto 15px;	
+    @include respond-to(xs-screens) {
+    	max-width:95%;
+    }
 }

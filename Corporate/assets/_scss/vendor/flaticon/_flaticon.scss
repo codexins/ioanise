@@ -1,0 +1,99 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 08/05/2017 09:43
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon/Flaticon.eot");
+  src: url("../fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/flaticon/Flaticon.woff") format("woff"),
+       url("../fonts/flaticon/Flaticon.ttf") format("truetype"),
+       url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+.flaticon-001-teamwork-3:before { content: "\f100"; }
+.flaticon-002-teamwork-2:before { content: "\f101"; }
+.flaticon-003-support:before { content: "\f102"; }
+.flaticon-004-management:before { content: "\f103"; }
+.flaticon-005-exchange:before { content: "\f104"; }
+.flaticon-006-brainstorming:before { content: "\f105"; }
+.flaticon-007-gears:before { content: "\f106"; }
+.flaticon-008-networking:before { content: "\f107"; }
+.flaticon-009-transfer:before { content: "\f108"; }
+.flaticon-010-team-3:before { content: "\f109"; }
+.flaticon-011-presentation:before { content: "\f10a"; }
+.flaticon-012-strategy:before { content: "\f10b"; }
+.flaticon-013-profits:before { content: "\f10c"; }
+.flaticon-014-settings:before { content: "\f10d"; }
+.flaticon-015-discussion:before { content: "\f10e"; }
+.flaticon-016-files:before { content: "\f10f"; }
+.flaticon-017-tasks-2:before { content: "\f110"; }
+.flaticon-018-tasks-1:before { content: "\f111"; }
+.flaticon-019-community:before { content: "\f112"; }
+.flaticon-020-curriculum:before { content: "\f113"; }
+.flaticon-021-puzzle:before { content: "\f114"; }
+.flaticon-022-team-2:before { content: "\f115"; }
+.flaticon-023-teamwork-1:before { content: "\f116"; }
+.flaticon-024-communication:before { content: "\f117"; }
+.flaticon-025-tasks:before { content: "\f118"; }
+.flaticon-026-team-1:before { content: "\f119"; }
+.flaticon-027-man:before { content: "\f11a"; }
+.flaticon-028-woman:before { content: "\f11b"; }
+.flaticon-029-teamwork:before { content: "\f11c"; }
+.flaticon-030-team:before { content: "\f11d"; }
+    
+    $font-Flaticon-001-teamwork-3: "\f100";
+    $font-Flaticon-002-teamwork-2: "\f101";
+    $font-Flaticon-003-support: "\f102";
+    $font-Flaticon-004-management: "\f103";
+    $font-Flaticon-005-exchange: "\f104";
+    $font-Flaticon-006-brainstorming: "\f105";
+    $font-Flaticon-007-gears: "\f106";
+    $font-Flaticon-008-networking: "\f107";
+    $font-Flaticon-009-transfer: "\f108";
+    $font-Flaticon-010-team-3: "\f109";
+    $font-Flaticon-011-presentation: "\f10a";
+    $font-Flaticon-012-strategy: "\f10b";
+    $font-Flaticon-013-profits: "\f10c";
+    $font-Flaticon-014-settings: "\f10d";
+    $font-Flaticon-015-discussion: "\f10e";
+    $font-Flaticon-016-files: "\f10f";
+    $font-Flaticon-017-tasks-2: "\f110";
+    $font-Flaticon-018-tasks-1: "\f111";
+    $font-Flaticon-019-community: "\f112";
+    $font-Flaticon-020-curriculum: "\f113";
+    $font-Flaticon-021-puzzle: "\f114";
+    $font-Flaticon-022-team-2: "\f115";
+    $font-Flaticon-023-teamwork-1: "\f116";
+    $font-Flaticon-024-communication: "\f117";
+    $font-Flaticon-025-tasks: "\f118";
+    $font-Flaticon-026-team-1: "\f119";
+    $font-Flaticon-027-man: "\f11a";
+    $font-Flaticon-028-woman: "\f11b";
+    $font-Flaticon-029-teamwork: "\f11c";
+    $font-Flaticon-030-team: "\f11d";

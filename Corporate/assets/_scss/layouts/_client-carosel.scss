@@ -3,7 +3,7 @@
 	padding: 100px 0 80px;
 	@extend section ;
 }
-.client-carosel {
+.client-carousel {
 	padding-bottom: 80px;
    .slick-dots li button:before{
    	font-size: 15px;
@@ -15,7 +15,7 @@
    }
 }
 
-.client-carosel{
+.client-carousel{
 	.slick-slide img {
 		display: block;
 		max-width: 100%;

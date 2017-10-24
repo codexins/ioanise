@@ -11870,7 +11870,7 @@ body * {
 section, .client-section {
   padding-top: 70px;
   padding-bottom: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 70px;
 }
 
 section div[class*='col-'], .client-section div[class*='col-'] {
@@ -13002,11 +13002,11 @@ span.icon-border:after {
   color: #26a6cd;
 }
 
-.testimonial-carosel {
+.testimonial-carousel {
   margin-bottom: 20px;
 }
 
-.testimonial-carosel .comment-icon i {
+.testimonial-carousel .comment-icon i {
   color: #fff;
   font-size: 30px;
 }
@@ -13061,21 +13061,21 @@ span.icon-border:after {
   padding: 100px 0 80px;
 }
 
-.client-carosel {
+.client-carousel {
   padding-bottom: 80px;
 }
 
-.client-carosel .slick-dots li button:before {
+.client-carousel .slick-dots li button:before {
   font-size: 15px;
   color: #0b4249;
   opacity: 1;
 }
 
-.client-carosel .slick-dots li.slick-active button:before {
+.client-carousel .slick-dots li.slick-active button:before {
   color: #ff646c;
 }
 
-.client-carosel .slick-slide img {
+.client-carousel .slick-slide img {
   display: block;
   max-width: 100%;
   margin-left: auto;
@@ -13111,8 +13111,53 @@ span.icon-border:after {
   border-color: #ff646c;
 }
 
+.post-image {
+  position: relative;
+}
+
+.post-image .post-date {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #fff;
+  text-align: center;
+  border-radius: 8%;
+  overflow: hidden;
+}
+
+.post-image .date, .post-image .month {
+  display: block;
+  background: #0b4249;
+  font-size: 24px;
+  padding: 5px 12px;
+}
+
+.post-image .month {
+  background: black;
+  font-size: 16px;
+}
+
 .post-title a {
   font-size: 20px;
+}
+
+.post-carousel .slick-arrow {
+  bottom: -40px;
+  top: inherit;
+  background: transparent;
+  border: 1px solid #1ca5b8;
+}
+
+.post-carousel .slick-arrow.slick-next {
+  left: calc(50% + 15px);
+}
+
+.post-carousel .slick-arrow.slick-prev {
+  left: calc(50% - 15px);
+}
+
+.post-carousel .slick-arrow:before {
+  color: #1ca5b8;
 }
 
 .contact-section {

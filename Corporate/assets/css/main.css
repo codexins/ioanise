@@ -3066,7 +3066,6 @@ main,
 menu,
 nav,
 section,
-.client-section,
 summary {
   display: block;
 }
@@ -11867,13 +11866,13 @@ body * {
   box-sizing: inherit;
 }
 
-section, .client-section {
+section {
   padding-top: 70px;
   padding-bottom: 35px;
   margin-bottom: 70px;
 }
 
-section div[class*='col-'], .client-section div[class*='col-'] {
+section div[class*='col-'] {
   padding-bottom: 35px;
 }
 
@@ -11891,8 +11890,8 @@ section div[class*='col-'], .client-section div[class*='col-'] {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.65em;
+  font-size: 15px;
+  line-height: 1.6em;
   color: #333;
   font-weight: 400;
   background: #fff;
@@ -11942,7 +11941,7 @@ address, blockquote {
 }
 
 blockquote {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 td, th {
@@ -12546,6 +12545,9 @@ span.icon-border:after {
 
 .counter-item {
   text-align: center;
+  width: 228px;
+  float: left;
+  padding: 0 25px;
 }
 
 .counter-icon {
@@ -12578,10 +12580,6 @@ span.icon-border:after {
   font-size: 60px;
 }
 
-.reason-item {
-  text-align: center;
-}
-
 .reason-icon {
   margin-bottom: 7px;
 }
@@ -12595,8 +12593,12 @@ span.icon-border:after {
   opacity: 1;
 }
 
+.reasons-to-choose .slick-dots li {
+  margin: 0;
+}
+
 .reasons-to-choose .slick-dots li button:before {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .reasons-to-choose .slick-dots li button:hover:before {
@@ -12858,10 +12860,6 @@ span.icon-border:after {
   font-size: 60px;
 }
 
-.reason-item {
-  text-align: center;
-}
-
 .reason-icon {
   margin-bottom: 7px;
 }
@@ -12875,8 +12873,12 @@ span.icon-border:after {
   opacity: 1;
 }
 
+.reasons-to-choose .slick-dots li {
+  margin: 0;
+}
+
 .reasons-to-choose .slick-dots li button:before {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .reasons-to-choose .slick-dots li button:hover:before {
@@ -12947,7 +12949,6 @@ span.icon-border:after {
 }
 
 .testimonial {
-  padding: 100px  0;
   background-image: url(../img/testimonial.jpg);
   background-position: center;
   background-size: cover;
@@ -13058,15 +13059,27 @@ span.icon-border:after {
 
 .client-section {
   background: #f0fbfd;
-  padding: 100px 0 80px;
 }
 
+<<<<<<< HEAD
 .client-carousel {
   padding-bottom: 80px;
 }
 
 .client-carousel .slick-dots li button:before {
   font-size: 15px;
+=======
+.client-carosel {
+  padding-bottom: 50px;
+}
+
+.client-carosel .slick-dots li {
+  margin: 0;
+}
+
+.client-carosel .slick-dots li button:before {
+  font-size: 12px;
+>>>>>>> b4e67745bdba164058b09b4467e92c4d3a4810c2
   color: #0b4249;
   opacity: 1;
 }

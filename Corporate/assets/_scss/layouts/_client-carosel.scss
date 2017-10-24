@@ -1,8 +1,7 @@
 .client-section{
 	background : lighten($cx-primary-color , 55% );
-	padding: 100px 0 80px;
-	@extend section ;
 }
+<<<<<<< HEAD
 .client-carousel {
 	padding-bottom: 80px;
    .slick-dots li button:before{
@@ -10,9 +9,23 @@
    	color: $cx-tertiaty-color ;
    	opacity: 1 ;
    }
+=======
+.client-carosel {
+	padding-bottom: 50px;
+   .slick-dots li {
+		margin: 0;
+	   button:before{
+	   	font-size: 12px;
+	   	color: $cx-tertiaty-color ;
+	   	opacity: 1 ;
+	   }
+	}   
+
+>>>>>>> b4e67745bdba164058b09b4467e92c4d3a4810c2
    .slick-dots li.slick-active button:before{
    	   	color: $cx-secondary-color ;
    }
+   
 }
 
 .client-carousel{

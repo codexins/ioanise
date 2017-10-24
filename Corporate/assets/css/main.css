@@ -12524,6 +12524,10 @@ span.icon-border:after {
   background-repeat: no-repeat;
 }
 
+.counter-section .primary-title {
+  color: white;
+}
+
 .counter-section {
   position: relative;
 }
@@ -12550,6 +12554,7 @@ span.icon-border:after {
   width: 228px;
   float: left;
   padding: 0 25px;
+  color: white;
 }
 
 .counter-icon {

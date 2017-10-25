@@ -9,9 +9,6 @@ footer{
 	color: lighten($cx-text-color, 100%);
 	font-size: 20px;
 	text-transform:uppercase;
-	&.title-bar{
-		padding-bottom: 10px
-	}
 }
 
 .address{
@@ -22,11 +19,11 @@ footer{
 
 
 .footer-content{
-	p{
-		margin-bottom: 15px;
-	}
-	i{
-		margin-right: 10px;	
+	a {
+		color: lighten($cx-text-color, 100%);
+		&:hover {
+			color: $cx-secondary-color;
+		}
 	}
 	.social-icon {
 		margin-top:20px;
@@ -105,22 +102,8 @@ footer{
     	margin: 0;
     	color: lighten($cx-text-color, 100%);
     }
-}
-.list-element {
-	li{
-		margin-bottom: 15px;
-	}
-	p{
-		margin-bottom: 15px;
-	}
-	a{
-		color: lighten($cx-text-color, 100%);
-		text-transform: capitalize;
-		@extend %transition-all ;
 
-		&:hover{
-			color:$cx-tertiary-color;
-		}
-
-	}
+    a {
+    	color: $cx-secondary-color;
+    }
 }

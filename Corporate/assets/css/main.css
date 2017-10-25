@@ -12322,7 +12322,95 @@ to a reusable component.
   padding-bottom: 25px;
 }
 
-a, .skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, .top-content a, .project-item .img:before, .project-content, .team-details, .nav-img img, .blog-item .post-content, .submit-button, .list-element a {
+a.phone {
+  font-size: 22px;
+  position: relative;
+  padding: 10px 15px 10px 40px;
+  display: inline-block;
+}
+
+a.phone::before {
+  content: "\f095";
+  font-family: FontAwesome;
+  font-size: 85%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  border: 1px solid #333;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+a.phone:hover::before {
+  color: #ff646c;
+  border-color: #ff646c;
+}
+
+ul.address-card li {
+  padding-left: 25px;
+  margin-bottom: 2px;
+  list-style-type: none;
+  display: block;
+  position: relative;
+}
+
+ul.address-card li::before {
+  content: '';
+  font-family: FontAwesome;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  margin: auto;
+}
+
+ul.address-card li.card-email::before {
+  content: '\f003';
+}
+
+ul.address-card li.card-phone::before {
+  content: '\f2a0';
+}
+
+ul.address-card li.card-location::before {
+  content: '\f278';
+}
+
+.widgetized-menu {
+  padding: 0;
+}
+
+.widgetized-menu li {
+  list-style-type: none;
+  position: relative;
+}
+
+.widgetized-menu li::before {
+  content: '\f105';
+  font-family: FontAwesome;
+  position: relative;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+a, .skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .top-content a, .project-item .img:before, .project-content, .team-details, .nav-img img, .blog-item .post-content, .submit-button {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -12407,6 +12495,13 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+.header-wrapper .contact-info {
+  text-align: right;
+  float: right;
+  margin-right: -15px;
+  margin-top: 25px;
+}
+
 .header-inline {
   padding: 15px 0;
 }
@@ -12428,7 +12523,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-menu {
   display: inline-block;
   float: right;
-  margin-top: 65px;
+  margin-top: 0;
   width: 100%;
   text-align: right;
 }
@@ -13263,16 +13358,12 @@ footer {
   text-transform: uppercase;
 }
 
-.footer-title.title-bar {
-  padding-bottom: 10px;
+.footer-content a {
+  color: white;
 }
 
-.footer-content p {
-  margin-bottom: 15px;
-}
-
-.footer-content i {
-  margin-right: 10px;
+.footer-content a:hover {
+  color: #ff646c;
 }
 
 .footer-content .social-icon, .footer-content .social-icon-large {
@@ -13359,21 +13450,8 @@ footer {
   color: white;
 }
 
-.list-element li {
-  margin-bottom: 15px;
-}
-
-.list-element p {
-  margin-bottom: 15px;
-}
-
-.list-element a {
-  color: white;
-  text-transform: capitalize;
-}
-
-.list-element a:hover {
-  color: #0b4249;
+.copyright-section a {
+  color: #ff646c;
 }
 
 .c-button:hover {

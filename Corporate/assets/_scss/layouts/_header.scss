@@ -9,7 +9,13 @@
 }
 .header-wrapper {
 	background: lighten($cx-body-bg-color, 100%);
-	position:relative ;
+	position:relative;
+	.contact-info {
+		text-align: right;
+		float: right;
+		margin-right: -15px;
+		margin-top: 25px;
+	}
 }
 
 .header-inline{

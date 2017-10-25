@@ -12323,7 +12323,41 @@ to a reusable component.
   padding-bottom: 25px;
 }
 
-a, .skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, .top-content a, .project-item .img:before, .project-content, .team-details, .nav-img img, .blog-item .post-content, .submit-button, .list-element a {
+a.phone {
+  font-size: 22px;
+  position: relative;
+  padding: 10px 15px 10px 40px;
+  display: inline-block;
+}
+
+a.phone::before {
+  content: "\f095";
+  font-family: FontAwesome;
+  font-size: 85%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  border: 1px solid #333;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+a.phone:hover::before {
+  color: #ff646c;
+  border-color: #ff646c;
+}
+
+a, .skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .top-content a, .project-item .img:before, .project-content, .team-details, .nav-img img, .blog-item .post-content, .submit-button, .list-element a {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -12383,6 +12417,13 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+.header-wrapper .contact-info {
+  text-align: right;
+  float: right;
+  margin-right: -15px;
+  margin-top: 25px;
+}
+
 .header-inline {
   padding: 15px 0;
 }
@@ -12390,7 +12431,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-menu {
   display: inline-block;
   float: right;
-  margin-top: 65px;
+  margin-top: 0;
   width: 100%;
   text-align: right;
 }

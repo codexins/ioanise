@@ -12988,8 +12988,15 @@ span.icon-border:after {
   background: rgba(255, 100, 108, 0.9);
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .team-details {
+    width: 90%;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .team-details {
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -13038,8 +13045,26 @@ span.icon-border:after {
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .team-details .social-icon a, .team-details .social-icon-large a {
+    margin-right: 0px;
+  }
+}
+
 .team-details .social-icon a + a, .team-details .social-icon-large a + a {
   margin-left: 10px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .team-details .social-icon a + a, .team-details .social-icon-large a + a {
+    margin-left: 3px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .team-details .social-icon a + a, .team-details .social-icon-large a + a {
+    margin-left: 0px;
+  }
 }
 
 .team-details .social-icon a:hover, .team-details .social-icon-large a:hover {
@@ -13230,6 +13255,10 @@ span.icon-border:after {
 
 .post-image {
   position: relative;
+}
+
+.post-image img {
+  width: 100%;
 }
 
 .post-image .post-date {

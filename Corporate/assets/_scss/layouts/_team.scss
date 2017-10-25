@@ -20,6 +20,7 @@
 
 .team-details{
     padding: 20px;
+    
 	@extend %transition-all ;
     position: absolute;
     top: 100%;
@@ -28,7 +29,11 @@
     max-width: 220px;
     width: 100%;
 	background:rgba($cx-secondary-color,0.9);
+	@include respond-to(medium-screens){
+    	 width: 90%;
+	}
 	@include respond-to(xs-screens){
+		 width: 90%;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%,-50%);
@@ -66,8 +71,18 @@
 		    	line-height: 30px;
 		    	margin-right: 6px;
 			}
+			@include respond-to(medium-screens){
+				
+		    	margin-right: 0px;
+			}
 			+a{
 				margin-left: 10px;
+				@include respond-to(medium-screens){
+					margin-left: 3px;
+				}
+				@include respond-to(xs-screens){
+					margin-left: 0px;
+			    }
 			}
 			&:hover{
 				background:$cx-primary-color ;

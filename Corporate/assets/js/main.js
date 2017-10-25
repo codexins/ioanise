@@ -63,7 +63,7 @@ $(function() {
         slidesToScroll: 2,
         dots: true,
         arrows: false ,
-         responsive: [
+        responsive: [
             {
               breakpoint: 1024,
               settings: {
@@ -86,7 +86,7 @@ $(function() {
                 slidesToScroll: 1, 
               }
             }
-          ]
+        ]
 
     });
     // testimonial 
@@ -102,7 +102,18 @@ $(function() {
         slidesToScroll: 1,
         asNavFor: '.testimonial-carousel',
         centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+           
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                slidesToShow: 3,
+                slidesToScroll: 1, 
+              }
+            }
+          ]
 
     });
 
@@ -113,7 +124,23 @@ $(function() {
         slidesToScroll: 3,
         dots: true,
         arrows: false ,
-        autoplay :false 
+        autoplay :false ,
+         responsive: [
+            {
+              breakpoint: 700,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1, 
+              }
+            }
+        ]
 
     });
 

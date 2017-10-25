@@ -1,0 +1,94 @@
+.team-member {
+	position:relative;
+	overflow: hidden;
+	.team-image{
+		@include section-overly(rgba($cx-secondary-color, 0.9));
+		&:before{
+			@extend %transition-all ;
+			opacity: 0 ;
+		}
+	}
+	img {
+		width:100%;
+	}
+	&:hover{	
+		.team-image {
+			&:before{
+				top: 20px;
+				bottom:20px;
+				left: 20px;
+				right: 20px;
+				opacity: 1 ;
+
+			}
+		}
+		.team-details {
+			opacity: 1 ;
+		}
+
+	}
+	
+}
+
+
+.team-details{
+	@extend %transition-all ;
+    padding: 35px 40px;
+    position: absolute;
+	top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    // background: rgba(255, 100, 108, 0.9);
+    height: 220px;
+    margin: auto;
+    opacity: 0 ;
+	h2{
+		margin-bottom: 7px;
+		text-transform: uppercase;
+		@include respond-to(tablet-screens){
+			font-size: 20px;
+		};
+	}
+	a{
+		font-size: 20px;
+		color: #fff;
+	}
+	p{
+		margin-bottom: 0 ;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: #fff  ;
+
+	}
+	.social-icon{
+		margin-top: 40px;
+		a{
+			background:transparent ;
+			border: 1px solid #fff;
+			@include respond-to(xs-screens){
+				width: 30px;
+		    	height: 30px;
+		    	line-height: 30px;
+		    	margin-right: 6px;
+			}
+			@include respond-to(medium-screens){
+				
+		    	margin-right: 0px;
+			}
+			+a{
+				margin-left: 10px;
+				@include respond-to(medium-screens){
+					margin-left: 3px;
+				}
+				@include respond-to(xs-screens){
+					margin-left: 0px;
+			    }
+			}
+			&:hover{
+				background:$cx-primary-color ;
+				border: 1px solid $cx-primary-color;
+			}
+		}
+	}
+}

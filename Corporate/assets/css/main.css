@@ -12415,6 +12415,126 @@ ul.address-card li.card-location::before {
   margin-right: 8px;
 }
 
+.team-member {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-member .team-image {
+  position: relative;
+}
+
+.team-member .team-image:before {
+  background: rgba(255, 100, 108, 0.9);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.team-member .team-image:before {
+  opacity: 0;
+}
+
+.team-member img {
+  width: 100%;
+}
+
+.team-member:hover .team-image:before {
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  opacity: 1;
+}
+
+.team-member:hover .team-details {
+  opacity: 1;
+}
+
+.team-details {
+  padding: 35px 40px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: 220px;
+  margin: auto;
+  opacity: 0;
+}
+
+.team-details h2 {
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .team-details h2 {
+    font-size: 20px;
+  }
+}
+
+.team-details a {
+  font-size: 20px;
+  color: #fff;
+}
+
+.team-details p {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+}
+
+.team-details .social-icon, .team-details .social-icon-large {
+  margin-top: 40px;
+}
+
+.team-details .social-icon a, .team-details .social-icon-large a {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .team-details .social-icon a, .team-details .social-icon-large a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 6px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .team-details .social-icon a, .team-details .social-icon-large a {
+    margin-right: 0px;
+  }
+}
+
+.team-details .social-icon a + a, .team-details .social-icon-large a + a {
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .team-details .social-icon a + a, .team-details .social-icon-large a + a {
+    margin-left: 3px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .team-details .social-icon a + a, .team-details .social-icon-large a + a {
+    margin-left: 0px;
+  }
+}
+
+.team-details .social-icon a:hover, .team-details .social-icon-large a:hover {
+  background: #1ca5b8;
+  border: 1px solid #1ca5b8;
+}
+
 div#toTop {
   position: absolute;
   top: -25px;
@@ -12430,7 +12550,7 @@ div#toTop {
   cursor: pointer;
 }
 
-a, .skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .top-content a, .project-item .img:before, .project-content, .team-image:before, .team-details, .nav-img img, .blog-item .post-content, .submit-button {
+a, .skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .team-member .team-image:before, .team-details, .top-content a, .project-item .img:before, .project-content, .nav-img img, .blog-item .post-content, .submit-button {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -12985,130 +13105,14 @@ span.icon-border:after {
   font-size: 24px;
 }
 
-@media only screen and (max-width: 479px) {
-  .member-wraper.col-xs-6 {
-    width: 100%;
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .member-wraper {
+    width: 50%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
-}
-
-.team-section img {
-  width: 100%;
-}
-
-.team-member {
-  position: relative;
-  overflow: hidden;
-}
-
-.team-member:hover .team-image:before {
-  top: 20px;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  opacity: 1;
-}
-
-.team-member:hover .team-details {
-  opacity: 1;
-}
-
-.team-image {
-  position: relative;
-}
-
-.team-image:before {
-  background: rgba(255, 100, 108, 0.9);
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.team-image:before {
-  opacity: 0;
-}
-
-.team-details {
-  padding: 35px 40px;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
-  height: 220px;
-  margin: auto;
-  opacity: 0;
-}
-
-.team-details h2 {
-  margin-bottom: 7px;
-  text-transform: uppercase;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .team-details h2 {
-    font-size: 20px;
-  }
-}
-
-.team-details a {
-  font-size: 20px;
-  color: #fff;
-}
-
-.team-details p {
-  margin-bottom: 0;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #fff;
-}
-
-.team-details .social-icon, .team-details .social-icon-large {
-  margin-top: 40px;
-}
-
-.team-details .social-icon a, .team-details .social-icon-large a {
-  background: transparent;
-  border: 1px solid #fff;
-}
-
-@media only screen and (max-width: 767px) {
-  .team-details .social-icon a, .team-details .social-icon-large a {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    margin-right: 6px;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .team-details .social-icon a, .team-details .social-icon-large a {
-    margin-right: 0px;
-  }
-}
-
-.team-details .social-icon a + a, .team-details .social-icon-large a + a {
-  margin-left: 10px;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .team-details .social-icon a + a, .team-details .social-icon-large a + a {
-    margin-left: 3px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .team-details .social-icon a + a, .team-details .social-icon-large a + a {
-    margin-left: 0px;
-  }
-}
-
-.team-details .social-icon a:hover, .team-details .social-icon-large a:hover {
-  background: #1ca5b8;
-  border: 1px solid #1ca5b8;
 }
 
 .testimonial {

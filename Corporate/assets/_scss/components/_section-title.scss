@@ -3,7 +3,7 @@
 	display: block;
     max-width: 70%;
     margin: 0px auto 15px;	
-    @include respond-to(xs-screens) {
+    @include respond-to(xs) {
     	max-width:95%;
     }
 }

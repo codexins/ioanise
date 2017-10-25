@@ -4,10 +4,10 @@
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size: 40px;
-	@include respond-to(tablet-screens){
+	@include respond-to(sm){
 		font-size: 30px;
 	};
-	@include respond-to(xs-screens){
+	@include respond-to(xs){
 		font-size: 20px;
 	};
 }

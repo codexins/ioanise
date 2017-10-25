@@ -1,6 +1,6 @@
 .logo {
 	max-width:235px;
-	@include respond-to(xs-screens){
+	@include respond-to(xs){
 		max-width:150px;
 	}
 	a{
@@ -23,7 +23,7 @@
 }
 .mobile-menu-button{
 	overflow:hidden ;
-	@include respond-to(xs-screens){
+	@include respond-to(xs){
 		margin-top:28px;
 	}
 	.icon-bar{

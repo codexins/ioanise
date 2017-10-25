@@ -45,16 +45,16 @@ $cx-transition: all 0.3s ease ;
 //* screen size */
 //* screen min width */
 
-$cx-large-screen:1200px;
-$cx-medium-screen: 992px;
-$cx-tablet-screen:768px;
-$cx-sm-medium-screen:480px;
+$cx-lg-screen:1200px;
+$cx-md-screen: 992px;
+$cx-sm-screen:768px;
+$cx-vsm-screen:480px;
 
 $cx-breakpoints: (
-    "larg-screen":     $cx-large-screen,
-    "mediam-screen":    $cx-medium-screen,
-    "tablet-screen":      $cx-tablet-screen,
-    "sm-medium-screen": $cx-sm-medium-screen, 
+    "lg-screen":    $cx-lg-screen,
+    "md-screen":    $cx-md-screen,
+    "sm-screen":    $cx-sm-screen,
+    "vsm-screen": 	$cx-vsm-screen, 
 );
 
 

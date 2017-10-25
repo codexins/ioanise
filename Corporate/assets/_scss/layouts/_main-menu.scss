@@ -11,7 +11,7 @@
 			display: block; 
 			position: relative;
 			text-transform: uppercase;
-			@include respond-to(tablet-screens){
+			@include respond-to(sm){
 				padding: 10px 15px;
 			};
 			
@@ -31,7 +31,7 @@
 
 .mobile-menu{
 	display:none;
-	@include respond-to(xs-screens){
+	@include respond-to(xs){
 		display:block;
 	};
 }

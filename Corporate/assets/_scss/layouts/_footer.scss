@@ -4,17 +4,15 @@ footer{
 	color: lighten($cx-text-color, 100%);
 }
 
+.footer-top {
+	padding-bottom:0.5*$cx-section-padding-top;
+}
+
 .footer-title{
 	margin-bottom:35px;
 	color: lighten($cx-text-color, 100%);
 	font-size: 20px;
 	text-transform:uppercase;
-}
-
-.address{
-	
-	span{}
-	i{ }
 }
 
 
@@ -23,21 +21,6 @@ footer{
 		color: lighten($cx-text-color, 100%);
 		&:hover {
 			color: $cx-secondary-color;
-		}
-	}
-	.social-icon {
-		margin-top:20px;
-		a{
-			background:transparent ;
-			color: lighten($cx-text-color, 100%); 
-			font-size: 20px;
-			&:hover{
-				color:$cx-secondary-color;
-			}
-		}
-		i{
-			margin-right: 0 ;
-			
 		}
 	}
 	::-webkit-input-placeholder {
@@ -50,6 +33,7 @@ footer{
 
 	
 }
+
 .subscribe-field{
 	position:relative;
 	input{
@@ -62,6 +46,8 @@ footer{
 	}
 
 }
+
+
 .submit-button{
 	position: absolute;
 	right: 0;

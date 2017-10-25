@@ -299,7 +299,7 @@
 
 // mixin only for max or min width 
 
-@mixin mq($width, $type: min) {
+@mixin media-only($width, $type: min) {
     @if map_has_key($cx-breakpoints, $width) {
         $width: map_get($cx-breakpoints, $width);
         @if $type == max {

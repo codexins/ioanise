@@ -8,6 +8,10 @@
     z-index: 9;
 }
 .image{
+	
+	@include respond-to(tablet-screens){
+		margin-top: 85px;
+	}
 	padding:10px;
 	background:lighten($cx-primary-color,52%);
 

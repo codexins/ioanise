@@ -16,6 +16,7 @@ section {
 }
 
 
+footer div[class*='col-'] ,
 section div[class*='col-'] {
 	padding-bottom: $cx-column-padding-bottom;
 }

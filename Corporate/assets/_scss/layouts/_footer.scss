@@ -81,8 +81,9 @@ footer{
 }
 
 .copyright-section{
+	position:relative;
 	text-align: center;
-    padding: 20px 0;
+    padding: 40px 0 20px;
     background: $cx-tertiary-color;
     p{
     	margin: 0;

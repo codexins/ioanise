@@ -3,6 +3,7 @@
 $(function() {
 
 
+    // counter 
 
     $('.counter').counterUp({
         delay: 100,
@@ -26,8 +27,8 @@ $(function() {
 
 
     $('.portfolio-filter li').click(function(e) {
-         var $this = $(this);
-         var $filter = $this.attr('data-filter');
+        var $this = $(this);
+        var $filter = $this.attr('data-filter');
 
         $isocontainer.isotope({
             filter: $filter,
@@ -143,5 +144,17 @@ $(function() {
         ]
 
     });
+  
+
+ $("#toTop").on('click', function() {
+      $("html,body").animate({
+          scrollTop:0
+      }, 800)
+  });  //scrollup finished
+
+
+
+
+
 
 })

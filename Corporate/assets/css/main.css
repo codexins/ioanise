@@ -12415,6 +12415,21 @@ ul.address-card li.card-location::before {
   margin-right: 8px;
 }
 
+div#toTop {
+  position: absolute;
+  top: -25px;
+  background: #0b4249;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 a, .skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .top-content a, .project-item .img:before, .project-content, .team-image:before, .team-details, .nav-img img, .blog-item .post-content, .submit-button {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -13457,8 +13472,9 @@ footer {
 }
 
 .copyright-section {
+  position: relative;
   text-align: center;
-  padding: 20px 0;
+  padding: 40px 0 20px;
   background: #0b4249;
 }
 

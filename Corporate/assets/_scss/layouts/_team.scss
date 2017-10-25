@@ -1,6 +1,21 @@
+
+
+
+
+
+.member-wraper{
+	&.col-xs-6{
+		 @include media-only(sm-medium-screen, $type: max){
+            width: 100%;
+
+        }
+
+	}
+}
 .team-section{
-	// padding-bottom:10px;
-	// margin-bottom: 60px;
+	img{
+		width: 100%;
+	}
 }
 
 .team-details{
@@ -13,6 +28,15 @@
     max-width: 220px;
     width: 100%;
 	background:rgba($cx-secondary-color,0.9);
+	@include respond-to(xs-screens){
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background:rgba($cx-secondary-color,0.7);
+
+    }
+
+
 	h2{
 		margin-bottom: 7px;
 		text-transform: uppercase;
@@ -36,6 +60,12 @@
 		a{
 			background:transparent ;
 			border: 1px solid #fff;
+			@include respond-to(xs-screens){
+				width: 30px;
+		    	height: 30px;
+		    	line-height: 30px;
+		    	margin-right: 6px;
+			}
 			+a{
 				margin-left: 10px;
 			}

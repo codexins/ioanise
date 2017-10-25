@@ -7,23 +7,38 @@
     	@include  absolute-position(0,51%,0,-100px);
     	background:$cx-primary-color ;
     	transform: skewX(-35deg);
+        @include respond-to(xs-screens){
+            right: 0;
+            left: 0 ;
+            transform: skewX(0);
+
+        }
+
 
     }
     &:before{
     	left:51%;
     	right: -100px;
 		background:darken($cx-primary-color,25%) ;
+        @include respond-to(xs-screens){
+            display: none;
+        }
     }
 }
 
 .cta-left-side,
 .cta-right-side{
-	
 	width:50%;
 	position:relative;
 	z-index: 1;
 }
 .cta-right-side{
+     @include respond-to(xs-screens){
+        width:100%;
+        text-align: center;
+        padding: 0 15px ;
+    }
+
 	float:right ;
     padding-left: 15%;
     h2{

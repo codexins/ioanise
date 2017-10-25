@@ -11343,11 +11343,9 @@ body.has-active-menu {
 .c-button {
   display: inline-block;
   margin: 4px;
-  padding: 12px 24px;
   color: #67b5d1;
   background: none;
   font-size: 14px;
-  border: solid 2px #67b5d1;
   box-shadow: none;
   border-radius: none;
   -webkit-appearance: none;
@@ -11872,6 +11870,7 @@ section {
   margin-bottom: 70px;
 }
 
+footer div[class*='col-'],
 section div[class*='col-'] {
   padding-bottom: 35px;
 }
@@ -12378,9 +12377,22 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+@media only screen and (max-width: 767px) {
+  .header-top .social-icon, .header-top .social-icon-large {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
 .header-top .social-icon a, .header-top .social-icon-large a {
   background: transparent;
   color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-top .social-icon a, .header-top .social-icon-large a {
+    float: none;
+  }
 }
 
 .header-top .social-icon a:hover, .header-top .social-icon-large a:hover {
@@ -12389,6 +12401,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .top-content {
   line-height: 26px;
+}
+
+@media only screen and (max-width: 767px) {
+  .top-content.text-right {
+    text-align: center;
+  }
 }
 
 .top-content .bar {
@@ -12406,6 +12424,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo {
   max-width: 235px;
+}
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    max-width: 150px;
+  }
 }
 
 .logo a {
@@ -12426,6 +12450,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-inline {
   padding: 15px 0;
+}
+
+.mobile-menu-button {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .mobile-menu-button {
+    margin-top: 28px;
+  }
+}
+
+.mobile-menu-button .icon-bar {
+  background: #ff646c;
 }
 
 .main-menu {
@@ -12483,6 +12521,18 @@ h1, h2, h3, h4, h5, h6 {
 .image {
   padding: 10px;
   background: #e3f8fb;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image {
+    margin-top: 85px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services {
+    margin-bottom: 35px;
+  }
 }
 
 .service-item {
@@ -12569,10 +12619,17 @@ span.icon-border:after {
 
 .counter-item {
   text-align: center;
-  width: 228px;
+  width: 20%;
   float: left;
   padding: 0 25px;
   color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .counter-item {
+    width: 100%;
+    margin-bottom: 35px;
+  }
 }
 
 .counter-icon {
@@ -12589,16 +12646,37 @@ span.icon-border:after {
   display: inline-block;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-icon i {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+  }
+}
+
 .counter-item .counter {
   font-size: 50px;
   line-height: 100%;
   font-weight: bold;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-item .counter {
+    font-size: 35px;
+  }
+}
+
 .counter-item .counter-text {
   text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-item {
+    padding: 0 15px;
+  }
 }
 
 .reason i {
@@ -12628,6 +12706,12 @@ span.icon-border:after {
 
 .reasons-to-choose .slick-dots li button:hover:before {
   color: #ff646c;
+}
+
+@media only screen and (max-width: 479px) {
+  .recent-project .col-xs-6 {
+    width: 100%;
+  }
 }
 
 .project-item {
@@ -12754,10 +12838,24 @@ span.icon-border:after {
   transform: skewX(-35deg);
 }
 
+@media only screen and (max-width: 767px) {
+  .call-to-action:after, .call-to-action:before {
+    right: 0;
+    left: 0;
+    transform: skewX(0);
+  }
+}
+
 .call-to-action:before {
   left: 51%;
   right: -100px;
   background: #0b4249;
+}
+
+@media only screen and (max-width: 767px) {
+  .call-to-action:before {
+    display: none;
+  }
 }
 
 .cta-left-side,
@@ -12772,6 +12870,14 @@ span.icon-border:after {
   padding-left: 15%;
 }
 
+@media only screen and (max-width: 767px) {
+  .cta-right-side {
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+  }
+}
+
 .cta-right-side h2 {
   color: #fff;
   font-size: 24px;
@@ -12783,6 +12889,16 @@ span.icon-border:after {
   font-size: 24px;
 }
 
+@media only screen and (max-width: 479px) {
+  .member-wraper.col-xs-6 {
+    width: 100%;
+  }
+}
+
+.team-section img {
+  width: 100%;
+}
+
 .team-details {
   padding: 20px;
   position: absolute;
@@ -12792,6 +12908,15 @@ span.icon-border:after {
   max-width: 220px;
   width: 100%;
   background: rgba(255, 100, 108, 0.9);
+}
+
+@media only screen and (max-width: 767px) {
+  .team-details {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 100, 108, 0.7);
+  }
 }
 
 .team-details h2 {
@@ -12824,6 +12949,15 @@ span.icon-border:after {
 .team-details .social-icon a, .team-details .social-icon-large a {
   background: transparent;
   border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .team-details .social-icon a, .team-details .social-icon-large a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 6px;
+  }
 }
 
 .team-details .social-icon a + a, .team-details .social-icon-large a + a {
@@ -13145,12 +13279,8 @@ footer {
   padding-bottom: 10px;
 }
 
-.address {
-  margin-top: 25px;
-}
-
-.address p {
-  margin: 10px 0;
+.footer-content p {
+  margin-bottom: 15px;
 }
 
 .footer-content i {
@@ -13242,7 +13372,7 @@ footer {
 }
 
 .list-element li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .list-element p {
@@ -13256,4 +13386,12 @@ footer {
 
 .list-element a:hover {
   color: #0b4249;
+}
+
+.c-button:hover {
+  background: transparent;
+}
+
+.c-menu {
+  background-color: #1ca5b8;
 }

@@ -1,5 +1,12 @@
 
-.recent-project{}
+.recent-project{
+	.col-xs-6{
+		// padding: 0 15px;
+		@include media-only(sm-medium-screen, $type: max){
+	    	width:100%;
+		}
+	}
+}
 
 .project-item {
 	position:relative;

@@ -2,11 +2,21 @@
 	padding:10px 0;
 	background: $cx-tertiary-color;
 	color: lighten($cx-text-color, 100%);
-	.social-icon a {
-		background: transparent;
-		color: lighten($cx-text-color, 100%);
-		&:hover {
-			color: $cx-secondary-color;
+
+	.social-icon {
+		@include respond-to(xs-screens){
+			text-align: center;
+			margin-bottom: 10px;
+		} 
+		a {
+			background: transparent;
+			color: lighten($cx-text-color, 100%);
+			@include respond-to(xs-screens){
+				float: none;
+			}
+			&:hover {
+				color: $cx-secondary-color;
+			}
 		}
 	}
 }
@@ -14,9 +24,15 @@
 
 .top-content{
 	line-height: $cx-social-icon-size-small;
+	&.text-right{
+		@include respond-to(xs-screens){
+			text-align: center;
+		} 
+	}
 	.bar{
 		margin:0 5px;
 	}
+
 	a{
 		color: lighten($cx-text-color, 100%);	
 		font-size: 14px;

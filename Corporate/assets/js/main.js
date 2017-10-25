@@ -70,25 +70,20 @@ $(function() {
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: false
               }
             },
             {
               breakpoint: 700,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 2,
-                dots: false
-
               }
             },
             {
               breakpoint: 480,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: false
-                
+                slidesToScroll: 1, 
               }
             }
           ]

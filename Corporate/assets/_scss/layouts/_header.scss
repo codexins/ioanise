@@ -1,5 +1,8 @@
 .logo {
 	max-width:235px;
+	@include respond-to(xs-screens){
+		max-width:150px;
+	}
 	a{
 		display: inline-block;
 	}
@@ -17,4 +20,13 @@
 
 .header-inline{
     padding: 15px 0;
+}
+.mobile-menu-button{
+	overflow:hidden ;
+	@include respond-to(xs-screens){
+		margin-top:28px;
+	}
+	.icon-bar{
+		background:$cx-secondary-color ;
+	}
 }

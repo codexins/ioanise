@@ -1,0 +1,19 @@
+.page-title {
+	padding-top:1*1*$cx-section-padding-top;
+	padding-bottom:.7*$cx-section-padding-top;
+	background: lighten($cx-tertiary-color, 20%);
+	h1 {
+		margin-bottom: 0;
+		color: lighten($cx-text-color, 100%);
+	}
+
+	.breadcrumb > .active {
+		color: lighten($cx-text-color, 100%);
+	}
+
+	.breadcrumb li a {
+		color: lighten($cx-text-color, 100%);	
+	}
+
+
+}

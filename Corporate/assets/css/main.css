@@ -12061,6 +12061,11 @@ to a reusable component.
   outline: 0;
 }
 
+.breadcrumb {
+  background: transparent;
+  padding-left: 0;
+}
+
 .default-btn {
   line-height: 100%;
   padding: 12px 35px;
@@ -12423,6 +12428,25 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2em;
   margin-bottom: 25px;
   margin-top: 0;
+}
+
+.page-title {
+  padding-top: 70px;
+  padding-bottom: 49px;
+  background: #1892a2;
+}
+
+.page-title h1 {
+  margin-bottom: 0;
+  color: white;
+}
+
+.page-title .breadcrumb > .active {
+  color: white;
+}
+
+.page-title .breadcrumb li a {
+  color: white;
 }
 
 .header-top {
@@ -13322,6 +13346,10 @@ footer {
   color: white;
 }
 
+.footer-top {
+  padding-bottom: 35px;
+}
+
 .footer-title {
   margin-bottom: 35px;
   color: white;
@@ -13335,24 +13363,6 @@ footer {
 
 .footer-content a:hover {
   color: #ff646c;
-}
-
-.footer-content .social-icon, .footer-content .social-icon-large {
-  margin-top: 20px;
-}
-
-.footer-content .social-icon a, .footer-content .social-icon-large a {
-  background: transparent;
-  color: white;
-  font-size: 20px;
-}
-
-.footer-content .social-icon a:hover, .footer-content .social-icon-large a:hover {
-  color: #ff646c;
-}
-
-.footer-content .social-icon i, .footer-content .social-icon-large i {
-  margin-right: 0;
 }
 
 .footer-content ::-webkit-input-placeholder {

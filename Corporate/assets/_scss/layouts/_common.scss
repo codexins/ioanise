@@ -4,4 +4,12 @@
 %transition-all{
 	@include transition-all($cx-transition)
 }
+%default-heading{
+    font-family: $cx-heading-font ;
+    line-height: 1.2em;
+    margin-bottom: $cx-heading-margin-bottom;
+    margin-top:  0;
+
+}
+
 

@@ -57,7 +57,7 @@ img {
     height:auto
 }
 a {
-    @include  transition-all($cx-transition)
+    @extend %transition-all ;
     text-decoration:none;
     color:#212121 ;
 }
@@ -111,7 +111,7 @@ input::-webkit-input-placeholder,
 input:-moz-placeholder,
 input:-ms-input-placeholder,
 input[placeholder] {
-    color: #ddd ;
+    color: #fff ;
 }
 button:focus,
 input:focus,
@@ -124,6 +124,11 @@ input[type="submit"]:hover,
 input[type="button"]:hover{
     background: $cx-text-color;
 }
+
+
+
+
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;

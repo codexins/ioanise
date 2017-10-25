@@ -2,7 +2,9 @@
 	display: inline-block;
     float: right;
     margin-top: 65px;
-	li{
+    width: 100%;
+    text-align: right;
+	li {
 		display: inline-block;
 		a{
 			padding: 10px 20px;
@@ -19,6 +21,11 @@
 
 
 		}
+		&:last-child {
+			a {
+				padding-right: 0;
+			}
+		}	
 	}
 }
 

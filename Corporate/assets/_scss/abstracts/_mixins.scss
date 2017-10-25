@@ -140,14 +140,12 @@
 }
 //  for section overlay 
 
-@mixin section-overly($color:rgba(160, 120, 120, 0.63),$transition:0.5s) {
+@mixin section-overly($color:rgba(160, 120, 120, 0.63)) {
     &{
         position: relative;
     }
     &:before{
-        content: "";
         background: $color;
-        @include transition-all($transition);
         @include  absolute-position(0,0,0,0);
     }
 }

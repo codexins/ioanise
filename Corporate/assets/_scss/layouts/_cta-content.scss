@@ -5,16 +5,15 @@
     overflow: hidden ;
     &:after , &:before{
     	@include  absolute-position(0,51%,0,-100px);
-    	background:$cx-primary-color ;
     	transform: skewX(-35deg);
         @include respond-to(xs-screens){
             right: 0;
             left: 0 ;
             transform: skewX(0);
-
         }
-
-
+    }
+    &:after {
+        background-image:url(../img/counter-up.jpg);
     }
     &:before{
     	left:51%;
@@ -31,9 +30,18 @@
 	width:50%;
 	position:relative;
 	z-index: 1;
+    float: left;
+    h2{
+        color: $cx-body-bg-color ;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+}
+.cta-left-side{
+padding:0 50px;
 }
 .cta-right-side{
-     @include respond-to(xs-screens){
+    @include respond-to(xs-screens){
         width:100%;
         text-align: center;
         padding: 0 15px ;
@@ -41,11 +49,7 @@
 
 	float:right ;
     padding-left: 15%;
-    h2{
-    	color: $cx-body-bg-color ;
-        font-size: 24px;
-        text-transform: uppercase;
-    }
+   
     a{
         color: $cx-secondary-color ;
         font-size: 24px;

@@ -5,6 +5,10 @@
         float: left;
         @include box-sizing(border-box);
     }
+
+    @include media-only(700px, min) {
+    	background: red;
+    }
 }
 
 

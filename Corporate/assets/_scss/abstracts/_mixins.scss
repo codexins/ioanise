@@ -304,12 +304,14 @@
 @mixin media-only($width, $type: min) {
     @if map_has_key($cx-breakpoints, $width) {
         $width: map_get($cx-breakpoints, $width);
-        @if $type == max {
-            $width: $width - 1px;
-        }
-        @media only screen and (#{$type}-width: $width) {
-            @content;
-        }
     }
+
+    @if $type == max {
+        $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+        @content;
+    }
+    
 }
 

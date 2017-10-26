@@ -51,10 +51,10 @@ $cx-sm-screen:768px;
 $cx-vsm-screen:480px;
 
 $cx-breakpoints: (
-    "lg-screen":    $cx-lg-screen,
-    "md-screen":    $cx-md-screen,
-    "sm-screen":    $cx-sm-screen,
-    "vsm-screen": 	$cx-vsm-screen, 
+    "wide":    $cx-lg-screen,
+    "notebook":    $cx-md-screen,
+    "tablet":    $cx-sm-screen,
+    "small-mobile": 	$cx-vsm-screen, 
 );
 
 

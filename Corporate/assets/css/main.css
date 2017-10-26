@@ -13115,6 +13115,12 @@ span.icon-border:after {
   }
 }
 
+@media only screen and (min-width: 700px) {
+  .member-wraper {
+    background: red;
+  }
+}
+
 .testimonial {
   background-image: url(../img/testimonial.jpg);
   background-position: center;

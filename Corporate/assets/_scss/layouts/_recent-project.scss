@@ -2,7 +2,7 @@
 .recent-project{
 	.col-xs-6{
 		// padding: 0 15px;
-		@include media-only(vsm-screen, $type: max){
+		@include media-only(small-mobile, $type: max){
 	    	width:100%;
 		}
 	}

@@ -12252,6 +12252,66 @@ to a reusable component.
   background: #fff;
 }
 
+.counter-item {
+  text-align: center;
+  width: 100%;
+  padding: 0 25px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-item {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .counter-item {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+.counter-item .counter-icon {
+  margin-bottom: 30px;
+}
+
+.counter-item .counter-icon i {
+  width: 86px;
+  height: 86px;
+  font-size: 46px;
+  border-radius: 50%;
+  border: 2px solid white;
+  line-height: 86px;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-item .counter-icon i {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+  }
+}
+
+.counter-item .counter {
+  font-size: 50px;
+  line-height: 100%;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-item .counter {
+    font-size: 35px;
+  }
+}
+
+.counter-item .counter-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
 .social-icon, .social-icon-large {
   overflow: hidden;
 }
@@ -12798,22 +12858,28 @@ span.icon-border:after {
   border: 1px solid #ccc;
 }
 
-.counter-section {
+.fun-facts {
   background-image: url(../img/counter-up.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.counter-section .primary-title {
   color: white;
 }
 
-.counter-section {
+.fun-facts .primary-title {
+  color: white;
+}
+
+.fun-facts .counter-item {
+  width: 20%;
+  float: left;
+}
+
+.fun-facts {
   position: relative;
 }
 
-.counter-section:before {
+.fun-facts:before {
   background: rgba(11, 66, 73, 0.92);
   content: "";
   display: block;
@@ -12822,68 +12888,6 @@ span.icon-border:after {
   right: 0;
   bottom: 0;
   left: 0;
-}
-
-.counter-item {
-  text-align: center;
-  width: 20%;
-  float: left;
-  padding: 0 25px;
-  color: white;
-}
-
-@media only screen and (max-width: 767px) {
-  .counter-item {
-    width: 100%;
-    margin-bottom: 35px;
-  }
-}
-
-.counter-icon {
-  margin-bottom: 30px;
-}
-
-.counter-icon i {
-  width: 86px;
-  height: 86px;
-  font-size: 46px;
-  border-radius: 50%;
-  border: 2px solid white;
-  line-height: 86px;
-  display: inline-block;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .counter-icon i {
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
-    line-height: 60px;
-  }
-}
-
-.counter-item .counter {
-  font-size: 50px;
-  line-height: 100%;
-  font-weight: bold;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .counter-item .counter {
-    font-size: 35px;
-  }
-}
-
-.counter-item .counter-text {
-  text-transform: uppercase;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .counter-item {
-    padding: 0 15px;
-  }
 }
 
 .reason i {

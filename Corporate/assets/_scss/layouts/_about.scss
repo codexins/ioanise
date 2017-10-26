@@ -2,7 +2,9 @@
 .about{
 	background:lighten($cx-primary-color,55%) ;
 }
-
+.transparent-background{
+	background:transparent ;
+}
 .content{
 	position: relative;
     z-index: 9;

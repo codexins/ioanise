@@ -1,0 +1,11 @@
+.skills{
+	background:lighten($cx-primary-color,55%) ;
+}
+.skill-element{
+	h3{}
+	i{
+		color: $cx-secondary-color ;
+		font-size: 20px;
+		margin-right: 10px;
+	}
+}

@@ -14,6 +14,7 @@
 	}
 	.tooltip{ 
 	  position:relative;
+	  left: 15px !important;
 	  float:right;
 		>.tooltip-inner {
 			background-color: $cx-secondary-color; 
@@ -28,6 +29,7 @@
 				border-left: 5px solid transparent;
 	 			border-right: 5px solid transparent; 
 	 			border-top: 5px solid $cx-secondary-color;
+	 			left: 50% !important;
 			}
 		}
 

@@ -19,10 +19,10 @@
 			width: 86px;
 			height: 86px;
 			font-size: 46px;
-			border-radius: 50%;
-			border: 2px solid lighten($cx-text-color, 80%);
+			border: 2px solid $cx-text-color;
 			line-height: 86px;
 			display: inline-block;
+			@include border-radius(50%);
 			@include respond-to(tablet){
 				width: 60px;
 	    		height: 60px;

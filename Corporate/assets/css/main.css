@@ -12886,35 +12886,6 @@ span.icon-border:after {
   }
 }
 
-.reason i {
-  font-size: 60px;
-}
-
-.reason-icon {
-  margin-bottom: 7px;
-}
-
-.reasons-to-choose {
-  margin-bottom: 30px;
-}
-
-.reasons-to-choose .slick-dots li.slick-active button:before {
-  color: #ff646c;
-  opacity: 1;
-}
-
-.reasons-to-choose .slick-dots li {
-  margin: 0;
-}
-
-.reasons-to-choose .slick-dots li button:before {
-  font-size: 12px;
-}
-
-.reasons-to-choose .slick-dots li button:hover:before {
-  color: #ff646c;
-}
-
 @media only screen and (max-width: 479px) {
   .recent-project .col-xs-6 {
     width: 100%;

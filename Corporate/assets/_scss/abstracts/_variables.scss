@@ -1,60 +1,60 @@
 // typography 
-$cx-body-font: 'Roboto', sans-serif;
-$cx-heading-font: 'Exo 2', sans-serif;
+$cx-body-font: 							'Roboto', sans-serif;
+$cx-heading-font: 						'Exo 2', sans-serif;
 // $cx-tertiary-font: 'Raleway', sans-serif; 
 
 // Colors
-$cx-text-color: #333;
-$cx-body-bg-color: #fff; // white 
+$cx-text-color: 						#333;
+$cx-body-bg-color: 						#fff; // white 
 
-$cx-primary-color:  #1ca5b8; // teal
-$cx-secondary-color: #ff646c; // light red
-$cx-tertiary-color:#0b4249; // dark teal
+$cx-primary-color:  					#1ca5b8; // teal
+$cx-secondary-color: 					#ff646c; // light red
+$cx-tertiary-color:						#0b4249; // dark teal
 
 
-$cx-border-color: #ccc;
+$cx-border-color: 						#ccc;
 
-$cx-link-color: $cx-primary-color;
-$cx-link-hover-color: $cx-secondary-color;
+$cx-link-color: 						$cx-primary-color;
+$cx-link-hover-color: 					$cx-secondary-color;
 
 // line height  
-$cx-body-font-size: 15px;
-$cx-body-line-height: 1.6em;
-$cx-body-font-weight : 400;
+$cx-body-font-size: 					15px;
+$cx-body-line-height: 					1.6em;
+$cx-body-font-weight : 					400;
 
-$cx-social-icon-size-small: 26px ;
-$cx-social-icon-size-large: 35px ;
+$cx-social-icon-size-small: 			26px ;
+$cx-social-icon-size-large: 			35px ;
 
 
 // default speacing 
-$cx-vpadding: 40px;
-$cx-button-padding : 15px 20px ;
-$cx-heading-margin-bottom : 25px ;
+$cx-vpadding: 							40px;
+$cx-button-padding : 					15px 20px ;
+$cx-heading-margin-bottom : 			25px ;
 
-$cx-section-padding-top: 70px ;
-$cx-section-padding-bottom: 35px;
-$cx-section-margin-bottom: 70px;
-$cx-section-margin-bottom-small : 35px;
+$cx-section-padding-top: 				70px ;
+$cx-section-padding-bottom: 			35px;
+$cx-section-margin-bottom: 				70px;
+$cx-section-margin-bottom-small: 		35px;
 // column spacing
-$cx-column-padding-bottom: 35px;
-$cx-column-margin-bottom: 35px; // provided column has a background color assigned
+$cx-column-padding-bottom: 				35px;
+$cx-column-margin-bottom: 				35px; // provided column has a background color assigned
 
 // default transition 
-$cx-transition: all 0.3s ease ;
+$cx-transition: 						all 0.3s ease ;
 
 //* screen size */
 //* screen min width */
 
-$cx-lg-screen:1200px;
-$cx-md-screen: 992px;
-$cx-sm-screen:768px;
-$cx-vsm-screen:480px;
+$cx-lg-screen:							1200px;
+$cx-md-screen: 							992px;
+$cx-sm-screen:							768px;
+$cx-vsm-screen:							480px;
 
 $cx-breakpoints: (
-    "wide":    $cx-lg-screen,
-    "notebook":    $cx-md-screen,
-    "tablet":    $cx-sm-screen,
-    "small-mobile": 	$cx-vsm-screen, 
+    "wide":    							$cx-lg-screen,
+    "notebook":    						$cx-md-screen,
+    "tablet":    						$cx-sm-screen,
+    "small-mobile": 					$cx-vsm-screen, 
 );
 
 

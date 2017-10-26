@@ -17,14 +17,15 @@
 @import 'testimonial';
 @import 'client-carosel';
 @import 'blog';
+@import 'map';
 @import 'contact';
 @import 'footer';
 
 //  about page 
 @import "skills"; //no 
 
-
-
+// contact page
+@import "contact/contact-us";
 
 // vendor overwrite 
 @import "overwrite/overwrite"; //no 

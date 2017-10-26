@@ -13387,6 +13387,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
 }
 
+#map {
+  position: relative;
+}
+
+#map #gmap {
+  height: 480px;
+}
+
 footer {
   padding-top: 70px;
   background: #1ca5b8;
@@ -13491,6 +13499,11 @@ footer {
   color: #ff646c;
   font-size: 20px;
   margin-right: 10px;
+}
+
+.contact-us {
+  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
 .c-button:hover {

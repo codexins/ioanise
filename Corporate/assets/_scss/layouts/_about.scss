@@ -1,6 +1,11 @@
 
 .about{
 	background:lighten($cx-primary-color,55%) ;
+	&.mb-35{
+		@include respond-to(tablet){
+			margin-bottom: 0 ;
+		}
+	}
 }
 .transparent-background{
 	background:transparent ;
@@ -9,11 +14,20 @@
 	position: relative;
     z-index: 9;
 }
+.image.no-padding{
+	padding:0 ;
+}
 .image{
 	
 	@include respond-to(tablet){
 		margin-top: 85px;
 	}
+	img{
+		@include respond-to(mobile){
+			width: 100%;
+		}
+	}
+	
 	padding:10px;
 	background:lighten($cx-primary-color,52%);
 

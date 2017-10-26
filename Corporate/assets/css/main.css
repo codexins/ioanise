@@ -12851,6 +12851,12 @@ h1, h2, h3, h4, h5, h6 {
   background: #f0fbfd;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about.mb-35 {
+    margin-bottom: 0;
+  }
+}
+
 .transparent-background {
   background: transparent;
 }
@@ -12858,6 +12864,10 @@ h1, h2, h3, h4, h5, h6 {
 .content {
   position: relative;
   z-index: 9;
+}
+
+.image.no-padding {
+  padding: 0;
 }
 
 .image {
@@ -12868,6 +12878,12 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .image {
     margin-top: 85px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .image img {
+    width: 100%;
   }
 }
 

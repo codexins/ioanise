@@ -12066,7 +12066,7 @@ to a reusable component.
   padding-left: 0;
 }
 
-.default-btn {
+.default-btn, .slide-caption .default-btn {
   line-height: 100%;
   padding: 12px 35px;
   display: inline-block;
@@ -12078,7 +12078,7 @@ to a reusable component.
 }
 
 @media only screen and (max-width: 767px) {
-  .default-btn {
+  .default-btn, .slide-caption .default-btn {
     padding: 10px;
     font-size: 14px;
     margin-top: 30px;
@@ -12090,7 +12090,7 @@ to a reusable component.
   color: #fff;
 }
 
-.default-btn i {
+.default-btn i, .slide-caption .default-btn i {
   margin-left: 5px;
 }
 
@@ -13491,6 +13491,40 @@ footer {
   color: #ff646c;
   font-size: 20px;
   margin-right: 10px;
+}
+
+.slide-caption {
+  height: 100%;
+  background: transparent;
+}
+
+.slide-caption {
+  z-index: 9;
+}
+
+.slide-caption > div {
+  background: transparent;
+}
+
+.slide-caption.camera_caption {
+  top: 20%;
+  left: 10%;
+  width: 50%;
+  height: auto;
+  bottom: initial;
+}
+
+.slide-caption .slider-title {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.slide-caption .default-btn {
+  background: #1ca5b8;
+}
+
+.overlayer-one {
+  background: rgba(0, 0, 1, 0.6);
 }
 
 .c-button:hover {

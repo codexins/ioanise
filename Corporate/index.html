@@ -113,24 +113,25 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
         </div> <!-- end of header-wrapper -->
     </header>
 
-    <div class="slider-wrapper clearfix">
-
-
-        <div id="camera_slider" class="slider ">
-
-            <div data-thumb="assets/img/slider/slider-1.jpg" data-src="assets/img/slider/slider-1.jpg">
-                <div style="position:absolute; top:5%; left:5%; background:#000; color:#fff; padding:5px; width:25%" class="fadeIn camera_effected">This is an HTML element included in the transition effect</div>
+    <section id="camera_slider" class="slider-wrapper pt-0">
+        <div data-thumb="assets/img/slider/slider-1.jpg" data-src="assets/img/slider/slider-1.jpg">
+            <!-- <div class="camera_overlayer overlayer-one"></div> -->
+            <div class=" slide-caption camera_caption  fadeFromRight" >
+                <h1 class="slider-title  ">This is an HTML element  </h1>
+                 <p>Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. lacinia eget consectetur sed, convallis at tellus. </p>
+                <a href="#" class="default-btn skew-right  "> View MOre </a>
             </div>
-            <div data-thumb="assets/img/slider/slider-2.jpg" data-src="assets/img/slider/slider-2.jpg" data-time="1500" data-trasPeriod="4000" data-link="http://www.google.com/" data-target="_blank">
-                <div class="camera_caption fadeFromBottom">
-                    Changed the time and the transition time of this slide
-                </div>
+        </div>
+        <div data-thumb="assets/img/slider/slider-2.jpg" data-src="assets/img/slider/slider-2.jpg" >
+          
+            <div class=" slide-caption camera_caption  moveFromLeft" >
+                <h1 class="slider-title  ">This is an HTML element  </h1>
+                 <p>Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. lacinia eget consectetur sed, convallis at tellus. </p>
+                <a href="#" class="default-btn skew-right  "> View MOre </a>
             </div>
 
         </div>
-
-    </div>
-
+    </section>
     <main class="whole-wrapper">
         <!-- about us  -->
         <section class="about">
@@ -924,13 +925,21 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
 <script type='text/javascript' src='assets/js/jquery.easing.1.3.js'></script> 
 <script type='text/javascript' src='assets/js/camera.min.js'></script> 
 
+<script src="assets/js/main.js"></script>
 <script>
-        
-        
 
+(function($){
+
+    $('#camera_slider').camera({
+        height: '35%',
+        pagination: false,
+        loader: false ,
+        overlayer: true
+        // thumbnails: true,
+    }); 
+
+})(jQuery)
 
 </script>
-<script src="assets/js/main.js"></script>
-
 </body>
 </html>

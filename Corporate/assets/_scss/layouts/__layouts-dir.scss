@@ -22,7 +22,7 @@
 @import 'footer';
 
 //  about page 
-@import "skills"; //no 
+@import "about/skills"; //no 
 
 // slider 
 @import 'slider-caption';
@@ -30,6 +30,7 @@
 
 // contact page
 @import "contact/contact-us";
+@import "contact/contact-form";
 
 
 // vendor overwrite 

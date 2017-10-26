@@ -12024,7 +12024,6 @@ input[placeholder] {
 button:focus,
 input:focus,
 textarea:focus {
-  border-color: transparent;
   outline: 0;
 }
 
@@ -13543,6 +13542,11 @@ footer {
 .contact-us {
   margin-bottom: 0;
   padding-bottom: 10px;
+}
+
+.ful-wide-input textarea,
+.ful-wide-input input {
+  width: 100%;
 }
 
 .c-button:hover {

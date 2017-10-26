@@ -16,7 +16,7 @@
 	float: left;
 	padding: 0 25px;
 	color: lighten($cx-text-color, 100%);
-	@include respond-to(xs){
+	@include respond-to(mobile){
 		width: 100%;
 		margin-bottom: 35px;
 	}
@@ -31,7 +31,7 @@
 		border: 2px solid lighten($cx-text-color, 80%);
 		line-height: 86px;
 		display: inline-block;
-		@include respond-to(sm){
+		@include respond-to(tablet){
 			width: 60px;
     		height: 60px;
     		font-size: 30px;
@@ -44,7 +44,7 @@
 	    font-size: 50px;
     	line-height: 100%;
     	font-weight: bold;
-    	@include respond-to(sm){
+    	@include respond-to(tablet){
 			font-size: 35px;
 		}
 	}
@@ -54,7 +54,7 @@
     	margin-bottom: 0;
 
 	}
-	@include respond-to(sm){
+	@include respond-to(tablet){
 		padding: 0 15px;
 	}
 }

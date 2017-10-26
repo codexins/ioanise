@@ -9,7 +9,7 @@
 }
 .image{
 	
-	@include respond-to(sm){
+	@include respond-to(tablet){
 		margin-top: 85px;
 	}
 	padding:10px;

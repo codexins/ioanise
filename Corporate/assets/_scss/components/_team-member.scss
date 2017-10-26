@@ -46,7 +46,7 @@
 	h2{
 		margin-bottom: 7px;
 		text-transform: uppercase;
-		@include respond-to(sm){
+		@include respond-to(tablet){
 			font-size: 20px;
 		};
 	}
@@ -66,22 +66,22 @@
 		a{
 			background:transparent ;
 			border: 1px solid #fff;
-			@include respond-to(xs){
+			@include respond-to(mobile){
 				width: 30px;
 		    	height: 30px;
 		    	line-height: 30px;
 		    	margin-right: 6px;
 			}
-			@include respond-to(medium-screens){
+			@include respond-to(notebook){
 				
 		    	margin-right: 0px;
 			}
 			+a{
 				margin-left: 10px;
-				@include respond-to(medium-screens){
+				@include respond-to(notebook){
 					margin-left: 3px;
 				}
-				@include respond-to(xs){
+				@include respond-to(mobile){
 					margin-left: 0px;
 			    }
 			}

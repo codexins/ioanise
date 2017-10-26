@@ -6,7 +6,7 @@
     &:after , &:before{
     	@include  absolute-position(0,51%,0,-100px);
     	transform: skewX(-35deg);
-        @include respond-to(xs){
+        @include respond-to(mobile){
             right: 0;
             left: 0 ;
             transform: skewX(0);
@@ -19,7 +19,7 @@
     	left:51%;
     	right: -100px;
 		background:darken($cx-primary-color,25%) ;
-        @include respond-to(xs){
+        @include respond-to(mobile){
             display: none;
         }
     }
@@ -41,7 +41,7 @@
 padding:0 50px;
 }
 .cta-right-side{
-    @include respond-to(xs){
+    @include respond-to(mobile){
         width:100%;
         text-align: center;
         padding: 0 15px ;

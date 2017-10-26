@@ -7,7 +7,7 @@
 	text-transform:uppercase;
 	margin-top: 0;
 	background:$cx-primary-color ;
-	@include respond-to(xs){
+	@include respond-to(mobile){
 		padding:10px;
 		font-size: 14px;
 		margin-top: 30px;

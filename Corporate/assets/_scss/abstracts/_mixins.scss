@@ -270,28 +270,29 @@
 // responsive 
 @mixin respond-to($media) {
 
-    @if $media == vsm {
+    @if $media == small-mobile {
         @media only screen and (max-width: $cx-vsm-screen - 1) { @content; }
     }
 
     @else if $media == xs {
+    @else if $media == mobile {
         @media only screen and (max-width: $cx-sm-screen - 1) { @content; }
     }
 
-    @else if $media == vsm-xs {
+    @else if $media == large-mobile {
         @media only screen and (min-width: $cx-vsm-screen) and (max-width: $cx-sm-screen - 1) { @content; }
     }
 
-    @else if $media == sm {
+    @else if $media == tablet {
         @media only screen and (min-width: $cx-sm-screen) and (max-width: $cx-md-screen - 1) { @content; }
     }
 
-    @else if $media == medium-screens {
+    @else if $media == notebook {
         @media only screen and (min-width: $cx-md-screen) and (max-width: $cx-lg-screen - 1) { @content; }
     }
 
     ///* not importent */
-    @else if $media == lg {
+    @else if $media == wide {
         @media only screen and (min-width: $cx-lg-screen) { @content; }
     }
 

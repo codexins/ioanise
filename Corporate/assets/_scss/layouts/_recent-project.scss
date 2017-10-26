@@ -19,7 +19,7 @@
 		    color: #fff;
 		    opacity: 0 ;
 			@extend %transition-all ;
-			@include respond-to(xs){
+			@include respond-to(mobile){
 				 opacity: 1;
 				 @include  absolute-position(10px,10px,10px,10px);
 			};
@@ -53,7 +53,7 @@
 	max-width: 80%;
 	text-align: center;
 	@extend %transition-all ;
-		@include respond-to(xs){
+		@include respond-to(mobile){
 			 opacity: 1;
 		};
 	h3{

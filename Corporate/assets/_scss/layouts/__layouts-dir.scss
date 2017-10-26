@@ -17,6 +17,7 @@
 @import 'testimonial';
 @import 'client-carosel';
 @import 'blog';
+@import 'map';
 @import 'contact';
 @import 'footer';
 
@@ -26,6 +27,9 @@
 // slider 
 @import 'slider-caption';
 
+
+// contact page
+@import "contact/contact-us";
 
 
 // vendor overwrite 

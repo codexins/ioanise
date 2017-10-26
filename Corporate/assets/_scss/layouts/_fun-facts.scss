@@ -1,0 +1,21 @@
+
+.fun-facts {
+	background-image: url(../img/counter-up.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: lighten($cx-text-color, 100%);
+    .primary-title {
+    	color: lighten($cx-text-color, 100%);
+    }
+
+    .counter-item {
+    	width: 20%;
+    	float: left;
+    }
+
+    
+    @include section-overly(rgba($cx-tertiary-color,0.92));
+}
+
+

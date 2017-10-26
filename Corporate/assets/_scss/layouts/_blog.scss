@@ -4,7 +4,7 @@
 .blog-item {
 	.post-content {
 	    padding:30px;
-	    border: 1px solid #ccc;
+	    border: 1px solid $cx-border-color;
 	    border-top: 0px solid ;
 	    @extend %transition-all ;
 	    
@@ -16,10 +16,10 @@
 		display: none;
 		background: transparent;
 		color: $cx-text-color ;
-	    border: 1px solid #ccc;
+	    border: 1px solid $cx-border-color;
 		&:hover{
 			background:$cx-secondary-color ;
-			color: #fff ;
+			color: lighten($cx-text-color , 100%) ;
 	    	border-color: $cx-secondary-color;
 
 		}
@@ -41,7 +41,7 @@
 		position: absolute;
 		top: 15px;
 		left: 15px;
-		color: #fff;
+		color: lighten($cx-text-color , 100%);
 		text-align: center;
 		border-radius: 8%;
 		overflow: hidden;

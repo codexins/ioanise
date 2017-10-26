@@ -24,11 +24,11 @@ footer{
 		}
 	}
 	::-webkit-input-placeholder {
-		color:#fff;
+		color:lighten($cx-text-color, 100%);
 	}
 
 	::-moz-placeholder {
-		color:#fff;
+		color:lighten($cx-text-color, 100%);
 	}
 
 	

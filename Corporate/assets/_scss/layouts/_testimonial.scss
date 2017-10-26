@@ -4,7 +4,7 @@
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	@include section-overly( linear-gradient(to left , $cx-primary-color, rgba(#333,0.8)));
+	@include section-overly( linear-gradient(to left , $cx-primary-color, rgba($cx-text-color,0.8)));
 
 }
 

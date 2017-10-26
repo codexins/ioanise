@@ -12873,8 +12873,6 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
 }
 
-<<<<<<< HEAD
-=======
 .reasons-to-choose .thumb-icon i {
   font-size: 60px;
   border: 0;
@@ -12901,7 +12899,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #ff646c;
 }
 
->>>>>>> ba17bcc02f71c7e18bdbf93c66149b61ed103cac
 @media only screen and (max-width: 479px) {
   .recent-project .col-xs-6 {
     width: 100%;
@@ -13258,7 +13255,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-item .default-btn:hover {
   background: #ff646c;
-  color: #fff;
+  color: white;
   border-color: #ff646c;
 }
 
@@ -13278,7 +13275,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 15px;
   left: 15px;
-  color: #fff;
+  color: white;
   text-align: center;
   border-radius: 8%;
   overflow: hidden;
@@ -13298,88 +13295,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-title a {
   font-size: 20px;
-}
-
-.contact-section {
-  background: #0b4249;
-  padding: 90px 0;
-  margin-bottom: 0;
-}
-
-.name-email-field .form-group {
-  display: block;
-  margin-bottom: 0;
-  vertical-align: middle;
-  width: 50%;
-  float: left;
-}
-
-.name-email-field .form-group input {
-  width: 100%;
-}
-
-@media only screen and (max-width: 767px) {
-  .name-email-field .form-group {
-    width: 100%;
-  }
-}
-
-.name-email-field .sender-name input, .name-email-field .sender-email input {
-  width: 95%;
-  border: 0;
-  height: 60px;
-  border-top: 2px solid #000;
-  border-radius: 0;
-}
-
-@media only screen and (max-width: 767px) {
-  .name-email-field .sender-name input, .name-email-field .sender-email input {
-    width: 100%;
-  }
-}
-
-.name-email-field .sender-name input {
-  float: left;
-}
-
-.name-email-field .sender-email input {
-  float: right;
-}
-
-.contact-form .message {
-  width: 100%;
-  margin-top: 30px;
-}
-
-.contact-form textarea {
-  width: 100%;
-  border: 0;
-  border-top: 2px solid #000;
-  height: 150px;
-  border-bottom: 1px solid #000;
-}
-
-.contact-form input, .contact-form textarea {
-  background: transparent;
-  box-shadow: none;
-  outline: 0;
-  padding: 6px 12px;
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-  box-shadow: none;
-  outline: 0;
-}
-
-.contact-form .button-wrap {
-  text-align: center;
-}
-
-.contact-form button.submit-button {
-  padding: 15px 40px;
-  border-radius: 0px;
-  background: transparent;
-  text-transform: capitalize;
 }
 
 footer {
@@ -13408,11 +13323,11 @@ footer {
 }
 
 .footer-content ::-webkit-input-placeholder {
-  color: #fff;
+  color: white;
 }
 
 .footer-content ::-moz-placeholder {
-  color: #fff;
+  color: white;
 }
 
 .subscribe-field {

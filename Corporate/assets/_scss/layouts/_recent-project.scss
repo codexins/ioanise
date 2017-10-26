@@ -15,7 +15,8 @@
 		position:relative;
 		&:before{
 			@include  absolute-position(0,0,0,0);
-		    background: rgba(0, 0, 0, 0.76);
+		    // background: rgba(0, 0, 0, 0.76);
+		    background:  rgba(darken($cx-text-color,100%), 0.76);
 		    color: #fff;
 		    opacity: 0 ;
 			@extend %transition-all ;

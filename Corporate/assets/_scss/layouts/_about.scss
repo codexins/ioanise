@@ -13,6 +13,14 @@
 .content{
 	position: relative;
     z-index: 9;
+    h3{
+    	text-transform: uppercase;
+    }
+    p{
+    	&:last-child{
+    		margin-bottom: 0 ;
+    	}
+    }
 }
 .image.no-padding{
 	padding:0 ;

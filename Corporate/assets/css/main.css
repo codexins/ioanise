@@ -12675,6 +12675,10 @@ div#toTop {
   border-top: 5px solid #ff646c;
 }
 
+.bar-item + .bar-item {
+  margin-top: 20px;
+}
+
 a, .skew-right:before, .skew-left:before, .circle-button:before, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .team-member .team-image:before, .team-details, .top-content a, .project-item .img:before, .project-content, .nav-img img, .blog-item .post-content, .submit-button {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;

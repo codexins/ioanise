@@ -4,7 +4,7 @@ $(function() {
 
 
 
-$('[data-toggle="tooltip"]').tooltip({trigger: 'manual'}).tooltip('show');
+$('[data-toggle="tooltip"]').tooltip('show');
 
 $(window).scroll(function(){
     // This is then function used to detect if the element is scrolled into view

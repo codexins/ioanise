@@ -1,6 +1,35 @@
 .slider-wrapper {
 	
 }
-.slider-wrapper{
-	
+.slide-caption{
+	height: 100%;
+    background: transparent;
+	z-index:9 ;
+	>div{
+		background:transparent ;
+	}
+	.slider-title{
+		text-transform: uppercase;
+		color: #fff ;
+	}
+	.default-btn{
+		background:$cx-primary-color;
+		@extend  .default-btn ;
+	}
+	&.camera_caption {
+		top: 20%;
+		left: 10%;
+		width: 50%;
+		height: auto;
+		bottom: initial;
+	}
+	&.caption-style-3{
+		top: 33%;
+	}
+	&.caption-style-4 {
+		top:55%; 
+	}
+}
+.overlayer-one{
+	background:rgba(0, 0, 1, 0.6)
 }

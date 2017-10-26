@@ -2,41 +2,27 @@
 
 $(function() {
 
+    $('#camera_slider').camera({});
 
+    //  progressbar 
+    $('[data-toggle="tooltip"]').tooltip({trigger: 'manual'}).tooltip('show');
 
-$('[data-toggle="tooltip"]').tooltip('show');
-
-$(window).scroll(function(){
-    // This is then function used to detect if the element is scrolled into view
-    function elementScrolled(elem){
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
-        var elemTop = $(elem).offset().top;
-        return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
-    }
-    // This is where we use the function to detect if ".box2" is scrolled into view, and when it is add the class ".animated" to the <p> child element
-    if(elementScrolled('.bar-item')) {
-        $(".progress-bar").each(function(){
-            each_bar_width = $(this).attr('aria-valuenow');
-            $(this).width(each_bar_width + '%'); 
-        });
-    }
-});
-
-
-
-     
-
-    // $( window ).scroll(function() {   
-    //   if($( window ).scrollTop() > ($(".progress-bar").position().top - 100 )){     
-    //       $(".progress-bar").each(function(){
-    //         each_bar_width = $(this).attr('aria-valuenow');
-    //         $(this).width(each_bar_width + '%');
-    //       });
-               
-    //       }  
-    // });
-
+    $(window).scroll(function(){
+        // This is then function used to detect if the element is scrolled into view
+        function elementScrolled(elem){
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+            var elemTop = $(elem).offset().top;
+            return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+        }
+        // This is where we use the function to detect if ".box2" is scrolled into view, and when it is add the class ".animated" to the <p> child element
+        if(elementScrolled('.bar-item')) {
+            $(".progress-bar").each(function(){
+                each_bar_width = $(this).attr('aria-valuenow');
+                $(this).width(each_bar_width + '%'); 
+            });
+        }
+    });
 
 
     // counter 

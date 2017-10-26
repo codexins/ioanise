@@ -12,8 +12,6 @@
     <!-- all css here -->
     <!-- google fonts here -->
     <link href="https://fonts.googleapis.com/css?family=Exo+2:400,600,700|Roboto" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
     <link rel="stylesheet" href="style.css">
     <script src="assets/js/modernizr-2.8.3.min.js"></script>
 
@@ -114,9 +112,21 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
     </header>
 
     <div class="slider-wrapper clearfix">
-        <div class="slider clearfix">
-            <img src="assets/img/slider-placeholder.jpg" alt="slider">
+
+
+        <div id="camera_slider" class="slider ">
+
+            <div data-thumb="assets/img/slider/slider-1.jpg" data-src="assets/img/slider/slider-1.jpg">
+                <div style="position:absolute; top:5%; left:5%; background:#000; color:#fff; padding:5px; width:25%" class="fadeIn camera_effected">This is an HTML element included in the transition effect</div>
+            </div>
+            <div data-thumb="assets/img/slider/slider-2.jpg" data-src="assets/img/slider/slider-2.jpg" data-time="1500" data-trasPeriod="4000" data-link="http://www.google.com/" data-target="_blank">
+                <div class="camera_caption fadeFromBottom">
+                    Changed the time and the transition time of this slide
+                </div>
+            </div>
+
         </div>
+
     </div>
 
     <main class="whole-wrapper">
@@ -809,16 +819,6 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
         </section>
 
     </main>
-<div class="bar-item clearfix">
-    <h4>Html</h4>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-            <span  class="popOver" data-toggle="tooltip" data-placement="top" title="90%"> </span> 
-        </div>
-    </div>
-</div>
-
-
 
     <footer>
         <div class="footer-top">
@@ -918,7 +918,17 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
 <!-- counter up  -->
 <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.counterup.min.js"></script>
+<!-- camera slider  -->
+<script type='text/javascript' src='assets/js/jquery.mobile.customized.min.js'></script>
+<script type='text/javascript' src='assets/js/jquery.easing.1.3.js'></script> 
+<script type='text/javascript' src='assets/js/camera.min.js'></script> 
 
+<script>
+        
+        
+
+
+</script>
 <script src="assets/js/main.js"></script>
 
 </body>

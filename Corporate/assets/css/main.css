@@ -12279,10 +12279,13 @@ to a reusable component.
   width: 86px;
   height: 86px;
   font-size: 46px;
-  border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid #333;
   line-height: 86px;
   display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -12310,6 +12313,32 @@ to a reusable component.
   text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 0;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.info-item .thumb-icon {
+  line-height: 0;
+  margin-bottom: 20px;
+}
+
+.info-item .thumb-icon i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.info-item .thumb-icon i::after {
+  content: "";
+}
+
+.info-item .info-content p:last-child {
+  margin: 0;
 }
 
 .social-icon, .social-icon-large {
@@ -12808,56 +12837,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.service-item {
-  text-align: center;
-  overflow: hidden;
-}
-
-.thmb-icon {
-  line-height: 0;
-  margin-bottom: 20px;
-}
-
-.thmb-icon i {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 20px;
-  border: 1px solid #ccc;
-  position: relative;
-  z-index: 1;
-  background: #fff;
-  color: #333;
-}
-
-.thmb-icon i:after {
-  content: "";
-}
-
-.service-content p:last-child {
-  margin: 0;
-}
-
-span.icon-border {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-}
-
-span.icon-border:after {
-  position: absolute;
-  background: #fff;
-  width: 40%;
-  transform: translate(0px, -9px) rotate(-76deg) skew(163deg, 51deg);
-  height: 44%;
-  left: 0;
-  right: 0;
-  top: 68%;
-  margin: auto;
-  z-index: -1;
-  border: 1px solid #ccc;
-}
-
 .fun-facts {
   background-image: url(../img/counter-up.jpg);
   background-position: center;
@@ -12875,6 +12854,10 @@ span.icon-border:after {
   float: left;
 }
 
+.fun-facts .counter-item .counter-icon i {
+  border-color: white;
+}
+
 .fun-facts {
   position: relative;
 }
@@ -12890,6 +12873,35 @@ span.icon-border:after {
   left: 0;
 }
 
+<<<<<<< HEAD
+=======
+.reasons-to-choose .thumb-icon i {
+  font-size: 60px;
+  border: 0;
+}
+
+.reasons-to-choose {
+  margin-bottom: 30px;
+}
+
+.reasons-to-choose .slick-dots li.slick-active button:before {
+  color: #ff646c;
+  opacity: 1;
+}
+
+.reasons-to-choose .slick-dots li {
+  margin: 0;
+}
+
+.reasons-to-choose .slick-dots li button:before {
+  font-size: 12px;
+}
+
+.reasons-to-choose .slick-dots li button:hover:before {
+  color: #ff646c;
+}
+
+>>>>>>> ba17bcc02f71c7e18bdbf93c66149b61ed103cac
 @media only screen and (max-width: 479px) {
   .recent-project .col-xs-6 {
     width: 100%;

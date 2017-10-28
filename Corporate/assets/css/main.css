@@ -11875,10 +11875,6 @@ section div[class*='col-'] {
   padding-bottom: 35px;
 }
 
-.column-gap-0 {
-  padding: 0;
-}
-
 .margin-b-0 {
   margin-bottom: 0;
 }
@@ -13415,7 +13411,6 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   color: white;
   text-align: center;
-  border-radius: 8%;
   overflow: hidden;
 }
 

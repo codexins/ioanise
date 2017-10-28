@@ -12988,6 +12988,12 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
 }
 
+@media only screen and (max-width: 767px) {
+  .fun-facts .counter-item {
+    width: 100%;
+  }
+}
+
 .fun-facts .counter-item .counter-icon i {
   border-color: white;
 }
@@ -13203,6 +13209,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .cta-left-side {
   padding: 0 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .cta-left-side {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .cta-right-side {
@@ -13561,6 +13574,151 @@ footer {
 .ful-wide-input textarea,
 .ful-wide-input input {
   width: 100%;
+}
+
+.padding-bot30 {
+  padding-bottom: 30px;
+}
+
+.inverse-container {
+  background: #222534 url(../img/pattren02.png) repeat center top;
+}
+
+.contain-wrapp {
+  display: block;
+  position: relative;
+}
+
+.contain-wrapp .pb-0 {
+  padding-bottom: 0;
+}
+
+.contain-wrapp .section-title h1, .contain-wrapp .section-title p {
+  color: #fff;
+}
+
+.process-3colum {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.process-3colum li {
+  position: relative;
+  float: left;
+  width: 33.333%;
+  list-style: none;
+  text-align: center;
+  margin: 0 0 35px 0;
+  padding: 0 15px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .process-3colum li {
+    width: 100%;
+  }
+}
+
+.process-3colum li h5 {
+  color: #fff;
+}
+
+.process-3colum li p {
+  margin-bottom: 0;
+}
+
+.process-3colum li .fa {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+.process-3colum li:before, .process-3colum li::after {
+  position: absolute;
+  height: 3px;
+  border-top: 3px dotted #fff;
+  content: "";
+  top: 40px;
+  left: 7px;
+  right: 7px;
+}
+
+@media only screen and (max-width: 767px) {
+  .process-3colum li:before, .process-3colum li::after {
+    content: none;
+  }
+}
+
+.process-3colum li::before {
+  width: auto;
+  height: auto;
+  font-family: 'FontAwesome';
+  content: "\f105";
+  border: none;
+  top: 29px;
+  left: auto;
+  right: 0;
+  margin-right: -4px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .process-3colum li::before {
+    content: none;
+  }
+}
+
+.process-3colum li:first-child:after {
+  left: auto;
+  width: 50%;
+}
+
+.process-3colum li:last-child:after {
+  width: 50%;
+  left: 7px;
+  right: auto;
+}
+
+.process-3colum li:last-child::before {
+  content: none;
+}
+
+.process-3colum li .icon-circle {
+  position: relative;
+  display: inline-block;
+  text-indent: 2px;
+  color: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+  overflow: hidden;
+  text-indent: -1px;
+}
+
+.process-3colum li .icon-circle.fa-6x {
+  width: 82px;
+  height: 82px;
+  font-size: 32px;
+  line-height: 82px;
+}
+
+.process-3colum .first-step {
+  background: #ff646c;
+}
+
+.process-3colum .secound-step {
+  background: #1ca5b8;
+}
+
+.process-3colum .third-step {
+  background: #0b4249;
 }
 
 .c-button:hover {

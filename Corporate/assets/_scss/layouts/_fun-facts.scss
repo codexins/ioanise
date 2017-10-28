@@ -12,7 +12,9 @@
     .counter-item {
     	width: 20%;
     	float: left;
-
+        @include respond-to(mobile){
+            width: 100% ;
+        }
     	.counter-icon {
     		i {
     			border-color: lighten($cx-text-color, 100%);

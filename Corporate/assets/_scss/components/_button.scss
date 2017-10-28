@@ -20,6 +20,10 @@
 		margin-left: 5px;
 	}
 }
+input.default-btn{
+	@include button(12px 35px , 0px solid  $cx-border-color ,$cx-body-bg-color);
+}
+
 .skew-right{
 	position:relative;
 	z-index: 1 ;
@@ -35,14 +39,19 @@
 		transform-origin: center;
 		z-index: -1 ;
 		@extend %transition-all ;
-		transform: scaleX(1) skew(-40deg);
+		
+		transform: scaleX(0) skew(40deg);
+
+
 	}
 	
 	&:hover{
 		border-color:darken($cx-border-color,1.5%) ;
 		color: $cx-body-bg-color ;
 		&:before{
-			transform: scaleX(0) skew(40deg);
+			// transform: scaleX(0) skew(40deg);
+			transform: scaleX(1) skew(-40deg);
+
 		}
 	}
 }
@@ -50,11 +59,12 @@
 .skew-left{
 	@extend .skew-right ;
 	&:before{
-		transform: scaleX(1) skew(40deg);
+		transform: scaleX(0) skew(40deg);
+
 	}
 	&:hover{
 		&:before{
-			transform: scaleX(0) skew(40deg);
+			transform: scaleX(1) skew(40deg);	
 		}
 	}
 }

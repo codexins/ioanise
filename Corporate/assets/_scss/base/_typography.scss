@@ -80,7 +80,7 @@ ul{
     margin: 0;
     padding: 0
 }
-
+textarea,
 input[type="text"],
 input[type="url"],
 input[type="email"],
@@ -90,6 +90,7 @@ input[type="password"],
 input[type="search"],
 input[type="tel"] {
     padding:8px 10px;
+    border:1px solid lighten($cx-text-color,50%);
 }
 
 input[type="submit"] {
@@ -111,12 +112,12 @@ input::-webkit-input-placeholder,
 input:-moz-placeholder,
 input:-ms-input-placeholder,
 input[placeholder] {
-    color: #fff ;
+    color: lighten($cx-text-color,100%) ;
 }
 button:focus,
 input:focus,
 textarea:focus {
-    // border-color: transparent;
+    border-color:  $cx-primary-color;
     outline: 0;
 }
 button:hover,

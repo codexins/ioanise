@@ -11989,6 +11989,7 @@ ul {
   padding: 0;
 }
 
+textarea,
 input[type="text"],
 input[type="url"],
 input[type="email"],
@@ -11998,6 +11999,7 @@ input[type="password"],
 input[type="search"],
 input[type="tel"] {
   padding: 8px 10px;
+  border: 1px solid #b3b3b3;
 }
 
 input[type="submit"] {
@@ -12018,12 +12020,13 @@ input::-webkit-input-placeholder,
 input:-moz-placeholder,
 input:-ms-input-placeholder,
 input[placeholder] {
-  color: #fff;
+  color: white;
 }
 
 button:focus,
 input:focus,
 textarea:focus {
+  border-color: #1ca5b8;
   outline: 0;
 }
 
@@ -12093,6 +12096,13 @@ to a reusable component.
   margin-left: 5px;
 }
 
+input.default-btn, .slide-caption input.default-btn {
+  padding: 12px 35px;
+  display: inline-block;
+  border: 0px solid #ccc;
+  color: #fff;
+}
+
 .skew-right, .skew-left {
   position: relative;
   z-index: 1;
@@ -12109,7 +12119,7 @@ to a reusable component.
   background: #0b4249;
   transform-origin: center;
   z-index: -1;
-  transform: scaleX(1) skew(-40deg);
+  transform: scaleX(0) skew(40deg);
 }
 
 .skew-right:hover, .skew-left:hover {
@@ -12118,15 +12128,15 @@ to a reusable component.
 }
 
 .skew-right:hover:before, .skew-left:hover:before {
-  transform: scaleX(0) skew(40deg);
+  transform: scaleX(1) skew(-40deg);
 }
 
 .skew-left:before {
-  transform: scaleX(1) skew(40deg);
+  transform: scaleX(0) skew(40deg);
 }
 
 .skew-left:hover:before {
-  transform: scaleX(0) skew(40deg);
+  transform: scaleX(1) skew(40deg);
 }
 
 .title-bar {
@@ -13431,6 +13441,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #map #gmap {
   height: 480px;
+}
+
+.contact-form-field input[type=submit] {
+  color: white;
+  padding: 15px 25px;
+}
+
+.contact-form-field input[type=submit]:hover {
+  background: #ff646c;
 }
 
 footer {

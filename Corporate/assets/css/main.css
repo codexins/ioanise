@@ -13584,10 +13584,6 @@ footer {
   width: 100%;
 }
 
-.padding-bot30 {
-  padding-bottom: 30px;
-}
-
 .inverse-container {
   background: #222534 url(../img/pattren02.png) repeat center top;
 }
@@ -13629,6 +13625,7 @@ footer {
   }
 }
 
+.process-3colum li h3,
 .process-3colum li h5 {
   color: #fff;
 }
@@ -13708,9 +13705,10 @@ footer {
   line-height: 30px;
   overflow: hidden;
   text-indent: -1px;
+  border: 0;
 }
 
-.process-3colum li .icon-circle.fa-6x {
+.process-3colum li .icon-circle {
   width: 82px;
   height: 82px;
   font-size: 32px;

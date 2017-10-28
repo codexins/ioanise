@@ -20,9 +20,7 @@ footer div[class*='col-'] ,
 section div[class*='col-'] {
 	padding-bottom: $cx-column-padding-bottom;
 }
-.column-gap-0{
-	padding: 0;
-}
+
 .margin-b-0{
 	margin-bottom:0 ;
 }
@@ -34,12 +32,14 @@ section div[class*='col-'] {
 .pb-0 {
 	padding-bottom: 0;
 }
-
 .no-padding {
 	padding: 0;
 }
 .mb-35{
 	margin-bottom :$cx-section-margin-bottom-small;
+}
+.no-background{
+	background: transparent ;
 }
 
 

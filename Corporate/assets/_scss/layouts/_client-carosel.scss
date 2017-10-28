@@ -1,5 +1,8 @@
 .client-section{
 	background : lighten($cx-primary-color , 55% );
+	&.no-background{
+		background:transparent ;
+	}
 }
 
 .client-carousel {

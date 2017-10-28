@@ -38,7 +38,11 @@
     }
 }
 .cta-left-side{
-padding:0 50px;
+    padding:0 50px;
+    @include respond-to(mobile){
+        width: 100% ;
+        text-align: center;
+    }
 }
 .cta-right-side{
     @include respond-to(mobile){

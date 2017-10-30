@@ -30,6 +30,10 @@
 		}
 	}
 
+	@include respond-to(mobile) {
+		margin-bottom: $cx-col-spacing;
+	}
+
 
 }
 .post-image{

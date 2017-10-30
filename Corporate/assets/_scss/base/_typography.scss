@@ -68,6 +68,7 @@ a:active, a:hover {
   outline: 0 none;
   text-decoration: none;
 }
+
 a:hover {
     color: $cx-secondary-color;
 }
@@ -75,11 +76,9 @@ a:focus {
     outline:0px solid;
     color: initial  ;
 }
-ul{
-    list-style: outside none none;
-    margin: 0;
-    padding: 0
-}
+
+
+
 textarea,
 input[type="text"],
 input[type="url"],
@@ -90,11 +89,20 @@ input[type="password"],
 input[type="search"],
 input[type="tel"] {
     padding:8px 10px;
-    border:1px solid lighten($cx-text-color,50%);
+    border:1px solid darken($cx-border-color, 10%);
+    margin-bottom: 15px;
+    min-height: 40px;
+}
+
+textarea {
+    min-height: 160px;
 }
 
 input[type="submit"] {
-    border:1px solid $cx-text-color;
+    border:1px solid $cx-primary-color;
+    min-height: 40px;
+    background: $cx-primary-color;
+    color: lighten($cx-text-color, 100%);
 }
 
 
@@ -120,10 +128,12 @@ textarea:focus {
     border-color:  $cx-primary-color;
     outline: 0;
 }
+
 button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover{
-    background: $cx-text-color;
+    border-color: $cx-secondary-color;
+    background: $cx-secondary-color;
 }
 
 

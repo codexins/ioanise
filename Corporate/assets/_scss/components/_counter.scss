@@ -2,19 +2,17 @@
 	text-align:center;
 	width: 100%;
 	padding: 0 25px;
-	//color: lighten($cx-text-color, 100%);
-
 	@include respond-to(tablet){
 		padding: 0 15px;
 	}
 
 	@include respond-to(mobile){
 		width: 100%;
-		margin-bottom: 35px;
+		margin-bottom: $cx-col-spacing;
 	}
 
 	.counter-icon{
-		margin-bottom: 30px;
+		margin-bottom: 25px;
 		i{
 			width: 86px;
 			height: 86px;

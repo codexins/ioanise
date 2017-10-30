@@ -1,6 +1,6 @@
-.title-bar{
+.title-bar {
 	position:  relative ;
-	&:after{
+	&::after{
 		@include  absolute-position(auto,0,0,0);
 		background:$cx-secondary-color;
 		margin: auto;
@@ -9,25 +9,19 @@
 		transform: translateY(-50%);
 	}
 }
-.title-bar.leftalign-bar{
-	&:after{
-		margin-left:  0;
+
+
+.title-bar-left {
+	@extend .title-bar;
+	&::after {
+		margin-left: 0;
 	}
 }
-.title-bar.rightalign-bar{
-	&:after{
-			margin-right:  0;
-		}
-}
-.title-bar.fullwide-bar{
-	&:before{
-	    content: "";
-	    position: absolute;
-	    bottom: 0;
-	    left: 0;
-	    right: 0;
-	    height: 1px;
-	    background: #000;
-	    // transform: translateY(-50%);
+
+
+.title-bar-right {
+	@extend .title-bar;
+	&::after {
+		margin-right: 0;
 	}
 }

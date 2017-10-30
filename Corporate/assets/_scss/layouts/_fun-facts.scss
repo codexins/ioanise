@@ -21,7 +21,7 @@
     		}
     	}
     }
-
+    @extend %vpadding;
     
     @include section-overly(rgba($cx-tertiary-color,0.92));
 }

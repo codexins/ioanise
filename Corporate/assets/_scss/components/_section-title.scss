@@ -2,8 +2,16 @@
 	text-align:center;
 	display: block;
     max-width: 70%;
-    margin: 0px auto 15px;	
+    margin: 0px auto 2*$cx-heading-margin-bottom;
+
+    @include respond-to(tablet) {
+    	max-width:85%;
+    }
     @include respond-to(mobile) {
     	max-width:95%;
+    }
+
+    h1 {
+    	@extend .primary-title;
     }
 }

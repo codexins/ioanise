@@ -1,11 +1,11 @@
 footer{
-	padding-top: $cx-section-padding-top;
+	padding-top: $cx-section-spacing;
 	background: $cx-primary-color;
 	color: lighten($cx-text-color, 100%);
 }
 
 .footer-top {
-	padding-bottom:0.5*$cx-section-padding-top;
+	padding-bottom:0.5*$cx-section-spacing;
 }
 
 .footer-title{

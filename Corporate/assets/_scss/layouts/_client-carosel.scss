@@ -3,6 +3,7 @@
 	&.no-background{
 		background:transparent ;
 	}
+	@extend %vpadding;
 }
 
 .client-carousel {

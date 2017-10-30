@@ -4,6 +4,8 @@
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	@extend %vpadding;
+	@extend %mb0;
 	@include section-overly( linear-gradient(to left , $cx-primary-color, rgba($cx-text-color,0.8)));
 
 }
@@ -49,7 +51,7 @@
 	max-width:400px;
 	margin: 0 auto ;
 	.slick-list{
-		min-height:90px;
+		min-height:80px;
 	}
 	.slick-track {
 	    margin-top: 15px;

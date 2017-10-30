@@ -1,42 +1,25 @@
 
 .about{
-	background:lighten($cx-primary-color,55%) ;
-	&.mb-35{
-		@include respond-to(tablet){
-			margin-bottom: 0 ;
-		}
+	background:lighten($cx-primary-color,55%);
+	@extend %vpadding;
+	.section-title {
+		max-width:100%;
+		width:100%;
+		text-align: left;
+		margin-bottom: 0;
 	}
-}
-.transparent-background{
-	background:transparent ;
-}
-.content{
-	position: relative;
-    z-index: 9;
-    h3{
-    	text-transform: uppercase;
-    }
-    p{
-    	&:last-child{
-    		margin-bottom: 0 ;
-    	}
-    }
-}
-.image.no-padding{
-	padding:0 ;
-}
-.image{
-	
-	@include respond-to(tablet){
-		margin-top: 85px;
-	}
-	img{
-		@include respond-to(mobile){
-			width: 100%;
-		}
-	}
-	
-	padding:10px;
-	background:lighten($cx-primary-color,52%);
 
+	.default-btn {
+		@include respond-to(mobile) {
+			margin-bottom: $cx-col-spacing;
+		}
+	}
+}
+
+
+.img-bordered {
+	border: 10px solid lighten($cx-primary-color,52%);
+	@include respond-to(mobile) {
+		width:100%;
+	}
 }

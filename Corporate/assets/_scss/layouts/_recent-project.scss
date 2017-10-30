@@ -1,7 +1,10 @@
 
 .recent-project{
+
+	.portfolio {
+		@extend %padding-0;
+	}
 	.col-xs-6{
-		// padding: 0 15px;
 		@include media-only(small-mobile, $type: max){
 	    	width:100%;
 		}
@@ -40,10 +43,6 @@
 			opacity: 1 ;
 		}
 	}
-}
-
-.portfolio-wrapper >  div[class*='col-'] {
-	padding-bottom:0;
 }
 
 

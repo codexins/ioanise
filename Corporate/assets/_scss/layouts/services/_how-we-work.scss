@@ -1,125 +1,75 @@
-
-.inverse-container {
+.how-it-works {
     background: #222534 url(../img/pattren02.png) repeat center top;
-}
-.contain-wrapp {
-    display: block;
-    position: relative;
-    .pb-0{
-    	padding-bottom:0 ;
+    color: lighten($cx-text-color, 100%);
+    @extend %vpadding;
+    .processing-columns {
+    	h3 {
+    		color: lighten($cx-text-color, 100%);
+    	}
+    	li::before,
+    	li::after {
+    		border-color: lighten($cx-text-color, 100%);	
+    	}
     }
-    .section-title{
-    	h1,p {
-    		color: #fff ;
-    	}    	
-    }
-}
 
-.process-3colum {
-    position: relative;
-    float: left;
-    margin: 0;
-    padding: 0;
+    .section-title {
+    	h2 {
+			color: lighten($cx-text-color, 100%);
+    	}
+    }
+
     li {
-	    position: relative;
-	    float: left;
-	    width: 33.333%;
-	    list-style: none;
-	    text-align: center;
-	    margin: 0 0 35px 0;
-	    padding: 0 15px;
-	    color: #fff;
-	    @include respond-to(mobile){
-			width: 100%;
-	    }
-	    h3,
-	    h5{
-	    	color: #fff ;
-	    }
-	    p{
-	    	margin-bottom: 0 ;
-	    }
-	    .fa {
-		    position: relative;
-		    display: inline-block;
-		    margin-bottom: 10px;
-		    z-index: 2;
-		}
-		&:before, &::after{
-		    position: absolute;
-		    height: 3px;
-		    border-top: 3px dotted #fff;
-		    content: "";
-		    top: 40px;
-		    left: 7px;
-		    right: 7px;
-		    @include respond-to(mobile){
-				content: none ;
-		    }
+		
+		.icon-circle {
+		 	color: lighten($cx-text-color, 100%);	
 		}
 
-		&::before{
-		    width: auto;
-		    height: auto;
-		    font-family: 'FontAwesome';
-		    content: "\f105";
-		    border: none;
-		    top: 29px;
-		    left: auto;
-		    right: 0;
-		    margin-right: -4px;
-		    font-size: 24px;
-		    line-height: 24px;
-		    @include respond-to(mobile){
-				content: none ;
-		    }
+		.first-step{
+			border:0;
+			background: $cx-primary-color;
 		}
-		&:first-child:after{
-			left: auto;
-			width: 50%;
+		.second-step{
+			border:0;
+			background: $cx-secondary-color;
+		}
+		.third-step{
+			border:0;
+			background: $cx-tertiary-color;
+		}
+    }
+ 
+}
 
-		}
-		&:last-child:after {
-		    width: 50%;
-		    left: 7px;
-		    right: auto;
-		}
-		&:last-child::before{
-			content: none;
-		}
-		.icon-circle{
-		    position: relative;
-		    display: inline-block;
-		    text-indent: 2px;
-		    color: #fff;
-		    border-radius: 50%;
-		    width: 32px;
-		    height: 32px;
-		    text-align: center;
-		    font-size: 12px;
-		    line-height: 30px;
-		    overflow: hidden;
-		    text-indent: -1px;
-		    border: 0;
-		}
-		.icon-circle{
-		    width: 82px;
-		    height: 82px;
-		    font-size: 32px;
-		    line-height: 82px;
-		}
 
+.service-promo {
+	@extend %vpadding;
+	background: lighten($cx-primary-color, 52%);
+	h2 {
+		text-transform: uppercase;
+		font-weight:bold;
 	}
-	.first-step{
-		background: $cx-secondary-color;
+	.focused-text {
+		font-size: 2em;
+		line-height: 1.2em;
 	}
-	.secound-step{
-		background: $cx-primary-color;
-	}
-	.third-step{
-		background: $cx-tertiary-color;
+
+	.col-sm-8 {
+		p:last-child {
+			@extend %mb0;
+		}
 	}
 }
+
+
+.inner-services {
+	@extend %vpadding;
+	@extend %mb0;
+	padding-top:0;
+	.info-item {
+		text-align: left;
+	}
+}
+
 
 
 

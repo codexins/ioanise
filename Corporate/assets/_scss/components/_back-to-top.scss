@@ -9,6 +9,6 @@ div#toTop {
     right: 0;
     left: 0;
     margin: auto;
-    border-radius: 50%;
-    cursor: pointer ;
+    cursor: pointer;
+    @include border-radius(50%);
 }

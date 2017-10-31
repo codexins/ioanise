@@ -1,0 +1,17 @@
+.client-single {
+	width:100%;
+	border:1px solid $cx-border-color;
+	margin-bottom: $cx-heading-margin-bottom;
+	a {
+		display: inline-block;
+		width:100%;
+		padding:15px;
+	}
+	img {
+		max-width:100%;
+		max-height:90px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}

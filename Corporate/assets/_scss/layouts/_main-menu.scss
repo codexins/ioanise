@@ -11,6 +11,7 @@
 			display: block; 
 			position: relative;
 			text-transform: uppercase;
+			color: $cx-text-color;
 			@include respond-to(tablet){
 				padding: 10px 15px;
 			};

@@ -4,7 +4,6 @@
 .secondary-title{
 	color: $cx-text-color ;
 	text-transform: uppercase;
-	@include respond-to(mobile){
-		font-size: 20px;
-	};
+	font-size:18px;
+	margin-bottom:1em;
 }

@@ -1,7 +1,7 @@
 
 .about{
-	background:lighten($cx-primary-color,55%);
 	@extend %vpadding;
+	padding-bottom:0;
 	.section-title {
 		max-width:100%;
 		width:100%;

@@ -13084,7 +13084,7 @@ ul.address-card li.card-location::before {
 }
 
 .about {
-  background: #f0fbfd;
+  padding-bottom: 0;
 }
 
 .about .section-title, .about .section-title-left {

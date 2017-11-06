@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden ;
     &:after , &:before{
-    	@include  absolute-position(0,51%,0,-100px);
+    	@include  abs-position(0,51%,0,-100px);
     	transform: skewX(-35deg);
         @include respond-to(mobile){
             right: 0;

@@ -6,7 +6,7 @@
 	    padding:30px;
 	    border: 1px solid $cx-border-color;
 	    border-top: 0px solid ;
-	    @extend %transition-all ;
+	    @extend %cx-transition ;
 	    
 	    p{
 	    	margin:  0 ;

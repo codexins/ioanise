@@ -12,7 +12,7 @@ $cx-secondary-color: 					#ff646c; // light red
 $cx-tertiary-color:						#0b4249; // dark teal
 
 
-$cx-border-color: 						#ccc; // light gray
+$cx-border-color:						#ccc; // light gray
 
 $cx-link-color: 						$cx-primary-color;
 $cx-link-hover-color: 					$cx-secondary-color;
@@ -32,7 +32,6 @@ $cx-heading-margin-bottom : 			25px;
 
 $cx-section-spacing:	 				90px;
 $cx-col-spacing:						0.5*$cx-section-spacing; // will be used as bottom margin for the items on tablet and mobile
-
 
 // default transition 
 $cx-transition: 						all 0.3s ease;

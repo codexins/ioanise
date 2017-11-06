@@ -2,9 +2,9 @@
 	position:relative;
 	overflow: hidden;
 	.team-image{
-		@include section-overly(rgba($cx-secondary-color, 0.9));
+		@include cx-overlay(rgba($cx-secondary-color, 0.9));
 		&:before{
-			@extend %transition-all ;
+			@extend %cx-transition ;
 			opacity: 0 ;
 		}
 	}
@@ -36,7 +36,7 @@
 
 
 .team-details{
-	@extend %transition-all ;
+	@extend %cx-transition ;
     padding: 35px 40px;
     position: absolute;
 	top: 0px;

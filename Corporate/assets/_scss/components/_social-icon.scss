@@ -11,7 +11,7 @@
 	    background-color:darken($cx-body-bg-color, 10%);
 	    color: $cx-text-color ;
 	    float: left;
-	    @extend %transition-all ;
+	    @extend %cx-transition ;
 	    &:hover{
 	    	border-color : $cx-secondary-color;
 	    	background:$cx-secondary-color;

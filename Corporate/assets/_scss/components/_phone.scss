@@ -3,7 +3,7 @@ a.phone {
 	position: relative;
 	padding: 10px 15px 10px 40px;
 	display: inline-block;
-	@extend %transition-all;
+	@extend %cx-transition;
 	&::before {
 		content:"\f095";
 		font-family: FontAwesome;
@@ -21,7 +21,7 @@ a.phone {
 		display: block;
 		border:1px solid $cx-text-color;
 		@include border-radius(50%);
-		@extend %transition-all;
+		@extend %cx-transition;
 	}
 
 	&:hover {

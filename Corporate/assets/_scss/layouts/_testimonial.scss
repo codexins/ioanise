@@ -6,7 +6,7 @@
 	background-repeat: no-repeat;
 	@extend %vpadding;
 	@extend %mb0;
-	@include section-overly( linear-gradient(to left , $cx-primary-color, rgba($cx-text-color,0.8)));
+	@include cx-overlay( linear-gradient(to left , $cx-primary-color, rgba($cx-text-color,0.8)));
 
 }
 
@@ -81,7 +81,7 @@
 		border-radius: 50%;
 		margin-left: auto;
     	margin-right: auto;
-    	@extend %transition-all ;
+    	@extend %cx-transition ;
     	cursor: pointer;
 	}
 }

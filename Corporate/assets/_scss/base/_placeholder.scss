@@ -51,10 +51,11 @@
 }
 
 %overlay{
-	@include section-overly();
+	@include cx-overlay();
 }
-%transition-all{
-	@include transition-all($cx-transition)
+
+%cx-transition{
+	@include cx-transition($cx-transition)
 }
 
 

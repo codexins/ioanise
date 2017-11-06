@@ -65,7 +65,7 @@ img {
 }
 
 a {
-    @extend %transition-all ;
+    @extend %cx-transition ;
     text-decoration:none;
     color:$cx-link-color;
 }

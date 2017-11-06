@@ -36,7 +36,7 @@
 	a{
 		color: lighten($cx-text-color, 100%);	
 		font-size: 14px;
-		@extend %transition-all ;
+		@extend %cx-transition ;
 		&:hover{
 			color: $cx-secondary-color ;
 		}

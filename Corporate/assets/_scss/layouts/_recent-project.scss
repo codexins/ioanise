@@ -17,15 +17,15 @@
 		display: block;
 		position:relative;
 		&:before{
-			@include  absolute-position(0,0,0,0);
+			@include  abs-position(0,0,0,0);
 		    // background: rgba(0, 0, 0, 0.76);
 		    background:  rgba(darken($cx-text-color,100%), 0.76);
 		    color: #fff;
 		    opacity: 0 ;
-			@extend %transition-all ;
+			@extend %cx-transition ;
 			@include respond-to(mobile){
 				 opacity: 1;
-				 @include  absolute-position(10px,10px,10px,10px);
+				 @include  abs-position(10px,10px,10px,10px);
 			};
 		}
 		img{
@@ -35,7 +35,7 @@
 	&:hover{
 		.img {
 			&::before{
-				 @include  absolute-position(10px,10px,10px,10px);
+				 @include  abs-position(10px,10px,10px,10px);
 				opacity: 1 ;
 			}
 		}
@@ -49,10 +49,10 @@
 .project-content{
 	opacity:0 ;
 	color: #fff ;
-	@include position-center(both);
+	@include cx-centered(both);
 	max-width: 80%;
 	text-align: center;
-	@extend %transition-all ;
+	@extend %cx-transition ;
 		@include respond-to(mobile){
 			 opacity: 1;
 		};

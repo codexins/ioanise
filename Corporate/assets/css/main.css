@@ -12049,7 +12049,7 @@ input[type="button"]:hover {
   margin-bottom: 0;
 }
 
-.about, .fun-facts, .testimonial, .client-section, .how-it-works, .service-promo, .inner-services {
+.about, .fun-facts, .testimonial, .client-section, .how-it-works, .service-promo, .inner-services, .check {
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -12061,7 +12061,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 25px;
 }
 
-a, .skew-right:before, .skew-left:before, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .team-member .team-image:before, .team-details, .top-content a, .project-item .img:before, .project-content, .nav-img img, .blog-item .post-content, .submit-button {
+a, .default-btn, .slide-caption .default-btn, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .team-member .team-image:before, .team-details, .top-content a, .project-item .img:before, .project-content, .nav-img img, .blog-item .post-content, .submit-button {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -12074,11 +12074,6 @@ This file is used to contain all component imports.
 Files inside this folder should contain all styles relating
 to a reusable component.
 */
-.slick-initialized .slick-slide:focus {
-  border: 0;
-  outline: 0;
-}
-
 .breadcrumb {
   background: transparent;
   padding-left: 0;
@@ -12103,73 +12098,20 @@ div#toTop {
 }
 
 .default-btn, .slide-caption .default-btn {
-  line-height: 100%;
-  padding: 12px 35px;
+  padding: 8px 20px;
   display: inline-block;
-  border: 0px solid #ccc;
-  color: #fff;
+  background: transparent;
+  border: 1px solid #333;
+  color: #333;
   text-transform: uppercase;
-  margin-top: 0;
-  background: #1ca5b8;
-}
-
-@media only screen and (max-width: 767px) {
-  .default-btn, .slide-caption .default-btn {
-    padding: 10px;
-    font-size: 14px;
-  }
+  font-size: 14px;
+  letter-spacing: 0.05em;
 }
 
 .default-btn:hover {
-  border-color: #c8c8c8;
-  color: #fff;
-}
-
-.default-btn i, .slide-caption .default-btn i {
-  margin-left: 5px;
-}
-
-input.default-btn, .slide-caption input.default-btn {
-  padding: 12px 35px;
-  display: inline-block;
-  border: 0px solid #ccc;
-  color: #fff;
-}
-
-.skew-right, .skew-left {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.skew-right:before, .skew-left:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #0b4249;
-  transform-origin: center;
-  z-index: -1;
-  transform: scaleX(0) skew(40deg);
-}
-
-.skew-right:hover, .skew-left:hover {
-  border-color: #c8c8c8;
-  color: #fff;
-}
-
-.skew-right:hover:before, .skew-left:hover:before {
-  transform: scaleX(1) skew(-40deg);
-}
-
-.skew-left:before {
-  transform: scaleX(0) skew(40deg);
-}
-
-.skew-left:hover:before {
-  transform: scaleX(1) skew(40deg);
+  border-color: #ff646c;
+  background: #ff646c;
+  color: white;
 }
 
 .title-bar, .title-bar-left, .title-bar-right {
@@ -12391,42 +12333,6 @@ input.default-btn, .slide-caption input.default-btn {
   font-size: 16px;
   line-height: 35px;
   display: block;
-}
-
-.circle-dot .slick-dots li {
-  width: auto;
-  height: inherit;
-}
-
-.circle-dot .slick-dots button {
-  position: relative;
-  border-radius: 50%;
-  background: transparent;
-  border: 2px solid #fff;
-  width: 5px;
-  height: 5px;
-}
-
-.circle-dot .slick-dots button:before {
-  content: "";
-}
-
-.circle-dot .slick-dots li.slick-active button {
-  background: #fff;
-}
-
-.circle-dot .slick-dots li.slick-active button:before {
-  content: "";
-}
-
-.circle-dot .slick-slide:focus {
-  border: 0;
-  outline: 0;
-}
-
-.circle-dot .slick-dotted.slick-slider {
-  margin-bottom: 30px;
-  padding-bottom: 25px;
 }
 
 a.phone {
@@ -12714,8 +12620,6 @@ ul.address-card li.card-location::before {
 .bar-item .progress-bar {
   background: #ff646c;
   -webkit-transition: width 1.5s ease-in-out;
-  -moz-transition: width 1.5s ease-in-out;
-  -ms-transition: width 1.5s ease-in-out;
   -o-transition: width 1.5s ease-in-out;
   transition: width 1.5s ease-in-out;
 }
@@ -13784,4 +13688,25 @@ footer {
 
 .inner-services .info-item {
   text-align: left;
+}
+
+.check {
+  background: url("../img/slider/slider-3.jpg") no-repeat scroll center;
+  background-size: cover;
+  color: #fff;
+}
+
+.check {
+  position: relative;
+}
+
+.check:before {
+  background: rgba(0, 0, 0, 0.4);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

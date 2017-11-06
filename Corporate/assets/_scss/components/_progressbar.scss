@@ -10,7 +10,7 @@
 	}
 	.progress-bar{
 		background: $cx-secondary-color ;
-		@include transition-all(width 1.5s ease-in-out);
+		@include transition(width 1.5s ease-in-out);
 	}
 	.tooltip{ 
 	  position:relative;

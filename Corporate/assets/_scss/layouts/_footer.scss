@@ -53,7 +53,7 @@ footer{
 	right: 0;
 	top: 0;
 	height: 100%;
-	@extend %transition-all ;
+	@extend %cx-transition ;
 
 	&:before{
 	    content: "\f002";

@@ -1,8 +1,25 @@
-.contact-page-wrapper {
-	margin-bottom: 0;
-	padding-bottom: 10px;
+.contact-intro {
+	@extend %vpadding;
+	@extend %mb0;
+	p,
+	.section-intro {
+		@extend %mb0;
+	}
 }
 
 .contact-boxes {
 	margin-top: -100px;
+}
+
+.map-location {
+	@extend %mb0;
+}
+
+.contact-fun {
+	background-image: none;
+	@include cx-overlay(rgba($cx-tertiary-color, .9));
+	.counter-icon {
+		display: none;
+	}
+	@extend %mb0;
 }

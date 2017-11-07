@@ -4,12 +4,20 @@
 		background:transparent ;
 	}
 	@extend %vpadding;
+	&.type-2 {
+		@extend %mb0;
+		padding-top:$cx-col-spacing;
+		padding-bottom:$cx-col-spacing;
+		.slick-list {
+			@extend %pb0;
+		}
+	}
 }
 
 .client-carousel {
 
 	.slick-list {
-		padding-bottom: 50px;
+		padding-bottom: $cx-col-spacing;
 	}
 	.slick-dots li.slick-active button:before {
 		color: $cx-secondary-color;

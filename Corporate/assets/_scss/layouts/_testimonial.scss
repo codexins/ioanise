@@ -4,31 +4,40 @@
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	color: lighten($cx-text-color, 100%);
+	h3 {
+		color: lighten($cx-text-color, 100%);
+	}
 	@extend %vpadding;
 	@extend %mb0;
+
 	@include cx-overlay( linear-gradient(to left , $cx-primary-color, rgba($cx-text-color,0.8)));
+	&.type-2 {
+		background-image: none;
+		background-color: lighten($cx-text-color, 100%);
+		@include cx-overlay(transparent);
+		color: $cx-text-color;
+
+		h3 {
+			color: $cx-text-color;			
+		}
+		padding-bottom: $cx-col-spacing;
+	}
 
 }
 
 .testimonial-wrap {
     text-align: center;
 }
-.testimonial-wrap{
-	.secondary-title{
-		color: $cx-body-bg-color;
-	}
-	.testimonial-item{
-		p{
-			color: #fff ;
-		}
-		
-	}
+
+
+.testimonial-wrap {
 	.client-name{
 		margin:0 ;
-		color: #fff ;
 		margin-bottom: 15px;
 		text-transform: uppercase;
 	}
+
 	.website-link{
 		margin:0 ;
 		a{
@@ -40,7 +49,7 @@
 .testimonial-carousel{
 	margin-bottom: 20px;
 	.comment-icon i {
-	    color: #fff;
+	   // color: #fff;
 	    font-size: 30px;
 	}
 }

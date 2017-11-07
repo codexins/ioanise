@@ -1,13 +1,17 @@
 .skills{
+	@extend %vpadding;
 	background:lighten($cx-primary-color,55%) ;
 }
 .skill-element{
-	h3{
-
+	h3 {
+		@extend .secondary-title;
+		text-transform: capitalize;
 	}
-	i{
-		color: $cx-secondary-color ;
-		font-size: 20px;
-		margin-right: 10px;
+}
+
+
+.team-section {
+	.member-wrapper {
+		@extend %padding-0;
 	}
 }

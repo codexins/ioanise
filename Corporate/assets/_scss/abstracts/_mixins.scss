@@ -157,7 +157,8 @@
 //Equal Height Columns
 @mixin eqheight {
     display: table;
-    & > [class*="col-"] {
+    width:100%;
+    & > div {
             float: none;
             display: table-cell;
             vertical-align: middle;
@@ -201,8 +202,8 @@
     color: $cx-text-color;
     @extend %cx-transition;
     &:hover {
-        border-color: $cx-secondary-color;
-        background: $cx-secondary-color;
+        border-color: $cx-link-hover-color;
+        background: $cx-link-hover-color;
         color:lighten($cx-text-color, 100%);
     }
  }

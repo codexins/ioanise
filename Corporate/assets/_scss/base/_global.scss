@@ -22,4 +22,12 @@ section {
 	outline: none;
 }
 
+.whole-wrapper {
+	@extend %clearfix;
+}
+
+#primary,
+#sidebar {
+	margin-bottom: $cx-section-spacing;
+}
 

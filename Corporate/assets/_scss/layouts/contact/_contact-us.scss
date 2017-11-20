@@ -1,5 +1,6 @@
 .contact-intro {
-	@extend %vpadding;
+	@extend %pt0;
+	padding-bottom: $cx-section-spacing;
 	@extend %mb0;
 	p,
 	.section-intro {

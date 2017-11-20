@@ -12069,16 +12069,16 @@ input[type="button"]:hover {
   padding-bottom: 90px;
 }
 
-.whole-wrapper, .cx-pagination, .post-meta-wrapper {
+.whole-wrapper, .cx-pagination, .post-meta-wrapper, .comments-area ol li {
   zoom: 1;
 }
 
-.whole-wrapper::before, .cx-pagination::before, .post-meta-wrapper::before, .whole-wrapper::after, .cx-pagination::after, .post-meta-wrapper::after {
+.whole-wrapper::before, .cx-pagination::before, .post-meta-wrapper::before, .comments-area ol li::before, .whole-wrapper::after, .cx-pagination::after, .post-meta-wrapper::after, .comments-area ol li::after {
   content: "";
   display: table;
 }
 
-.whole-wrapper::after, .cx-pagination::after, .post-meta-wrapper::after {
+.whole-wrapper::after, .cx-pagination::after, .post-meta-wrapper::after, .comments-area ol li::after {
   clear: both;
 }
 
@@ -12941,7 +12941,7 @@ ul.address-card li.card-location::before {
 
 .recent-posts-single .post-brief h3 {
   margin-bottom: 3px;
-  font-size: 19px;
+  font-size: 16px;
 }
 
 .recent-posts-single .post-brief p {
@@ -13022,7 +13022,7 @@ ul.address-card li.card-location::before {
 .instagram-widget ul li {
   list-style-type: none;
   display: block;
-  width: 78px;
+  width: 76px;
   height: auto;
   float: left;
   margin-right: 10px;
@@ -14198,8 +14198,155 @@ footer {
   background: #0a5e91;
 }
 
+@media only screen and (max-width: 479px) {
+  .social-shares ul li {
+    margin-bottom: 10px;
+  }
+}
+
 .single .post-single {
   margin-bottom: 45px;
+}
+
+.comments-area .comment-list.nested {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.comments-area ol {
+  margin: 0;
+  padding: 0;
+}
+
+.comments-area ol li {
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.comments-area ol li .comment-author-thumb {
+  width: 110px;
+  float: left;
+  padding-right: 20px;
+}
+
+.comments-area ol li .comment-author-thumb img {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .comments-area ol li .comment-author-thumb {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .comments-area ol li .comment-author-thumb {
+    width: 80px;
+  }
+}
+
+.comments-area ol li .comment-content {
+  width: calc(100% - 120px);
+  padding: 20px;
+  float: right;
+  background: #f6f6f6;
+  position: relative;
+}
+
+.comments-area ol li .comment-content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #f6f6f6;
+  margin-left: -12px;
+  left: 0;
+}
+
+.comments-area ol li .comment-content .comment-author-name {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.comments-area ol li .comment-content .comment-author-name a {
+  color: #333;
+}
+
+.comments-area ol li .comment-content .comment-author-name a:hover {
+  color: #ff646c;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .comments-area ol li .comment-content {
+    width: calc(100% - 100px);
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .comments-area ol li .comment-content {
+    width: calc(100% - 80px);
+  }
+}
+
+.comments-area > ol {
+  margin-bottom: 45px;
+}
+
+.comments-area .comment-author-thumb img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.comments-area .comment-meta {
+  text-align: right;
+}
+
+.comments-area .comment-meta a {
+  color: #333;
+}
+
+.comments-area .comment-meta a:hover {
+  color: #ff646c;
+}
+
+.comments-area .comment-meta span {
+  display: inline-block;
+}
+
+.comments-area .comment-meta span.comment-edit {
+  padding-right: 15px;
+}
+
+.comments-area .comment-meta span.comment-reply {
+  position: relative;
+}
+
+.comments-area .comment-meta span.comment-reply::before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  position: relative;
+  left: 0;
+  top: 0;
+  padding-right: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .comments-area .comment-meta {
+    text-align: left;
+    font-size: 90%;
+  }
+}
+
+.comments-area .comment-form input,
+.comments-area .comment-form textarea {
+  width: 100%;
 }
 
 .check {

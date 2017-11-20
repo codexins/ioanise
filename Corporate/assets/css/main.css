@@ -14009,6 +14009,179 @@ footer {
   margin-bottom: 30px;
 }
 
+.portfolio-images {
+  overflow: hidden;
+}
+
+.portfolio-left {
+  float: left;
+  width: 815px;
+  margin-right: 30px;
+  margin-bottom: 45px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-left {
+    width: 670px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-left {
+    width: 480px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-left {
+    width: 100%;
+    float: none;
+    clear: both;
+    overflow: hidden;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.portfolio-right {
+  width: 295px;
+  float: right;
+  margin-bottom: 45px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-right {
+    width: 240px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-right {
+    width: 210px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-right {
+    width: 100%;
+    float: none;
+    clear: both;
+    overflow: hidden;
+  }
+}
+
+.image-wrapper {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio-featured {
+  background-image: url("http://placehold.it/800X585");
+  width: 100%;
+  height: 555px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-featured {
+    height: 456px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-featured {
+    height: 405px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio-featured {
+    height: 360px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .portfolio-featured {
+    height: 280px;
+  }
+}
+
+.portfolio-non-featured {
+  width: 100%;
+  height: 175px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-non-featured {
+    height: 142px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-non-featured {
+    height: 125px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio-non-featured {
+    height: 360px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .portfolio-non-featured {
+    height: 280px;
+  }
+}
+
+.portfolio-one {
+  background-image: url("http://placehold.it/800X585");
+}
+
+.portfolio-two {
+  background-image: url("http://placehold.it/800X585");
+}
+
+.portfolio-three {
+  background-image: url("http://placehold.it/800X585");
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-content .portfolio-left {
+    margin-bottom: 45px;
+  }
+}
+
+.portfolio-content .portfolio-right ul {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-content .portfolio-right ul li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+.portfolio-content .portfolio-right ul li span {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-content .portfolio-right {
+    margin-bottom: 45px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-content {
+    margin-bottom: 90px;
+  }
+}
+
 #primary .post-single:first-child .thumb-wrapper {
   padding-top: 0;
   border-top: 0;

@@ -1,0 +1,140 @@
+.portfolio-images {
+	overflow: hidden;
+}
+
+.portfolio-left {
+	float: left;
+	width:815px;
+	margin-right: 30px;
+	margin-bottom: $cx-col-spacing;
+	@include respond-to(notebook) {
+		width:670px;
+	}
+
+	@include respond-to(tablet) {
+		width:480px;
+	}
+
+	@include respond-to(mobile) {
+		width:100%;
+		float: none;
+		clear:both;
+		overflow: hidden;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+}
+
+.portfolio-right {
+	width:295px;
+	float: right;
+	margin-bottom: $cx-col-spacing;
+	@include respond-to(notebook) {
+		width: 240px;
+	}
+
+	@include respond-to(tablet) {
+		width: 210px;
+	}
+
+	@include respond-to(mobile) {
+		width:100%;
+		float: none;
+		clear:both;
+		overflow: hidden;
+	}
+}
+
+.image-wrapper {
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center;
+	background-size:cover;
+
+}
+
+.portfolio-featured {
+	background-image: url('http://placehold.it/800X585');
+	width:100%;
+	height: 555px;
+	margin-bottom: 15px;
+	@include respond-to(notebook) {
+		height: 456px;
+	}
+
+	@include respond-to(tablet) {
+		height: 405px;
+	}
+
+	@include respond-to(large-mobile) {
+		height:360px;
+	}
+
+	@include respond-to(small-mobile) {
+		height:280px;
+	}
+}
+
+.portfolio-non-featured {
+	width:100%;
+	height:175px;
+	margin-bottom: 15px;
+	@include respond-to(notebook) {
+		height: 142px;
+	}
+
+	@include respond-to(tablet) {
+		height: 125px;
+	}
+
+	@include respond-to(large-mobile) {
+		height:360px;
+	}
+
+	@include respond-to(small-mobile) {
+		height:280px;
+	}
+}
+
+.portfolio-one {
+	background-image: url('http://placehold.it/800X585');
+}
+
+.portfolio-two {
+	background-image: url('http://placehold.it/800X585');
+
+}
+
+.portfolio-three {
+	background-image: url('http://placehold.it/800X585');
+
+}
+
+.portfolio-content {
+	.portfolio-left {
+		@include respond-to(mobile) {
+			margin-bottom: $cx-col-spacing;
+		}
+	}
+	.portfolio-right {
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				list-style-type: none;
+				margin-bottom: 5px;
+				span {
+					font-weight: bold;
+				}
+			}
+		}
+		@include respond-to(mobile) {
+			margin-bottom: $cx-col-spacing;
+		}
+	}
+
+	@include respond-to(mobile) {
+		margin-bottom: $cx-section-spacing;
+	}
+}
+

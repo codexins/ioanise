@@ -16,5 +16,16 @@
 		color: lighten($cx-text-color, 100%);	
 	}
 
+	&.centered {
+		text-align: center;
+		.breadcrumb {
+			li {
+				&:first-child {
+					padding-left: 19.5px;
+				}
+			}
+		}
+	}
+
 
 }

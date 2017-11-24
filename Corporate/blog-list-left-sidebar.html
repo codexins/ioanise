@@ -20,7 +20,7 @@ script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
 script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
 -->
 </head>
-<body class="blog-grid">
+<body>
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
@@ -163,223 +163,171 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
         </div>
     </div>
     <main class="whole-wrapper">
- 
-        <section class="blog-section no-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="section-intro">
-                            <h1 class="primary-title title-bar">Our Blog </h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repellat repudiandae ullam ipsam enim eius, </p>
-                        </div>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 col-md-4 col-lg-3">
+                    <div id="sidebar">
+
+                        <div class="search-widget sidebar-widget">
+                            <form action="">
+                                <input type="search" name="s" title="search" placeholder="Search..">
+                                <input type="submit" value="search">
+
+                            </form>
+                        </div> <!-- end of search-widget -->
+
+                        <div class="recent-posts-widget sidebar-widget">
+                            <h2>Recent Posts</h2>
+                            <div class="recent-posts-single">
+                                <div class="img-thumb">
+                                    <img src="http://placehold.it/100X80" alt="Thumbnail">
+                                </div>
+                                <div class="post-brief">
+                                    <h3>Lorem ipsum dolor.</h3>
+                                    <p><span>September 12, 2017</span></p>
+                                </div>
+                            </div>
+
+                            <div class="recent-posts-single">
+                                <div class="img-thumb">
+                                    <img src="http://placehold.it/100X80" alt="Thumbnail">
+                                </div>
+                                <div class="post-brief">
+                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                    <p><span>September 12, 2017</span></p>
+                                </div>
+                            </div>
+
+                            <div class="recent-posts-single">
+                                <div class="img-thumb">
+                                    <img src="http://placehold.it/100X80" alt="Thumbnail">
+                                </div>
+                                <div class="post-brief">
+                                    <h3>Lorem ipsum dolor.</h3>
+                                    <p><span>September 12, 2017</span></p>
+                                </div>
+                            </div>
+
+                            <div class="recent-posts-single">
+                                <div class="img-thumb">
+                                    <img src="http://placehold.it/100X80" alt="Thumbnail">
+                                </div>
+                                <div class="post-brief">
+                                    <h3>Lorem ipsum dolor.</h3>
+                                    <p><span>September 12, 2017</span></p>
+                                </div>
+                            </div>
+                        </div> <!-- end of recent-posts-widget -->
+
+                        <div class="tags-widget sidebar-widget">
+                            <h2>Tags</h2>
+                            <ul>
+                                <li><a href="">Arts</a></li>
+                                <li><a href="">Electric</a></li>
+                                <li><a href="">Science</a></li>
+                                <li><a href="">Food</a></li>
+                                <li><a href="">Nature</a></li>
+                                <li><a href="">Hat</a></li>
+                            </ul>
+                        </div> <!-- end of tags-widget -->
+
+                        <div class="category-widget sidebar-widget">
+                            <h2>Category List</h2>
+                            <ul>
+                                <li><a href="">Building News<span>(10)</span></a></li>
+                                <li><a href="">Construction<span>(8)</span></a></li>
+                                <li><a href="">Financial Loans<span>(9)</span></a></li>
+                                <li><a href="">Video<span>(12)</span></a></li>
+                                <li><a href="">Projects<span>(3)</span></a></li>
+                                <li><a href="">Innovation<span>(4)</span></a></li>
+                                <li><a href="">Web development<span>(11)</span></a></li>
+                            </ul>
+                        </div> <!-- end of category-widget -->
+
+                        <div class="instagram-widget sidebar-widget">
+                            <h2>Instagram Feeds</h2>
+                            <ul>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                            </ul>
+                        </div> <!-- end of instagram-widget -->
+                    </div> <!-- end of #sidebar -->
                 </div>
-                <div class="row">
-                    <div class="col-sm-4  ">
-                        <div class="blog-item-grid">
-                            <div class="post-image">
-                                <a href=""><img src="assets/img/blog/blog-1.png" alt=""><i class="fa fa-plus"></i></a>
-                                <div class="post-date">
-                                    <span class="date">30</span>
-                                    <span class="month">Sep</span>
+                <div class="col-sm-7 col-md-8 col-lg-8 col-lg-offset-1">
+                    <div id="primary">
+                        <div class="posts-wrapper">
+                            <article class="post-single">
+                                <div class="thumb-wrapper">
+                                    <img src="http://placehold.it/830X400" alt="">
                                 </div>
-                            </div>
-                            <div class="post-content ">
-                                <div class="post-meta-wrapper">
-                                    <span class="post-author"><i class="fa fa-user"></i> John Doe</span>
-                                    <span class="post-categories"><i class="fa fa-tag"></i> Nature, Object</span>
-                                </div>
+                                <div class="post-content-wrapper">
+                                    <div class="post-meta-wrapper">
+                                        <span class="post-date"><i class="fa fa-calendar"></i> 27th Oct, 2017</span>
+                                        <span class="post-author"><i class="fa fa-user"></i> John Doe</span>
+                                        <span class="post-categories"><i class="fa fa-tag"></i> Science, Nature, Object</span>
+                                    </div>
 
-                                <h3 class="post-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quidem sapiente repellendus nihil quibusdam!!</p>
-                                <a href="#" class="default-btn   "> View More </a>
-                            </div>
-                        </div> <!-- end of blog-item-grid -->
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="blog-item-grid">
-                            <div class="post-image">
-                                <a href=""><img src="assets/img/blog/blog-1.png" alt=""><i class="fa fa-plus"></i></a>
-                                <div class="post-date">
-                                    <span class="date">30</span>
-                                    <span class="month">Sep</span>
+                                    <div class="post-descrption">
+                                        <h2 class="post-title">Lorem ipsum dolor sit amet.</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe facilis, tenetur quod, pariatur aperiam, ea rerum nihil, quae soluta nemo praesentium culpa! Reiciendis minima, reprehenderit illo molestiae dolore, explicabo eum!</p>
+                                        <a href="" class="default-btn">Read More</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="post-content ">
-                                <div class="post-meta-wrapper">
-                                    <span class="post-author"><i class="fa fa-user"></i> John Doe</span>
-                                    <span class="post-categories"><i class="fa fa-tag"></i> Nature, Object</span>
+                                
+                            </article>
+
+
+                            <article class="post-single">
+                                <div class="thumb-wrapper">
+                                    <img src="http://placehold.it/830X400" alt="">
                                 </div>
+                                <div class="post-content-wrapper">
+                                    <div class="post-meta-wrapper">
+                                        <span class="post-date"><i class="fa fa-calendar"></i> 27th Oct, 2017</span>
+                                        <span class="post-author"><i class="fa fa-user"></i> John Doe</span>
+                                        <span class="post-categories"><i class="fa fa-tag"></i> Science, Nature, Object</span>
+                                    </div>
 
-                                <h3 class="post-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quidem sapiente repellendus nihil quibusdam!!</p>
-                                <a href="#" class="default-btn   "> View More </a>
-                            </div>
-                        </div> <!-- end of blog-item-grid -->
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="blog-item-grid">
-                            <div class="post-image">
-                                <a href=""><img src="assets/img/blog/blog-1.png" alt=""><i class="fa fa-plus"></i></a>
-                                <div class="post-date">
-                                    <span class="date">30</span>
-                                    <span class="month">Sep</span>
+                                    <div class="post-descrption">
+                                        <h2 class="post-title">Lorem ipsum dolor sit amet.</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe facilis, tenetur quod, pariatur aperiam, ea rerum nihil, quae soluta nemo praesentium culpa! Reiciendis minima, reprehenderit illo molestiae dolore, explicabo eum!</p>
+                                        <a href="" class="default-btn">Read More</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="post-content ">
-                                <div class="post-meta-wrapper">
-                                    <span class="post-author"><i class="fa fa-user"></i> John Doe</span>
-                                    <span class="post-categories"><i class="fa fa-tag"></i> Nature, Object</span>
+                                
+                            </article>
+
+                            <article class="post-single">
+                                <div class="thumb-wrapper">
+                                    <img src="http://placehold.it/830X400" alt="">
                                 </div>
+                                <div class="post-content-wrapper">
+                                    <div class="post-meta-wrapper">
+                                        <span class="post-date"><i class="fa fa-calendar"></i> 27th Oct, 2017</span>
+                                        <span class="post-author"><i class="fa fa-user"></i> John Doe</span>
+                                        <span class="post-categories"><i class="fa fa-tag"></i> Science, Nature, Object</span>
+                                    </div>
 
-                                <h3 class="post-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quidem sapiente repellendus nihil quibusdam!!</p>
-                                <a href="#" class="default-btn   "> View More </a>
-                            </div>
-                        </div> <!-- end of blog-item-grid -->
-                    </div>
-                    <div class="clearfix"></div>
-
-                    <div class="col-sm-4">
-                        <div class="blog-item-grid">
-                            <div class="post-image">
-                                <a href=""><img src="assets/img/blog/blog-1.png" alt=""><i class="fa fa-plus"></i></a>
-                                <div class="post-date">
-                                    <span class="date">30</span>
-                                    <span class="month">Sep</span>
+                                    <div class="post-descrption">
+                                        <h2 class="post-title">Lorem ipsum dolor sit amet.</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe facilis, tenetur quod, pariatur aperiam, ea rerum nihil, quae soluta nemo praesentium culpa! Reiciendis minima, reprehenderit illo molestiae dolore, explicabo eum!</p>
+                                        <a href="" class="default-btn">Read More</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="post-content ">
-                                <div class="post-meta-wrapper">
-                                    <span class="post-author"><i class="fa fa-user"></i> John Doe</span>
-                                    <span class="post-categories"><i class="fa fa-tag"></i> Nature, Object</span>
-                                </div>
+                                
+                            </article>
+                        </div>
 
-                                <h3 class="post-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quidem sapiente repellendus nihil quibusdam!!</p>
-                                <a href="#" class="default-btn   "> View More </a>
-                            </div>
-                        </div> <!-- end of blog-item-grid -->
-                    </div>
 
-                    <div class="col-sm-4">
-                        <div class="blog-item-grid">
-                            <div class="post-image">
-                                <a href=""><img src="assets/img/blog/blog-1.png" alt=""><i class="fa fa-plus"></i></a>
-                                <div class="post-date">
-                                    <span class="date">30</span>
-                                    <span class="month">Sep</span>
-                                </div>
-                            </div>
-                            <div class="post-content ">
-                                <div class="post-meta-wrapper">
-                                    <span class="post-author"><i class="fa fa-user"></i> John Doe</span>
-                                    <span class="post-categories"><i class="fa fa-tag"></i> Nature, Object</span>
-                                </div>
+                        <div class="pagination-wrapper text-left">
 
-                                <h3 class="post-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quidem sapiente repellendus nihil quibusdam!!</p>
-                                <a href="#" class="default-btn   "> View More </a>
-                            </div>
-                        </div> <!-- end of blog-item-grid -->
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="blog-item-grid">
-                            <div class="post-image">
-                                <a href=""><img src="assets/img/blog/blog-1.png" alt=""><i class="fa fa-plus"></i></a>
-                                <div class="post-date">
-                                    <span class="date">30</span>
-                                    <span class="month">Sep</span>
-                                </div>
-                            </div>
-                            <div class="post-content ">
-                                <div class="post-meta-wrapper">
-                                    <span class="post-author"><i class="fa fa-user"></i> John Doe</span>
-                                    <span class="post-categories"><i class="fa fa-tag"></i> Nature, Object</span>
-                                </div>
-
-                                <h3 class="post-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quidem sapiente repellendus nihil quibusdam!!</p>
-                                <a href="#" class="default-btn   "> View More </a>
-                            </div>
-                        </div> <!-- end of blog-item-grid -->
-                    </div>
-
-                    <div class="clearfix"></div>
-
-                    <div class="col-sm-4">
-                        <div class="blog-item-grid">
-                            <div class="post-image">
-                                <a href=""><img src="assets/img/blog/blog-1.png" alt=""><i class="fa fa-plus"></i></a>
-                                <div class="post-date">
-                                    <span class="date">30</span>
-                                    <span class="month">Sep</span>
-                                </div>
-                            </div>
-                            <div class="post-content ">
-                                <div class="post-meta-wrapper">
-                                    <span class="post-author"><i class="fa fa-user"></i> John Doe</span>
-                                    <span class="post-categories"><i class="fa fa-tag"></i> Nature, Object</span>
-                                </div>
-
-                                <h3 class="post-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quidem sapiente repellendus nihil quibusdam!!</p>
-                                <a href="#" class="default-btn   "> View More </a>
-                            </div>
-                        </div> <!-- end of blog-item-grid -->
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="blog-item-grid">
-                            <div class="post-image">
-                                <a href=""><img src="assets/img/blog/blog-1.png" alt=""><i class="fa fa-plus"></i></a>
-                                <div class="post-date">
-                                    <span class="date">30</span>
-                                    <span class="month">Sep</span>
-                                </div>
-                            </div>
-                            <div class="post-content ">
-                                <div class="post-meta-wrapper">
-                                    <span class="post-author"><i class="fa fa-user"></i> John Doe</span>
-                                    <span class="post-categories"><i class="fa fa-tag"></i> Nature, Object</span>
-                                </div>
-
-                                <h3 class="post-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quidem sapiente repellendus nihil quibusdam!!</p>
-                                <a href="#" class="default-btn   "> View More </a>
-                            </div>
-                        </div> <!-- end of blog-item-grid -->
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="blog-item-grid">
-                            <div class="post-image">
-                                <a href=""><img src="assets/img/blog/blog-1.png" alt=""><i class="fa fa-plus"></i></a>
-                                <div class="post-date">
-                                    <span class="date">30</span>
-                                    <span class="month">Sep</span>
-                                </div>
-                            </div>
-                            <div class="post-content ">
-                                <div class="post-meta-wrapper">
-                                    <span class="post-author"><i class="fa fa-user"></i> John Doe</span>
-                                    <span class="post-categories"><i class="fa fa-tag"></i> Nature, Object</span>
-                                </div>
-
-                                <h3 class="post-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quidem sapiente repellendus nihil quibusdam!!</p>
-                                <a href="#" class="default-btn   "> View More </a>
-                            </div>
-                        </div> <!-- end of blog-item-grid -->
-                    </div> <!-- end of col -->
-                </div>  <!-- end of row -->
-            </div>  <!-- end of container -->
-
-            <div class="pagination-wrapper text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
                             <ul class="pagination pagination-lg">
                                 <li class="disabled"><span>&laquo;</span></li>
                                 <li class="active"><span>1</span></li>
@@ -389,13 +337,15 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
                                 <li><a href="#">5</a></li>
                                 <li><a href="#">&raquo;</a></li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
 
+                        </div> <!-- end of pagination-wrapper -->
+                    </div> <!-- end of #primary -->
+                </div>
+            
+            </div>
+        </div> <!-- end of container -->
+    </main>
+   
     <footer>
         <div class="footer-top">
             <div class="container">

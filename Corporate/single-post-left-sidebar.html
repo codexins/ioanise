@@ -63,17 +63,53 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
                             <div class="contact-info">
                                 <a href="tel:+1123456789" class="phone">(123) 456-7890</a>
                             </div>
-                            <nav class="menu hidden-xs">
-                                <ul class="main-menu">
-                                    <li><a href="index.html">Home</a></li>
+                            <nav class="hidden-xs">
+                                <ul class="sf-menu">
+                                    <li><a href="index.html">Home</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="index.html">Home Version 01</a></li>
+                                            <li><a href="index-02.html">Home Version 02</a></li>
+                                            <li><a href="index-03.html">Home Version 03</a></li>
+                                            <li><a href="index-04.html">Home Version 04</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="about.html">About</a></li>
                                     <li><a href="services.html">Services</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="portfolio.html">Portfolio</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="portfolio-single-01.html">Portfolio Single 01</a></li>
+                                            <li><a href="portfolio-single-02.html">Portfolio Single 02</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>                        
-                            </nav>
+                                    <li><a href="blog-list-right-sidebar.html">Blog</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog-grid.html">Blog Grid</a></li>
+                                            <li><a href="blog-list-right-sidebar.html">Blog List</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="blog-list-no-sidebar.html">Blog List No Sidebar</a></li>
+                                                    <li><a href="blog-list-left-sidebar.html">Blog List Left Sidebar</a></li>
+                                                    <li><a href="blog-list-right-sidebar.html">Blog List Right Sidebar</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="single-post-right-sidebar.html">Single Blog</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="single-post-no-sidebar.html">Single Post No Sidebar</a></li>
+                                                    <li><a href="single-post-left-sidebar.html">Single Post Left Sidebar</a></li>
+                                                    <li><a href="single-post-right-sidebar.html">Single Post RIght Sidebar</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact-us-01.html">Contact</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="contact-us-01.html">Contact Us 01</a></li>
+                                            <li><a href="contact-us-02.html">Contact Us 02</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="elements.html">Elements</a></li>
+                                </ul>  <!-- end of sf-menu -->
+                            </nav> <!-- end of nav -->
                             
                             <div class="mobile-menu-button">
                                 <button id="c-button--slide-left"  type="button" class=" c-button visible-xs navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -129,7 +165,94 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
     <main class="whole-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-sm-7 col-md-8 col-lg-8">
+                <div class="col-sm-5 col-md-4 col-lg-3">
+                    <div id="sidebar">
+
+                        <div class="search-widget sidebar-widget">
+                            <form action="">
+                                <input type="search" name="s" title="search" placeholder="Search..">
+                                <input type="submit" value="search">
+
+                            </form>
+                        </div> <!-- end of search-widget -->
+
+                        <div class="recent-posts-widget sidebar-widget">
+                            <h2>Recent Posts</h2>
+                            <div class="recent-posts-single">
+                                <div class="img-thumb">
+                                    <img src="http://placehold.it/100X80" alt="Thumbnail">
+                                </div>
+                                <div class="post-brief">
+                                    <h3>Lorem ipsum dolor.</h3>
+                                    <p><span>September 12, 2017</span></p>
+                                </div>
+                            </div>
+
+                            <div class="recent-posts-single">
+                                <div class="img-thumb">
+                                    <img src="http://placehold.it/100X80" alt="Thumbnail">
+                                </div>
+                                <div class="post-brief">
+                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                    <p><span>September 12, 2017</span></p>
+                                </div>
+                            </div>
+
+                            <div class="recent-posts-single">
+                                <div class="img-thumb">
+                                    <img src="http://placehold.it/100X80" alt="Thumbnail">
+                                </div>
+                                <div class="post-brief">
+                                    <h3>Lorem ipsum dolor.</h3>
+                                    <p><span>September 12, 2017</span></p>
+                                </div>
+                            </div>
+
+                        </div> <!-- end of recent-posts-widget -->
+
+                        <div class="tags-widget sidebar-widget">
+                            <h2>Tags</h2>
+                            <ul>
+                                <li><a href="">Arts</a></li>
+                                <li><a href="">Electric</a></li>
+                                <li><a href="">Science</a></li>
+                                <li><a href="">Food</a></li>
+                                <li><a href="">Nature</a></li>
+                                <li><a href="">Hat</a></li>
+                            </ul>
+                        </div> <!-- end of tags-widget -->
+
+                        <div class="category-widget sidebar-widget">
+                            <h2>Category List</h2>
+                            <ul>
+                                <li><a href="">Building News<span>(10)</span></a></li>
+                                <li><a href="">Construction<span>(8)</span></a></li>
+                                <li><a href="">Financial Loans<span>(9)</span></a></li>
+                                <li><a href="">Video<span>(12)</span></a></li>
+                                <li><a href="">Projects<span>(3)</span></a></li>
+                                <li><a href="">Innovation<span>(4)</span></a></li>
+                                <li><a href="">Web development<span>(11)</span></a></li>
+                            </ul>
+                        </div> <!-- end of category-widget -->
+
+                        <div class="instagram-widget sidebar-widget">
+                            <h2>Instagram Feeds</h2>
+                            <ul>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
+                            </ul>
+                        </div> <!-- end of instagram-widget -->
+
+                    </div> <!-- end of #sidebar -->
+                </div>
+                <div class="col-sm-7 col-md-8 col-lg-8 col-lg-offset-1">
                     <div id="primary">
                         <div class="posts-wrapper">
                             <article class="post-single">
@@ -298,94 +421,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
 
                     </div> <!-- end of #primary -->
                 </div>
-                
-                <div class="col-sm-5 col-md-4 col-lg-3 col-lg-offset-1">
-                    <div id="sidebar">
-
-                        <div class="search-widget sidebar-widget">
-                            <form action="">
-                                <input type="search" name="s" title="search" placeholder="Search..">
-                                <input type="submit" value="search">
-
-                            </form>
-                        </div> <!-- end of search-widget -->
-
-                        <div class="recent-posts-widget sidebar-widget">
-                            <h2>Recent Posts</h2>
-                            <div class="recent-posts-single">
-                                <div class="img-thumb">
-                                    <img src="http://placehold.it/100X80" alt="Thumbnail">
-                                </div>
-                                <div class="post-brief">
-                                    <h3>Lorem ipsum dolor.</h3>
-                                    <p><span>September 12, 2017</span></p>
-                                </div>
-                            </div>
-
-                            <div class="recent-posts-single">
-                                <div class="img-thumb">
-                                    <img src="http://placehold.it/100X80" alt="Thumbnail">
-                                </div>
-                                <div class="post-brief">
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
-                                    <p><span>September 12, 2017</span></p>
-                                </div>
-                            </div>
-
-                            <div class="recent-posts-single">
-                                <div class="img-thumb">
-                                    <img src="http://placehold.it/100X80" alt="Thumbnail">
-                                </div>
-                                <div class="post-brief">
-                                    <h3>Lorem ipsum dolor.</h3>
-                                    <p><span>September 12, 2017</span></p>
-                                </div>
-                            </div>
-
-                        </div> <!-- end of recent-posts-widget -->
-
-                        <div class="tags-widget sidebar-widget">
-                            <h2>Tags</h2>
-                            <ul>
-                                <li><a href="">Arts</a></li>
-                                <li><a href="">Electric</a></li>
-                                <li><a href="">Science</a></li>
-                                <li><a href="">Food</a></li>
-                                <li><a href="">Nature</a></li>
-                                <li><a href="">Hat</a></li>
-                            </ul>
-                        </div> <!-- end of tags-widget -->
-
-                        <div class="category-widget sidebar-widget">
-                            <h2>Category List</h2>
-                            <ul>
-                                <li><a href="">Building News<span>(10)</span></a></li>
-                                <li><a href="">Construction<span>(8)</span></a></li>
-                                <li><a href="">Financial Loans<span>(9)</span></a></li>
-                                <li><a href="">Video<span>(12)</span></a></li>
-                                <li><a href="">Projects<span>(3)</span></a></li>
-                                <li><a href="">Innovation<span>(4)</span></a></li>
-                                <li><a href="">Web development<span>(11)</span></a></li>
-                            </ul>
-                        </div> <!-- end of category-widget -->
-
-                        <div class="instagram-widget sidebar-widget">
-                            <h2>Instagram Feeds</h2>
-                            <ul>
-                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
-                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
-                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
-                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
-                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
-                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
-                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
-                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
-                                <li><a href=""><img src="http://placehold.it/80X80" alt="Instagram Feeds"></a></li>
-                            </ul>
-                        </div> <!-- end of instagram-widget -->
-
-                    </div> <!-- end of #sidebar -->
-                </div>
+            
             </div>
         </div> <!-- end of container -->
     </main> <!-- end of main -->
@@ -476,6 +512,10 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
 <script src="assets/js/jquery.1.12.4.min.js"></script>
 <!-- bootstrap js -->
 <script src="assets/js/bootstrap.min.js"></script>
+
+<!-- superfish menu -->
+<script src="assets/js/hoverIntent.js"></script>
+<script src="assets/js/superfish.min.js"></script>
 
 <script src="assets/js/imagesloaded.pkgd.js"></script>
 <script src="assets/js/isotope.pkgd.min.js"></script>

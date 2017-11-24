@@ -1,34 +1,111 @@
-.main-menu{
-	display: inline-block;
+.sf-menu{
+	display: block;
     float: right;
     margin-top: 0;
     margin-bottom: 0;
-    width: 100%;
-    text-align: right;
+    margin-right: -20px;
+    width: auto;
+    clear:both;
 	li {
-		display: inline-block;
+		background: $cx-primary-color;
+		display: block;
 		a{
 			padding: 10px 20px;
 			display: block; 
 			position: relative;
-			text-transform: uppercase;
-			color: $cx-text-color;
+			//text-transform: uppercase;
+			color:lighten($cx-text-color, 100%);
+			border:0;
 			@include respond-to(tablet){
 				padding: 10px 15px;
 			};
 			
 			&:hover{
-				color:$cx-secondary-color ;
+				color:lighten($cx-text-color, 100%);
 			}
-
-
 		}
-		&:last-child {
-			a {
-				padding-right: 0;
-			}
-		}	
+
 	}
+
+    &>li {
+    	background: transparent;
+    	&.sfHover,
+    	&:focus,
+    	&:hover {
+    		background: transparent;
+    	}
+    	&.sfHover {
+    		&>a {
+    			color: $cx-secondary-color;
+    		}
+    	}
+    	&>a {
+    		text-transform: uppercase;
+    		color: $cx-text-color;
+    		&:hover {
+    			color: $cx-secondary-color;
+    		}
+    	}
+    }
+
+    ul {
+    	li {
+    		background: $cx-primary-color;
+	    	&.sfHover,
+	    	&:focus,
+	    	&:hover {
+	    		background: $cx-secondary-color;
+	    	}
+    	}
+
+    	ul {
+    		li {
+    			background: lighten($cx-primary-color, 5%);
+    		}
+
+    		ul {
+    			li {
+				background: lighten($cx-primary-color, 10%);
+    			}
+
+    			ul {
+    				li {
+    					background: lighten($cx-primary-color, 15%);
+    				}
+    			}
+    		}
+    	}
+    }
+
+}
+
+
+.sub-menu {
+	//display: block !important;
+}
+
+.sf-arrows .sf-with-ul:after {
+    content: '\f107';
+    font-family: FontAwesome;
+    font-size: 85%;
+    position: absolute;
+    right: 5px;
+    top: auto;
+    margin-top: -1px;
+    width: auto;
+    height: auto;
+    border:0;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+    content: '\f105';
+    font-family: FontAwesome;
+	margin-top: 0;
+	right:10px;
+}
+
+.sf-arrows .sf-with-ul {
+    padding-right: 20px;
 }
 
 .mobile-menu{

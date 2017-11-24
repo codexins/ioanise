@@ -1,0 +1,41 @@
+.cta-section {
+	padding-top:$cx-col-spacing;
+	padding-bottom: $cx-col-spacing;
+	background: $cx-fourth-color;
+	margin-bottom: 0;
+
+	p,	
+	h2 {
+		@extend %mb0;
+		color: lighten($cx-text-color, 100%);
+	}
+
+	h2 {
+		margin-bottom: 5px;
+	}
+
+	.row {
+		@include eqheight;
+		.cta-content {
+
+			@include respond-to(mobile) {
+				margin-bottom: 30px;
+			}
+
+		}
+
+		.cta-action {
+			text-align: right;
+			.btn-default {
+				padding:10px 25px;
+			}
+
+			@include respond-to(mobile) {
+				text-align: left;
+			}
+		}
+
+	}
+
+
+}

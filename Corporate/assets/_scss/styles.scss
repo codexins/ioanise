@@ -12,13 +12,3 @@
 @import "components/__components-dir";
 //Layout
 @import "layouts/__layouts-dir";
-
-
-.check {
-	@extend %vpadding;
-	background: url('../img/slider/slider-3.jpg') no-repeat scroll center;
-	background-size: cover;
-	color: #fff;
-	@include cx-overlay;
-	
-}

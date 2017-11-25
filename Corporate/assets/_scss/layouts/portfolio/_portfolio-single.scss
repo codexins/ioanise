@@ -1,5 +1,15 @@
 .portfolio-images {
 	overflow: hidden;
+	.row {
+		img {
+			margin-bottom: $cx-col-spacing;
+		}
+
+	}
+
+	&.bottom {
+		margin-bottom: $cx-col-spacing;
+	}
 }
 
 .portfolio-left {
@@ -50,6 +60,9 @@
 	background-attachment: scroll;
 	background-position: center;
 	background-size:cover;
+	&.full {
+		margin-bottom: $cx-col-spacing;
+	}
 
 }
 
@@ -111,6 +124,10 @@
 }
 
 .portfolio-content {
+    clear: both;
+    width: 100%;
+    float: none;
+    overflow: hidden;
 	.portfolio-left {
 		@include respond-to(mobile) {
 			margin-bottom: $cx-col-spacing;
@@ -134,7 +151,16 @@
 	}
 
 	@include respond-to(mobile) {
-		margin-bottom: $cx-section-spacing;
+		margin-bottom: $cx-col-spacing;
+	}
+
+	&.reversed {
+		.portfolio-right {
+			float: left;
+		}
+		@include respond-to(mobile) {
+			margin-bottom: 0;
+		}
 	}
 }
 

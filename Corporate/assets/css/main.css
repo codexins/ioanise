@@ -12061,11 +12061,11 @@ input[type="button"]:hover {
 .cta-section p,
 .cta-section h2, .testimonial, .client-section.type-2, .blog-item-grid .post-meta-wrapper span, .contact-intro, .contact-intro p,
 .contact-intro .section-intro,
-.contact-intro .section-intro-left, .map-location, .contact-fun, .service-promo .col-sm-8 p:last-child, .inner-services, .portfolio-section {
+.contact-intro .section-intro-left, .map-location, .contact-fun, .service-promo .col-sm-8 p:last-child, .inner-services, .portfolio-section, .faq-page .cta-centered {
   margin-bottom: 0;
 }
 
-.fun-facts, .testimonial, .client-section, .skills, .how-it-works, .service-promo, .inner-services, .check {
+.cta-centered, .fun-facts, .testimonial, .client-section, .skills, .how-it-works, .service-promo, .inner-services, .check {
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -12362,6 +12362,97 @@ div#toTop {
   font-size: 16px;
   line-height: 35px;
   display: block;
+}
+
+.social-icons {
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+.social-icons p {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  line-height: 36px;
+}
+
+.social-icons ul {
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.social-icons ul li a {
+  display: block;
+  margin-right: 6px;
+  color: white;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.social-icons ul li a.facebook {
+  background: #2D5F9A;
+}
+
+.social-icons ul li a.facebook:hover {
+  background: #244c7a;
+}
+
+.social-icons ul li a.twitter {
+  background: #00C3F3;
+}
+
+.social-icons ul li a.twitter:hover {
+  background: #00a2ca;
+}
+
+.social-icons ul li a.google-plus {
+  background: #d34836;
+}
+
+.social-icons ul li a.google-plus:hover {
+  background: #b83928;
+}
+
+.social-icons ul li a.instagram {
+  background: #405de6;
+}
+
+.social-icons ul li a.instagram:hover {
+  background: #1d3fe0;
+}
+
+.social-icons ul li a.pinterest {
+  background: #cd2029;
+}
+
+.social-icons ul li a.pinterest:hover {
+  background: #aa1a22;
+}
+
+.social-icons ul li a.linkedin {
+  background: #0d77b7;
+}
+
+.social-icons ul li a.linkedin:hover {
+  background: #0a5e91;
+}
+
+@media only screen and (max-width: 479px) {
+  .social-icons ul li {
+    margin-bottom: 10px;
+  }
 }
 
 a.phone {
@@ -13092,6 +13183,10 @@ ul.address-card li.card-location::before {
   .cta-section .row .cta-action {
     text-align: left;
   }
+}
+
+.cta-centered {
+  text-align: center;
 }
 
 .page-title {
@@ -13850,6 +13945,7 @@ ul.address-card li.card-location::before {
 
 .blog-item-grid .post-content {
   padding: 25px;
+  background: #f9f9f9;
   border: 1px solid #e6e6e6;
   border-top: 0px solid;
 }
@@ -13884,7 +13980,6 @@ ul.address-card li.card-location::before {
 
 .blog-item-grid:hover .post-content {
   border-color: #d9d9d9;
-  background: #fafafa;
 }
 
 .blog-item-grid .post-meta-wrapper {
@@ -14126,6 +14221,120 @@ footer {
   display: none;
 }
 
+.contact-us {
+  background: white;
+}
+
+.contact-us .container {
+  margin-top: -200px;
+}
+
+.contact-us .container .form-wrapper,
+.contact-us .container .contact-info-wrapper {
+  background: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+
+.contact-us .container .form-wrapper h3 {
+  margin-left: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-us .container .form-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-us .container .form-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-us .container {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-us .container {
+    margin-top: 0;
+  }
+}
+
+.contact-us input[type="submit"] {
+  width: 100%;
+}
+
+.contact-us textarea {
+  min-height: 230px;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-us textarea {
+    min-height: 160px;
+  }
+}
+
+.contact-us .contact-box {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 25px;
+}
+
+.contact-us .contact-box .thumb-icon {
+  width: 55px;
+}
+
+.contact-us .contact-box .fa {
+  display: block;
+  width: 55px;
+}
+
+.contact-us .social-icons {
+  margin-top: 45px;
+  margin-bottom: 0;
+}
+
+.contact-us .social-icons h6 {
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-us {
+    padding-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-us {
+    padding-top: 15px;
+  }
+}
+
+.connect {
+  margin-bottom: 0;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background: #f6f6f6;
+}
+
+.connect .social-icons {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.connect .social-icons h6 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
 .primary-form div[class*='col-'] {
   padding-bottom: 0;
 }
@@ -14134,6 +14343,10 @@ footer {
 .full-width-input input {
   width: 100%;
   background: #fafafa;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .service-page .page-title {
@@ -14207,6 +14420,14 @@ footer {
   overflow: hidden;
 }
 
+.portfolio-images .row img {
+  margin-bottom: 45px;
+}
+
+.portfolio-images.bottom {
+  margin-bottom: 45px;
+}
+
 .portfolio-left {
   float: left;
   width: 815px;
@@ -14269,6 +14490,10 @@ footer {
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
+}
+
+.image-wrapper.full {
+  margin-bottom: 45px;
 }
 
 .portfolio-featured {
@@ -14344,6 +14569,13 @@ footer {
   background-image: url("http://placehold.it/800X585");
 }
 
+.portfolio-content {
+  clear: both;
+  width: 100%;
+  float: none;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 767px) {
   .portfolio-content .portfolio-left {
     margin-bottom: 45px;
@@ -14372,7 +14604,17 @@ footer {
 
 @media only screen and (max-width: 767px) {
   .portfolio-content {
-    margin-bottom: 90px;
+    margin-bottom: 45px;
+  }
+}
+
+.portfolio-content.reversed .portfolio-right {
+  float: left;
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-content.reversed {
+    margin-bottom: 0;
   }
 }
 
@@ -14478,97 +14720,6 @@ footer {
 
 .single-post-meta ul li:last-child a::after {
   display: none;
-}
-
-.social-shares {
-  margin-top: 25px;
-  margin-bottom: 45px;
-}
-
-.social-shares p {
-  display: inline-block;
-  float: left;
-  margin-right: 20px;
-  line-height: 36px;
-}
-
-.social-shares ul {
-  margin: 0;
-  padding: 0;
-}
-
-.social-shares ul li {
-  list-style-type: none;
-  display: inline-block;
-}
-
-.social-shares ul li a {
-  display: block;
-  margin-right: 6px;
-  color: white;
-  width: 36px;
-  height: 36px;
-  text-align: center;
-  line-height: 36px;
-  display: inline-block;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-
-.social-shares ul li a.facebook {
-  background: #2D5F9A;
-}
-
-.social-shares ul li a.facebook:hover {
-  background: #244c7a;
-}
-
-.social-shares ul li a.twitter {
-  background: #00C3F3;
-}
-
-.social-shares ul li a.twitter:hover {
-  background: #00a2ca;
-}
-
-.social-shares ul li a.google-plus {
-  background: #d34836;
-}
-
-.social-shares ul li a.google-plus:hover {
-  background: #b83928;
-}
-
-.social-shares ul li a.instagram {
-  background: #405de6;
-}
-
-.social-shares ul li a.instagram:hover {
-  background: #1d3fe0;
-}
-
-.social-shares ul li a.pinterest {
-  background: #cd2029;
-}
-
-.social-shares ul li a.pinterest:hover {
-  background: #aa1a22;
-}
-
-.social-shares ul li a.linkedin {
-  background: #0d77b7;
-}
-
-.social-shares ul li a.linkedin:hover {
-  background: #0a5e91;
-}
-
-@media only screen and (max-width: 479px) {
-  .social-shares ul li {
-    margin-bottom: 10px;
-  }
 }
 
 .single .post-single {
@@ -14714,6 +14865,49 @@ footer {
 .comments-area .comment-form input,
 .comments-area .comment-form textarea {
   width: 100%;
+}
+
+.faq-wrapper .panel-group .panel {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+
+.faq-wrapper .panel-default .panel-heading {
+  padding: 0;
+}
+
+.faq-wrapper .panel-default .panel-heading a {
+  display: block;
+  padding: 15px 15px 15px 40px;
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.faq-wrapper .panel-default .panel-heading a::before {
+  content: "\f068";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  right: auto;
+  bottom: 0;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  display: inline-block;
+}
+
+.faq-wrapper .panel-default .panel-heading a.collapsed::before {
+  content: "\f067";
+}
+
+.faq-page .cta-centered {
+  background: #f1f1f1;
 }
 
 .check {

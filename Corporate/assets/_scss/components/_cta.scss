@@ -39,3 +39,8 @@
 
 
 }
+
+.cta-centered {
+	text-align: center;
+	@extend %vpadding;
+}

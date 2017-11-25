@@ -1,0 +1,48 @@
+.faq-wrapper {
+	.panel-group {
+		.panel {
+			@include border-radius(0);
+		}
+	}
+	.panel-default {
+		.panel-heading {
+			padding:0;
+
+			a {
+			    display: block;
+			    padding: 15px 15px 15px 40px;
+			    position: relative;
+			    font-weight: 400;
+			    font-size: 18px;
+				&::before {
+					content:"\f068";
+					font-family: FontAwesome;
+					position:absolute;
+					top:5px;
+					left:10px;
+					right:auto;
+					bottom:0;
+					margin:auto;
+					@include box(24px, 24px);
+				}
+
+				&.collapsed {
+					&::before {
+						content:"\f067";
+					}
+				}
+			}
+
+
+		}
+
+
+	}
+}
+
+.faq-page {
+	.cta-centered {
+		background: #f1f1f1;
+		@extend %mb0;
+	}
+}

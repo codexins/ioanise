@@ -21,7 +21,7 @@
 		    transform: translateY(-50%);
 		}
 
-		@include cx-overlay;
+		@include cx-overlay(rgba(0,0,0,.5));
 		.default-btn {
 			border-color: #fff;
 			color: #fff;

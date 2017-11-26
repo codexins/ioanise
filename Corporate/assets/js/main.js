@@ -34,6 +34,7 @@ jQuery(document).ready(function($){
         loader: 'none',
         playPause: false,
         transPeriod: 1000,
+        fx: 'simpleFade'
       });
 
 

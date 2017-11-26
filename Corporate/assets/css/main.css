@@ -11848,6 +11848,282 @@ body.has-active-menu {
 }
 
 /*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  -moz-backface-visibility: hidden;
+  /* fix firefox animation glitch */
+}
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+  display: none;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+.owl-carousel.owl-refresh .owl-item {
+  visibility: hidden;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel.owl-grab {
+  cursor: move;
+  cursor: grab;
+}
+
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block;
+}
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+}
+
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+
+.owl-carousel .fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out;
+}
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.owl-carousel .owl-item img.owl-lazy {
+  transform-style: preserve-3d;
+}
+
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform 100ms ease;
+}
+
+.owl-carousel .owl-video-play-icon:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none;
+}
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 400ms ease;
+}
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+  color: #FFF;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #D6D6D6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: #869791;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.owl-theme .owl-nav .disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px;
+}
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #869791;
+}
+
+/*
 This file is used to contain all base imports.
 Files inside this folder can contain global styles used in
 the project.
@@ -12090,7 +12366,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 25px;
 }
 
-a, .default-btn, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .team-member .team-image:before, .team-details, .top-content a, .slider-section .camera_caption .default-btn, .project-item .img:before, .project-content, .nav-img img, .blog-item-grid .post-content, .post-image a i, .post-image a::before, .submit-button {
+a, .default-btn, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .team-member .team-image:before, .team-details, .top-content a, .project-item .img:before, .project-content, .nav-img img, .blog-item-grid .post-content, .post-image a i, .post-image a::before, .submit-button {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -13436,114 +13712,49 @@ ul.address-card li.card-location::before {
   display: block;
 }
 
-.slider-section .camera_wrap {
-  margin-bottom: 0 !important;
+.slider-section .slide-single {
+  color: #fff;
+  height: 500px;
 }
 
-.slider-section .camera_caption {
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.4);
+.slider-section .slide-single h1, .slider-section .slide-single h2, .slider-section .slide-single h3, .slider-section .slide-single h4, .slider-section .slide-single h5, .slider-section .slide-single h6 {
+  color: #fff;
 }
 
-.slider-section .camera_caption > div {
-  background: transparent;
-  width: 1140px;
-  margin: auto;
+.slider-section .slide-single img {
+  display: none;
+}
+
+.slider-section .slide-single .container {
   top: 50%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0;
   position: relative;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .slider-section .camera_caption > div {
-    width: 940px;
-  }
+.slider-section .slide-single {
+  position: relative;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .slider-section .camera_caption > div {
-    width: 720px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .slider-section .camera_caption > div {
-    width: 95%;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-.slider-section .camera_caption.centered > div {
-  text-align: center;
-}
-
-.slider-section .camera_caption.right-aligned > div {
-  text-align: right;
-}
-
-.slider-section .camera_caption .default-btn {
-  padding: 8px 20px;
-  display: inline-block;
-  background: transparent;
-  border: 1px solid #333;
-  color: #333;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 0.05em;
-}
-
-.slider-section .camera_caption .default-btn:hover {
-  border-color: #ff646c;
-  background: #ff646c;
-  color: white;
-}
-
-.slider-section .camera_pag {
+.slider-section .slide-single:before {
+  background: rgba(0, 0, 0, 0.4);
+  content: "";
+  display: block;
   position: absolute;
-  width: 100%;
+  top: 0;
+  right: 0;
   bottom: 0;
+  left: 0;
 }
 
-.slider-section .camera_pag ul.camera_pag_ul {
-  text-align: center;
+.slider-section .slide-single .default-btn {
+  border-color: #fff;
+  color: #fff;
 }
 
-.slider-section .camera_pag ul.camera_pag_ul li {
-  width: 16px;
-  height: 16px;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
-  background: #1ca5b8;
-}
-
-.slider-section .camera_pag ul.camera_pag_ul li span {
-  display: none;
-}
-
-.slider-section .camera_pag ul.camera_pag_ul li.cameracurrent {
-  background: #ff646c;
-  width: 36px;
+.slider-section .slide-single .default-btn:hover {
+  border-color: #ff646c;
 }
 
 .about {

@@ -26,17 +26,6 @@ jQuery(document).ready(function($){
     });
 
 
-    // camera slider
-
-      $('#slider').camera({
-        height: '35%',
-        minHeight: '350px',
-        loader: 'none',
-        playPause: false,
-        transPeriod: 1000,
-      });
-
-
     // counter 
 
     $('.counter').counterUp({

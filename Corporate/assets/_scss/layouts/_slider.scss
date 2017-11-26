@@ -4,6 +4,15 @@
 	float:none;
 	clear:both;
 	display: block;
+	h1,h2,h3,h4,h5,h6 {
+		color: lighten($cx-text-color, 100%);
+	}
+	.camera_fakehover {
+		@include cx-overlay(rgba(0,0,0,.5));
+		&::before {
+			z-index:inherit;
+		}
+	}
 	.camera_wrap {
 		margin-bottom: 0 !important;
 	}
@@ -14,8 +23,9 @@
 		bottom:0;
 		right:0;
 		position: absolute;
+		z-index:2;
 		margin:auto;
-		background: rgba(0,0,0,.4);
+		background: transparent;
 		&>div {
 			background: transparent;
 			width:1140px;
@@ -65,6 +75,9 @@
 			text-transform: uppercase;
 			font-size: 14px;
 			letter-spacing: 0.05em;
+			color: lighten($cx-text-color, 100%);
+			border-color: $cx-primary-color;
+			background: $cx-primary-color;
 		}
 
 
@@ -79,7 +92,7 @@
 			li {
 
 				width:16px;
-				height:16px;
+				height:10px;
 				@include cx-transition(all .8s ease);
 				@include border-radius(0);
 				background: $cx-primary-color;

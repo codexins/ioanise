@@ -13436,6 +13436,29 @@ ul.address-card li.card-location::before {
   display: block;
 }
 
+.slider-section h1, .slider-section h2, .slider-section h3, .slider-section h4, .slider-section h5, .slider-section h6 {
+  color: white;
+}
+
+.slider-section .camera_fakehover {
+  position: relative;
+}
+
+.slider-section .camera_fakehover:before {
+  background: rgba(0, 0, 0, 0.5);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.slider-section .camera_fakehover::before {
+  z-index: inherit;
+}
+
 .slider-section .camera_wrap {
   margin-bottom: 0 !important;
 }
@@ -13446,8 +13469,9 @@ ul.address-card li.card-location::before {
   bottom: 0;
   right: 0;
   position: absolute;
+  z-index: 2;
   margin: auto;
-  background: rgba(0, 0, 0, 0.4);
+  background: transparent;
 }
 
 .slider-section .camera_caption > div {
@@ -13504,6 +13528,9 @@ ul.address-card li.card-location::before {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 0.05em;
+  color: white;
+  border-color: #1ca5b8;
+  background: #1ca5b8;
 }
 
 .slider-section .camera_caption .default-btn:hover {
@@ -13524,7 +13551,7 @@ ul.address-card li.card-location::before {
 
 .slider-section .camera_pag ul.camera_pag_ul li {
   width: 16px;
-  height: 16px;
+  height: 10px;
   -webkit-transition: all 0.8s ease;
   -moz-transition: all 0.8s ease;
   -ms-transition: all 0.8s ease;

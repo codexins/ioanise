@@ -10,25 +10,110 @@
 		}
 		color:#fff;
 		height:500px;
+		@include respond-to(tablet) {
+			height: 400px;
+		}
+
+		@include respond-to(mobile) {
+			height: 350px;
+		}
+
 		img {
 			display: none;
 		}
 		.container {
-		    top: 50%;
+		    top: 48%;
 		    position: relative;
 		    -webkit-transform: translateY(-50%);
 		    -ms-transform: translateY(-50%);
 		    transform: translateY(-50%);
+		    @include media-only(1350px, max) {
+		    	padding-left: 100px;
+		    	padding-right: 100px;
+		    }
+
+		    @include media-only(768px, max) {
+		    	padding-left: 15px;
+		    	padding-right: 15px;
+		    }
 		}
 
 		@include cx-overlay(rgba(0,0,0,.5));
 		.default-btn {
-			border-color: #fff;
-			color: #fff;
+			border-color: $cx-primary-color;
+			background: $cx-primary-color;
+			color: lighten($cx-text-color, 100%);
 			&:hover {
+				background: $cx-secondary-color;
 				border-color: $cx-secondary-color;
 			}
 		}
 	}
+
+
+	.owl-nav {
+		opacity:0;
+		position: absolute;
+		top: 50%;
+		width:100%;
+		margin-top: -20px;
+		font-size: 22px;
+		@extend %cx-transition;
+		.owl-next,
+		.owl-prev {
+			position:absolute;
+			background: rgba(255,255,255,0.4);
+			@include box(40px, 40px);
+			@include border-radius(50%);
+			@extend %cx-transition;
+			&:hover {
+				background: rgba(255,255,255,0.85);
+			}
+		}
+
+		.owl-next {
+			right:40px;
+		}
+
+		.owl-prev {
+			left:40px;
+		}
+		@include media-only(tablet, max) {
+			display: none;
+		}
+	}
+
+	.owl-dots {
+		text-align: center;
+		width:100%;
+		position: absolute;
+		bottom: 15px;
+		.owl-dot {
+			display: inline-block;
+			margin:0 3px;
+			span {
+				width:16px;
+				height:10px;
+				display: inline-block;
+				background: $cx-primary-color;
+				@include cx-transition(all .7s ease);
+			}
+
+			&.active {
+				span {
+					width:32px;
+					background: $cx-secondary-color;
+				}
+			}
+		}
+	}
+
+	&:hover {
+		.owl-nav {
+			opacity:1;
+		}
+	}
+
+
 
 }

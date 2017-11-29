@@ -12604,14 +12604,13 @@ div#toTop {
 }
 
 .info-item .thumb-icon i {
-  font-size: 32px;
-  border: 1px solid #ccc;
+  font-size: 50px;
   color: #333;
   text-align: center;
-  width: 82px;
-  height: 82px;
+  width: 64px;
+  height: 64px;
   text-align: center;
-  line-height: 82px;
+  line-height: 64px;
   display: inline-block;
 }
 

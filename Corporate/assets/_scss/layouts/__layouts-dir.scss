@@ -1,48 +1,48 @@
 
 //Import layout files
 
-@import 'page-title';
-@import 'header-top';
-@import 'header';
-@import 'main-menu';
-@import 'slider';
-@import 'about';
-@import 'our-services';
-@import 'fun-facts';
-@import 'choose-us';
-@import 'recent-project';
-@import 'cta-content';
-@import 'team';
-@import 'testimonial';
-@import 'client-carosel';
-@import 'blog';
-@import 'map';
-@import 'footer';
+@import 'lo-page-title';
+@import 'lo-header-top';
+@import 'lo-header';
+@import 'lo-main-menu';
+@import 'lo-slider';
+@import 'lo-about';
+@import 'lo-our-services';
+@import 'lo-fun-facts';
+@import 'lo-choose-us';
+@import 'lo-recent-project';
+@import 'lo-cta-content';
+@import 'lo-team';
+@import 'lo-testimonial';
+@import 'lo-client-carosel';
+@import 'lo-blog';
+@import 'lo-map';
+@import 'lo-footer';
 
 //  about page 
-@import "about/skills"; //no 
+@import "about/lo-skills"; //no 
 
 // slider 
-@import 'slider-caption';
+@import 'lo-slider-caption';
 
 
 // contact page
-@import "contact/contact-us";
-@import "contact/contact-form";
+@import "contact/lo-contact-us";
+@import "contact/lo-contact-form";
 // services 
-@import "services/how-we-work";
+@import "services/lo-how-we-work";
 
 //portfolio page
-@import "portfolio/portfolio";
-@import "portfolio/portfolio-single";
+@import "portfolio/lo-portfolio";
+@import "portfolio/lo-portfolio-single";
 
 // blog page
 
-@import "blog/blog-list";
-@import "blog/single";
+@import "blog/lo-blog-list";
+@import "blog/lo-single";
 
 // Faq
 
-@import "Faq/faq";
+@import "Faq/lo-faq";
 
 

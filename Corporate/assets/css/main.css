@@ -12385,6 +12385,16 @@ to a reusable component.
   padding-left: 0;
 }
 
+.img-bordered {
+  border: 10px solid #e3f8fb;
+}
+
+@media only screen and (max-width: 767px) {
+  .img-bordered {
+    width: 100%;
+  }
+}
+
 div#toTop {
   position: absolute;
   top: -25px;
@@ -14055,16 +14065,6 @@ ul.address-card li.card-location::before {
 @media only screen and (max-width: 767px) {
   .about .default-btn {
     margin-bottom: 45px;
-  }
-}
-
-.img-bordered {
-  border: 10px solid #e3f8fb;
-}
-
-@media only screen and (max-width: 767px) {
-  .img-bordered {
-    width: 100%;
   }
 }
 

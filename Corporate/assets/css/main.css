@@ -12675,6 +12675,60 @@ to a reusable component.
   }
 }
 
+.fill-screen {
+  min-height: 700px;
+}
+
+.fill-screen {
+  position: relative;
+}
+
+.fill-screen:before {
+  background: rgba(0, 0, 0, 0.5);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .fill-screen {
+    min-height: 600px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .fill-screen {
+    min-height: 500px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .fill-screen {
+    min-height: 450px;
+  }
+}
+
+.fill-screen.header {
+  background-image: url("../img/slider/full-screen-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin-bottom: 90px;
+}
+
+.fill-screen .header-wrapper {
+  background: transparent;
+}
+
+.fill-screen .sf-menu > li > a {
+  color: white;
+}
+
 div#toTop {
   position: absolute;
   top: -25px;

@@ -73,6 +73,16 @@
 	ul {
 		li {
 			cursor: pointer;
+			padding: 7px 15px;
+			margin:2px;
+			border:1px solid $cx-border-color;
+			@extend %cx-transition;
+			&.active,
+			&:hover {
+				border-color: $cx-secondary-color;
+				background: $cx-secondary-color;
+				color: lighten($cx-text-color, 100%);
+			}
 		}
 	}
 }

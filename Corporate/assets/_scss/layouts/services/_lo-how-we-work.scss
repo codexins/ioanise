@@ -1,4 +1,4 @@
-.service-page {
+.service-page-one {
 	.page-title {
 		margin-bottom: 0;
 	}
@@ -45,27 +45,6 @@
     }
  
 }
-
-
-.service-promo {
-	@extend %vpadding;
-	background: lighten($cx-primary-color, 52%);
-	h2 {
-		text-transform: uppercase;
-		font-weight:bold;
-	}
-	.focused-text {
-		font-size: 2em;
-		line-height: 1.2em;
-	}
-
-	.col-sm-8 {
-		p:last-child {
-			@extend %mb0;
-		}
-	}
-}
-
 
 .inner-services {
 	@extend %vpadding;

@@ -1,6 +1,6 @@
 .skills{
 	@extend %vpadding;
-	background:lighten($cx-primary-color,55%) ;
+	background: $cx-offset-color;
 }
 .skill-element{
 	h3 {

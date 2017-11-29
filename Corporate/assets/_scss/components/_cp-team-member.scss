@@ -1,7 +1,7 @@
 .team-member {
 	position:relative;
 	overflow: hidden;
-	.team-image{
+	.team-image {
 		@include cx-overlay(rgba($cx-secondary-color, 0.9));
 		&:before{
 			@extend %cx-transition ;
@@ -35,7 +35,7 @@
 }
 
 
-.team-details{
+.team-details {
 	@extend %cx-transition ;
     padding: 35px 40px;
     position: absolute;
@@ -64,6 +64,7 @@
 		color:  lighten($cx-text-color,100%)  ;
 
 	}
+
 	&.sm-version {
 		padding: 55px 0;
 		a{
@@ -85,7 +86,8 @@
 			}
 		}
 	}
-	.social-icon{
+	
+	.social-icon {
 		margin-top: 40px;
 		a{
 			background:transparent ;

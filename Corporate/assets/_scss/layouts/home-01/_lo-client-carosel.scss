@@ -1,9 +1,10 @@
 .client-section{
-	background : lighten($cx-primary-color , 55% );
+	background : $cx-offset-color;
 	&.no-background{
 		background:transparent ;
 	}
 	@extend %vpadding;
+	@extend %mb0;
 	&.type-2 {
 		@extend %mb0;
 		padding-top:$cx-col-spacing;

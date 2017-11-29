@@ -1,6 +1,5 @@
 
-.recent-project{
-
+.recent-project {
 	.portfolio {
 		@extend %padding-0;
 	}
@@ -9,79 +8,4 @@
 	    	width:100%;
 		}
 	}
-}
-
-.project-item {
-	position:relative;
-	.img{
-		display: block;
-		position:relative;
-		&:before{
-			@include  abs-position(0,0,0,0);
-		    // background: rgba(0, 0, 0, 0.76);
-		    background:  rgba(darken($cx-text-color,100%), 0.76);
-		    color: #fff;
-		    opacity: 0 ;
-			@extend %cx-transition ;
-			@include respond-to(mobile){
-				 opacity: 1;
-				 @include  abs-position(10px,10px,10px,10px);
-			};
-		}
-		img{
-			width: 100% ;
-		}
-	}
-	&:hover{
-		.img {
-			&::before{
-				 @include  abs-position(10px,10px,10px,10px);
-				opacity: 1 ;
-			}
-		}
-		.project-content{
-			opacity: 1 ;
-		}
-	}
-}
-
-
-.project-content{
-	opacity:0 ;
-	color: #fff ;
-	@include cx-centered(both);
-	max-width: 80%;
-	text-align: center;
-	@extend %cx-transition ;
-		@include respond-to(mobile){
-			 opacity: 1;
-		};
-	h3{
-		text-transform: uppercase;
-		position:relative;
-		margin-bottom: 10px;
-		padding-bottom: 13px;
-		font-size: 18px;
-		letter-spacing: 3px;
-		&:after{
-			height: 3px;
-		}
-	}
-	
-	a{
-		color:$cx-secondary-color ; 
-	}
-	p{
-		margin: 0 ;
-		text-transform: uppercase;
-		font-size: 14px;
-		letter-spacing: 3px;
-		font-weight: 300;
-	}
-}
-
-.portfolio-filter ul li {
-	cursor: pointer;
-	
-
 }

@@ -1,0 +1,37 @@
+.fill-screen {
+	min-height:700px;
+	@include cx-overlay(rgba(0,0,0,.5));
+	@include respond-to(notebook) {
+		min-height:600px;
+	}
+
+	@include respond-to(tablet) {
+		min-height:500px;
+	}
+
+	@include respond-to(mobile) {
+		min-height:450px;
+	}
+
+	&.header {
+		background-image: url('../img/slider/full-screen-image.jpg');
+		background-size: cover;
+		background-position:center;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		margin-bottom: $cx-section-spacing;
+	}
+
+	.header-wrapper {
+		background: transparent;
+	}
+
+	.sf-menu {
+		&>li {
+			&>a {
+				color: lighten($cx-text-color, 100%);
+			}
+		}
+	}
+
+}

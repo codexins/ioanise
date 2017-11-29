@@ -12938,6 +12938,16 @@ div#toTop {
 }
 
 .info-item .thumb-icon i {
+<<<<<<< HEAD
+  font-size: 32px;
+  border: 1px solid #ccc;
+  color: #333;
+  text-align: center;
+  width: 82px;
+  height: 82px;
+  text-align: center;
+  line-height: 82px;
+=======
   font-size: 50px;
   color: #333;
   text-align: center;
@@ -12945,6 +12955,7 @@ div#toTop {
   height: 64px;
   text-align: center;
   line-height: 64px;
+>>>>>>> 26b21180e800584989b28fe9883af26012b7f1f5
   display: inline-block;
 }
 

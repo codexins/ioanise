@@ -1,8 +1,5 @@
-.blog-section{
 
-}
 .blog-item-grid {
-	margin-bottom: $cx-col-spacing;
 	.post-content {
 	    padding:25px;
 	    background: #f9f9f9;
@@ -98,6 +95,7 @@
 			}
 		}
 	}
+	
 	img{
 		width: 100% ;
 	}
@@ -127,6 +125,3 @@
 		text-transform: uppercase;
 	}
 }
-
-
-

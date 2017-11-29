@@ -6,11 +6,11 @@
 		margin-bottom: 0.8*$cx-heading-margin-bottom;
 		i {
 			
-			font-size: 60px;
+			font-size: 32px;
 		    border: 1px solid $cx-border-color;
 	    	color: $cx-text-color;
 	    	text-align: center;
-	    	@include box(80px,80px);
+	    	@include box(82px,82px);
 		    &::after{
 		    	content: "";
 		    }

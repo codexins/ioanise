@@ -6,6 +6,7 @@
 
 .full-width-input {
 	textarea,
+	select,
 	input {
 		width: 100%;
 		background: lighten($cx-border-color, 18%);

@@ -91,6 +91,7 @@ a:focus {
 
 
 textarea,
+select,
 input[type="text"],
 input[type="url"],
 input[type="email"],
@@ -103,6 +104,7 @@ input[type="tel"] {
     border:1px solid darken($cx-border-color, 10%);
     margin-bottom: 15px;
     min-height: 40px;
+    @include border-radius(0);
 }
 
 textarea {

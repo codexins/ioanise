@@ -1,0 +1,16 @@
+.get-quote {
+	text-align: center;
+	@extend %vpadding;
+	background: url('http://placehold.it/1920X1080') no-repeat scroll;
+	background-position:center;
+	background-size: cover;
+	@include cx-overlay(rgba(0,0,0,.4));
+	.primary-title {
+		color: lighten($cx-text-color, 100%);
+	}
+
+	.section-intro {
+		position:relative;
+		color: lighten($cx-text-color, 100%);
+	}
+}

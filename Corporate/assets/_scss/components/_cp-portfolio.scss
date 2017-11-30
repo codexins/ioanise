@@ -1,3 +1,11 @@
+.portfolio-wrapper {
+	&.seperated {
+		.portfolio-item {
+			padding:5px;
+		}		
+	}
+}
+
 .portfolio-item {
 	position:relative;
 	.img {

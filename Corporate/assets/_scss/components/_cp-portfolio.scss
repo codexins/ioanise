@@ -53,13 +53,21 @@
 		@include respond-to(mobile){
 			 opacity: 1;
 		};
+	
+	i {
+		font-size: 2em;
+		cursor: pointer;
+	}
+
 	h3{
 		text-transform: uppercase;
 		position:relative;
 		margin-bottom: 10px;
-		padding-bottom: 13px;
+		padding-top: 10px;
+		padding-bottom: 0;
 		font-size: 18px;
 		letter-spacing: 3px;
+		// color: $cx-primary-color;
 		&:after{
 			height: 3px;
 		}

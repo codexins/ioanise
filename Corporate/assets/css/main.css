@@ -15094,7 +15094,7 @@ ul.address-card li.card-location::before {
 
 .get-quote {
   text-align: center;
-  background: url("http://placehold.it/1920X1080") no-repeat scroll;
+  background: url(../img/quote-background.jpg) no-repeat scroll;
   background-position: center;
   background-size: cover;
 }
@@ -15104,7 +15104,7 @@ ul.address-card li.card-location::before {
 }
 
 .get-quote:before {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   content: "";
   display: block;
   position: absolute;

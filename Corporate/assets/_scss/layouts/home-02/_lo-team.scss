@@ -1,0 +1,11 @@
+.team-section {
+	&.offset-bg {
+		background: $cx-offset-color;
+		@extend %vpadding;
+		@extend %mb0;
+		margin-top: -($cx-section-spacing);
+		.team-details {
+			background: lighten($cx-text-color, 100%);
+		}
+	}
+}

@@ -31,6 +31,61 @@
 	@include media-only(notebook, max) {
 		margin-bottom: $cx-col-spacing;
 	}
+
+	&.card-styled {
+		.team-details {
+			position: relative;
+			background: $cx-offset-color;
+			opacity:1;
+			height: 105px;
+		    padding: 20px;
+		    text-align: center;
+			a,p {
+				color: $cx-text-color;
+			}
+			h2 {
+				margin-bottom: 0;
+			}
+		}
+
+		.team-image {
+			&::before {
+				display: none;
+			}
+		}
+
+		.social-icon-large {
+			position: absolute;
+			top:-85px;
+			width:100%;
+			margin-top: 0;
+			padding-top: 25px;
+			padding-bottom: 25px;
+			background: $cx-secondary-color;
+			opacity:0;
+			@extend %cx-transition;
+			@include cx-centered(horizontal);
+			a {
+				float: none;
+				margin-right: 0;
+				color: lighten($cx-text-color, 100%);
+			}
+
+		}
+
+		@include respond-to(mobile) {
+			.social-icon-large {
+				top:-80px;
+			}
+		}
+		&:hover {
+			.social-icon-large {
+				opacity:1;
+			}
+		}
+
+		box-shadow: 0 0 1px rgba(0,0,0,.35);
+	}
 	
 }
 

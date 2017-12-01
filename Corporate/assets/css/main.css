@@ -15839,7 +15839,7 @@ ul.address-card li.card-location::before {
 }
 
 .get-quote:before {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   content: "";
   display: block;
   position: absolute;

@@ -86,3 +86,41 @@
 	justify-content:  flex-end ;
 }
 
+
+// border placeholder
+
+%cx-top-border {
+	@include cx-border(1px, 0, 0, 0);
+}
+
+%cx-right-border {
+	@include cx-border(0, 1px, 0, 0);
+}
+
+%cx-bottom-border {
+	@include cx-border(0, 0, 1px, 0);
+}
+
+%cx-left-border {
+	@include cx-border(0, 0, 0, 1px);
+}
+
+%cx-rb-border {
+	@include cx-border(0, 1px, 1px, 0);
+}
+
+%cx-right-bottom-border {
+	@include cx-border(0, 1px, 1px, 0);
+}
+
+%cx-bottom-left-border {
+	@include cx-border(0, 1px, 1px, 0);
+}
+
+%cx-top-right-border {
+	@include cx-border(1px, 1px, 0, 0);
+}
+
+%cx-top-left-border {
+	@include cx-border(1px, 0, 0, 1px);
+}

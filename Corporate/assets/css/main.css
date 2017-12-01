@@ -13422,6 +13422,62 @@ a, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-ic
   transition: all 0.3s ease;
 }
 
+.top-bordered {
+  border-top: 1px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 0 solid #ccc;
+  border-left: 0 solid #ccc;
+}
+
+.right-bordered {
+  border-top: 0 solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 0 solid #ccc;
+  border-left: 0 solid #ccc;
+}
+
+.bottom-bordered {
+  border-top: 0 solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 0 solid #ccc;
+}
+
+.left-bordered {
+  border-top: 0 solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 0 solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.rb-bordered {
+  border-top: 0 solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 0 solid #ccc;
+}
+
+.bl-bordered {
+  border-top: 0 solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 0 solid #ccc;
+}
+
+.tr-bordered {
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 0 solid #ccc;
+  border-left: 0 solid #ccc;
+}
+
+.tl-bordered {
+  border-top: 1px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 0 solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
 /*
 This file is used to contain all component imports.
 Files inside this folder should contain all styles relating
@@ -13444,6 +13500,7 @@ to a reusable component.
 
 .fill-screen {
   min-height: 700px;
+  height: 100Vh;
 }
 
 .fill-screen {
@@ -13486,6 +13543,14 @@ to a reusable component.
   background-repeat: no-repeat;
   background-attachment: scroll;
   margin-bottom: 90px;
+}
+
+.fill-screen.attachment-fixed {
+  background-attachment: fixed;
+}
+
+.fill-screen#header_bg_slide {
+  background-image: none;
 }
 
 .fill-screen .header-wrapper {
@@ -13964,6 +14029,17 @@ div#toTop {
 
 .info-item.boxed:hover h3 {
   color: white;
+}
+
+.info-item.border-collapsed {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 0;
+  padding: 35px 30px;
+}
+
+.info-item:hover {
+  background: inherit;
 }
 
 .social-icon, .social-icon-large {
@@ -14887,6 +14963,44 @@ ul.address-card li.card-location::before {
   text-align: center;
 }
 
+.cta-centered.has-bg {
+  background-image: url("../img/slider/slider-4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.cta-centered.has-bg {
+  position: relative;
+}
+
+.cta-centered.has-bg:before {
+  background: rgba(0, 0, 0, 0.4);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.cta-centered.has-bg h1, .cta-centered.has-bg h2, .cta-centered.has-bg h3, .cta-centered.has-bg h4, .cta-centered.has-bg h5, .cta-centered.has-bg h6 {
+  color: white;
+}
+
+.cta-centered.has-bg .default-btn {
+  border-color: #1ca5b8;
+  background: #1ca5b8;
+  color: white;
+}
+
+.cta-centered.has-bg .default-btn:hover {
+  border-color: #ff646c;
+  background: #ff646c;
+}
+
 .call-to-action {
   color: white;
   position: relative;
@@ -15261,6 +15375,21 @@ ul.address-card li.card-location::before {
 
 .quote-form-wrapper input[type="submit"] {
   width: 100%;
+}
+
+#header_full_screen_video.header {
+  background-image: none;
+  background: #f5f5f5;
+}
+
+#header_full_screen_video.fill-screen::before {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#header_full_screen_video .showcase-text,
+#header_full_screen_video .header-wrapper {
+  z-index: 1;
 }
 
 .logo {

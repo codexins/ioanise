@@ -332,3 +332,22 @@
     }
     
 }
+
+
+// border mixins
+
+@mixin cx-border($top, $right, $bottom, $left) {
+    border-top: $top solid $cx-border-color;
+    border-right: $right solid $cx-border-color;
+    border-bottom: $bottom solid $cx-border-color;
+    border-left: $left solid $cx-border-color;
+}
+
+// background image mixin
+
+@mixin cx-background($url) {
+    background-image: url($url);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

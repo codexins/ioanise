@@ -57,3 +57,35 @@ section {
 		}
 	}
 }
+
+.rb-bordered {
+	@extend %cx-right-bottom-border;
+}
+
+.tr-bordered {
+	@extend %cx-top-right-border;
+}
+
+.bl-bordered {
+	@extend %cx-bottom-left-border;
+}
+
+.tl-bordered {
+	@extend %cx-top-left-border;
+}
+
+.top-bordered {
+	@extend %cx-top-border;
+}
+
+.right-bordered {
+	@extend %cx-right-border;
+}
+
+.bottom-bordered {
+	@extend %cx-bottom-border;
+}
+
+.left-bordered {
+	@extend %cx-left-border;
+}

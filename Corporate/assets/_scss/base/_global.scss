@@ -31,3 +31,29 @@ section {
 	margin-bottom: $cx-section-spacing;
 }
 
+.pswp button:hover {
+	background-color: inherit;
+}
+
+.pswp__caption__center {
+	text-align: center;
+	i,
+	p {
+		display: none;
+	}
+
+	.primary-title {
+		display: inline-block;
+		text-align: center;
+		text-transform: capitalize;
+		margin: 0;
+		padding: 0;
+	    font-size: 1em;
+	    font-weight: normal;
+
+		a {
+			color: lighten($cx-primary-color, 100%);
+
+		}
+	}
+}

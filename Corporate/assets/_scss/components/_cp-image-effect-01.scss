@@ -10,6 +10,11 @@
 		position:absolute;
 		text-align: center;
 		background: $cx-primary-color;
+		background-image: -webkit-linear-gradient(to bottom, $cx-primary-color 30%, darken($cx-primary-color, 5%) 100%);
+		background-image: -moz-linear-gradient(to bottom, $cx-primary-color 30%, darken($cx-primary-color, 5%) 100%);
+		background-image: -ms-linear-gradient(to bottom, $cx-primary-color 30%, darken($cx-primary-color, 5%) 100%);
+		background-image: -o-linear-gradient(to bottom, $cx-primary-color 30%, darken($cx-primary-color, 5%) 100%);
+		background-image: linear-gradient(to bottom, $cx-primary-color 30%, darken($cx-primary-color, 5%) 100%);
 		color: lighten($cx-text-color, 100%);
 		width:100%;
 		bottom:0;

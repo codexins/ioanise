@@ -12662,7 +12662,7 @@ body.has-active-menu {
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
-  background: url(default-skin/default-skin.png) 0 0 no-repeat;
+  background: url(../img/default-skin/default-skin.png) 0 0 no-repeat;
   background-size: 264px 88px;
   width: 44px;
   height: 44px;
@@ -12673,7 +12673,7 @@ body.has-active-menu {
   .pswp--svg .pswp__button,
   .pswp--svg .pswp__button--arrow--left:before,
   .pswp--svg .pswp__button--arrow--right:before {
-    background-image: url(default-skin/default-skin.svg);
+    background-image: url(../img/default-skin/default-skin.svg);
   }
   .pswp--svg .pswp__button--arrow--left,
   .pswp--svg .pswp__button--arrow--right {
@@ -12970,7 +12970,7 @@ a.pswp__share--download:hover {
 
 .pswp__preloader--active .pswp__preloader__icn {
   /* We use .gif in browsers that don't support CSS animation */
-  background: url(default-skin/preloader.gif) 0 0 no-repeat;
+  background: url(../img/default-skin/preloader.gif) 0 0 no-repeat;
 }
 
 .pswp--css_animation .pswp__preloader--active {
@@ -13173,6 +13173,33 @@ section {
   margin-bottom: 90px;
 }
 
+.pswp button:hover {
+  background-color: inherit;
+}
+
+.pswp__caption__center {
+  text-align: center;
+}
+
+.pswp__caption__center i,
+.pswp__caption__center p {
+  display: none;
+}
+
+.pswp__caption__center .primary-title, .pswp__caption__center .section-intro h2, .section-intro .pswp__caption__center h2, .pswp__caption__center .section-intro-left h2, .section-intro-left .pswp__caption__center h2 {
+  display: inline-block;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.pswp__caption__center .primary-title a, .pswp__caption__center .section-intro h2 a, .section-intro .pswp__caption__center h2 a, .pswp__caption__center .section-intro-left h2 a, .section-intro-left .pswp__caption__center h2 a {
+  color: white;
+}
+
 html,
 body {
   font-size: 15px;
@@ -13322,7 +13349,7 @@ button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover {
   border-color: #ff646c;
-  background: #ff646c;
+  background-color: #ff646c;
 }
 
 ::-moz-selection {
@@ -14941,11 +14968,17 @@ ul.address-card li.card-location::before {
   }
 }
 
+.portfolio-content i {
+  font-size: 2em;
+  cursor: pointer;
+}
+
 .portfolio-content h3 {
   text-transform: uppercase;
   position: relative;
   margin-bottom: 10px;
-  padding-bottom: 13px;
+  padding-top: 10px;
+  padding-bottom: 0;
   font-size: 18px;
   letter-spacing: 3px;
 }
@@ -15128,6 +15161,11 @@ ul.address-card li.card-location::before {
   position: absolute;
   text-align: center;
   background: #1ca5b8;
+  background-image: -webkit-linear-gradient(to bottom, #1ca5b8 30%, #1991a2 100%);
+  background-image: -moz-linear-gradient(to bottom, #1ca5b8 30%, #1991a2 100%);
+  background-image: -ms-linear-gradient(to bottom, #1ca5b8 30%, #1991a2 100%);
+  background-image: -o-linear-gradient(to bottom, #1ca5b8 30%, #1991a2 100%);
+  background-image: linear-gradient(to bottom, #1ca5b8 30%, #1991a2 100%);
   color: white;
   width: 100%;
   bottom: 0;

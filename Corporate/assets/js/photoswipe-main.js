@@ -1,10 +1,3 @@
-
-/*
- *   Main Photoswipe trigger
- */
-
-"use strict";
-
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
     // parse slide data (url, title, size ...) from DOM elements 
@@ -44,6 +37,11 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
                 // <figcaption> content
                 item.title = figureEl.children[1].innerHTML; 
             }
+
+            if(linkEl.children.length > 0) {
+                // <img> thumbnail element, retrieving thumbnail url
+                item.msrc = linkEl.children[0].getAttribute('src');
+            } 
 
             item.el = figureEl; // save link to element for getThumbBoundsFn
             items.push(item);
@@ -143,9 +141,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
             // define gallery index (for URL)
             galleryUID: galleryElement.getAttribute('data-pswp-uid'),
-            // showHideOpacity:true,
-            // bgOpacity: 0.9,
-            // getThumbBoundsFn:false
 
             getThumbBoundsFn: function(index) {
                 // See Options -> getThumbBoundsFn section of documentation for more info
@@ -207,6 +202,5 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 };
 
 // execute above function
+// initPhotoSwipeFromDOM('.project-item');
 initPhotoSwipeFromDOM('.portfolio-popup');
-
-

@@ -13914,6 +13914,10 @@ div#toTop {
   margin-bottom: 0;
 }
 
+.counter-item.type-02 .counter-icon i {
+  border: 0;
+}
+
 .info-item {
   text-align: center;
   margin-bottom: 45px;
@@ -15218,11 +15222,6 @@ ul.address-card li.card-location::before {
   position: absolute;
   text-align: center;
   background: #1ca5b8;
-  background-image: -webkit-linear-gradient(to bottom, #1ca5b8 30%, #1991a2 100%);
-  background-image: -moz-linear-gradient(to bottom, #1ca5b8 30%, #1991a2 100%);
-  background-image: -ms-linear-gradient(to bottom, #1ca5b8 30%, #1991a2 100%);
-  background-image: -o-linear-gradient(to bottom, #1ca5b8 30%, #1991a2 100%);
-  background-image: linear-gradient(to bottom, #1ca5b8 30%, #1991a2 100%);
   color: white;
   width: 100%;
   bottom: 0;

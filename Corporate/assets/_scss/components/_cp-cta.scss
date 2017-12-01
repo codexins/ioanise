@@ -43,6 +43,25 @@
 .cta-centered {
 	text-align: center;
 	@extend %vpadding;
+	&.has-bg {
+		@include cx-background("../img/slider/slider-4.jpg");
+		@include cx-overlay();
+		color: lighten($cx-text-color, 100%);
+		h1, h2, h3, h4, h5, h6 {
+			color: lighten($cx-text-color, 100%);
+		}
+
+		.default-btn {
+			border-color: $cx-primary-color;
+			background: $cx-primary-color;
+			color: lighten($cx-text-color, 100%);
+			&:hover {
+				border-color: $cx-secondary-color;
+				background: $cx-secondary-color;
+			}
+
+		}
+	}
 }
 
 

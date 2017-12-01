@@ -1,0 +1,17 @@
+#header_full_screen_video {
+	&.header {
+		background-image: none;
+		background: $cx-offset-color;
+	}
+	&.fill-screen {
+		&::before {
+			background: rgba(0,0,0,.5);
+			z-index:1;
+		}
+	}
+
+	.showcase-text,
+	.header-wrapper {
+		z-index:1;
+	}
+}

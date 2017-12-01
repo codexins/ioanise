@@ -46,11 +46,37 @@
     	margin-bottom: 0;
 	}
 
+	&.type-03,
 	&.type-02 {
 		.counter-icon {
 			i {
 				border: 0;
 			}
+		}
+	}
+
+	&.type-03 {
+		text-align: left;
+		width:auto;
+		display: inline-block;
+		padding:0 40px;
+		.counter-icon {
+			margin-right: 15px;
+			float: left;
+			@extend %mb0;
+			 i {
+			 	font-size: 64px;
+			 	@include box(65px, 65px);
+			 }
+		}
+
+		.counter-text {
+			float: right;
+		}
+
+		.counter {
+			font-size: 42px;
+			margin-bottom: 2px;
 		}
 	}
 

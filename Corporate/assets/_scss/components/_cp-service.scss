@@ -50,4 +50,15 @@
 
 	}
 
+	&.border-collapsed {
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-bottom: 0;
+		padding:35px 30px;
+	}
+
+	&:hover {
+		background: inherit;
+	}
+
 }

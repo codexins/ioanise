@@ -25,7 +25,7 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <div id="o-wrapper" class="o-wrapper">
-    <header class="header fill-screen">
+    <header id="header_full_screen_video" class="header fill-screen">
         <div class="header-wrapper">
             <div class="header-inline">
                 <div class="container">
@@ -588,32 +588,42 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
                     <div class="col-xs-12">
                         <div class="counter-item type-02">
                             <div class="counter-icon"><i class="fi flaticon-coding" aria-hidden="true"></i></div>
-                            <p class="counter">124</p>
-                            <p class="counter-text">Web Apps Projects</p>
+                            <div class="counter-text">
+                                <p class="counter">124</p>
+                                <p class="counter-text">Web Apps Projects</p>
+                            </div>
                         </div>
 
                         <div class="counter-item type-02">
                             <div class="counter-icon"><i class="fi flaticon-five-stars-outlines" aria-hidden="true"></i></div>
-                            <p class="counter ">87</p>
-                            <p class="counter-text">Award Winner</p>
+                            <div class="counter-text">
+                                <p class="counter ">87</p>
+                                <p class="counter-text">Award Winner</p>
+                            </div>
                         </div>
 
                         <div class="counter-item type-02">
                             <div class="counter-icon"><i class="fi flaticon-people-2" aria-hidden="true"></i></div>
-                            <p class="counter ">162</p>
-                            <p class="counter-text">Happy Clients</p>
+                            <div class="counter-text">
+                                <p class="counter ">162</p>
+                                <p class="counter-text">Happy Clients</p>
+                            </div>
                         </div>
 
                         <div class="counter-item type-02">
                             <div class="counter-icon"><i class="fi flaticon-team" aria-hidden="true"></i></div>
-                            <p class="counter">73</p>
-                            <p class="counter-text">Members</p>
+                            <div class="counter-text">
+                                <p class="counter">73</p>
+                                <p class="counter-text">Members</p>
+                            </div>
                         </div>
 
                         <div class="counter-item type-02">
                             <div class="counter-icon"><i class="fi flaticon-coffee-cup" aria-hidden="true"></i></div>
-                            <p class="counter">67</p>
-                            <p class="counter-text">Cup of Cofee</p>
+                            <div class="counter-text">
+                                <p class="counter">67</p>
+                                <p class="counter-text">Cup of Cofee</p>
+                            </div>
                         </div>
 
                     </div>
@@ -1044,6 +1054,9 @@ script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
 <!-- bootstrap js -->
 <script src="assets/js/bootstrap.min.js"></script>
 
+<!-- WallPaper js -->
+<script src="assets/js/jquery.fs.wallpaper.min.js"></script>
+
 <!-- superfish menu -->
 <script src="assets/js/hoverIntent.js"></script>
 <script src="assets/js/superfish.min.js"></script>
@@ -1071,6 +1084,16 @@ jQuery(document).ready(function($){
 
         $(window).on("load resize", function() {
             $(".fill-screen").css("height", window.innerHeight);
+        });
+
+        $("#header_full_screen_video").wallpaper({
+            source: {
+                poster: "assets/img/poster.jpg",
+                webm: "assets/videos/video-6.webm",
+                mp4: "assets/videos/video-6.mp4",
+                ogg: "assets/videos/video-6.ogv"
+            }
+
         });
 
 });

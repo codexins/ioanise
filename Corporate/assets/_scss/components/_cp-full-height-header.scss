@@ -1,5 +1,6 @@
 .fill-screen {
 	min-height:700px;
+	height:100Vh;
 	@include cx-overlay(rgba(0,0,0,.6));
 	@include respond-to(notebook) {
 		min-height:600px;
@@ -20,6 +21,15 @@
 		background-repeat: no-repeat;
 		background-attachment: scroll;
 		margin-bottom: $cx-section-spacing;
+	}
+
+	&.attachment-fixed {
+		background-attachment: fixed;
+	}
+
+	&#header_bg_slide {
+		background-image: none;
+
 	}
 
 	.header-wrapper {

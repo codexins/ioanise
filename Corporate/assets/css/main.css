@@ -13381,14 +13381,14 @@ input[type="button"]:hover {
   padding-bottom: 0;
 }
 
-.cta-section p,
+.counter-item.type-03 .counter-icon, .cta-section p,
 .cta-section h2, .call-to-action .cta-left *, .call-to-action .cta-right *, .blog-item-grid .post-meta-wrapper span, .image-info-wrapper .image-caption h3, .client-section, .client-section.type-2, .team-section.offset-bg, .about-page-one .testimonial, .contact-page-two .page-title, .contact-promo, .contact-intro, .contact-intro p,
 .contact-intro .section-intro,
 .contact-intro .section-intro-left, .map-location, .contact-fun, .service-promo .col-sm-8 p:last-child, .contact-promo .col-sm-8 p:last-child, .inner-services, .client-list, .portfolio-section, .faq-page .cta-centered {
   margin-bottom: 0;
 }
 
-.cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial, .client-section, .get-quote, .team-section.offset-bg, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
+.cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial, .client-section, .get-quote, .team-section.offset-bg, .achievement-counters, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -13979,8 +13979,38 @@ div#toTop {
   margin-bottom: 0;
 }
 
-.counter-item.type-02 .counter-icon i {
+.counter-item.type-03 .counter-icon i, .counter-item.type-02 .counter-icon i {
   border: 0;
+}
+
+.counter-item.type-03 {
+  text-align: left;
+  width: auto;
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.counter-item.type-03 .counter-icon {
+  margin-right: 15px;
+  float: left;
+}
+
+.counter-item.type-03 .counter-icon i {
+  font-size: 64px;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  line-height: 65px;
+  display: inline-block;
+}
+
+.counter-item.type-03 .counter-text {
+  float: right;
+}
+
+.counter-item.type-03 .counter {
+  font-size: 42px;
+  margin-bottom: 2px;
 }
 
 .info-item {
@@ -16092,6 +16122,12 @@ ul.address-card li.card-location::before {
 
 .home-page-two .testimonial {
   background-image: url(../img/slider/slider-4.jpg);
+}
+
+.achievement-counters {
+  background: #0b4249;
+  text-align: center;
+  color: white;
 }
 
 footer {

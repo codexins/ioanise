@@ -4,7 +4,7 @@
 	background: url(../img/quote-background.jpg) no-repeat scroll;
 	background-position:center;
 	background-size: cover;
-	@include cx-overlay(rgba(0,0,0,.5));
+	@include cx-overlay(rgba(0,0,0,.6));
 	.primary-title {
 		color: lighten($cx-text-color, 100%);
 	}

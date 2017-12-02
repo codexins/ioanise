@@ -16118,7 +16118,7 @@ ul.address-card li.card-location::before {
 
 .get-quote {
   text-align: center;
-  background: url(../img/quote-background.jpg) no-repeat scroll;
+  background: url(../img/free-quote1.jpg) no-repeat scroll;
   background-position: center;
   background-size: cover;
 }
@@ -16145,6 +16145,10 @@ ul.address-card li.card-location::before {
 .get-quote .section-intro, .get-quote .section-intro-left {
   position: relative;
   color: white;
+}
+
+.fun-facts.achievements {
+  background-image: url(../img/counter-up-2.jpg);
 }
 
 .team-section.offset-bg {

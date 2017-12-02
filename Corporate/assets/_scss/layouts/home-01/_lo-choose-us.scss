@@ -7,21 +7,23 @@
 		}
 	}
 
-	.slick-dots li.slick-active button:before {
-		color: $cx-secondary-color;
-		opacity: 1;
-	}
+}
 
-	.slick-dots li {
-		margin:0;
-		button {
-			&:before{
-				font-size: 12px;
-			}
-			&:hover:before{
-				color: $cx-secondary-color;
-			}
+.slick-dots li.slick-active button:before {
+	color: $cx-secondary-color;
+	opacity: .8;
+}
+
+.slick-dots li {
+	margin:0;
+	button {
+		&:before{
+			font-size: 12px;
+			color: $cx-primary-color;
+			opacity:0.4;
+		}
+		&:hover:before{
+			color: $cx-secondary-color;
 		}
 	}
-
 }

@@ -61,4 +61,30 @@
 		background: inherit;
 	}
 
+	&.left-edged-icon {
+		text-align: left;
+		border:1px solid $cx-border-color;
+		@include eqheight;
+		.info-content-wrapper,
+		.thumb-icon {
+			padding:20px 10px;
+			vertical-align: top;
+		}
+
+		.thumb-icon {
+			//background: $cx-secondary-color;
+			border-right: 1px solid $cx-border-color;
+			i {
+				font-size: 50px;
+				//color: lighten($cx-text-color, 100%);
+			}
+		}
+
+		.info-content-wrapper {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+	}
+
 }

@@ -128,6 +128,7 @@ jQuery(document).ready(function($){
         arrows: false,
         asNavFor: '.testimonial-nav'
     });
+
     $('.testimonial-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -146,6 +147,15 @@ jQuery(document).ready(function($){
             }
           ]
 
+    });
+
+    // testimonial type 02
+
+    $('.testimonial-carousel-type-02').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
     });
 
     //  client  carousel 

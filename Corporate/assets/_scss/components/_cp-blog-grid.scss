@@ -57,6 +57,30 @@
 		margin-bottom: $cx-col-spacing;
 	}
 
+	&.type-02 {
+		.post-content {
+			background: transparent;
+			border-color: $cx-border-color;
+			padding-bottom:0;
+			p {
+				margin-bottom: 25px;
+			}
+		}
+
+		.post-bottom-meta {
+			border-top:1px solid $cx-border-color;
+			text-transform: uppercase;
+			font-size: 85%;
+			margin-left: -25px;
+			margin-right: -25px;
+			padding: 15px 25px;
+			a.read-more {
+				display: inline-block;
+				float:right;
+			}
+		}
+	}
+
 }
 
 .post-image {

@@ -89,3 +89,23 @@ section {
 .left-bordered {
 	@extend %cx-left-border;
 }
+
+// section padding
+
+.pb-spacing {
+	padding-bottom: $cx-section-spacing;
+}
+
+.pt-spacing {
+	padding-top: $cx-section-spacing;
+}
+
+//section margin
+
+.mb-spacing {
+	margin-bottom: $cx-section-spacing;
+}
+
+.mt-spacing {
+	margin-top: $cx-section-spacing;
+}

@@ -87,6 +87,78 @@
 		box-shadow: 0 0 1px rgba(0,0,0,.35);
 	}
 	
+
+	&.flat-styled {
+		@extend .card-styled;
+		.team-details {
+			height:auto;
+			margin-top: -85px;
+			padding:20px 20px 25px;
+		}
+
+		.social-icon-large {
+			opacity:1;
+			position: relative;
+			top:auto;
+			padding-top: 0;
+			padding-bottom: 0;
+			margin-top: 15px;
+			background: transparent;
+			a {
+				@include box(30px, 30px);
+				border:0;
+				background: $cx-primary-color;
+				@include border-radius(50%);
+				&:hover {
+					border:0;
+				}
+
+				&.facebook {
+					background: #2D5F9A;
+					&:hover {
+						background: darken(#2D5F9A, 8%);
+					}
+				}
+				&.twitter {
+					background: #00C3F3;
+					&:hover {
+						background: darken(#00C3F3, 8%);
+					}
+				}
+				&.google-plus {
+					background: #d34836;
+					&:hover {
+						background: darken(#d34836, 8%);
+					}
+				}
+				&.instagram {
+					background: #405de6;
+					&:hover {
+						background: darken(#405de6, 8%);
+					}
+				}
+				&.pinterest {
+					background: #cd2029;
+					&:hover {
+						background: darken(#cd2029, 8%);
+					}
+				}
+				&.linkedin {
+					background: #0d77b7;
+					&:hover {
+						background: darken(#0d77b7, 8%);
+					}
+				}
+				&+a {
+					margin-left: 5px;
+				}
+				i {
+					font-size: 14px;
+					line-height: 32px;
+				}
+			}
+		}
+	}
 }
 
 
@@ -173,3 +245,12 @@
 		}
 	}
 }
+
+.offset-bg {
+	.card-styled {
+		.team-details{
+			background: lighten($cx-text-color, 100%);
+		}
+	}
+}
+

@@ -84,13 +84,13 @@ footer{
 	position:relative;
 	text-align: center;
     padding: 40px 0 20px;
-    background: $cx-tertiary-color;
+    @extend %bgc-tertiary;
     p{
     	margin: 0;
     	color: lighten($cx-text-color, 100%);
     }
 
     a {
-    	color: $cx-secondary-color;
+    	@extend %color-secondary;
     }
 }

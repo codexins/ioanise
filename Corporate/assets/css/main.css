@@ -13384,6 +13384,30 @@ a, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-ic
   border-left: 1px solid #ccc;
 }
 
+div#toTop, .copyright-section {
+  background-color: #0b4249;
+}
+
+.blog-item-grid .post-content {
+  background-color: #f5f5f5;
+}
+
+.blog-item-grid .default-btn {
+  background-color: transparent;
+}
+
+.blog-item-grid .post-title a, .blog-item-grid .default-btn {
+  color: #333;
+}
+
+.copyright-section a {
+  color: #ff646c;
+}
+
+.blog-item-grid .post-title a:hover, .blog-item-grid .default-btn:hover {
+  color: #ff646c;
+}
+
 /*
 This file is used to contain all component imports.
 Files inside this folder should contain all styles relating
@@ -13690,7 +13714,6 @@ to a reusable component.
 div#toTop {
   position: absolute;
   top: -25px;
-  background: #0b4249;
   text-align: center;
   width: 60px;
   height: 60px;
@@ -15257,7 +15280,6 @@ ul.address-card li.card-location::before {
 
 .blog-item-grid .post-content {
   padding: 25px;
-  background: #f9f9f9;
   border: 1px solid #e6e6e6;
   border-top: 0px solid;
 }
@@ -15266,17 +15288,7 @@ ul.address-card li.card-location::before {
   margin: 0;
 }
 
-.blog-item-grid .post-title a {
-  color: #333;
-}
-
-.blog-item-grid .post-title a:hover {
-  color: #ff646c;
-}
-
 .blog-item-grid .default-btn {
-  background: transparent;
-  color: #333;
   text-transform: initial;
   font-weight: 600;
   border: 0;
@@ -15284,10 +15296,6 @@ ul.address-card li.card-location::before {
   padding: 0;
   margin-top: 15px;
   position: relative;
-}
-
-.blog-item-grid .default-btn:hover {
-  color: #ff646c;
 }
 
 .blog-item-grid:hover .post-content {
@@ -16250,16 +16258,11 @@ footer {
   position: relative;
   text-align: center;
   padding: 40px 0 20px;
-  background: #0b4249;
 }
 
 .copyright-section p {
   margin: 0;
   color: white;
-}
-
-.copyright-section a {
-  color: #ff646c;
 }
 
 .about {

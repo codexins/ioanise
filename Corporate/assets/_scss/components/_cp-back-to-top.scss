@@ -1,7 +1,6 @@
 div#toTop {
     position: absolute;
     top: -25px;
-    background: $cx-tertiary-color;
     text-align: center;
     width: 60px;
     height: 60px;
@@ -10,5 +9,6 @@ div#toTop {
     left: 0;
     margin: auto;
     cursor: pointer;
+    @extend %bgc-tertiary;
     @include border-radius(50%);
 }

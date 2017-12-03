@@ -15211,7 +15211,7 @@ ul.address-card li.card-location::before {
 }
 
 .portfolio-wrapper.seperated .portfolio-item {
-  padding: 5px;
+  padding: 5px !important;
 }
 
 .portfolio-item {

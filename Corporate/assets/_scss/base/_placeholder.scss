@@ -1,29 +1,4 @@
 // helpers
-
-%margin-0 {
-	margin:0;
-}
-
-%padding-0 {
-	padding:0;
-}
-
-%pt0 {
-	padding-top:0;
-}
-
-%pb0 {
-	padding-bottom:0;
-}
-
-%mt0 {
-	margin-top:0;
-}
-
-%mb0 {
-	margin-bottom:0;
-}
-
 %vpadding {
 	padding-top: $cx-section-spacing;
 	padding-bottom: $cx-section-spacing;
@@ -60,13 +35,15 @@
 
 
 ///* Vertically and Horizantally Centering */
-%display-flex{
+
+%display-flex {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
 }
+
 %vhcenter {
 	@extend %display-flex ;
 	align-items: center;
@@ -105,9 +82,6 @@
 	@include cx-border(0, 0, 0, 1px);
 }
 
-%cx-rb-border {
-	@include cx-border(0, 1px, 1px, 0);
-}
 
 %cx-right-bottom-border {
 	@include cx-border(0, 1px, 1px, 0);
@@ -121,6 +95,132 @@
 	@include cx-border(1px, 1px, 0, 0);
 }
 
-%cx-top-left-border {
+%cx-left-top-border {
 	@include cx-border(1px, 0, 0, 1px);
+}
+
+// background placeholder
+
+%bgc-primary {
+	background-color: $cx-primary-color;
+}
+
+%bgc-secondary {
+	background-color: $cx-secondary-color;
+}
+
+%bgc-tertiary {
+	background-color: $cx-tertiary-color;
+}
+
+%bgc-fourth {
+	background-color: $cx-fourth-color;
+}
+
+%bgc-transparent {
+	background-color: transparent;
+}
+
+%bgc-offset {
+	background-color: $cx-offset-color;
+}
+
+%bgc-white {
+	background-color: #fff;
+}
+
+
+// color
+
+%color-primary {
+	color: $cx-primary-color;
+}
+
+%color-secondary {
+	color: $cx-secondary-color;
+}
+
+%color-tertiary {
+	color: $cx-tertiary-color;
+}
+
+%color-fourth {
+	color: $cx-fourth-color;
+}
+
+%color-transparent {
+	color: transparent;
+}
+
+%color-offset {
+	color: $cx-offset-color;
+}
+
+%color-white {
+	color: #fff;
+}
+
+
+// zero margin & padding
+
+%margin-0 {
+	margin:0 !important;
+}
+
+%padding-0 {
+	padding:0 !important;
+}
+
+%pt0 {
+	padding-top:0 !important;
+}
+
+%pb0 {
+	padding-bottom:0 !important;
+}
+
+%mt0 {
+	margin-top:0 !important;
+}
+
+%mb0 {
+	margin-bottom:0 !important;
+}
+
+// full margin & padding
+
+%mb-full {
+	margin-bottom: $cx-section-spacing;
+}
+
+%mt-full {
+	margin-top: $cx-section-spacing;
+}
+
+
+%pb-full {
+	padding-bottom: $cx-section-spacing;
+}
+
+%pt-full {
+	padding-top: $cx-section-spacing;
+}
+
+// half margin & padding
+
+%mb-half {
+	margin-bottom: $cx-col-spacing;
+}
+
+%mt-half {
+	margin-top: $cx-col-spacing;
+}
+
+
+%pb-half {
+	padding-bottom: $cx-col-spacing;
+}
+
+%pt-half {
+	padding-top: $cx-col-spacing;
 }

@@ -1,6 +1,5 @@
 .about{
-	padding-top:0;
-	padding-bottom:0;
+	@extend %vpadding;
 	.section-intro {
 		max-width:100%;
 		width:100%;

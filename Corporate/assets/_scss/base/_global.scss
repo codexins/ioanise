@@ -58,6 +58,8 @@ section {
 	}
 }
 
+// Border classes
+
 .rb-bordered {
 	@extend %cx-right-bottom-border;
 }
@@ -70,8 +72,8 @@ section {
 	@extend %cx-bottom-left-border;
 }
 
-.tl-bordered {
-	@extend %cx-top-left-border;
+.lt-bordered {
+	@extend %cx-left-top-border;
 }
 
 .top-bordered {
@@ -90,22 +92,120 @@ section {
 	@extend %cx-left-border;
 }
 
-// section padding
 
-.pb-spacing {
-	padding-bottom: $cx-section-spacing;
+//section zero margin & padding
+
+.mb0 {
+	@extend %mb0;
 }
 
-.pt-spacing {
-	padding-top: $cx-section-spacing;
+.pb0 {
+	@extend %pb0;
 }
 
-//section margin
-
-.mb-spacing {
-	margin-bottom: $cx-section-spacing;
+.mt0 {
+	@extend %mt0;
 }
 
-.mt-spacing {
-	margin-top: $cx-section-spacing;
+.pt0 {
+	@extend %pt0;
 }
+
+// full margin & padding 
+
+.mt-full {
+	@extend %mt-full;
+}
+
+.mb-full {
+	@extend %mb-full;
+}
+
+.pt-full {
+	@extend %pt-full;
+}
+
+.pb-full {
+	@extend %pb-full;
+}
+
+// half padding & margin
+
+.mt-half {
+	@extend %mt-half;
+}
+
+.mb-half {
+	@extend %mb-half;
+}
+
+.pt-half {
+	@extend %pt-half;
+}
+
+.pb-half {
+	@extend %pb-half;
+}
+
+// Background Colors
+
+.bgc-primary {
+	@extend %bgc-primary;
+}
+
+.bgc-secondary {
+	@extend %bgc-secondary;
+}
+
+.bgc-tertiary {
+	@extend %bgc-tertiary;
+}
+
+.bgc-fourth {
+	@extend %bgc-fourth;
+}
+
+.bgc-transparent {
+	@extend %bgc-transparent;
+}
+
+.bgc-offset {
+	@extend %bgc-offset;
+}
+
+.bgc-white {
+	@extend %bgc-white;
+}
+
+
+// color 
+
+
+.color-primary {
+	@extend %color-primary;
+}
+
+.color-secondary {
+	@extend %color-secondary;
+}
+
+.color-tertiary {
+	@extend %color-tertiary;
+}
+
+.color-fourth {
+	@extend %color-fourth;
+}
+
+.color-transparent {
+	@extend %color-transparent;
+}
+
+.color-offset {
+	@extend %color-offset;
+}
+
+.color-white {
+	@extend %color-white;
+}
+

@@ -1,7 +1,6 @@
 .cta-section {
 	padding-top:$cx-col-spacing;
 	padding-bottom: $cx-col-spacing;
-	background: $cx-fourth-color;
 	margin-bottom: 0;
 
 	p,	
@@ -81,7 +80,7 @@
 			margin-bottom: 5px;
 			color: #fff;
 		}
-		* {
+		p {
 			position:relative;
 			@extend %mb0;
 		}
@@ -130,5 +129,6 @@
 
 	.default-btn {
 		margin-top: 25px;
+		margin-bottom: 5px;
 	}
 }

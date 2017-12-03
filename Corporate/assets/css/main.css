@@ -13086,22 +13086,6 @@ section {
   color: white;
 }
 
-.pb-spacing {
-  padding-bottom: 90px;
-}
-
-.pt-spacing {
-  padding-top: 90px;
-}
-
-.mb-spacing {
-  margin-bottom: 90px;
-}
-
-.mt-spacing {
-  margin-top: 90px;
-}
-
 html,
 body {
   font-size: 15px;
@@ -13275,26 +13259,7 @@ input[type="button"]:hover {
   padding: 0.2em 0;
 }
 
-.recent-project .portfolio, .team-section .member-wrapper {
-  padding: 0;
-}
-
-.contact-intro {
-  padding-top: 0;
-}
-
-.client-section.type-2 .slick-list, .portfolio-section {
-  padding-bottom: 0;
-}
-
-.counter-item.type-03 .counter-icon, .cta-section p,
-.cta-section h2, .call-to-action .cta-left *, .call-to-action .cta-right *, .blog-item-grid .post-meta-wrapper span, .image-info-wrapper .image-caption h3, .client-section, .client-section.type-2, .team-section.offset-bg, .about-page-one .testimonial-slider, .contact-page-two .page-title, .contact-promo, .contact-intro, .contact-intro p,
-.contact-intro .section-intro,
-.contact-intro .section-intro-left, .map-location, .contact-fun, .service-promo .col-sm-8 p:last-child, .contact-promo .col-sm-8 p:last-child, .inner-services, .client-list, .portfolio-section, .faq-page .cta-centered {
-  margin-bottom: 0;
-}
-
-.cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial-slider, .client-section, .get-quote, .team-section.offset-bg, .achievement-counters, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
+.cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial-slider, .client-section, .get-quote, .team-section.offset-bg, .achievement-counters, .about, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -13377,11 +13342,122 @@ a, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-ic
   border-left: 0 solid #ccc;
 }
 
-.tl-bordered {
+.lt-bordered {
   border-top: 1px solid #ccc;
   border-right: 0 solid #ccc;
   border-bottom: 0 solid #ccc;
   border-left: 1px solid #ccc;
+}
+
+.bgc-primary {
+  background-color: #1ca5b8;
+}
+
+.bgc-secondary {
+  background-color: #ff646c;
+}
+
+.bgc-tertiary {
+  background-color: #0b4249;
+}
+
+.bgc-fourth {
+  background-color: #f9b808;
+}
+
+.bgc-transparent {
+  background-color: transparent;
+}
+
+.bgc-offset {
+  background-color: #f5f5f5;
+}
+
+.bgc-white {
+  background-color: #fff;
+}
+
+.color-primary {
+  color: #1ca5b8;
+}
+
+.color-secondary {
+  color: #ff646c;
+}
+
+.color-tertiary {
+  color: #0b4249;
+}
+
+.color-fourth {
+  color: #f9b808;
+}
+
+.color-transparent {
+  color: transparent;
+}
+
+.color-offset {
+  color: #f5f5f5;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.recent-project .portfolio, .team-section .member-wrapper {
+  padding: 0 !important;
+}
+
+.pt0, .contact-intro {
+  padding-top: 0 !important;
+}
+
+.pb0, .client-section.type-2 .slick-list, .portfolio-section {
+  padding-bottom: 0 !important;
+}
+
+.mt0 {
+  margin-top: 0 !important;
+}
+
+.mb0, .counter-item.type-03 .counter-icon, .cta-section p,
+.cta-section h2, .call-to-action .cta-left p, .call-to-action .cta-right *, .blog-item-grid .post-meta-wrapper span, .image-info-wrapper .image-caption h3, .client-section, .client-section.type-2, .team-section.offset-bg, .about-page-one .testimonial-slider, .contact-page-two .page-title, .contact-promo, .contact-intro, .contact-intro p,
+.contact-intro .section-intro,
+.contact-intro .section-intro-left, .map-location, .contact-fun, .service-promo .col-sm-8 p:last-child, .contact-promo .col-sm-8 p:last-child, .inner-services, .client-list, .portfolio-section, .faq-page .cta-centered {
+  margin-bottom: 0 !important;
+}
+
+.mb-full {
+  margin-bottom: 90px;
+}
+
+.mt-full {
+  margin-top: 90px;
+}
+
+.pb-full {
+  padding-bottom: 90px;
+}
+
+.pt-full {
+  padding-top: 90px;
+}
+
+.mb-half {
+  margin-bottom: 45px;
+}
+
+.mt-half {
+  margin-top: 45px;
+}
+
+.pb-half {
+  padding-bottom: 45px;
+}
+
+.pt-half {
+  padding-top: 45px;
 }
 
 /*
@@ -14977,7 +15053,6 @@ ul.address-card li.card-location::before {
 .cta-section {
   padding-top: 45px;
   padding-bottom: 45px;
-  background: #f9b808;
   margin-bottom: 0;
 }
 
@@ -15088,7 +15163,7 @@ ul.address-card li.card-location::before {
   color: #fff;
 }
 
-.call-to-action .cta-left * {
+.call-to-action .cta-left p {
   position: relative;
 }
 
@@ -15132,6 +15207,7 @@ ul.address-card li.card-location::before {
 
 .call-to-action .default-btn {
   margin-top: 25px;
+  margin-bottom: 5px;
 }
 
 .portfolio-wrapper.seperated .portfolio-item {
@@ -15882,7 +15958,6 @@ ul.address-card li.card-location::before {
 
 .services {
   margin-bottom: 0;
-  background: #f5f5f5;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -16262,11 +16337,6 @@ footer {
   color: #ff646c;
 }
 
-.about {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .about .section-intro, .about .section-intro-left {
   max-width: 100%;
   width: 100%;
@@ -16484,10 +16554,6 @@ footer {
 
 #map #gmap {
   height: 480px;
-}
-
-.service-promo, .contact-promo {
-  background: #f5f5f5;
 }
 
 .service-promo h2, .contact-promo h2 {

@@ -1,7 +1,7 @@
 
 .recent-project {
 	.portfolio {
-		@extend %padding-0;
+		padding:0;
 	}
 	.col-xs-6{
 		@include media-only(small-mobile, $type: max){

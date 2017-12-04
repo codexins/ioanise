@@ -1,0 +1,6 @@
+.newsletter-section {
+	@extend %vpadding;
+	@include cx-background("../img/slider/slider-2.jpg");
+	@extend %overlay;
+	@extend %color-white;
+}

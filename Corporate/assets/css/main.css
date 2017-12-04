@@ -13259,7 +13259,7 @@ input[type="button"]:hover {
   padding: 0.2em 0;
 }
 
-.cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial-slider, .client-section, .get-quote, .team-section.offset-bg, .achievement-counters, .about, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
+.cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial-slider, .client-section, .get-quote, .team-section.offset-bg, .achievement-counters, .newsletter-section, .about, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -13282,6 +13282,21 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2em;
   margin-top: 0;
   margin-bottom: 25px;
+}
+
+.newsletter-section {
+  position: relative;
+}
+
+.newsletter-section:before {
+  background: rgba(0, 0, 0, 0.4);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 a, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .team-member .team-image:before, .team-member.card-styled .social-icon-large, .team-member.flat-styled .social-icon-large, .team-details, .portfolio-item .img:before, .portfolio-content, .portfolio-filter ul li, .blog-item-grid .post-content, .post-image a i, .post-image a::before, .image-info-wrapper .image-caption, .top-content a, .slider-section .owl-nav, .slider-section .owl-nav .owl-next,
@@ -13401,11 +13416,11 @@ a, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-ic
   color: #f5f5f5;
 }
 
-.color-white {
+.color-white, .newsletter-section {
   color: #fff;
 }
 
-.recent-project .portfolio, .team-section .member-wrapper {
+.team-section .member-wrapper {
   padding: 0 !important;
 }
 
@@ -16036,6 +16051,10 @@ ul.address-card li.card-location::before {
   color: #ff646c;
 }
 
+.recent-project .portfolio {
+  padding: 0;
+}
+
 @media only screen and (max-width: 479px) {
   .recent-project .col-xs-6 {
     width: 100%;
@@ -16239,6 +16258,13 @@ ul.address-card li.card-location::before {
   background: #0b4249;
   text-align: center;
   color: white;
+}
+
+.newsletter-section {
+  background-image: url("../img/slider/slider-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 footer {

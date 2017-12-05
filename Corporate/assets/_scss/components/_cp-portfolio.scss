@@ -1,7 +1,7 @@
 .portfolio-wrapper {
 	&.seperated {
 		.portfolio-item {
-			padding:5px !important;
+			padding:5px;
 		}		
 	}
 }
@@ -36,14 +36,14 @@
 				opacity: 1 ;
 			}
 		}
-		.portfolio-content{
+		.portfolio-mini-desc {
 			opacity: 1 ;
 		}
 	}
 }
 
 
-.portfolio-content {
+.portfolio-mini-desc {
 	opacity:0 ;
 	color: #fff ;
 	@include cx-centered(both);

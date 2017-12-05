@@ -1,14 +1,16 @@
 div#toTop {
-    position: absolute;
-    top: -25px;
-    background: $cx-tertiary-color;
+    position: fixed;
+    background: $cx-secondary-color;
     text-align: center;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    right: 0;
-    left: 0;
+    right: 20px;
+    bottom: 25px;
     margin: auto;
     cursor: pointer;
-    @include border-radius(50%);
+    z-index:99;
+    opacity: 0.7;
+    @extend %cx-transition;
+    @include box(40px, 40px);
+    &:hover {
+        opacity:1;
+    }
 }

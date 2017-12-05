@@ -13,6 +13,9 @@
 //page title table-layout
 @import 'page-title/lo-page-title';
 
+// parallax table-layout: 
+@import 'parallax/lo-parallax';
+
 
 
 // home-01 page 
@@ -28,13 +31,15 @@
 @import 'home-02/lo-quote-wrapper';
 @import 'home-02/lo-fun-facts';
 @import 'home-02/lo-team';
-@import 'home-02/lo-testimonial';
+
 
 //home 03 
 @import 'home-03/lo-counter-section';
 
 // home 04 
 @import 'home-04/lo-newsletter-section';
+@import 'home-04/_lo-testimonila-simple-section';
+@import 'home-04/_lo-pricing-section';
 
 //footer layout
 @import 'footer/lo-footer';

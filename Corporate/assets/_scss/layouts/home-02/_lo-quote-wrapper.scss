@@ -1,9 +1,10 @@
 .get-quote {
 	text-align: center;
 	@extend %vpadding;
-	background: url(../img/free-quote1.jpg) no-repeat scroll;
 	background-position:center;
 	background-size: cover;
+	min-height:300px;
+	background: transparent;
 	@include cx-overlay(rgba(0,0,0,.6));
 	.primary-title {
 		color: lighten($cx-text-color, 100%);

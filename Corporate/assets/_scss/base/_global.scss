@@ -113,6 +113,10 @@ section {
 
 // full margin & padding 
 
+.vpadding {
+	@extend %vpadding;
+}
+
 .mt-full {
 	@extend %mt-full;
 }

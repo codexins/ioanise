@@ -1,10 +1,18 @@
-.client-section{
-	background : $cx-offset-color;
-	&.no-background{
-		background:transparent ;
+.client-section {
+
+	.item-brand {
+		border: 1px solid darken($cx-border-color, 10%);
+		padding:20px;
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-bottom: 5px;
+		opacity:0.6;
+		@extend %cx-transition;
+		&:hover {
+			opacity:0.85;
+		}
 	}
-	@extend %vpadding;
-	@extend %mb0;
+
 	&.type-2 {
 		@extend %mb0;
 		padding-top:$cx-col-spacing;
@@ -13,12 +21,17 @@
 			@extend %pb0;
 		}
 	}
+
+	&.has-bg {
+		@include cx-background("../img/slider/slider-3.jpg");
+		@include cx-overlay(rgba($cx-tertiary-color, 0.6));
+	}
 }
 
 .client-carousel {
 
 	.slick-list {
-		padding-bottom: $cx-col-spacing;
+		padding-bottom: ($cx-col-spacing - 15px);
 	}
 	.slick-dots li.slick-active button:before {
 		color: $cx-secondary-color;

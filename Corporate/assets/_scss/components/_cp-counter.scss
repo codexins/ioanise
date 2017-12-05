@@ -55,6 +55,17 @@
 		}
 	}
 
+	&.type-02 {
+		.counter-icon {
+			margin-bottom: 5px;
+		}
+
+		.counter {
+			font-size: 54px;
+			margin-bottom: 5px;
+		}
+	}
+
 	&.type-03 {
 		text-align: left;
 		width:auto;

@@ -12013,6 +12013,22 @@ body.has-active-menu {
   content: "\f163";
 }
 
+.flaticon-tick-1:before {
+  content: "\f164";
+}
+
+.flaticon-tick:before {
+  content: "\f165";
+}
+
+.flaticon-close:before {
+  content: "\f166";
+}
+
+.flaticon-cross:before {
+  content: "\f167";
+}
+
 /*
  *  Owl Carousel - Core
  */
@@ -13259,7 +13275,7 @@ input[type="button"]:hover {
   padding: 0.2em 0;
 }
 
-.cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial-slider, .client-section, .get-quote, .team-section.offset-bg, .achievement-counters, .newsletter-section, .about, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
+.vpadding, .cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial-slider, .get-quote, .team-section.offset-bg, .achievement-counters, .newsletter-section, .testiminial-simple, .pricing-table-section, .about, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -13299,8 +13315,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
 }
 
-a, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .team-member .team-image:before, .team-member.card-styled .social-icon-large, .team-member.flat-styled .social-icon-large, .team-details, .portfolio-item .img:before, .portfolio-content, .portfolio-filter ul li, .blog-item-grid .post-content, .post-image a i, .post-image a::before, .image-info-wrapper .image-caption, .top-content a, .slider-section .owl-nav, .slider-section .owl-nav .owl-next,
-.slider-section .owl-nav .owl-prev, .testimonial-nav .nav-img img, .submit-button {
+a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .team-member .team-image:before, .team-member.card-styled .social-icon-large, .team-member.flat-styled .social-icon-large, .team-details, .portfolio-item .img:before, .portfolio-mini-desc, .portfolio-filter ul li, .blog-item-grid .post-content, .post-image a i, .post-image a::before, .image-info-wrapper .image-caption, .top-content a, .slider-section .owl-nav, .slider-section .owl-nav .owl-next,
+.slider-section .owl-nav .owl-prev, .testimonial-nav .nav-img img, .client-section .item-brand {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -13380,7 +13396,7 @@ a, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-ic
   background-color: #f9b808;
 }
 
-.bgc-transparent {
+.bgc-transparent, .parallaxed {
   background-color: transparent;
 }
 
@@ -13388,7 +13404,7 @@ a, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-ic
   background-color: #f5f5f5;
 }
 
-.bgc-white {
+.bgc-white, .pricing-table-section .pricing-table-wrapper {
   background-color: #fff;
 }
 
@@ -13416,7 +13432,7 @@ a, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-ic
   color: #f5f5f5;
 }
 
-.color-white, .newsletter-section {
+.color-white, .newsletter-section, .pricing-table-section .section-intro, .pricing-table-section .section-intro-left {
   color: #fff;
 }
 
@@ -13437,7 +13453,7 @@ a, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-ic
 }
 
 .mb0, .counter-item.type-03 .counter-icon, .cta-section p,
-.cta-section h2, .call-to-action .cta-left p, .call-to-action .cta-right *, .blog-item-grid .post-meta-wrapper span, .image-info-wrapper .image-caption h3, .client-section, .client-section.type-2, .team-section.offset-bg, .about-page-one .testimonial-slider, .contact-page-two .page-title, .contact-promo, .contact-intro, .contact-intro p,
+.cta-section h2, .call-to-action .cta-left p, .call-to-action .cta-right *, .blog-item-grid .post-meta-wrapper span, .image-info-wrapper .image-caption h3, .pricing-table-wrapper .price-top p, .client-section.type-2, .team-section.offset-bg, .about-page-one .testimonial-slider, .contact-page-two .page-title, .contact-promo, .contact-intro, .contact-intro p,
 .contact-intro .section-intro,
 .contact-intro .section-intro-left, .map-location, .contact-fun, .service-promo .col-sm-8 p:last-child, .contact-promo .col-sm-8 p:last-child, .inner-services, .client-list, .portfolio-section, .faq-page .cta-centered {
   margin-bottom: 0 !important;
@@ -13779,21 +13795,24 @@ to a reusable component.
 }
 
 div#toTop {
-  position: absolute;
-  top: -25px;
-  background: #0b4249;
+  position: fixed;
+  background: #ff646c;
   text-align: center;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  right: 0;
-  left: 0;
+  right: 20px;
+  bottom: 25px;
   margin: auto;
   cursor: pointer;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
+  z-index: 99;
+  opacity: 0.7;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+}
+
+div#toTop:hover {
+  opacity: 1;
 }
 
 .default-btn {
@@ -13904,6 +13923,10 @@ div#toTop {
   transform: translateY(-50%);
 }
 
+.title-bar.white-skin::after, .white-skin.title-bar-left::after, .white-skin.title-bar-right::after {
+  background-color: #fff;
+}
+
 .title-bar-left::after {
   margin-left: 0;
 }
@@ -13977,6 +14000,15 @@ div#toTop {
 
 .counter-item.type-03 .counter-icon i, .counter-item.type-02 .counter-icon i {
   border: 0;
+}
+
+.counter-item.type-02 .counter-icon {
+  margin-bottom: 5px;
+}
+
+.counter-item.type-02 .counter {
+  font-size: 54px;
+  margin-bottom: 5px;
 }
 
 .counter-item.type-03 {
@@ -14188,6 +14220,7 @@ div#toTop {
 
 .social-icons ul li a.facebook:hover {
   background: #244c7a;
+  color: white;
 }
 
 .social-icons ul li a.twitter {
@@ -14196,6 +14229,7 @@ div#toTop {
 
 .social-icons ul li a.twitter:hover {
   background: #00a2ca;
+  color: white;
 }
 
 .social-icons ul li a.google-plus {
@@ -14204,6 +14238,7 @@ div#toTop {
 
 .social-icons ul li a.google-plus:hover {
   background: #b83928;
+  color: white;
 }
 
 .social-icons ul li a.instagram {
@@ -14212,6 +14247,7 @@ div#toTop {
 
 .social-icons ul li a.instagram:hover {
   background: #1d3fe0;
+  color: white;
 }
 
 .social-icons ul li a.pinterest {
@@ -14220,6 +14256,7 @@ div#toTop {
 
 .social-icons ul li a.pinterest:hover {
   background: #aa1a22;
+  color: white;
 }
 
 .social-icons ul li a.linkedin {
@@ -14228,6 +14265,7 @@ div#toTop {
 
 .social-icons ul li a.linkedin:hover {
   background: #0a5e91;
+  color: white;
 }
 
 @media only screen and (max-width: 479px) {
@@ -15065,6 +15103,31 @@ ul.address-card li.card-location::before {
   height: auto;
 }
 
+.working-hour-widget ul {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #fff;
+  display: block;
+  max-width: 87%;
+}
+
+.working-hour-widget ul li {
+  list-style-type: none;
+  display: block;
+  border-bottom: 1px solid #fff;
+  padding: 5px 15px;
+}
+
+.working-hour-widget ul li span {
+  text-align: right;
+  display: inline-block;
+  float: right;
+}
+
+.working-hour-widget ul li:last-child {
+  border-bottom: 0;
+}
+
 .cta-section {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -15226,7 +15289,7 @@ ul.address-card li.card-location::before {
 }
 
 .portfolio-wrapper.seperated .portfolio-item {
-  padding: 5px !important;
+  padding: 5px;
 }
 
 .portfolio-item {
@@ -15279,11 +15342,11 @@ ul.address-card li.card-location::before {
   opacity: 1;
 }
 
-.portfolio-item:hover .portfolio-content {
+.portfolio-item:hover .portfolio-mini-desc {
   opacity: 1;
 }
 
-.portfolio-content {
+.portfolio-mini-desc {
   opacity: 0;
   color: #fff;
   position: absolute;
@@ -15297,17 +15360,17 @@ ul.address-card li.card-location::before {
 }
 
 @media only screen and (max-width: 767px) {
-  .portfolio-content {
+  .portfolio-mini-desc {
     opacity: 1;
   }
 }
 
-.portfolio-content i {
+.portfolio-mini-desc i {
   font-size: 2em;
   cursor: pointer;
 }
 
-.portfolio-content h3 {
+.portfolio-mini-desc h3 {
   text-transform: uppercase;
   position: relative;
   margin-bottom: 10px;
@@ -15317,15 +15380,15 @@ ul.address-card li.card-location::before {
   letter-spacing: 3px;
 }
 
-.portfolio-content h3:after {
+.portfolio-mini-desc h3:after {
   height: 3px;
 }
 
-.portfolio-content a {
+.portfolio-mini-desc a {
   color: #ff646c;
 }
 
-.portfolio-content p {
+.portfolio-mini-desc p {
   margin: 0;
   text-transform: uppercase;
   font-size: 14px;
@@ -15402,6 +15465,10 @@ ul.address-card li.card-location::before {
   .blog-item-grid {
     margin-bottom: 45px;
   }
+}
+
+.blog-item-grid.type-02 {
+  margin-bottom: 45px;
 }
 
 .blog-item-grid.type-02 .post-content {
@@ -15573,6 +15640,183 @@ ul.address-card li.card-location::before {
 #header_full_screen_video .showcase-text,
 #header_full_screen_video .header-wrapper {
   z-index: 1;
+}
+
+.testimonial-simple-wrapper {
+  display: table;
+  width: 100%;
+}
+
+.testimonial-simple-wrapper > div {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+  .testimonial-simple-wrapper > div {
+    display: block;
+  }
+}
+
+.testimonial-simple-wrapper .thumb-img {
+  vertical-align: top;
+  width: 80px;
+}
+
+.testimonial-simple-wrapper .thumb-img img {
+  width: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.testimonial-simple-wrapper .testimonial-simple-content {
+  vertical-align: top;
+  padding-left: 20px;
+}
+
+.testimonial-simple-wrapper .author-desc .author-name {
+  font-weight: bold;
+  display: block;
+}
+
+.testimonial-simple-wrapper .author-desc .author-desig {
+  display: block;
+  font-style: italic;
+}
+
+.pricing-table-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-table-wrapper .price-top {
+  padding: 25px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.pricing-table-wrapper .price-top h2 {
+  text-transform: uppercase;
+  color: #ff646c;
+  font-size: 18px;
+  margin-bottom: 2px;
+  font-weight: normal;
+}
+
+.pricing-table-wrapper .price-top h3 {
+  text-transform: uppercase;
+  font-size: 27px;
+}
+
+.pricing-table-wrapper .price-cost span {
+  font-size: 14px;
+  position: relative;
+  top: -2px;
+  left: 3px;
+  line-height: 1em;
+}
+
+.pricing-table-wrapper .price-bottom {
+  padding: 25px 20px 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.pricing-table-wrapper .price-bottom ul {
+  margin: 0;
+  padding: 0;
+}
+
+.pricing-table-wrapper .price-bottom ul li {
+  list-style-type: none;
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 33px;
+}
+
+.pricing-table-wrapper .price-bottom ul li.effective {
+  font-weight: bold;
+}
+
+.pricing-table-wrapper .price-bottom ul li.effective::before {
+  content: "\f164";
+  font-family: Flaticon;
+  position: absolute;
+  border: 1px dashed #ff646c;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  display: inline-block;
+  margin-right: 12px;
+  color: #ff646c;
+  font-size: 85%;
+  top: 0;
+  left: 0;
+  margin-bottom: 5px;
+}
+
+.pricing-table-wrapper .price-bottom ul li.not-effective::before {
+  content: "\f166";
+  font-family: Flaticon;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px dashed #4d4d4d;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  display: inline-block;
+  margin-right: 12px;
+  color: #4d4d4d;
+  font-size: 85%;
+  margin-bottom: 5px;
+}
+
+.pricing-table-wrapper .default-btn {
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  background: #ff646c;
+  border-color: #ff646c;
+  color: white;
+}
+
+.pricing-table-wrapper .price-token {
+  position: absolute;
+  background: #ff646c;
+  color: white;
+  display: block;
+  width: 200px;
+  height: 100px;
+  line-height: 165px;
+  text-align: center;
+  top: -15px;
+  right: -100px;
+  transform: rotate(45deg);
+}
+
+.pricing-table-wrapper .price-token span {
+  position: relative;
+  left: -11%;
+  font-size: 95%;
+}
+
+.newsletter-form-wrapper form div[class^="col-"] {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.newsletter-form-wrapper form select,
+.newsletter-form-wrapper form textarea,
+.newsletter-form-wrapper form input {
+  color: #333;
+}
+
+.newsletter-form-wrapper form input[type="submit"] {
+  color: white;
 }
 
 .logo {
@@ -15971,6 +16215,10 @@ ul.address-card li.card-location::before {
   padding-left: 19.5px;
 }
 
+.parallaxed {
+  min-height: 300px;
+}
+
 .services {
   margin-bottom: 0;
 }
@@ -15982,10 +16230,6 @@ ul.address-card li.card-location::before {
 }
 
 .fun-facts {
-  background-image: url(../img/counter-up.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   color: white;
 }
 
@@ -16167,12 +16411,17 @@ ul.address-card li.card-location::before {
   border-radius: 50%;
 }
 
-.client-section {
-  background: #f5f5f5;
+.client-section .item-brand {
+  border: 1px solid #b3b3b3;
+  padding: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  opacity: 0.6;
 }
 
-.client-section.no-background {
-  background: transparent;
+.client-section .item-brand:hover {
+  opacity: 0.85;
 }
 
 .client-section.type-2 {
@@ -16180,8 +16429,30 @@ ul.address-card li.card-location::before {
   padding-bottom: 45px;
 }
 
+.client-section.has-bg {
+  background-image: url("../img/slider/slider-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.client-section.has-bg {
+  position: relative;
+}
+
+.client-section.has-bg:before {
+  background: rgba(11, 66, 73, 0.6);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .client-carousel .slick-list {
-  padding-bottom: 45px;
+  padding-bottom: 30px;
 }
 
 .client-carousel .slick-dots li.slick-active button:before {
@@ -16212,9 +16483,10 @@ ul.address-card li.card-location::before {
 
 .get-quote {
   text-align: center;
-  background: url(../img/free-quote1.jpg) no-repeat scroll;
   background-position: center;
   background-size: cover;
+  min-height: 300px;
+  background: transparent;
 }
 
 .get-quote {
@@ -16250,10 +16522,6 @@ ul.address-card li.card-location::before {
   margin-top: -90px;
 }
 
-.home-page-two .testimonial-slider {
-  background-image: url(../img/slider/slider-4.jpg);
-}
-
 .achievement-counters {
   background: #0b4249;
   text-align: center;
@@ -16265,6 +16533,81 @@ ul.address-card li.card-location::before {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.testiminial-simple {
+  background-image: url("../img/slider/slider-4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.testiminial-simple {
+  position: relative;
+}
+
+.testiminial-simple:before {
+  background: rgba(0, 0, 0, 0.5);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.testiminial-simple .testimonial-simple-wrapper {
+  padding: 50px 20px;
+}
+
+.testiminial-simple .testimonial-container {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.testiminial-simple .testimonial-container .row {
+  display: table;
+  width: 100%;
+}
+
+.testiminial-simple .testimonial-container .row > div {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+  .testiminial-simple .testimonial-container .row > div {
+    display: block;
+  }
+}
+
+.pricing-table-section {
+  background-image: url("../img/slider/slider-5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pricing-table-section {
+  position: relative;
+}
+
+.pricing-table-section:before {
+  background: rgba(0, 0, 0, 0.5);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.pricing-table-section .pricing-table-wrapper {
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.35);
 }
 
 footer {
@@ -16284,73 +16627,30 @@ footer {
   text-transform: uppercase;
 }
 
-.footer-content a {
+.footer-widget {
+  margin-bottom: 45px;
+}
+
+.footer-widget a {
   color: white;
 }
 
-.footer-content a:hover {
+.footer-widget a:hover {
   color: #ff646c;
 }
 
-.footer-content ::-webkit-input-placeholder {
+.footer-widget ::-webkit-input-placeholder {
   color: white;
 }
 
-.footer-content ::-moz-placeholder {
+.footer-widget ::-moz-placeholder {
   color: white;
-}
-
-.subscribe-field {
-  position: relative;
-}
-
-.subscribe-field input {
-  border: 1px solid white;
-  color: white;
-}
-
-.subscribe-field .email {
-  width: 100%;
-  background: transparent;
-}
-
-.submit-button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-}
-
-.submit-button:before {
-  content: "\f002";
-  font-family: FontAwesome;
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  right: 1px;
-  bottom: 1px;
-  margin: auto;
-  text-align: center;
-  line-height: 40px;
-}
-
-.submit-button:hover {
-  background: #157d8c;
-}
-
-.submit-button input[type=submit] {
-  background: transparent;
-  text-indent: -999999999px;
-  width: 30px;
-  z-index: 9;
-  overflow: hidden;
-  position: relative;
 }
 
 .copyright-section {
   position: relative;
   text-align: center;
-  padding: 40px 0 20px;
+  padding: 30px 15px;
   background: #0b4249;
 }
 

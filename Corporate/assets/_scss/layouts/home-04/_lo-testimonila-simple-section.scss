@@ -1,0 +1,21 @@
+.testiminial-simple {
+	@extend %vpadding;
+	@include cx-overlay(rgba(0,0,0,.5));
+	@include cx-background("../img/slider/slider-4.jpg");
+	background-attachment: fixed;
+	.testimonial-simple-wrapper {
+		padding:50px 20px;
+		
+	}
+
+	.testimonial-container {
+		overflow: hidden;
+		background: rgba(255,255,255,0.92);
+		.row {
+			@include eqheight;
+		}
+
+	}
+
+
+}

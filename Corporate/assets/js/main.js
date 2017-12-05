@@ -219,27 +219,22 @@ jQuery(document).ready(function($){
   }
   
 
- $("#toTop").on('click', function() {
-      $("html,body").animate({
-          scrollTop:0
-      }, 800)
-  });  //scrollup finished
+  	//scroll to top
+    $(window).on('scroll',function () {
+        if($(window).scrollTop()>200) {
+            $("#toTop").fadeIn();
+        } else {
+            $("#toTop").fadeOut();
+        }
+    });
 
 
- // For Parallax Effects
-(function(){
+	 $("#toTop").on('click', function() {
+	      $("html,body").animate({
+	          scrollTop:0
+	      }, 800)
+	  });  //scrollup finished
 
-    var parallax = document.querySelectorAll(".parallax"),
-        speed = 0.5;
-
-    window.onscroll = function(){
-        [].slice.call(parallax).forEach(function(el,i){
-            var windowYOffset = window.pageYOffset,
-            elementYOffset = el.offsetTop, elBackgrounPos = "50% " + ((windowYOffset - elementYOffset) * speed) + "px";
-            el.style.backgroundPosition = elBackgrounPos;
-        });
-    };
-})();
 
 
 });

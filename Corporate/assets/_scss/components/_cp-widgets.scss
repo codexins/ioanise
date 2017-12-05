@@ -163,3 +163,27 @@
 		}
 	}
 }
+
+.working-hour-widget {
+	ul {
+		margin: 0;
+		padding: 0;
+		border:1px solid #fff;
+		display: block;
+		max-width:87%;
+		li {
+			list-style-type: none;
+			display: block;
+			border-bottom:1px solid #fff;
+			padding:5px 15px;
+			span {
+				text-align: right;
+				display: inline-block;
+				float: right;
+			}
+			&:last-child {
+				border-bottom:0;
+			}
+		}
+	}
+}

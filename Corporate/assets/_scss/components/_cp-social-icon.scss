@@ -65,36 +65,42 @@
 					background: #2D5F9A;
 					&:hover {
 						background: darken(#2D5F9A, 8%);
+						color: lighten($cx-text-color, 100%);
 					}
 				}
 				&.twitter {
 					background: #00C3F3;
 					&:hover {
 						background: darken(#00C3F3, 8%);
+						color: lighten($cx-text-color, 100%);
 					}
 				}
 				&.google-plus {
 					background: #d34836;
 					&:hover {
 						background: darken(#d34836, 8%);
+						color: lighten($cx-text-color, 100%);
 					}
 				}
 				&.instagram {
 					background: #405de6;
 					&:hover {
 						background: darken(#405de6, 8%);
+						color: lighten($cx-text-color, 100%);
 					}
 				}
 				&.pinterest {
 					background: #cd2029;
 					&:hover {
 						background: darken(#cd2029, 8%);
+						color: lighten($cx-text-color, 100%);
 					}
 				}
 				&.linkedin {
 					background: #0d77b7;
 					&:hover {
 						background: darken(#0d77b7, 8%);
+						color: lighten($cx-text-color, 100%);
 					}
 				}
 

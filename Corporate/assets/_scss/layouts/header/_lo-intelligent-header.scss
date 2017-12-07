@@ -1,0 +1,25 @@
+.intelligent-header {
+	transition: .3s;
+    position: fixed;
+    width: 100%;
+    z-index: 999 !important;
+    transform: translateY(0%);
+    top: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.hide-menu {
+    transform: translateY(-100%);
+}
+
+
+.fill-screen {
+	.intelligent-header {
+		border-bottom:0;
+		&.scrolling-up {
+			// background: darken(rgba($cx-tertiary-color, 0.95), 5%);
+			 background: darken(rgba($cx-text-color, 0.95), 5%);
+			//background: rgba($cx-text-color, 0.95);
+		}
+	}
+}

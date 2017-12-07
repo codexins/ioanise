@@ -1,5 +1,5 @@
 .logo {
-	max-width:260px;
+	max-width:175px;
 	@include respond-to(mobile){
 		max-width:150px;
 	}
@@ -25,8 +25,10 @@
 }
 
 .header-inline{
-    padding: 10px 0;
+    padding: 15px 0;
 }
+
+
 .mobile-menu-button{
 	overflow:hidden ;
 	@include respond-to(mobile){

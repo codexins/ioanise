@@ -8,8 +8,24 @@
 		h1,h2,h3,h4,h5,h6 {
 			color:#fff;
 		}
+
+		h1 {
+		    font-size: 46px;
+		    text-transform: uppercase;
+		    margin-bottom: 5px;
+		    letter-spacing: 2px;
+		    line-height: 55px;
+		    font-weight: 700;
+		}
+
+		p {
+			font-size:20px;
+			line-height: 1.35em;
+			margin-bottom: 30px;
+		}
+
 		color:#fff;
-		height:500px;
+		height:560px;
 		@include respond-to(tablet) {
 			height: 400px;
 		}
@@ -36,9 +52,13 @@
 		    	padding-left: 15px;
 		    	padding-right: 15px;
 		    }
+
+		    .slider-content {
+		    	max-width:75%;
+		    }
 		}
 
-		@include cx-overlay(rgba(0,0,0,.5));
+		@include cx-overlay(rgba(0,0,0,.6));
 		.default-btn {
 			border-color: $cx-primary-color;
 			background: $cx-primary-color;

@@ -13556,6 +13556,7 @@ to a reusable component.
   background-repeat: no-repeat;
   background-attachment: scroll;
   margin-bottom: 90px;
+  z-index: 1 !important;
 }
 
 .fill-screen.attachment-fixed {
@@ -15825,7 +15826,7 @@ ul.address-card li.card-location::before {
 }
 
 .logo {
-  max-width: 260px;
+  max-width: 175px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -15859,7 +15860,7 @@ ul.address-card li.card-location::before {
 }
 
 .header-inline {
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .mobile-menu-button {
@@ -15877,7 +15878,8 @@ ul.address-card li.card-location::before {
 }
 
 .header-top {
-  padding: 10px 0;
+  padding: 7px 0;
+  font-size: 85%;
   background: #0b4249;
   color: white;
 }
@@ -15930,7 +15932,7 @@ ul.address-card li.card-location::before {
 .sf-menu {
   display: block;
   float: right;
-  margin-top: 30px;
+  margin-top: 11px;
   margin-bottom: 0;
   margin-right: -20px;
   width: auto;
@@ -15975,7 +15977,6 @@ ul.address-card li.card-location::before {
 .sf-menu > li > a {
   text-transform: uppercase;
   color: #333;
-  font-weight: 600;
 }
 
 .sf-menu > li > a:hover {
@@ -16036,6 +16037,28 @@ ul.address-card li.card-location::before {
   }
 }
 
+.intelligent-header {
+  transition: .3s;
+  position: fixed;
+  width: 100%;
+  z-index: 999 !important;
+  transform: translateY(0%);
+  top: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hide-menu {
+  transform: translateY(-100%);
+}
+
+.fill-screen .intelligent-header {
+  border-bottom: 0;
+}
+
+.fill-screen .intelligent-header.scrolling-up {
+  background: rgba(38, 38, 38, 0.95);
+}
+
 .slider-section {
   width: 100%;
   overflow: hidden;
@@ -16046,11 +16069,26 @@ ul.address-card li.card-location::before {
 
 .slider-section .slide-single {
   color: #fff;
-  height: 500px;
+  height: 560px;
 }
 
 .slider-section .slide-single h1, .slider-section .slide-single h2, .slider-section .slide-single h3, .slider-section .slide-single h4, .slider-section .slide-single h5, .slider-section .slide-single h6 {
   color: #fff;
+}
+
+.slider-section .slide-single h1 {
+  font-size: 46px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  line-height: 55px;
+  font-weight: 700;
+}
+
+.slider-section .slide-single p {
+  font-size: 20px;
+  line-height: 1.35em;
+  margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -16091,12 +16129,16 @@ ul.address-card li.card-location::before {
   }
 }
 
+.slider-section .slide-single .container .slider-content {
+  max-width: 75%;
+}
+
 .slider-section .slide-single {
   position: relative;
 }
 
 .slider-section .slide-single:before {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   content: "";
   display: block;
   position: absolute;

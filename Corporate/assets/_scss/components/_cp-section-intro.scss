@@ -14,6 +14,10 @@
     h2 {
     	@extend .primary-title;
     }
+
+    .subtitle {
+        @extend %mb0;
+    }
 }
 
 

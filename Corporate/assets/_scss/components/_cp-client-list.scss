@@ -2,6 +2,8 @@
 	width:100%;
 	border:1px solid $cx-border-color;
 	margin-bottom: $cx-heading-margin-bottom;
+	opacity: 0.7;
+	@extend %cx-transition;
 	a {
 		display: inline-block;
 		width:100%;
@@ -13,5 +15,9 @@
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
+	}
+
+	&:hover {
+		opacity: 0.95;
 	}
 }

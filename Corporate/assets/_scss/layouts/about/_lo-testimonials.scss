@@ -1,5 +1,6 @@
-.about-page-one {
-	.testimonial-slider {
+
+.testimonial-slider {
+	&.flat {
 		@extend %mb0;
 		background-image: none;
 		background-color: lighten($cx-text-color, 100%);
@@ -9,6 +10,7 @@
 		h3 {
 			color: $cx-text-color;			
 		}
-		padding-bottom: $cx-col-spacing;
+		
 	}
+
 }

@@ -13104,11 +13104,11 @@ section {
 
 html,
 body {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6em;
   color: #333;
   font-weight: 400;
@@ -13116,27 +13116,27 @@ body {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 h2 {
-  font-size: 26.25px;
+  font-size: 28px;
 }
 
 h3 {
-  font-size: 22.5px;
+  font-size: 24px;
 }
 
 h4 {
-  font-size: 19.6875px;
+  font-size: 21px;
 }
 
 h5 {
-  font-size: 16.875px;
+  font-size: 18px;
 }
 
 h6 {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13159,7 +13159,7 @@ address, blockquote {
 }
 
 blockquote {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 td, th {
@@ -13294,7 +13294,7 @@ input[type="button"]:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Exo 2", sans-serif;
+  font-family: "PT Sans", sans-serif;
   line-height: 1.2em;
   margin-top: 0;
   margin-bottom: 25px;
@@ -13315,7 +13315,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
 }
 
-a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .team-member .team-image:before, .team-member.card-styled .social-icon-large, .team-member.flat-styled .social-icon-large, .team-details, .portfolio-item .img:before, .portfolio-mini-desc, .portfolio-filter ul li, .blog-item-grid .post-content, .post-image a i, .post-image a::before, .image-info-wrapper .image-caption, .top-content a, .slider-section .owl-nav, .slider-section .owl-nav .owl-next,
+a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .team-member .team-image:before, .team-member.card-styled .social-icon-large, .team-member.flat-styled .social-icon-large, .team-details, .client-single, .portfolio-item .img:before, .portfolio-mini-desc, .portfolio-filter ul li, .blog-item-grid .post-content, .post-image a i, .post-image a::before, .image-info-wrapper .image-caption, .top-content a, .slider-section .owl-nav, .slider-section .owl-nav .owl-next,
 .slider-section .owl-nav .owl-prev, .testimonial-nav .nav-img img, .client-section .item-brand {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -13404,7 +13404,7 @@ a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3,
   background-color: #f5f5f5;
 }
 
-.bgc-white, .pricing-table-section .pricing-table-wrapper {
+.bgc-white, .client-section.type-2.has-bg .item-brand, .pricing-table-section .pricing-table-wrapper {
   background-color: #fff;
 }
 
@@ -13436,7 +13436,7 @@ a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3,
   color: #fff;
 }
 
-.team-section .member-wrapper {
+.nopadding {
   padding: 0 !important;
 }
 
@@ -13452,8 +13452,8 @@ a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3,
   margin-top: 0 !important;
 }
 
-.mb0, .counter-item.type-03 .counter-icon, .cta-section p,
-.cta-section h2, .call-to-action .cta-left p, .call-to-action .cta-right *, .blog-item-grid .post-meta-wrapper span, .image-info-wrapper .image-caption h3, .pricing-table-wrapper .price-top p, .client-section.type-2, .team-section.offset-bg, .about-page-one .testimonial-slider, .contact-page-two .page-title, .contact-promo, .contact-intro, .contact-intro p,
+.mb0, .section-intro .subtitle, .section-intro-left .subtitle, .counter-item.type-03 .counter-icon, .cta-section p,
+.cta-section h2, .call-to-action .cta-left p, .call-to-action .cta-right *, .blog-item-grid .post-meta-wrapper span, .image-info-wrapper .image-caption h3, .pricing-table-wrapper .price-top p, .client-section.type-2, .team-section.offset-bg, .testimonial-slider.flat, .contact-page-two .page-title, .contact-promo, .contact-intro, .contact-intro p,
 .contact-intro .section-intro,
 .contact-intro .section-intro-left, .map-location, .contact-fun, .service-promo .col-sm-8 p:last-child, .contact-promo .col-sm-8 p:last-child, .inner-services, .client-list, .portfolio-section, .faq-page .cta-centered {
   margin-bottom: 0 !important;
@@ -13852,19 +13852,19 @@ div#toTop:hover {
   padding-bottom: 20px;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 27px;
+  font-size: 28.8px;
   margin-bottom: 25px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .primary-title, .section-intro h2, .section-intro-left h2 {
-    font-size: 22.5px;
+    font-size: 24px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .primary-title, .section-intro h2, .section-intro-left h2 {
-    font-size: 19.5px;
+    font-size: 20.8px;
   }
 }
 
@@ -14857,6 +14857,7 @@ ul.address-card li.card-location::before {
   width: 100%;
   border: 1px solid #ccc;
   margin-bottom: 25px;
+  opacity: 0.7;
 }
 
 .client-single a {
@@ -14871,6 +14872,10 @@ ul.address-card li.card-location::before {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.client-single:hover {
+  opacity: 0.95;
 }
 
 .pagination-wrapper {
@@ -15434,7 +15439,7 @@ ul.address-card li.card-location::before {
   text-transform: initial;
   font-weight: 600;
   border: 0;
-  font-family: "Exo 2", sans-serif;
+  font-family: "PT Sans", sans-serif;
   padding: 0;
   margin-top: 15px;
   position: relative;
@@ -15820,7 +15825,7 @@ ul.address-card li.card-location::before {
 }
 
 .logo {
-  max-width: 235px;
+  max-width: 260px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -15854,7 +15859,7 @@ ul.address-card li.card-location::before {
 }
 
 .header-inline {
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .mobile-menu-button {
@@ -15925,7 +15930,7 @@ ul.address-card li.card-location::before {
 .sf-menu {
   display: block;
   float: right;
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 0;
   margin-right: -20px;
   width: auto;
@@ -15938,7 +15943,7 @@ ul.address-card li.card-location::before {
 }
 
 .sf-menu li a {
-  padding: 10px 20px;
+  padding: 10px 15px;
   display: block;
   position: relative;
   color: white;
@@ -15970,6 +15975,7 @@ ul.address-card li.card-location::before {
 .sf-menu > li > a {
   text-transform: uppercase;
   color: #333;
+  font-weight: 600;
 }
 
 .sf-menu > li > a:hover {
@@ -16429,6 +16435,23 @@ ul.address-card li.card-location::before {
   padding-bottom: 45px;
 }
 
+.client-section.type-2 .client-carousel {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.client-section.type-2 .client-carousel .slick-prev {
+  left: 0;
+}
+
+.client-section.type-2 .client-carousel .slick-next {
+  right: 0;
+}
+
+.client-section.type-2.has-bg .item-brand {
+  opacity: 0.8;
+}
+
 .client-section.has-bg {
   background-image: url("../img/slider/slider-3.jpg");
   background-position: center;
@@ -16441,7 +16464,7 @@ ul.address-card li.card-location::before {
 }
 
 .client-section.has-bg:before {
-  background: rgba(11, 66, 73, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   content: "";
   display: block;
   position: absolute;
@@ -16479,6 +16502,24 @@ ul.address-card li.card-location::before {
   margin-right: auto;
   max-height: 80px;
   height: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-carousel .slick-slide img {
+    max-height: 60px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .client-carousel .slick-slide img {
+    max-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .client-carousel .slick-slide img {
+    max-height: 35px;
+  }
 }
 
 .get-quote {
@@ -16520,6 +16561,10 @@ ul.address-card li.card-location::before {
 .team-section.offset-bg {
   background: #f5f5f5;
   margin-top: -90px;
+}
+
+.team-section .member-wrapper {
+  margin-bottom: 45px;
 }
 
 .achievement-counters {
@@ -16684,18 +16729,17 @@ footer {
   text-transform: capitalize;
 }
 
-.about-page-one .testimonial-slider {
+.testimonial-slider.flat {
   background-image: none;
   background-color: white;
   color: #333;
-  padding-bottom: 45px;
 }
 
-.about-page-one .testimonial-slider {
+.testimonial-slider.flat {
   position: relative;
 }
 
-.about-page-one .testimonial-slider:before {
+.testimonial-slider.flat:before {
   background: transparent;
   content: "";
   display: block;
@@ -16706,7 +16750,7 @@ footer {
   left: 0;
 }
 
-.about-page-one .testimonial-slider h3 {
+.testimonial-slider.flat h3 {
   color: #333;
 }
 

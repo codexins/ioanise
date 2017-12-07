@@ -117,6 +117,10 @@ section {
 	@extend %vpadding;
 }
 
+.nopadding {
+	@extend %padding-0;
+}
+
 .mt-full {
 	@extend %mt-full;
 }

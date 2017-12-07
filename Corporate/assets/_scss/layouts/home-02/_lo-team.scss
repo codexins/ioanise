@@ -5,4 +5,8 @@
 		@extend %mb0;
 		margin-top: -($cx-section-spacing);
 	}
+
+	.member-wrapper {
+		margin-bottom: $cx-col-spacing;
+	}
 }

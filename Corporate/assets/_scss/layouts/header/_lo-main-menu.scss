@@ -1,7 +1,7 @@
 .sf-menu{
 	display: block;
     float: right;
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 0;
     margin-right: -20px;
     width: auto;
@@ -10,10 +10,9 @@
 		background: $cx-primary-color;
 		display: block;
 		a{
-			padding: 10px 20px;
+			padding: 10px 15px;
 			display: block; 
 			position: relative;
-			//text-transform: uppercase;
 			color:lighten($cx-text-color, 100%);
 			border:0;
 			@include respond-to(tablet){
@@ -42,6 +41,7 @@
     	&>a {
     		text-transform: uppercase;
     		color: $cx-text-color;
+            font-weight: 600;
     		&:hover {
     			color: $cx-secondary-color;
     		}

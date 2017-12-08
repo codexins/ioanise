@@ -36,6 +36,11 @@
 
 	}
 
+	&.has-bg {
+		@include cx-background("../img/slider/slider-6.jpg");
+		@extend %overlay;
+	}
+
 
 }
 

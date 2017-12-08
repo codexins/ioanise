@@ -1,9 +1,12 @@
 .team-section {
-	&.offset-bg {
+	&.bgc-offset {
 		background: $cx-offset-color;
 		@extend %vpadding;
 		@extend %mb0;
 		margin-top: -($cx-section-spacing);
+		.team-details {
+			background-color: #fff;
+		}
 	}
 
 	.member-wrapper {

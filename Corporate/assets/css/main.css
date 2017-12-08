@@ -13275,7 +13275,7 @@ input[type="button"]:hover {
   padding: 0.2em 0;
 }
 
-.vpadding, .cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial-slider, .get-quote, .team-section.offset-bg, .achievement-counters, .newsletter-section, .testiminial-simple, .pricing-table-section, .about, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
+.vpadding, .cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial-slider, .get-quote, .team-section.bgc-offset, .achievement-counters, .newsletter-section, .testiminial-simple, .pricing-table-section, .about, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -13300,12 +13300,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 25px;
 }
 
-.newsletter-section {
+.cta-section.has-bg, .newsletter-section {
   position: relative;
 }
 
-.newsletter-section:before {
-  background: rgba(0, 0, 0, 0.4);
+.cta-section.has-bg:before, .newsletter-section:before {
+  background: rgba(0, 0, 0, 0.55);
   content: "";
   display: block;
   position: absolute;
@@ -13388,7 +13388,7 @@ a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3,
   background-color: #ff646c;
 }
 
-.bgc-tertiary {
+.bgc-tertiary, .support-widget a {
   background-color: #0b4249;
 }
 
@@ -13400,8 +13400,8 @@ a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3,
   background-color: transparent;
 }
 
-.bgc-offset {
-  background-color: #f5f5f5;
+.bgc-offset, .service-widget ul li a {
+  background-color: #f3f3f3;
 }
 
 .bgc-white, .client-section.type-2.has-bg .item-brand, .pricing-table-section .pricing-table-wrapper {
@@ -13429,10 +13429,10 @@ a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3,
 }
 
 .color-offset {
-  color: #f5f5f5;
+  color: #f3f3f3;
 }
 
-.color-white, .newsletter-section, .pricing-table-section .section-intro, .pricing-table-section .section-intro-left {
+.color-white, .support-widget a, .newsletter-section, .pricing-table-section .section-intro, .pricing-table-section .section-intro-left {
   color: #fff;
 }
 
@@ -13440,7 +13440,7 @@ a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3,
   padding: 0 !important;
 }
 
-.pt0, .contact-intro {
+.pt0 {
   padding-top: 0 !important;
 }
 
@@ -13453,7 +13453,7 @@ a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3,
 }
 
 .mb0, .section-intro .subtitle, .section-intro-left .subtitle, .counter-item.type-03 .counter-icon, .cta-section p,
-.cta-section h2, .call-to-action .cta-left p, .call-to-action .cta-right *, .blog-item-grid .post-meta-wrapper span, .image-info-wrapper .image-caption h3, .pricing-table-wrapper .price-top p, .client-section.type-2, .team-section.offset-bg, .testimonial-slider.flat, .contact-page-two .page-title, .contact-promo, .contact-intro, .contact-intro p,
+.cta-section h2, .call-to-action .cta-left p, .call-to-action .cta-right *, .blog-item-grid .post-meta-wrapper span, .image-info-wrapper .image-caption h3, .pricing-table-wrapper .price-top p, .client-section.type-2, .team-section.bgc-offset, .testimonial-slider.flat, .contact-page-two .page-title, .contact-promo, .contact-intro p,
 .contact-intro .section-intro,
 .contact-intro .section-intro-left, .map-location, .contact-fun, .service-promo .col-sm-8 p:last-child, .contact-promo .col-sm-8 p:last-child, .inner-services, .client-list, .portfolio-section, .faq-page .cta-centered {
   margin-bottom: 0 !important;
@@ -14419,7 +14419,7 @@ ul.address-card li.card-location::before {
 
 .team-member.card-styled .team-details, .team-member.flat-styled .team-details {
   position: relative;
-  background: #f5f5f5;
+  background: #f3f3f3;
   opacity: 1;
   height: 105px;
   padding: 20px;
@@ -14973,6 +14973,31 @@ ul.address-card li.card-location::before {
   width: 95px;
 }
 
+.support-widget {
+  position: relative;
+}
+
+.support-widget img {
+  width: 100%;
+  display: block;
+}
+
+.support-widget a {
+  position: absolute;
+  width: 100%;
+  padding: 15px;
+  display: block;
+  bottom: 45px;
+  left: 0;
+  text-align: center;
+  font-size: 85%;
+}
+
+.support-widget a span {
+  display: block;
+  font-size: 16px;
+}
+
 .recent-posts-single {
   padding-bottom: 15px;
   padding-top: 15px;
@@ -15059,28 +15084,49 @@ ul.address-card li.card-location::before {
   border-color: #ff646c;
 }
 
-.category-widget ul {
+.category-widget ul, .service-widget ul {
   margin: 0;
   padding: 0;
 }
 
-.category-widget ul li {
+.category-widget ul li, .service-widget ul li {
   list-style-type: none;
 }
 
-.category-widget ul li a {
+.category-widget ul li a, .service-widget ul li a {
   color: #333;
   display: block;
   padding: 8px 10px 8px 0;
   border-bottom: 1px solid #e6e6e6;
 }
 
-.category-widget ul li a span {
+.category-widget ul li a span, .service-widget ul li a span {
   float: right;
 }
 
-.category-widget ul li a:hover {
+.category-widget ul li a:hover, .service-widget ul li a:hover {
   color: #ff646c;
+}
+
+.service-widget ul li a {
+  padding: 8px 10px 8px 45px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.service-widget ul li a::before {
+  content: "\f156";
+  font-family: "Flaticon";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
 }
 
 .instagram-widget ul {
@@ -15186,6 +15232,13 @@ ul.address-card li.card-location::before {
   }
 }
 
+.cta-section.has-bg {
+  background-image: url("../img/slider/slider-6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .cta-centered {
   text-align: center;
 }
@@ -15203,7 +15256,7 @@ ul.address-card li.card-location::before {
 }
 
 .cta-centered.has-bg:before {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.55);
   content: "";
   display: block;
   position: absolute;
@@ -15603,6 +15656,11 @@ ul.address-card li.card-location::before {
   transform: translateY(100px);
 }
 
+.image-info-wrapper .image-caption h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
 .image-info-wrapper .image-caption a {
   padding: 15px;
   display: block;
@@ -15635,7 +15693,7 @@ ul.address-card li.card-location::before {
 
 #header_full_screen_video.header {
   background-image: none;
-  background: #f5f5f5;
+  background: #f3f3f3;
 }
 
 #header_full_screen_video.fill-screen::before {
@@ -15823,6 +15881,14 @@ ul.address-card li.card-location::before {
 
 .newsletter-form-wrapper form input[type="submit"] {
   color: white;
+}
+
+.cx-dropcap {
+  font-size: 52px;
+  display: inline-block;
+  float: left;
+  line-height: 52px;
+  margin-right: 10px;
 }
 
 .logo {
@@ -16415,7 +16481,8 @@ ul.address-card li.card-location::before {
 
 .testimonial-slider .client-meta .client-name {
   margin: 0;
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
@@ -16600,9 +16667,13 @@ ul.address-card li.card-location::before {
   background-image: url(../img/counter-up-2.jpg);
 }
 
-.team-section.offset-bg {
-  background: #f5f5f5;
+.team-section.bgc-offset {
+  background: #f3f3f3;
   margin-top: -90px;
+}
+
+.team-section.bgc-offset .team-details {
+  background-color: #fff;
 }
 
 .team-section .member-wrapper {
@@ -16764,7 +16835,7 @@ footer {
 }
 
 .skills {
-  background: #f5f5f5;
+  background: #f3f3f3;
 }
 
 .skill-element h3 {
@@ -16804,6 +16875,10 @@ footer {
   padding-bottom: 90px;
 }
 
+.section-intro .social-icons, .section-intro-left .social-icons {
+  margin-bottom: 0;
+}
+
 .contact-boxes {
   margin-top: -100px;
 }
@@ -16836,7 +16911,7 @@ footer {
 }
 
 .contact-us .container {
-  margin-top: -200px;
+  margin-top: -135px;
 }
 
 .contact-us .container .form-wrapper,
@@ -16928,6 +17003,29 @@ footer {
   }
 }
 
+.contact-us.simple-type .container {
+  margin-top: 0;
+}
+
+.contact-us.simple-type .container .form-wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.contact-us.simple-type .container .form-wrapper textarea {
+  min-height: 120px;
+}
+
+.contact-us.simple-type .container .contact-info-wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.contact-us.simple-type .container > .row {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
 .connect {
   margin-bottom: 0;
   padding-top: 45px;
@@ -16965,7 +17063,7 @@ footer {
 }
 
 #map #gmap {
-  height: 480px;
+  height: 400px;
 }
 
 .service-promo h2, .contact-promo h2 {
@@ -17504,32 +17602,25 @@ footer {
 
 .faq-wrapper .panel-default .panel-heading a {
   display: block;
-  padding: 15px 15px 15px 40px;
+  padding: 15px 15px 15px 35px;
   position: relative;
   font-weight: 400;
   font-size: 18px;
 }
 
 .faq-wrapper .panel-default .panel-heading a::before {
-  content: "\f068";
-  font-family: FontAwesome;
+  content: "\f131";
+  font-family: Flaticon;
   position: absolute;
-  top: 5px;
   left: 10px;
-  right: auto;
-  bottom: 0;
-  margin: auto;
-  width: 24px;
-  height: 24px;
-  text-align: center;
-  line-height: 24px;
-  display: inline-block;
+  font-size: 15px;
+  top: auto;
 }
 
 .faq-wrapper .panel-default .panel-heading a.collapsed::before {
-  content: "\f067";
+  content: "\f130";
 }
 
 .faq-page .cta-centered {
-  background: #f5f5f5;
+  background: #f3f3f3;
 }

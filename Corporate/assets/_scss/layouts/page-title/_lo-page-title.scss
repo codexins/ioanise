@@ -2,7 +2,9 @@
 	padding-top:1*1*$cx-section-spacing;
 	padding-bottom:.7*$cx-section-spacing;
 	margin-bottom: $cx-section-spacing;
-	background: lighten($cx-tertiary-color, 20%);
+	background-color: lighten($cx-tertiary-color, 20%);
+	@extend %overlay;
+	
 	h1 {
 		margin-bottom: 0;
 		color: lighten($cx-text-color, 100%);
@@ -25,6 +27,14 @@
 				}
 			}
 		}
+	}
+
+	&.service-page-title {
+		@include cx-background("../img/service/service-title-bg.jpg");
+	}
+
+	&.about-page-title {
+		@include cx-background("../img/page-titles/about-page-title.jpg");
 	}
 
 

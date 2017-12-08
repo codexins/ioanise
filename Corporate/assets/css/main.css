@@ -13300,11 +13300,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 25px;
 }
 
-.cta-section.has-bg, .newsletter-section {
+.cta-section.has-bg, .page-title, .newsletter-section {
   position: relative;
 }
 
-.cta-section.has-bg:before, .newsletter-section:before {
+.cta-section.has-bg:before, .page-title:before, .newsletter-section:before {
   background: rgba(0, 0, 0, 0.55);
   content: "";
   display: block;
@@ -16305,7 +16305,7 @@ ul.address-card li.card-location::before {
   padding-top: 90px;
   padding-bottom: 63px;
   margin-bottom: 90px;
-  background: #1892a2;
+  background-color: #1892a2;
 }
 
 .page-title h1 {
@@ -16327,6 +16327,20 @@ ul.address-card li.card-location::before {
 
 .page-title.centered .breadcrumb li:first-child {
   padding-left: 19.5px;
+}
+
+.page-title.service-page-title {
+  background-image: url("../img/service/service-title-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-title.about-page-title {
+  background-image: url("../img/page-titles/about-page-title.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .parallaxed {

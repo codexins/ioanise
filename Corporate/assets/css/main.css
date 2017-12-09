@@ -16408,6 +16408,11 @@ ul.address-card li.card-location::before {
 
 .fun-facts {
   color: white;
+  background-image: url("../img/counter-up.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .fun-facts .primary-title, .fun-facts .section-intro h2, .section-intro .fun-facts h2, .fun-facts .section-intro-left h2, .section-intro-left .fun-facts h2 {
@@ -16698,8 +16703,11 @@ ul.address-card li.card-location::before {
   text-align: center;
   background-position: center;
   background-size: cover;
-  min-height: 300px;
-  background: transparent;
+  background-image: url("../img/free-quote1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .get-quote {

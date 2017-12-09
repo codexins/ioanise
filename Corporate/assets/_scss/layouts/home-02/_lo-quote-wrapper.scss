@@ -3,8 +3,8 @@
 	@extend %vpadding;
 	background-position:center;
 	background-size: cover;
-	min-height:300px;
-	background: transparent;
+	@include cx-background("../img/free-quote1.jpg");
+	background-attachment: fixed;	
 	@include cx-overlay(rgba(0,0,0,.6));
 	.primary-title {
 		color: lighten($cx-text-color, 100%);

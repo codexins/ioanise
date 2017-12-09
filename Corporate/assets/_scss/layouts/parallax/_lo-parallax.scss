@@ -1,4 +1,3 @@
-.parallaxed {
-	@extend %bgc-transparent;
-	min-height:300px;
+.parallax-window {
+	background-attachment: fixed;
 }

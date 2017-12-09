@@ -1,9 +1,7 @@
 .team-section {
 	&.bgc-offset {
 		background: $cx-offset-color;
-		@extend %vpadding;
 		@extend %mb0;
-		margin-top: -($cx-section-spacing);
 		.team-details {
 			background-color: #fff;
 		}

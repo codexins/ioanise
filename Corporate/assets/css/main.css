@@ -13275,7 +13275,7 @@ input[type="button"]:hover {
   padding: 0.2em 0;
 }
 
-.vpadding, .cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial-slider, .get-quote, .team-section.bgc-offset, .achievement-counters, .newsletter-section, .testiminial-simple, .pricing-table-section, .about, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
+.vpadding, .cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial-slider, .get-quote, .achievement-counters, .newsletter-section, .testiminial-simple, .pricing-table-section, .about, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -13396,7 +13396,7 @@ a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3,
   background-color: #f9b808;
 }
 
-.bgc-transparent, .parallaxed {
+.bgc-transparent {
   background-color: transparent;
 }
 
@@ -16392,8 +16392,8 @@ ul.address-card li.card-location::before {
   background-repeat: no-repeat;
 }
 
-.parallaxed {
-  min-height: 300px;
+.parallax-window {
+  background-attachment: fixed;
 }
 
 .services {
@@ -16412,7 +16412,6 @@ ul.address-card li.card-location::before {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .fun-facts .primary-title, .fun-facts .section-intro h2, .section-intro .fun-facts h2, .fun-facts .section-intro-left h2, .section-intro-left .fun-facts h2 {
@@ -16740,7 +16739,6 @@ ul.address-card li.card-location::before {
 
 .team-section.bgc-offset {
   background: #f3f3f3;
-  margin-top: -90px;
 }
 
 .team-section.bgc-offset .team-details {

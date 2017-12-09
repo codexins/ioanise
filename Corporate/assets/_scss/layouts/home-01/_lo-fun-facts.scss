@@ -20,7 +20,6 @@
     }
     @extend %vpadding;
     @include cx-background("../img/counter-up.jpg");
-    background-attachment: fixed;
     @include cx-overlay(rgba($cx-tertiary-color,0.92));
 }
 

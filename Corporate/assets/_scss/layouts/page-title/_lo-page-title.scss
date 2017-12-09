@@ -37,5 +37,32 @@
 		@include cx-background("../img/page-titles/about-page-title.jpg");
 	}
 
+	&.portfolio-page-title {
+		@include cx-background("../img/page-titles/portfolio.jpg");
+	}
+
+	&.faq-page-title {
+		@include cx-background("../img/page-titles/faq.jpg");
+	}
+
+	&.blog-page-title {
+		@include cx-background("../img/page-titles/blog.jpg");
+	}
+
+	&.single-page-title {
+		@include cx-background("../img/page-titles/single-post.jpg");
+	}
+
+	&.single-portfolio-page-title {
+		@include cx-background("../img/page-titles/single-portfolio.jpg");
+	}
+
+	&.contact-page-title-01 {
+		@include cx-background("../img/page-titles/contact-bg-1.jpg");
+	}
+
+	&.contact-page-title-02 {
+		@include cx-background("../img/page-titles/contact-bg-2.jpg");
+	}
 
 }

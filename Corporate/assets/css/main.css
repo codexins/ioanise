@@ -16343,6 +16343,55 @@ ul.address-card li.card-location::before {
   background-repeat: no-repeat;
 }
 
+.page-title.portfolio-page-title {
+  background-image: url("../img/page-titles/portfolio.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-title.faq-page-title {
+  background-image: url("../img/page-titles/faq.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-title.blog-page-title {
+  background-image: url("../img/page-titles/blog.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-title.single-page-title {
+  background-image: url("../img/page-titles/single-post.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-title.single-portfolio-page-title {
+  background-image: url("../img/page-titles/single-portfolio.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-title.contact-page-title-01 {
+  background-image: url("../img/page-titles/contact-bg-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-title.contact-page-title-02 {
+  background-image: url("../img/page-titles/contact-bg-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .parallaxed {
   min-height: 300px;
 }
@@ -17224,7 +17273,7 @@ footer {
 }
 
 .portfolio-featured {
-  background-image: url("http://placehold.it/800X585");
+  background-image: url("../img/single-portfolio/single-portfolio-4.jpg");
   width: 100%;
   height: 555px;
   margin-bottom: 15px;
@@ -17285,15 +17334,15 @@ footer {
 }
 
 .portfolio-one {
-  background-image: url("http://placehold.it/800X585");
+  background-image: url("../img/single-portfolio/single-portfolio-1.jpg");
 }
 
 .portfolio-two {
-  background-image: url("http://placehold.it/800X585");
+  background-image: url("../img/single-portfolio/single-portfolio-3.jpg");
 }
 
 .portfolio-three {
-  background-image: url("http://placehold.it/800X585");
+  background-image: url("../img/single-portfolio/single-portfolio-2.jpg");
 }
 
 .portfolio-content {

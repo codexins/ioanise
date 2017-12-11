@@ -1,7 +1,7 @@
 .pricing-table-section {
 	@extend %vpadding;
 	@include cx-overlay(rgba(0,0,0,.5));
-	@include cx-background("../img/slider/slider-5.jpg");
+	@include cx-background("../img/slider/home-1/slide-1.jpg");
 	.section-intro {
 		@extend %color-white;
 	}

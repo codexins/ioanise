@@ -16853,7 +16853,7 @@ ul.address-card li.card-location::before {
 }
 
 .newsletter-section {
-  background-image: url("../img/slider/slider-2.jpg");
+  background-image: url("../img/background/newsletter.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -16909,7 +16909,7 @@ ul.address-card li.card-location::before {
 }
 
 .pricing-table-section {
-  background-image: url("../img/slider/slider-5.jpg");
+  background-image: url("../img/slider/home-1/slide-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

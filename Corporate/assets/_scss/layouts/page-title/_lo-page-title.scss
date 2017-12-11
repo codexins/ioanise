@@ -4,6 +4,7 @@
 	margin-bottom: $cx-section-spacing;
 	background-color: lighten($cx-tertiary-color, 20%);
 	@extend %overlay;
+	@extend %clearfix;
 	
 	h1 {
 		margin-bottom: 0;
@@ -34,7 +35,7 @@
 	}
 
 	&.about-page-title {
-		@include cx-background("../img/page-titles/about-page-title.jpg");
+		@include cx-background("../img/page-titles/contact-bg-1.jpg");
 	}
 
 	&.portfolio-page-title {

@@ -13280,16 +13280,16 @@ input[type="button"]:hover {
   padding-bottom: 90px;
 }
 
-.whole-wrapper, .cx-pagination, .post-meta-wrapper, .comments-area ol li {
+.whole-wrapper, .cx-pagination, .page-title, .post-meta-wrapper, .comments-area ol li {
   zoom: 1;
 }
 
-.whole-wrapper::before, .cx-pagination::before, .post-meta-wrapper::before, .comments-area ol li::before, .whole-wrapper::after, .cx-pagination::after, .post-meta-wrapper::after, .comments-area ol li::after {
+.whole-wrapper::before, .cx-pagination::before, .page-title::before, .post-meta-wrapper::before, .comments-area ol li::before, .whole-wrapper::after, .cx-pagination::after, .page-title::after, .post-meta-wrapper::after, .comments-area ol li::after {
   content: "";
   display: table;
 }
 
-.whole-wrapper::after, .cx-pagination::after, .post-meta-wrapper::after, .comments-area ol li::after {
+.whole-wrapper::after, .cx-pagination::after, .page-title::after, .post-meta-wrapper::after, .comments-area ol li::after {
   clear: both;
 }
 
@@ -15285,7 +15285,7 @@ ul.address-card li.card-location::before {
   color: white;
   position: relative;
   overflow: hidden;
-  background: url("/assets/img/cta.jpg") no-repeat scroll center;
+  background: url("assets/img/cta.jpg") no-repeat scroll center;
   background-size: cover;
   background-position: center;
   color: white;
@@ -15891,6 +15891,103 @@ ul.address-card li.card-location::before {
   margin-right: 10px;
 }
 
+.cx-pageloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-color: #fff;
+}
+
+.cx-pageloader .cx-pageloader-inner {
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  width: calc(100% - 200px);
+  color: #1ca5b8;
+  padding: 0 100px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.cx-pageloader .cx-pageloader-inner label {
+  font-size: 32px;
+  opacity: 0;
+  display: inline-block;
+}
+
+@keyframes lol {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+}
+
+@-webkit-keyframes lol {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+  }
+}
+
+.cx-pageloader-inner label:nth-child(6) {
+  -webkit-animation: lol 3s infinite ease-in-out;
+  animation: lol 3s infinite ease-in-out;
+}
+
+.cx-pageloader-inner label:nth-child(5) {
+  -webkit-animation: lol 3s 100ms infinite ease-in-out;
+  animation: lol 3s 100ms infinite ease-in-out;
+}
+
+.cx-pageloader-inner label:nth-child(4) {
+  -webkit-animation: lol 3s 200ms infinite ease-in-out;
+  animation: lol 3s 200ms infinite ease-in-out;
+}
+
+.cx-pageloader-inner label:nth-child(3) {
+  -webkit-animation: lol 3s 300ms infinite ease-in-out;
+  animation: lol 3s 300ms infinite ease-in-out;
+}
+
+.cx-pageloader-inner label:nth-child(2) {
+  -webkit-animation: lol 3s 400ms infinite ease-in-out;
+  animation: lol 3s 400ms infinite ease-in-out;
+}
+
+.cx-pageloader-inner label:nth-child(1) {
+  -webkit-animation: lol 3s 500ms infinite ease-in-out;
+  animation: lol 3s 500ms infinite ease-in-out;
+}
+
 .logo {
   max-width: 175px;
 }
@@ -16337,7 +16434,7 @@ ul.address-card li.card-location::before {
 }
 
 .page-title.about-page-title {
-  background-image: url("../img/page-titles/about-page-title.jpg");
+  background-image: url("../img/page-titles/contact-bg-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

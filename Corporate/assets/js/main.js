@@ -25,6 +25,12 @@ jQuery(document).ready(function($){
            }        
     });
 
+    // Preloaders
+
+    $(window).on('load', function() { 
+        $('.cx-pageloader').delay(300).fadeOut('fast');
+    });
+
 
     // counter 
 

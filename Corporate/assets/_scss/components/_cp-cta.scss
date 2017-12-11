@@ -48,7 +48,7 @@
 	text-align: center;
 	@extend %vpadding;
 	&.has-bg {
-		@include cx-background("../img/slider/slider-4.jpg");
+		@include cx-background("../img/slider/home-1/slide-2.jpg");
 		@include cx-overlay();
 		color: lighten($cx-text-color, 100%);
 		h1, h2, h3, h4, h5, h6 {

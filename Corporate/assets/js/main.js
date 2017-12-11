@@ -29,6 +29,11 @@ jQuery(document).ready(function($){
 
     $(window).on('load', function() { 
         $('.cx-pageloader').delay(300).fadeOut('fast');
+
+       // intelligent header
+
+        var intHeight = $('.intelligent-header').outerHeight();
+        $('.intelligent-header-space').height(intHeight);
     });
 
 
@@ -251,10 +256,7 @@ jQuery(document).ready(function($){
 	  });  //scrollup finished
 
 
-   // intelligent header
 
-    var intHeight = $('.intelligent-header').height();
-    $('.intelligent-header-space').height(intHeight);
 
 
 

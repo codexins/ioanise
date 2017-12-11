@@ -16,16 +16,28 @@
 		    letter-spacing: 2px;
 		    line-height: 55px;
 		    font-weight: 700;
+		    @include respond-to(notebook) {
+		    	font-size: 34px;
+		    	line-height: 1.2em;
+		    }
 		}
 
 		p {
 			font-size:20px;
 			line-height: 1.35em;
 			margin-bottom: 30px;
+			@include respond-to(notebook) {
+				font-size: 18px;
+			}
 		}
 
 		color:#fff;
 		height:560px;
+
+		@include respond-to(notebook) {
+			height: 450px;
+		}
+
 		@include respond-to(tablet) {
 			height: 400px;
 		}

@@ -16097,7 +16097,6 @@ ul.address-card li.card-location::before {
   float: right;
   margin-top: 11px;
   margin-bottom: 0;
-  margin-right: -20px;
   width: auto;
   clear: both;
 }
@@ -16248,10 +16247,29 @@ ul.address-card li.card-location::before {
   font-weight: 700;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .slider-section .slide-single h1 {
+    font-size: 34px;
+    line-height: 1.2em;
+  }
+}
+
 .slider-section .slide-single p {
   font-size: 20px;
   line-height: 1.35em;
   margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .slider-section .slide-single p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .slider-section .slide-single {
+    height: 450px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

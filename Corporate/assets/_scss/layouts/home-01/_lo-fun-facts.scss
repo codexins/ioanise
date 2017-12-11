@@ -19,7 +19,7 @@
     	}
     }
     @extend %vpadding;
-    @include cx-background("../img/counter-up.jpg");
+    @include cx-background("../img/background/counter-up.jpg");
     @include cx-overlay(rgba($cx-tertiary-color,0.92));
 }
 

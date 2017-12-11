@@ -13550,7 +13550,7 @@ to a reusable component.
 }
 
 .fill-screen.header {
-  background-image: url("../img/slider/full-screen-image.jpg");
+  background-image: url("../img/slider/home-3/slide-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -15285,7 +15285,7 @@ ul.address-card li.card-location::before {
   color: white;
   position: relative;
   overflow: hidden;
-  background: url("assets/img/cta.jpg") no-repeat scroll center;
+  background: url("../img/CTA/cta.jpg") no-repeat scroll center;
   background-size: cover;
   background-position: center;
   color: white;
@@ -16505,7 +16505,7 @@ ul.address-card li.card-location::before {
 
 .fun-facts {
   color: white;
-  background-image: url("../img/counter-up.jpg");
+  background-image: url("../img/background/counter-up.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -16595,7 +16595,7 @@ ul.address-card li.card-location::before {
 
 .testimonial-slider {
   color: white;
-  background-image: url("../img/testimonial.jpg");
+  background-image: url("../img/background/testimonial.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -16799,7 +16799,7 @@ ul.address-card li.card-location::before {
   text-align: center;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/free-quote1.jpg");
+  background-image: url("../img/background/free-quote.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -16831,7 +16831,7 @@ ul.address-card li.card-location::before {
 }
 
 .fun-facts.achievements {
-  background-image: url(../img/counter-up-2.jpg);
+  background-image: url(../img/background/counter-up-2.jpg);
 }
 
 .team-section.bgc-offset {
@@ -17247,7 +17247,7 @@ footer {
 }
 
 .how-it-works {
-  background: #222534 url(../img/pattren02.png) repeat center top;
+  background: #222534 url(../img/service/pattren.png) repeat center top;
   color: white;
 }
 

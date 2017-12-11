@@ -4,7 +4,7 @@
 		color: lighten($cx-text-color, 100%);
 	}
 	@extend %vpadding;
-	@include cx-background("../img/testimonial.jpg");
+	@include cx-background("../img/background/testimonial.jpg");
 	@include cx-overlay( linear-gradient(to left , $cx-primary-color, rgba($cx-text-color,0.8)));
 
 	.testimonial-wrap {

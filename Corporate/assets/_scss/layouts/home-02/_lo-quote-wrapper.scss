@@ -3,7 +3,7 @@
 	@extend %vpadding;
 	background-position:center;
 	background-size: cover;
-	@include cx-background("../img/free-quote1.jpg");
+	@include cx-background("../img/background/free-quote.jpg");
 	background-attachment: fixed;	
 	@include cx-overlay(rgba(0,0,0,.6));
 	.primary-title {

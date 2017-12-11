@@ -2,6 +2,10 @@
 %vpadding {
 	padding-top: $cx-section-spacing;
 	padding-bottom: $cx-section-spacing;
+	@include respond-to(mobile) {
+		padding-top: 0.75*$cx-section-spacing;
+		padding-bottom: 0.75*$cx-section-spacing;
+	}
 }
 
 

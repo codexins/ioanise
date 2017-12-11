@@ -11,6 +11,9 @@ section {
 	width:100%;
 	float:none;
 	clear:both;
+	@include respond-to(mobile) {
+		margin-bottom: 0.75*$cx-section-spacing;
+	}
 }
 
 

@@ -31,10 +31,14 @@
 
 .mobile-menu-button{
 	overflow:hidden ;
-	@include respond-to(mobile){
-		margin-top:28px;
+	@include media-only(notebook, max) {
+		margin-top: 11px;
+	}
+
+	@include media-only(tablet, max) {
+		margin-top: 7px;
 	}
 	.icon-bar{
-		background:$cx-secondary-color ;
+		@extend %bgc-white;
 	}
 }

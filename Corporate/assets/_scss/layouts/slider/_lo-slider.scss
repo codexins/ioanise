@@ -20,6 +20,18 @@
 		    	font-size: 34px;
 		    	line-height: 1.2em;
 		    }
+
+		    @include respond-to(tablet) {
+		    	font-size: 32px;
+		    	line-height: 1.2em;
+		    	margin-bottom: 15px;
+		    }
+
+		    @include respond-to(mobile) {
+		    	font-size: 26px;
+		    	line-height: 1.2em;
+		    	margin-bottom: 15px;
+		    }
 		}
 
 		p {
@@ -28,6 +40,14 @@
 			margin-bottom: 30px;
 			@include respond-to(notebook) {
 				font-size: 18px;
+			}
+
+			@include respond-to(tablet) {
+				font-size: 16px;
+			}
+
+			@include respond-to(mobile) {
+				font-size: 16px;
 			}
 		}
 
@@ -67,6 +87,13 @@
 
 		    .slider-content {
 		    	max-width:75%;
+		    	@include respond-to(mobile) {
+		    		max-width:95%;
+		    		text-align: center;
+		    		margin-left: auto;
+		    		margin-right: auto;
+		    		display: block;
+		    	}
 		    }
 		}
 

@@ -47,7 +47,7 @@ $color--blue-dark: rgb(0,100,140);
 $color--blue: rgb(40,170,220);
 $color--blue-light: rgb(70,200,250);
 
-$color--theme: #67b5d1;
+$color--theme: $cx-primary-color;
 $color--theme-dark: darken($color--theme, 20%);
 $color--theme-light: lighten($color--theme, 20%);
 

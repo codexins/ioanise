@@ -109,7 +109,7 @@
 
 .mobile-menu{
 	display:none;
-	@include respond-to(mobile){
-		display:block;
-	};
+    @include media-only(notebook, max) {
+        display: block;
+    }
 }

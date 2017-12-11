@@ -42,7 +42,7 @@
 	}
 
 	&.has-bg {
-		@include cx-background("../img/slider/slider-3.jpg");
+		@include cx-background("../img/background/counter-up.jpg");
 		@include cx-overlay(rgba(0,0,0, 0.5));
 	}
 }

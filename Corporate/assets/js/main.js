@@ -102,30 +102,24 @@ jQuery(document).ready(function($){
     $('.reasons-to-choose').slick({
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         dots: true,
         arrows: false ,
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 991,
               settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToShow: 2,
+                slidesToScroll: 1,
                 infinite: true,
               }
             },
             {
-              breakpoint: 700,
+              breakpoint: 500,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 2,
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1, 
+                slidesToScroll: 1,
+                infinite: true,
               }
             }
         ]
@@ -151,7 +145,6 @@ jQuery(document).ready(function($){
             {
               breakpoint: 480,
               settings: {
-                arrows: false,
                 slidesToShow: 3,
                 slidesToScroll: 1, 
               }
@@ -214,18 +207,26 @@ jQuery(document).ready(function($){
     $('.client-carousel').slick({
         infinite: true,
         slidesToShow: 5,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         dots: true,
         arrows: false ,
-        autoplay :false ,
+        autoplay :true,
          responsive: [
             {
-              breakpoint: 700,
+              breakpoint: 991,
               settings: {
                 slidesToShow: 4,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
               }
             },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1, 
+              }
+            },
+
             {
               breakpoint: 480,
               settings: {

@@ -82,6 +82,10 @@
 		}
 	}
 
+	@include media-only(notebook, max) {
+		margin-bottom: $cx-col-spacing;
+	}
+
 }
 
 .post-image {

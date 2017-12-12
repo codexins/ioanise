@@ -1,4 +1,36 @@
 @charset "UTF-8";
+/*
+	Template Name: Ionize
+	Author: ThemeItems
+	Description: Responsive Multipurpose Corporate Bootstrap Theme
+	Version: 1.0
+
+*/
+/******************************
+
+INDEX:
+	c00 - Vendor - Font Awesome
+	c01 - Vendor - Bootstrap
+	c03 - Vendor - Slide and Push Menu
+	c04 - Vendor - Slick CSS
+	c05 - Vendor - Flaticon CSS
+	c06 - Vendor - Owl Carousel
+	c07 - Vendor - Photoswipe
+
+
+******************************/
+/*
+	Primary Color: 		#1ca5b8; //Teal
+	Secondary Color: 	#ff646c; //Redish
+	Tertiary Color: 	#0b4249; // Dark Teal
+	Offset Color: 		#f3f3f3; //Offwhite
+	Border Color: 		#ccc;    // light Grey
+	Body Font: 			'Open Sans', sans-serif;
+	Heading Font: 		'PT Sans', sans-serif;
+*/
+/************************************************************
+	c00 - Vendor - Font Awesome
+*************************************************************/
 /* FONT PATH
  * -------------------------- */
 @font-face {
@@ -3043,6 +3075,10 @@
   clip: auto;
 }
 
+/***************** end of FontAwesome ***********************/
+/************************************************************
+	c01 - Vendor - Bootstrap
+*************************************************************/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -10775,6 +10811,10 @@ button.close {
   }
 }
 
+/******************** Vendor bootstrap finished ********************/
+/************************************************************
+	c03 - Vendor - Slide and Push Menu
+*************************************************************/
 /* -----------------------------------------------------------------------------
 
   WRAPPER OBJECT
@@ -11332,6 +11372,10 @@ body.has-active-menu {
   }
 }
 
+/********************  Vendor SLide and Push Menu finished ********************/
+/************************************************************
+	c04 - Vendor - Slick CSS
+*************************************************************/
 /* Slider */
 .slick-slider {
   position: relative;
@@ -11606,6 +11650,10 @@ body.has-active-menu {
   opacity: 0.75;
 }
 
+/******************** Vendor Slick CSS finished ********************/
+/************************************************************
+	c05 - Vendor - Flaticon CSS
+*************************************************************/
 /*
     Flaticon icon font: Flaticon
     Creation date: 29/11/2017 12:25
@@ -12056,6 +12104,10 @@ body.has-active-menu {
   content: "\f167";
 }
 
+/******************** Vendor Flaticon CSS finished ********************/
+/************************************************************
+	c06 - Vendor - Owl Carousel
+*************************************************************/
 /*
  *  Owl Carousel - Core
  */
@@ -12332,6 +12384,10 @@ body.has-active-menu {
   background: #869791;
 }
 
+/******************** Vendor Owl carousel CSS finished ********************/
+/************************************************************
+	c07 - Vendor - Photoswipe
+*************************************************************/
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 /*
 	Styles for basic PhotoSwipe functionality (sliding area, open/close transitions)
@@ -13067,6 +13123,7 @@ a.pswp__share--download:hover {
   background: none;
 }
 
+/******************** Vendor Photoswipe finished ********************/
 /*
 This file is used to contain all base imports.
 Files inside this folder can contain global styles used in
@@ -13133,6 +13190,13 @@ section {
 
 .pswp__caption__center .primary-title a, .pswp__caption__center .section-intro h2 a, .section-intro .pswp__caption__center h2 a, .pswp__caption__center .section-intro-left h2 a, .section-intro-left .pswp__caption__center h2 a {
   color: white;
+}
+
+.browserupgrade {
+  padding: 50px;
+  background: #dedede;
+  font-size: 22px;
+  text-align: center;
 }
 
 html,
@@ -13355,7 +13419,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
 }
 
-a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .team-member .team-image:before, .team-member.card-styled .social-icon-large, .team-member.flat-styled .social-icon-large, .team-details, .client-single, .portfolio-item .img:before, .portfolio-mini-desc, .portfolio-filter ul li, .blog-item-grid .post-content, .post-image a i, .post-image a::before, .image-info-wrapper .image-caption, .top-content a, .slider-section .owl-nav, .slider-section .owl-nav .owl-next,
+a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .team-member .team-image::before, .team-member.card-styled .social-icon-large, .team-member.flat-styled .social-icon-large, .team-details, .client-single, .portfolio-item .img:before, .portfolio-mini-desc, .portfolio-filter ul li, .blog-item-grid .post-content, .post-image a i, .post-image a::before, .image-info-wrapper .image-caption, .top-content a, .slider-section .owl-nav, .slider-section .owl-nav .owl-next,
 .slider-section .owl-nav .owl-prev, .testimonial-nav .nav-img img, .client-section .item-brand {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -13974,6 +14038,9 @@ div#toTop:hover {
   margin-right: 0;
 }
 
+/************************************************************
+	Counter Components started
+*************************************************************/
 .counter-item {
   text-align: center;
   width: 100%;
@@ -14080,6 +14147,7 @@ div#toTop:hover {
   margin-bottom: 2px;
 }
 
+/********** Counter Components finished *******************/
 .info-item {
   text-align: center;
   margin-bottom: 45px;
@@ -14425,7 +14493,7 @@ ul.address-card li.card-location::before {
   left: 0;
 }
 
-.team-member .team-image:before {
+.team-member .team-image::before {
   opacity: 0;
 }
 
@@ -15342,6 +15410,12 @@ ul.address-card li.card-location::before {
   position: relative;
 }
 
+@media only screen and (max-width: 767px) {
+  .call-to-action .cta-left {
+    text-align: center;
+  }
+}
+
 .call-to-action .cta-right {
   padding-left: 50px;
   position: relative;
@@ -15351,6 +15425,13 @@ ul.address-card li.card-location::before {
 
 .call-to-action .cta-right h2 {
   color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .call-to-action .cta-right {
+    text-align: center;
+    background-color: #1ca5b8;
+  }
 }
 
 .call-to-action::before {
@@ -15380,9 +15461,21 @@ ul.address-card li.card-location::before {
   transform: skewX(-25deg);
 }
 
+@media only screen and (max-width: 767px) {
+  .call-to-action::after {
+    display: none;
+  }
+}
+
 .call-to-action .default-btn {
   margin-top: 25px;
   margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .call-to-action {
+    background-position: -50px -100px;
+  }
 }
 
 .portfolio-wrapper.seperated .portfolio-item {
@@ -15411,19 +15504,6 @@ ul.address-card li.card-location::before {
   opacity: 0;
 }
 
-@media only screen and (max-width: 767px) {
-  .portfolio-item .img:before {
-    opacity: 1;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-  }
-}
-
 .portfolio-item .img img {
   width: 100%;
 }
@@ -15443,6 +15523,12 @@ ul.address-card li.card-location::before {
   opacity: 1;
 }
 
+@media only screen and (max-width: 767px) {
+  .portfolio-item {
+    margin-bottom: 20px;
+  }
+}
+
 .portfolio-mini-desc {
   opacity: 0;
   color: #fff;
@@ -15459,6 +15545,8 @@ ul.address-card li.card-location::before {
 @media only screen and (max-width: 767px) {
   .portfolio-mini-desc {
     opacity: 1;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -15596,6 +15684,12 @@ ul.address-card li.card-location::before {
 .blog-item-grid.type-02 .post-bottom-meta a.read-more {
   display: inline-block;
   float: right;
+}
+
+@media only screen and (max-width: 991px) {
+  .blog-item-grid {
+    margin-bottom: 45px;
+  }
 }
 
 .post-image {
@@ -15910,6 +16004,12 @@ ul.address-card li.card-location::before {
   position: relative;
   left: -11%;
   font-size: 95%;
+}
+
+@media only screen and (max-width: 991px) {
+  .pricing-table-wrapper {
+    margin-bottom: 45px;
+  }
 }
 
 .newsletter-form-wrapper form div[class^="col-"] {
@@ -16693,8 +16793,9 @@ ul.address-card li.card-location::before {
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .member-wraper {
-    width: 50%;
-    float: left;
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -16796,6 +16897,37 @@ ul.address-card li.card-location::before {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 479px) {
+  .testimonial-nav .nav-img img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .testimonial-nav {
+    max-width: 360px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .testimonial-nav {
+    max-width: 280px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .testimonial-nav .slick-prev {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .testimonial-nav .slick-next {
+    right: 0;
+  }
 }
 
 .client-section .item-brand {

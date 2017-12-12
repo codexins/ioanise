@@ -72,7 +72,30 @@
 	    	cursor: pointer;
 	    	@include border-radius(50%);
 	    	@extend %cx-transition ;
+	    	@include respond-to(small-mobile) {
+	    		width: 40px;
+	    		height:40px;
+	    	}
 	    	
+		}
+	}
+	@include respond-to(large-mobile) {
+		max-width:360px;
+	}
+
+	@include respond-to(small-mobile) {
+		max-width:280px;
+	}
+
+	.slick-prev {
+		@include respond-to(small-mobile) {
+			left:0;
+		}
+	}
+
+	.slick-next {
+		@include respond-to(small-mobile) {
+			right:0;
 		}
 	}
 }

@@ -1,14 +1,52 @@
+/************************************************************
+	c00 - Vendor - Font Awesome
+*************************************************************/
+@import "font-awesome/font-awesome";
 
-//Import Vendor files
+/***************** end of FontAwesome ***********************/
 
-@import "font-awesome/font-awesome"; //4.4.0
-@import "normalize/normalize"; //3.0.3
-@import "bootstrap/bootstrap"; //3.3.7
+
+/************************************************************
+	c01 - Vendor - Bootstrap
+*************************************************************/
+@import "bootstrap/bootstrap";
+
+/******************** Vendor bootstrap finished ********************/
+
+/************************************************************
+	c03 - Vendor - Slide and Push Menu
+*************************************************************/
 @import "Slide-and-Push-Menus/SlideMenus"; 
-@import "slick/slick"; //3.3.7
-@import "flaticon/flaticon"; //3.3.7
-@import "owl-carousel/owl"; //3.3.7
-@import "photoswipe/photoswipe"; //3.3.7
+
+/********************  Vendor SLide and Push Menu finished ********************/
+
+/************************************************************
+	c04 - Vendor - Slick CSS
+*************************************************************/
+@import "slick/slick";
+
+/******************** Vendor Slick CSS finished ********************/
+
+/************************************************************
+	c05 - Vendor - Flaticon CSS
+*************************************************************/
+@import "flaticon/flaticon";
+
+/******************** Vendor Flaticon CSS finished ********************/
+
+/************************************************************
+	c06 - Vendor - Owl Carousel
+*************************************************************/
+@import "owl-carousel/owl";
+
+/******************** Vendor Owl carousel CSS finished ********************/
+
+/************************************************************
+	c07 - Vendor - Photoswipe
+*************************************************************/
+@import "photoswipe/photoswipe";
+
+/******************** Vendor Photoswipe finished ********************/
 
 
 

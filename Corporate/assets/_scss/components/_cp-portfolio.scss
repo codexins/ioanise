@@ -19,8 +19,7 @@
 		    opacity: 0 ;
 			@extend %cx-transition ;
 			@include respond-to(mobile){
-				 opacity: 1;
-				 @include  abs-position(10px,10px,10px,10px);
+
 			};
 		}
 		
@@ -40,6 +39,9 @@
 			opacity: 1 ;
 		}
 	}
+	@include respond-to(mobile) {
+		margin-bottom: 20px;
+	}
 }
 
 
@@ -51,7 +53,9 @@
 	text-align: center;
 	@extend %cx-transition ;
 		@include respond-to(mobile){
-			 opacity: 1;
+			opacity:1;
+			padding:30px;
+			background-color: rgba(0,0,0,.6);
 		};
 	
 	i {

@@ -31,7 +31,7 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    
+    <!-- wrapper div for mobile menu support -->
     <div id="o-wrapper" class="o-wrapper">
 
         <header class="header">
@@ -59,7 +59,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> <!-- end of header-top -->
+
                 <div class="header-wrapper">
                     <div class="header-inline">
                         <div class="container">
@@ -68,7 +69,8 @@
                                     <div class="logo">
                                         <a href="index.html"><img src="assets/img/logo.png" alt="Logo "></a>
                                     </div>
-                                </div>
+                                </div> <!-- end of col -->
+
                                 <div class="col-xs-4 col-md-9">
                                     <nav class="hidden-xs hidden-sm">
                                         <ul class="sf-menu">
@@ -125,15 +127,16 @@
                                             <span class="icon-bar"></span>
                                             <span class="icon-bar"></span>
                                         </button>
-                                    </div>
+                                    </div> <!-- end of mobile-menu-button -->
 
 
-                                </div>
+                                </div> <!-- end of col -->
                             </div>
-                        </div>
-                    </div>
+                        </div> <!-- end of container -->
+                    </div> <!-- end of header-inline -->
                 </div> <!-- end of header-wrapper -->
-            </div>
+            </div> <!-- end of intelligent-header -->
+            
             <div class="mobile-menu">
                 <nav id="c-menu--slide-left" class="c-menu c-menu--slide-left">
                     <button class="c-menu__close">&larr; Close Menu</button>
@@ -162,12 +165,11 @@
                         <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
                     </ul>
                 </nav><!-- /c-menu slide-left --> 
-            </div>
-        </header>
-
-
-        <div class="intelligent-header-space"></div>
-
+            </div> <!-- end of mobile-menu -->
+        </header> <!-- end of header -->
+        
+        <div class="intelligent-header-space"></div> <!-- empty div with a height of header height-->
+         
         <section class="slider-section mb0">
             <div class="primary-slider owl-carousel">
                 <div class="slide-single">
@@ -183,7 +185,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
 
                 <div class="slide-single text-center">
                     <img src="assets/img/slider/home-1/slide-2.jpg" alt="" class="slider-image">
@@ -213,35 +215,31 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
+                </div> 
+            </div> <!-- end of primary-slider -->
+        </section> <!-- end of slider-section -->
+        
+    
         <main class="whole-wrapper">
-
-            <!-- about us  -->
             <section class="about mb0">
-                    <div class="container"> 
-                        <div class="row"> 
-                            <div class="col-sm-7 col-md-8 ">
-                                <div class="section-intro">
-                                    <h2 class="title-bar-left">About Us</h2>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quas explicabo, eius dolor nemo ut modi itaque nesciunt suscipit veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat molestias a vero nesciunt tenetur aperiam voluptatem quo sed, quisquam doloribus in veniam doloremque voluptate debitis, quaerat ipsum officia ad exercitationem placeat quasi, nobis enim itaque saepe autem.</p>
-
-                                <a href="#" class="default-btn"> View More </a>
-                                
+                <div class="container"> 
+                    <div class="row"> 
+                        <div class="col-sm-7 col-md-8 ">
+                            <div class="section-intro">
+                                <h2 class="title-bar-left">About Us</h2>
                             </div>
-                            <div class="col-sm-5 col-md-4">
-                                <a href="#"><img src="assets/img/about/about.jpg" alt="About Us" class="img-bordered"></a> 
-                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quas explicabo, eius dolor nemo ut modi itaque nesciunt suscipit veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat molestias a vero nesciunt tenetur aperiam voluptatem quo sed, quisquam doloribus in veniam doloremque voluptate debitis, quaerat ipsum officia ad exercitationem placeat quasi, nobis enim itaque saepe autem.</p>
+                            <a href="#" class="default-btn"> View More </a>
                         </div>
-                    </div>
-                    
-            </section><!-- end about us  -->
 
-            <!-- services   -->
+                        <div class="col-sm-5 col-md-4">
+                            <a href="#"><img src="assets/img/about/about.jpg" alt="About Us" class="img-bordered"></a> 
+                        </div>
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </section><!-- end of about us  -->
+
             <section class="services bgc-offset">
                 <div class="container">
                     <div class="row">
@@ -249,8 +247,9 @@
                             <div class="section-intro">
                                 <h2 class="title-bar ">Our Services</h2>
                             </div>
-                        </div>
-                    </div>
+                        </div> 
+                    </div> <!-- end of row -->
+
                     <div class="row">
                         <div class="col-md-4 col-sm-6">
                             <div class="info-item">
@@ -267,6 +266,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-4 col-sm-6">
                             <div class="info-item">
                                 <div class="thumb-icon">                              
@@ -282,6 +282,9 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="clearfix visible-sm"></div>
+
                         <div class="col-md-4 col-sm-6">
                             <div class="info-item">
                                 <div class="thumb-icon">                              
@@ -297,7 +300,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="clearfix"></div>
+
+                        <div class="clearfix visible-md"></div>
+
                         <div class="col-md-4 col-sm-6">
                             <div class="info-item">
                                 <div class="thumb-icon">                              
@@ -313,6 +318,9 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="clearfix visible-sm"></div>
+
                         <div class="col-md-4 col-sm-6">
                             <div class="info-item">
                                 <div class="thumb-icon">                              
@@ -328,6 +336,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-4 col-sm-6">
                             <div class="info-item">
                                 <div class="thumb-icon">                              
@@ -343,12 +352,10 @@
                                 </div>
                             </div>
                         </div>
-                        
-
-                    </div>
-                </div>   
+                    </div> <!-- end of row -->
+                </div>   <!-- end of container -->
             </section><!-- end services   -->
-            <!-- call to action   -->
+
             <section class="call-to-action">
                 <div class="container">
                     <div class="row">
@@ -363,11 +370,10 @@
                             <h2>Give Us a Call Today</h2>
                             <p><a class="default-btn skin-white" href="tel:+1123456789">(123) 456-7890</a></p>
                         </div>
-                    </div>
-                </div>
-            </section><!-- end call to action   -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </section><!-- end call-to-action   -->
 
-            <!-- recent project   -->
             <section class="recent-project">
                 <div class="container">
                     <div class="row">
@@ -386,16 +392,17 @@
                                     <li data-filter=".creativity">Creativity</li>
                                     <li data-filter=".Graphics">Graphics</li>
                                     <li data-filter=".design">Design</li>
-                                    <li data-filter=".Clean">Clean</li>
+                                    <li data-filter=".clean">Clean</li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </div> 
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+
                 <div class="container-fluid">
                     <div class="row">
                         <div class="portfolio-wrapper portfolio-popup">
-                            <figure class="portfolio portfolio-item modern creativity col-md-3 col-sm-6 col-xs-6">
+                            <figure class="portfolio portfolio-item modern creativity col-xs-12 col-sm-6 col-md-3">
                                 <a href="assets/img/portfolio/project-1-large.jpg" data-size="1000x822" class="img">
                                     <img src="assets/img/portfolio/project-1.jpg" alt="project img">
                                 </a>
@@ -405,7 +412,8 @@
                                     <p>Design, Art, Color</p>
                                 </figcaption>
                             </figure>
-                            <figure class="portfolio portfolio-item modern design col-md-3 col-sm-6 col-xs-6">
+
+                            <figure class="portfolio portfolio-item modern design col-xs-12 col-sm-6 col-md-3">
                                 <a href="assets/img/portfolio/project-2-large.jpg" data-size="1000x822" class="img">
                                     <img src="assets/img/portfolio/project-2.jpg" alt="project img">
                                 </a>
@@ -415,7 +423,8 @@
                                     <p>Color, Object, Art</p>
                                 </figcaption>
                             </figure>
-                            <figure class="portfolio portfolio-item creativity Clean col-md-3 col-sm-6 col-xs-6">
+
+                            <figure class="portfolio portfolio-item creativity clean col-xs-12 col-sm-6 col-md-3">
                                 <a href="assets/img/portfolio/project-3-large.jpg" data-size="1000x1644" class="img">
                                     <img src="assets/img/portfolio/project-3.jpg" alt="project img">
                                 </a>
@@ -425,7 +434,8 @@
                                     <p>Develop, Design, Theories</p>
                                 </figcaption>
                             </figure>
-                            <figure class="portfolio portfolio-item creativity Graphics col-md-3 col-sm-6 col-xs-6">
+
+                            <figure class="portfolio portfolio-item creativity Graphics col-xs-12 col-sm-6 col-md-3">
                                 <a href="assets/img/portfolio/project-4-large.jpg" data-size="1000x822" class="img">
                                     <img src="assets/img/portfolio/project-4.jpg" alt="project img">
                                 </a>
@@ -435,7 +445,8 @@
                                     <p>Create, Flat, Clean</p>
                                 </figcaption>
                             </figure>
-                            <figure class="portfolio portfolio-item Graphics design col-md-3 col-sm-6 col-xs-6">
+
+                            <figure class="portfolio portfolio-item Graphics design col-xs-12 col-sm-6 col-md-3">
                                 <a href="assets/img/portfolio/project-5-large.jpg" data-size="1000x822" class="img">
                                     <img src="assets/img/portfolio/project-5.jpg" alt="project img">
                                 </a>
@@ -445,7 +456,8 @@
                                     <p>Design, Photo, Pro</p>
                                 </figcaption>
                             </figure>
-                            <figure class="portfolio portfolio-item Graphics Clean col-md-3 col-sm-6 col-xs-6">
+
+                            <figure class="portfolio portfolio-item Graphics clean col-xs-12 col-sm-6 col-md-3">
                                 <a href="assets/img/portfolio/project-6-large.jpg" data-size="1000x822" class="img">
                                     <img src="assets/img/portfolio/project-6.jpg" alt="project img">
                                 </a>
@@ -455,7 +467,8 @@
                                     <p>Art, Clean, Create</p>
                                 </figcaption>
                             </figure>
-                            <figure class="portfolio portfolio-item modern design col-md-3 col-sm-6 col-xs-6">
+
+                            <figure class="portfolio portfolio-item modern design col-xs-12 col-sm-6 col-md-3">
                                 <a href="assets/img/portfolio/project-7-large.jpg" data-size="1000x822" class="img">
                                     <img src="assets/img/portfolio/project-7.jpg" alt="project img">
                                 </a>
@@ -465,11 +478,11 @@
                                     <p>Develop, Beauty, Flat</p>
                                 </figcaption>
                             </figure>
-                        </div>
-                    </div>
-                </div>
+                        </div> <!-- end of portfolio-wrapper -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of container-fluid -->
             </section><!-- end recent project   -->
-            <!-- choose us -->
+
             <section class="choose-us">
                 <div class="container">
                     <div class="row">
@@ -479,8 +492,9 @@
                                 <p>Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. Holistically foster superior methodologies without market-driven best practices. </p>
                                 
                             </div>
-                        </div>
-                    </div>
+                        </div> 
+                    </div> <!-- end of row -->
+
                     <div class="row">
                         <div class="reasons-to-choose">
                             <div class="reason col-sm-4">
@@ -498,6 +512,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="reason col-sm-4">
                                 <div class="info-item text-center">
                                     <div class="thumb-icon">                              
@@ -513,6 +528,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="reason col-sm-4">
                                 <div class="info-item text-center">
                                     <div class="thumb-icon">                              
@@ -528,6 +544,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="reason col-sm-4">
                                 <div class="info-item text-center">
                                     <div class="thumb-icon">                              
@@ -543,6 +560,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="reason col-sm-4">
                                 <div class="info-item text-center">
                                     <div class="thumb-icon">                              
@@ -558,13 +576,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
-                </div>   
+                        </div> <!-- end of reasons-to-choose -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
             </section><!-- end  choose us -->
 
-            <!-- testimonial section  -->
             <section class="testimonial-slider">
                 <div class="container">
                     <div class="row">
@@ -573,7 +589,8 @@
                                 <h2 class="title-bar white-skin">Happy Quotes From Our CLients</h2>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- end of row -->
+
                     <div class="row">
                         <div class="col-sm-offset-2 col-sm-8">
                             <div class="testimonial-wrap">
@@ -586,7 +603,8 @@
                                             <h3 class="client-name">Jane Galadriel </h3>
                                             <p>CEO, TENGKU REP</p>
                                         </div>
-                                    </div>
+                                    </div> 
+
                                     <div class="testimonial-item">
                                         <div class="comment-icon"><i class="fi flaticon-left-quote" aria-hidden="true"></i></div>
                                         <p>Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
@@ -595,7 +613,8 @@
                                             <h3 class="client-name">Lex Luther </h3>
                                             <p>M.D., Lexx Corp</p>
                                         </div>
-                                    </div>
+                                    </div> 
+
                                     <div class="testimonial-item">
                                         <div class="comment-icon"><i class="fi flaticon-left-quote" aria-hidden="true"></i></div>
                                         <p>Strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment going forward in future.</p>
@@ -604,7 +623,8 @@
                                             <h3 class="client-name">Clark Kent </h3>
                                             <p>Manager, Jiggle Inc</p>
                                         </div>
-                                    </div>
+                                    </div> 
+
                                     <div class="testimonial-item">
                                         <div class="comment-icon"><i class="fi flaticon-left-quote" aria-hidden="true"></i></div>
                                         <p>Engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service throught.</p>
@@ -613,7 +633,8 @@
                                             <h3 class="client-name">Stevie Wonders </h3>
                                             <p>CEO, RickB Org</p>
                                         </div>
-                                    </div>
+                                    </div> 
+
                                     <div class="testimonial-item">
                                         <div class="comment-icon"><i class="fi flaticon-left-quote" aria-hidden="true"></i></div>
                                         <p>Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service. Maximize timely deliverables for real-time schemas.</p>
@@ -622,8 +643,8 @@
                                             <h3 class="client-name">Tania Tween </h3>
                                             <p>Chairman, TTWEB</p>
                                         </div>
-                                    </div>
-                                </div>
+                                    </div> 
+                                </div> <!-- end of testimonial-carousel -->
                                 
                                 <div class="testimonial-nav">
                                     <div class="item">                            
@@ -653,15 +674,13 @@
                                            
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><!-- end testimonial section  -->
+                                </div> <!-- end of testimonial-nav -->
+                            </div> <!-- end of testimonial-wrap -->
+                        </div> <!-- enf of col -->
+                    </div>  <!-- end of row -->
+                </div> <!-- end of container -->
+            </section><!-- end of testimonial-slider  -->
 
-
-            <!-- team section  -->
             <section class="team-section">
                 <div class="container">
                     <div class="row">
@@ -671,10 +690,10 @@
                                 <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
+                    </div> <!-- end of row -->
 
-                        <div class="member-wraper col-sm-6 col-md-3">
+                    <div class="row">
+                        <div class="member-wrapper col-sm-6 col-md-3">
                             <div class="team-member">
                                 <div class="team-image">
                                     <a href="#">
@@ -694,7 +713,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="member-wraper col-sm-6 col-md-3">
+
+                        <div class="member-wrapper col-sm-6 col-md-3">
                             <div class="team-member">
                                 <div class="team-image">
                                     <a href="#">
@@ -714,7 +734,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="member-wraper col-sm-6 col-md-3">
+
+                        <div class="member-wrapper col-sm-6 col-md-3">
                             <div class="team-member">
                                 <div class="team-image">
                                     <a href="#">
@@ -734,7 +755,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="member-wraper col-sm-6 col-md-3">
+
+                        <div class="member-wrapper col-sm-6 col-md-3">
                             <div class="team-member">
                                 <div class="team-image">
                                     <a href="#">
@@ -754,21 +776,20 @@
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                </div>  
+                    </div> <!-- end of row -->
+                </div>  <!-- end of container -->
             </section><!-- end team section  -->
 
-            <!-- counter section  -->
             <section id="counter_section" class="fun-facts parallax-window">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-xs-12">
                             <div class="section-intro ">
                                 <h2 class="title-bar white-skin">Some Fun facts </h2>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- end of row -->
+
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="counter-item">
@@ -810,7 +831,6 @@
                                     <p class="counter-text">Cup of Cofee</p>
                                 </div>
                             </div>
-
                         </div>
                     </div> <!-- end of row -->
                 </div> <!-- end of container -->
@@ -825,7 +845,8 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolore alias voluptate officiis nemo natus deleniti aliquid, optio, esse est.</p>
                             </div>
                         </div>
-                        <div class="col-sm-12">
+
+                        <div class="col-xs-12">
                             <div class="client-carousel">
                                 <div class="item-brand">
                                     <img src="assets/img/brand/client-logo-01.png" alt="">
@@ -851,9 +872,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </section> <!-- end of client-section -->
 
             <section class="pricing-table-section">
                 <div class="container">
@@ -865,7 +886,9 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-4">
+                        <div class="clearfix"></div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="pricing-table-wrapper">
                                 <div class="price-top">
                                     <h2 class="price-type">Standard</h2>
@@ -884,13 +907,11 @@
                                         <li class="not-effective">Awesome customer support</li>
                                     </ul>
                                 </div>
-
                                 <a href="" class="default-btn">Buy Now</a>
-
                             </div>
                         </div>
 
-                        <div class="col-sm-4">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="pricing-table-wrapper">
                                 <div class="price-token">
                                     <span>On Sale</span>
@@ -900,7 +921,6 @@
                                     <h3 class="price-cost">$100<span>/people</span></h3>
                                     <p class="price-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eum quos hic assumenda pariatur dolore?</p>
                                 </div>
-
                                 <div class="price-bottom">
                                     <ul>
                                         <li class="effective">3 active sitemaps</li>
@@ -912,20 +932,17 @@
                                         <li class="not-effective">Awesome customer support</li>
                                     </ul>
                                 </div>
-
                                 <a href="" class="default-btn">Buy Now</a>
-
                             </div>
                         </div>
 
-                        <div class="col-sm-4">
+                        <div class="col-xs-12 col-sm-12 col-md-4">
                             <div class="pricing-table-wrapper">
                                 <div class="price-top">
                                     <h2 class="price-type">Premium</h2>
                                     <h3 class="price-cost">$200<span>/people</span></h3>
                                     <p class="price-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eum quos hic assumenda pariatur dolore?</p>
                                 </div>
-
                                 <div class="price-bottom">
                                     <ul>
                                         <li class="effective">3 active sitemaps</li>
@@ -937,15 +954,13 @@
                                         <li class="effective">Awesome customer support</li>
                                     </ul>
                                 </div>
-
                                 <a href="" class="default-btn">Buy Now</a>
-
                             </div>
                         </div>
 
-                    </div>
-                </div>
-            </section>
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </section> <!-- end of pricing-table-section -->
 
             <section class="blog-section">
                 <div class="container">
@@ -956,9 +971,10 @@
                                 <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. </p>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- end of row -->
+
                     <div class="row">
-                        <div class=" col-sm-4  ">
+                        <div class="col-xs-12 col-sm-6 col-md-4  ">
                             <div class="blog-item-grid">
                                 <div class="post-image">
                                     <a href="single-post-right-sidebar.html"><img src="assets/img/blog/blog-1.jpg" alt=""><i class="fa fa-plus"></i></a>
@@ -977,9 +993,9 @@
                                     <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate. Uniquely promote enterprise.</p>
                                     <a href="single-post-right-sidebar.html" class="default-btn"> View More </a>
                                 </div>
-                            </div> <!-- end of blog-item-grid -->
+                            </div>
                         </div>
-                        <div class=" col-sm-4  ">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="blog-item-grid">
                                 <div class="post-image">
                                     <a href="single-post-right-sidebar.html"><img src="assets/img/blog/blog-2.jpg" alt=""><i class="fa fa-plus"></i></a>
@@ -995,12 +1011,12 @@
                                     </div>
 
                                     <h3 class="post-title"><a href="single-post-right-sidebar.html">Survival Strategies</a></h3>
-                                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward to complle those.</p>
+                                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward to complle those perfecty.</p>
                                     <a href="single-post-right-sidebar.html" class="default-btn   "> View More </a>
                                 </div>
-                            </div> <!-- end of blog-item-grid -->
+                            </div>
                         </div>
-                        <div class=" col-sm-4  ">
+                        <div class="col-xs-12 col-sm-12 col-md-4">
                             <div class="blog-item-grid">
                                 <div class="post-image">
                                     <a href="single-post-right-sidebar.html"><img src="assets/img/blog/blog-3.jpg" alt=""><i class="fa fa-plus"></i></a>
@@ -1019,11 +1035,11 @@
                                     <p>Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Seamlessly orchestrate growth.</p>
                                     <a href="single-post-right-sidebar.html" class="default-btn   "> View More </a>
                                 </div>
-                            </div> <!-- end of blog-item-grid -->
+                            </div>
                         </div>
-                    </div>  
-                </div>  
-            </section>
+                    </div> <!-- end of row --> 
+                </div>  <!-- end of container -->
+            </section> <!-- end fo blog-section -->
 
             <section class="newsletter-section mb0">
                 <div class="container">
@@ -1047,14 +1063,12 @@
                                         <input type="submit" name="contact" value="Subscribe Now" class="full-width">
                                     </div>
                                 </form>
-                            </div> <!-- end of quote-form-wrapper -->
+                            </div>
                         </div>        
-
-                    </div>
-                </div>
-            </section>
-
-        </main>
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </section> <!-- end of newsletter-section -->
+        </main> <!-- end of main -->
 
         <footer>
             <div class="footer-top">
@@ -1134,21 +1148,23 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div> 
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
             </div> <!-- end of footer-top -->
+
             <div class="copyright-section">
                 <div id="toTop" style="display: block;">
                     <i class="fa fa-chevron-up"></i>
                 </div>
                 <p>&copy; Copyright - 2017. All rights reserverd by <a href="http://themeitems.com" target="_blank">themeitems.com</a></p>
-            </div>    
-        </footer>
+            </div> <!-- end of copyright-section -->
+        </footer> <!-- end of footer -->
     </div><!-- /o-wrapper -->
+    <!-- end of wrapper div for mobile menu support -->
+
     <div id="c-mask" class="c-mask"></div><!-- /c-mask -->
 
-
-    <!-- Site Loader -->
+    <!-- Site Loader started-->
     <div class="cx-pageloader">
         <div class="cx-pageloader-inner">
             <label> &#8226;</label>
@@ -1209,7 +1225,6 @@
     ============================================ -->
     <script src="assets/js/bootstrap.min.js"></script>
 
-
     <!-- Superfish JS
     ============================================ -->
     <script src="assets/js/hoverIntent.js"></script>
@@ -1223,7 +1238,6 @@
     <!-- Menu JS
     ============================================ -->
     <script src="assets/js/menu.js"></script>
-
 
     <!-- Photoswipe JS
     ============================================ -->
@@ -1246,7 +1260,6 @@
     <!-- Main JS
     ============================================ -->
     <script src="assets/js/main.js"></script>
-
 
     <!-- JS specific to this page only
     ============================================ -->
@@ -1302,11 +1315,8 @@
         // call the function on windows load
         $(window).on('load', function() {
             sliderBgSetting();
-        })
-
-
-    });
-
+        });
+    }); // document.ready closed
     </script>
 
 </body>

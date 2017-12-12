@@ -3,7 +3,7 @@
 	overflow: hidden;
 	.team-image {
 		@include cx-overlay(rgba($cx-secondary-color, 0.9));
-		&:before{
+		&::before {
 			@extend %cx-transition ;
 			opacity: 0 ;
 		}
@@ -11,7 +11,8 @@
 	img {
 		width:100%;
 	}
-	&:hover{	
+
+	&:hover {	
 		.team-image {
 			&:before{
 				top: 20px;
@@ -189,6 +190,10 @@
 		text-transform: uppercase;
 		font-size: 14px;
 		color:  lighten($cx-text-color,100%)  ;
+
+	}
+
+	@include respond-to(mobile) {
 
 	}
 

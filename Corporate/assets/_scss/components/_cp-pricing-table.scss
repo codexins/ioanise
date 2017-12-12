@@ -108,4 +108,8 @@
     		font-size: 95%;
     	}
 	}
+
+	@include media-only(notebook, max) {
+		margin-bottom: $cx-col-spacing;
+	}
 }

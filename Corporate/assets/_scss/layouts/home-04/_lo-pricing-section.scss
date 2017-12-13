@@ -1,3 +1,8 @@
+/**
+ * layout home-04/ pricing section
+ *
+ */
+
 .pricing-table-section {
 	@extend %vpadding;
 	@include cx-overlay(rgba(0,0,0,.5));

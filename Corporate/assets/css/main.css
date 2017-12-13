@@ -16,7 +16,25 @@ INDEX:
 	c05 - Vendor - Flaticon CSS
 	c06 - Vendor - Owl Carousel
 	c07 - Vendor - Photoswipe
-
+	c08 - Base - Global
+	c09 - Base - Typography
+	c10 - Base - Placeholders
+	c11 - Components Section
+	c12 - Layout - header
+	c13 - Layout - Slider
+	c14 - layout - Page Titile
+	c15 - layout - parallax
+	c16 - Layout - Home 01
+	c17 - Layout - Home 02
+	c18 - Layout - Home 03
+	c19 - Layout - Home 04
+	c20 - layout - Footer
+	c21 - layout - About Page
+	c22 - layout - Contact Page
+	c23 - layout - Services Page
+	c24 - layout - Portfolio Page
+	c25 - layout - Blog Page
+	c26 - Layout - FAQ page
 
 ******************************/
 /*
@@ -3075,7 +3093,6 @@ INDEX:
   clip: auto;
 }
 
-/***************** end of FontAwesome ***********************/
 /************************************************************
 	c01 - Vendor - Bootstrap
 *************************************************************/
@@ -10811,7 +10828,6 @@ button.close {
   }
 }
 
-/******************** Vendor bootstrap finished ********************/
 /************************************************************
 	c03 - Vendor - Slide and Push Menu
 *************************************************************/
@@ -11372,7 +11388,6 @@ body.has-active-menu {
   }
 }
 
-/********************  Vendor SLide and Push Menu finished ********************/
 /************************************************************
 	c04 - Vendor - Slick CSS
 *************************************************************/
@@ -11650,7 +11665,6 @@ body.has-active-menu {
   opacity: 0.75;
 }
 
-/******************** Vendor Slick CSS finished ********************/
 /************************************************************
 	c05 - Vendor - Flaticon CSS
 *************************************************************/
@@ -12104,7 +12118,6 @@ body.has-active-menu {
   content: "\f167";
 }
 
-/******************** Vendor Flaticon CSS finished ********************/
 /************************************************************
 	c06 - Vendor - Owl Carousel
 *************************************************************/
@@ -12384,7 +12397,6 @@ body.has-active-menu {
   background: #869791;
 }
 
-/******************** Vendor Owl carousel CSS finished ********************/
 /************************************************************
 	c07 - Vendor - Photoswipe
 *************************************************************/
@@ -13123,12 +13135,9 @@ a.pswp__share--download:hover {
   background: none;
 }
 
-/******************** Vendor Photoswipe finished ********************/
-/*
-This file is used to contain all base imports.
-Files inside this folder can contain global styles used in
-the project.
-*/
+/************************************************************
+	c08 - Base - Global
+*************************************************************/
 html,
 body {
   margin: 0;
@@ -13199,6 +13208,9 @@ section {
   text-align: center;
 }
 
+/************************************************************
+	c09 - Base - Typography
+*************************************************************/
 html,
 body {
   font-size: 16px;
@@ -13237,6 +13249,7 @@ h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
 }
 
@@ -13372,6 +13385,9 @@ input[type="button"]:hover {
   padding: 0.2em 0;
 }
 
+/************************************************************
+	c10 - Base - Placeholders
+*************************************************************/
 .vpadding, .cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial-slider, .get-quote, .achievement-counters, .newsletter-section, .testiminial-simple, .pricing-table-section, .about, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -13398,7 +13414,6 @@ input[type="button"]:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", sans-serif;
   line-height: 1.2em;
   margin-top: 0;
   margin-bottom: 25px;
@@ -13600,11 +13615,22 @@ This file is used to contain all component imports.
 Files inside this folder should contain all styles relating
 to a reusable component.
 */
+/************************************************************
+	c11 - Components Section
+*************************************************************/
+/**
+ * Components Breadcrumb
+ *
+ */
 .breadcrumb {
   background: transparent;
   padding-left: 0;
 }
 
+/**
+ * Components Image
+ *
+ */
 .img-bordered {
   border: 10px solid #e3f8fb;
 }
@@ -13615,6 +13641,10 @@ to a reusable component.
   }
 }
 
+/**
+ * Components Full height Header
+ *
+ */
 .fill-screen {
   min-height: 700px;
   height: 100Vh;
@@ -13897,6 +13927,10 @@ to a reusable component.
   }
 }
 
+/**
+ * Components Back to Top
+ *
+ */
 div#toTop {
   position: fixed;
   background: #ff646c;
@@ -13918,6 +13952,10 @@ div#toTop:hover {
   opacity: 1;
 }
 
+/**
+ * Components Button
+ *
+ */
 .default-btn {
   padding: 8px 20px;
   display: inline-block;
@@ -13944,6 +13982,10 @@ div#toTop:hover {
   border-color: #ff646c;
 }
 
+/**
+ * Components Secondary title
+ *
+ */
 .secondary-title, .skill-element h3 {
   color: #333;
   text-transform: uppercase;
@@ -13951,6 +13993,10 @@ div#toTop:hover {
   margin-bottom: 1em;
 }
 
+/**
+ * Components Primary Titile
+ *
+ */
 .primary-title, .section-intro h2, .section-intro-left h2 {
   padding-bottom: 20px;
   text-transform: uppercase;
@@ -13971,6 +14017,10 @@ div#toTop:hover {
   }
 }
 
+/**
+ * Components Section intro
+ *
+ */
 .section-intro, .section-intro-left {
   text-align: center;
   display: block;
@@ -14038,9 +14088,10 @@ div#toTop:hover {
   margin-right: 0;
 }
 
-/************************************************************
-	Counter Components started
-*************************************************************/
+/**
+ * Components Counter
+ *
+ */
 .counter-item {
   text-align: center;
   width: 100%;
@@ -14147,7 +14198,10 @@ div#toTop:hover {
   margin-bottom: 2px;
 }
 
-/********** Counter Components finished *******************/
+/**
+ * Components Service
+ *
+ */
 .info-item {
   text-align: center;
   margin-bottom: 45px;
@@ -14245,6 +14299,10 @@ div#toTop:hover {
   padding-right: 20px;
 }
 
+/**
+ * Components Social Icons
+ *
+ */
 .social-icon, .social-icon-large {
   overflow: hidden;
 }
@@ -14381,6 +14439,10 @@ div#toTop:hover {
   }
 }
 
+/**
+ * Components Phone
+ *
+ */
 a.phone {
   font-size: 22px;
   position: relative;
@@ -14415,6 +14477,10 @@ a.phone:hover::before {
   border-color: #ff646c;
 }
 
+/**
+ * Components Address
+ *
+ */
 ul.address-card {
   padding-left: 0;
 }
@@ -14454,6 +14520,10 @@ ul.address-card li.card-location::before {
   content: '\f278';
 }
 
+/**
+ * Components widgetized menu
+ *
+ */
 .widgetized-menu {
   padding: 0;
 }
@@ -14473,6 +14543,10 @@ ul.address-card li.card-location::before {
   margin-right: 8px;
 }
 
+/**
+ * Components Team Member
+ *
+ */
 .team-member {
   position: relative;
   overflow: hidden;
@@ -14771,6 +14845,10 @@ ul.address-card li.card-location::before {
   background: white;
 }
 
+/**
+ * Components Contact Box
+ *
+ */
 .contact-box {
   background: white;
   padding-top: 35px;
@@ -14805,46 +14883,10 @@ ul.address-card li.card-location::before {
   margin-bottom: 0;
 }
 
-.bar-item h4 {
-  text-transform: uppercase;
-}
-
-.bar-item .progress {
-  height: 2px;
-  border-radius: 0;
-  overflow: visible;
-}
-
-.bar-item .progress-bar {
-  background: #ff646c;
-  -webkit-transition: width 1.5s ease-in-out;
-  -o-transition: width 1.5s ease-in-out;
-  transition: width 1.5s ease-in-out;
-}
-
-.bar-item .tooltip {
-  position: relative;
-  left: 15px !important;
-  float: right;
-}
-
-.bar-item .tooltip > .tooltip-inner {
-  background-color: #ff646c;
-  color: white;
-  font-weight: bold;
-}
-
-.bar-item .popOver + .tooltip > .tooltip-arrow {
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #ff646c;
-  left: 50% !important;
-}
-
-.bar-item + .bar-item {
-  margin-top: 20px;
-}
-
+/**
+ * Components Processing Columns
+ *
+ */
 .processing-columns {
   position: relative;
   float: left;
@@ -14960,6 +15002,10 @@ ul.address-card li.card-location::before {
   background: white;
 }
 
+/**
+ * Components Client List
+ *
+ */
 .client-single {
   width: 100%;
   border: 1px solid #ccc;
@@ -14985,6 +15031,10 @@ ul.address-card li.card-location::before {
   opacity: 0.95;
 }
 
+/**
+ * Components Newsletter
+ *
+ */
 .pagination-wrapper {
   margin-bottom: 70px;
 }
@@ -15043,6 +15093,10 @@ ul.address-card li.card-location::before {
   color: #ff646c;
 }
 
+/**
+ * Components Widgets
+ *
+ */
 .sidebar-widget {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -15286,6 +15340,10 @@ ul.address-card li.card-location::before {
   border-bottom: 0;
 }
 
+/**
+ * Components Call to action
+ *
+ */
 .cta-section {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -15478,6 +15536,10 @@ ul.address-card li.card-location::before {
   }
 }
 
+/**
+ * Components Portfolio
+ *
+ */
 .portfolio-wrapper.seperated .portfolio-item {
   padding: 5px;
 }
@@ -15600,6 +15662,10 @@ ul.address-card li.card-location::before {
   }
 }
 
+/**
+ * Components Blog Grid
+ *
+ */
 .blog-item-grid .post-content {
   padding: 25px;
   background: #f9f9f9;
@@ -15769,6 +15835,10 @@ ul.address-card li.card-location::before {
   text-transform: uppercase;
 }
 
+/**
+ * Components Image effect 01
+ *
+ */
 .image-info-wrapper {
   position: relative;
   overflow: hidden;
@@ -15819,6 +15889,10 @@ ul.address-card li.card-location::before {
   }
 }
 
+/**
+ * Components Quote Forms
+ *
+ */
 .quote-form-wrapper {
   max-width: 750px;
   margin-left: auto;
@@ -15829,6 +15903,10 @@ ul.address-card li.card-location::before {
   width: 100%;
 }
 
+/**
+ * Components Full screen Video
+ *
+ */
 #header_full_screen_video.header {
   background-image: none;
   background: #f3f3f3;
@@ -15844,6 +15922,10 @@ ul.address-card li.card-location::before {
   z-index: 1;
 }
 
+/**
+ * Components Testimonial Simple
+ *
+ */
 .testimonial-simple-wrapper {
   display: table;
   width: 100%;
@@ -15889,6 +15971,10 @@ ul.address-card li.card-location::before {
   font-style: italic;
 }
 
+/**
+ * Components Pricing Tables
+ *
+ */
 .pricing-table-wrapper {
   position: relative;
   overflow: hidden;
@@ -16012,6 +16098,10 @@ ul.address-card li.card-location::before {
   }
 }
 
+/**
+ * Components Newsletter
+ *
+ */
 .newsletter-form-wrapper form div[class^="col-"] {
   padding-left: 8px;
   padding-right: 8px;
@@ -16027,6 +16117,10 @@ ul.address-card li.card-location::before {
   color: white;
 }
 
+/**
+ * Components Dropcap
+ *
+ */
 .cx-dropcap {
   font-size: 52px;
   display: inline-block;
@@ -16035,6 +16129,10 @@ ul.address-card li.card-location::before {
   margin-right: 10px;
 }
 
+/**
+ * Components Pre loader
+ *
+ */
 .cx-pageloader {
   position: fixed;
   left: 0;
@@ -16132,6 +16230,13 @@ ul.address-card li.card-location::before {
   animation: lol 3s 500ms infinite ease-in-out;
 }
 
+/************************************************************
+	c12 - Layout - header
+*************************************************************/
+/**
+ * Layout header/ Header
+ *
+ */
 .logo {
   max-width: 175px;
 }
@@ -16186,6 +16291,10 @@ ul.address-card li.card-location::before {
   }
 }
 
+/**
+ * Layout header/ Header Top
+ *
+ */
 .header-top {
   padding: 7px 0;
   font-size: 85%;
@@ -16244,6 +16353,10 @@ ul.address-card li.card-location::before {
   color: #ff646c;
 }
 
+/**
+ * Layout header/ Main Menu
+ *
+ */
 .sf-menu {
   display: block;
   float: right;
@@ -16351,6 +16464,10 @@ ul.address-card li.card-location::before {
   }
 }
 
+/**
+ * layout header/ Intelligent Header
+ *
+ */
 .intelligent-header {
   transition: .3s;
   position: fixed;
@@ -16373,6 +16490,13 @@ ul.address-card li.card-location::before {
   background: rgba(38, 38, 38, 0.95);
 }
 
+/************************************************************
+	c13 - Layout - Slider
+*************************************************************/
+/**
+ * layout slider/ slider
+ *
+ */
 .slider-section {
   width: 100%;
   overflow: hidden;
@@ -16606,6 +16730,13 @@ ul.address-card li.card-location::before {
   opacity: 1;
 }
 
+/************************************************************
+	c14 - layout - Page Titile
+*************************************************************/
+/**
+ * layout page-title/page title
+ *
+ */
 .page-title {
   padding-top: 90px;
   padding-bottom: 63px;
@@ -16697,10 +16828,24 @@ ul.address-card li.card-location::before {
   background-repeat: no-repeat;
 }
 
+/************************************************************
+	c15 - layout - parallax
+*************************************************************/
+/**
+ * layout parallax / parallax
+ *
+ */
 .parallax-window {
   background-attachment: fixed;
 }
 
+/************************************************************
+	c16 - Layout - Home 01
+*************************************************************/
+/**
+ * layout home-01/ Our Services
+ *
+ */
 .services {
   margin-bottom: 0;
 }
@@ -16711,6 +16856,10 @@ ul.address-card li.card-location::before {
   }
 }
 
+/**
+ * layout home-01/ Fun Facts
+ *
+ */
 .fun-facts {
   color: white;
   background-image: url("../img/background/counter-up.jpg");
@@ -16753,6 +16902,10 @@ ul.address-card li.card-location::before {
   left: 0;
 }
 
+/**
+ * layout home-01/ choose us
+ *
+ */
 .reasons-to-choose {
   margin-bottom: 30px;
 }
@@ -16781,6 +16934,10 @@ ul.address-card li.card-location::before {
   color: #ff646c;
 }
 
+/**
+ * layout home-01/ recent project
+ *
+ */
 .recent-project .portfolio {
   padding: 0;
 }
@@ -16791,6 +16948,10 @@ ul.address-card li.card-location::before {
   }
 }
 
+/**
+ * layout home-01/ team
+ *
+ */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .member-wraper {
     max-width: 460px;
@@ -16802,6 +16963,10 @@ ul.address-card li.card-location::before {
   }
 }
 
+/**
+ * layout home-01/ testimonial
+ *
+ */
 .testimonial-slider {
   color: white;
   background-image: url("../img/background/testimonial.jpg");
@@ -16930,6 +17095,10 @@ ul.address-card li.card-location::before {
   }
 }
 
+/**
+ * layout home-01/ Client Carousel
+ *
+ */
 .client-section .item-brand {
   border: 1px solid #b3b3b3;
   padding: 20px;
@@ -17035,6 +17204,13 @@ ul.address-card li.card-location::before {
   }
 }
 
+/************************************************************
+	c17 - Layout - Home 02
+*************************************************************/
+/**
+ * layout home-02/ Quote Wrapper
+ *
+ */
 .get-quote {
   text-align: center;
   background-position: center;
@@ -17070,10 +17246,18 @@ ul.address-card li.card-location::before {
   color: white;
 }
 
+/**
+ * layout home-02/ fun facts
+ *
+ */
 .fun-facts.achievements {
   background-image: url(../img/background/counter-up-2.jpg);
 }
 
+/**
+ * Layout home-02/ team
+ *
+ */
 .team-section.bgc-offset {
   background: #f3f3f3;
 }
@@ -17086,12 +17270,26 @@ ul.address-card li.card-location::before {
   margin-bottom: 45px;
 }
 
+/************************************************************
+	c18 - Layout - Home 03
+*************************************************************/
+/**
+ * Layout home-03/ counter section
+ *
+ */
 .achievement-counters {
   background: #0b4249;
   text-align: center;
   color: white;
 }
 
+/************************************************************
+	c19 - Layout - Home 04
+*************************************************************/
+/**
+ * layout home-04/ newsletter section
+ *
+ */
 .newsletter-section {
   background-image: url("../img/background/newsletter.jpg");
   background-position: center;
@@ -17099,6 +17297,10 @@ ul.address-card li.card-location::before {
   background-repeat: no-repeat;
 }
 
+/**
+ * layout home-04/testimonial simple section
+ *
+ */
 .testiminial-simple {
   background-image: url("../img/slider/home-1/slide-2.jpg");
   background-position: center;
@@ -17148,6 +17350,10 @@ ul.address-card li.card-location::before {
   }
 }
 
+/**
+ * layout home-04/ pricing section
+ *
+ */
 .pricing-table-section {
   background-image: url("../img/slider/home-1/slide-1.jpg");
   background-position: center;
@@ -17174,6 +17380,13 @@ ul.address-card li.card-location::before {
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.35);
 }
 
+/************************************************************
+	c20 - layout - Footer
+*************************************************************/
+/**
+ * layout footer/ footer
+ *
+ */
 footer {
   padding-top: 90px;
   background: #1ca5b8;
@@ -17227,6 +17440,13 @@ footer {
   color: #ff646c;
 }
 
+/************************************************************
+	c21 - layout - About Page
+*************************************************************/
+/**
+ * Layout about/about
+ *
+ */
 .about .section-intro, .about .section-intro-left {
   max-width: 100%;
   width: 100%;
@@ -17240,6 +17460,10 @@ footer {
   }
 }
 
+/**
+ * layout about/skills
+ *
+ */
 .skills {
   background: #f3f3f3;
 }
@@ -17248,6 +17472,10 @@ footer {
   text-transform: capitalize;
 }
 
+/**
+ * layout about/testimonials
+ *
+ */
 .testimonial-slider.flat {
   background-image: none;
   background-color: white;
@@ -17273,10 +17501,21 @@ footer {
   color: #333;
 }
 
+/************************************************************
+	c22 - layout - Contact Page
+*************************************************************/
+/**
+ * layout contact/ contact promo
+ *
+ */
 .contact-promo {
   background-color: transparent;
 }
 
+/**
+ * Layout contact/ contact us
+ *
+ */
 .contact-intro {
   padding-bottom: 90px;
 }
@@ -17449,6 +17688,10 @@ footer {
   margin-bottom: 15px;
 }
 
+/**
+ * Layout contact/ contact form
+ *
+ */
 .primary-form div[class*='col-'] {
   padding-bottom: 0;
 }
@@ -17464,6 +17707,10 @@ footer {
   width: 100%;
 }
 
+/**
+ * layput contact/ map
+ *
+ */
 #map {
   position: relative;
 }
@@ -17472,6 +17719,13 @@ footer {
   height: 400px;
 }
 
+/************************************************************
+	c23 - layout - Services Page
+*************************************************************/
+/**
+ * layout services/ service promo
+ *
+ */
 .service-promo h2, .contact-promo h2 {
   text-transform: uppercase;
   font-weight: bold;
@@ -17482,6 +17736,10 @@ footer {
   line-height: 1.2em;
 }
 
+/**
+ * layout services/ how we work
+ *
+ */
 .service-page-one .page-title {
   margin-bottom: 0;
 }
@@ -17531,10 +17789,25 @@ footer {
   text-align: left;
 }
 
+/**
+ * layout services/ client list
+ *
+ */
+/************************************************************
+	c24 - layout - Portfolio Page
+*************************************************************/
+/**
+ * layout portfolio/ portfolio
+ *
+ */
 .portfolio-section .portfolio-item {
   margin-bottom: 30px;
 }
 
+/**
+ * layout portfolio/ portfolio single
+ *
+ */
 .portfolio-images {
   overflow: hidden;
 }
@@ -17737,6 +18010,13 @@ footer {
   }
 }
 
+/************************************************************
+	c25 - layout - Blog Page
+*************************************************************/
+/**
+ * layout blog/ blog list
+ *
+ */
 #primary .post-single:first-child .thumb-wrapper {
   padding-top: 0;
   border-top: 0;
@@ -17802,6 +18082,10 @@ footer {
   margin-top: 45px;
 }
 
+/**
+ * layout blog/blog grid
+ *
+ */
 .blog-grid-section .blog-item-grid {
   margin-bottom: 45px;
 }
@@ -17811,6 +18095,10 @@ footer {
   margin-bottom: 0;
 }
 
+/**
+ * Layout blog/ single
+ *
+ */
 .single-post-meta {
   margin-top: 45px;
 }
@@ -17995,6 +18283,13 @@ footer {
   width: 100%;
 }
 
+/************************************************************
+	c26 - Layout - FAQ page
+*************************************************************/
+/**
+ * Layout faq/ faq
+ *
+ */
 .faq-wrapper .panel-group .panel {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;

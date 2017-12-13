@@ -1,3 +1,8 @@
+/**
+ * layout home-04/ newsletter section
+ *
+ */
+
 .newsletter-section {
 	@extend %vpadding;
 	@include cx-background("../img/background/newsletter.jpg");

@@ -1,3 +1,8 @@
+/**
+ * layout home-04/testimonial simple section
+ *
+ */
+
 .testiminial-simple {
 	@extend %vpadding;
 	@include cx-overlay(rgba(0,0,0,.5));

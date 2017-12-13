@@ -1,25 +1,32 @@
-//Import layout files
-
-// header layout
+/************************************************************
+	c12 - Layout - header
+*************************************************************/
 @import 'header/lo-header';
 @import 'header/lo-header-top';
 @import 'header/lo-main-menu';
-@import 'header/_lo-intelligent-header';
+@import 'header/lo-intelligent-header';
 
 
-//slider table-layout: 
+/************************************************************
+	c13 - Layout - Slider
+*************************************************************/
 @import 'slider/lo-slider';
 
 
-//page title table-layout
+/************************************************************
+	c14 - layout - Page Titile
+*************************************************************/
 @import 'page-title/lo-page-title';
 
-// parallax table-layout: 
+
+/************************************************************
+	c15 - layout - parallax
+*************************************************************/
 @import 'parallax/lo-parallax';
 
-
-
-// home-01 page 
+/************************************************************
+	c16 - Layout - Home 01
+*************************************************************/
 @import 'home-01/lo-our-services';
 @import 'home-01/lo-fun-facts';
 @import 'home-01/lo-choose-us';
@@ -28,55 +35,68 @@
 @import 'home-01/lo-testimonial';
 @import 'home-01/lo-client-carosel';
 
-// home-02 page 
+/************************************************************
+	c17 - Layout - Home 02
+*************************************************************/
 @import 'home-02/lo-quote-wrapper';
 @import 'home-02/lo-fun-facts';
 @import 'home-02/lo-team';
 
-
-//home 03 
+/************************************************************
+	c18 - Layout - Home 03
+*************************************************************/
 @import 'home-03/lo-counter-section';
 
-// home 04 
+/************************************************************
+	c19 - Layout - Home 04
+*************************************************************/
 @import 'home-04/lo-newsletter-section';
 @import 'home-04/_lo-testimonila-simple-section';
 @import 'home-04/_lo-pricing-section';
 
-//footer layout
+/************************************************************
+	c20 - layout - Footer
+*************************************************************/
 @import 'footer/lo-footer';
 
-
-//  about page 
+/************************************************************
+	c21 - layout - About Page
+*************************************************************/
 @import 'about/lo-about';
-@import "about/lo-skills"; //no 
+@import "about/lo-skills";
 @import "about/lo-testimonials"; 
 
-
-// contact page
+/************************************************************
+	c22 - layout - Contact Page
+*************************************************************/
 @import "contact/lo-contact-promo";
 @import "contact/lo-contact-us";
 @import "contact/lo-contact-form";
 @import 'contact/lo-map';
 
-
-// services page
+/************************************************************
+	c23 - layout - Services Page
+*************************************************************/
 @import "services/lo-service-promo";
 @import "services/lo-how-we-work";
 @import "services/lo-client-list";
 
-
-//portfolio page
+/************************************************************
+	c24 - layout - Portfolio Page
+*************************************************************/
 @import "portfolio/lo-portfolio";
 @import "portfolio/lo-portfolio-single";
 
-
-// blog page
+/************************************************************
+	c25 - layout - Blog Page
+*************************************************************/
 @import "blog/lo-blog-list";
 @import "blog/lo-blog-grid";
 @import "blog/lo-single";
 
-
-// Faq Page
+/************************************************************
+	c26 - Layout - FAQ page
+*************************************************************/
 @import "faq/lo-faq";
 
 

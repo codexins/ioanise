@@ -1,10 +1,8 @@
-// smooth scrolling js area
-
 jQuery(document).ready(function($){
 
-  // superfish menu
-
-    // activating superfish menu
+    /************************************************************
+        Superfish Menu
+    *************************************************************/
     $(".sf-menu").superfish({
 
         delay:       0,                            // one second delay on mouseout
@@ -16,45 +14,48 @@ jQuery(document).ready(function($){
 
     });
 
+    // Submenu Intelligent hover functionality
     $('.sub-menu').hover(function() {
         var menu = $(this);
-        // var child_menu = $('.site-nav ul.sub-menu .sub-menu');
         var child_menu = $(this).find('ul');
         if( $(menu).offset().left + $(menu).width() + $(child_menu).width() > $(window).width() ){
             $(child_menu).css({"left": "inherit", "right": "100%"});
            }        
     });
 
-    // Preloaders
+    
+    /************************************************************
+        Page Loader & intelligent Header
+    *************************************************************/
 
     $(window).on('load', function() { 
         $('.cx-pageloader').delay(300).fadeOut('fast');
 
        // intelligent header
-
         var intHeight = $('.intelligent-header').outerHeight();
         $('.intelligent-header-space').height(intHeight);
     });
 
 
-    // counter 
-
+    
+    /************************************************************
+        Animated Counter
+    *************************************************************/
     $('.counter').counterUp({
         delay: 100,
         time: 3000
     });
 
-    /*--------------------------------------------------------------
-    Isotope Js for Portfolio Section
-    ---------------------------------------------------------------- */
 
+    /************************************************************
+        Isotope Js for Portfolio Section
+    *************************************************************/
     var $isocontainer = $('.portfolio-wrapper');
 
     $isocontainer.imagesLoaded(function() {
         $isocontainer.isotope({
              itemSelector: ".portfolio",
              layoutMode: 'masonry',
-             //percentPosition: true,
         });
 
     });
@@ -73,9 +74,9 @@ jQuery(document).ready(function($){
     });
 
 
-    /**
-    * Slide left instantiation and action.
-    */
+    /************************************************************
+        Slide left instantiation and action for Mobile Menu
+    *************************************************************/
     var slideLeft = new Menu({
         wrapper: '#o-wrapper',
         type: 'slide-left',
@@ -91,14 +92,9 @@ jQuery(document).ready(function($){
     });
 
 
-    // main slider
-
-    $('.slider-wrapper').slick({
-      dots: true
-    });
-
-    // reason-to-choose
-
+    /************************************************************
+        Reasons to Choose Carousel
+    *************************************************************/
     $('.reasons-to-choose').slick({
         infinite: true,
         slidesToShow: 3,
@@ -125,8 +121,11 @@ jQuery(document).ready(function($){
         ]
 
     });
-    // testimonial 
 
+
+    /************************************************************
+        Testimonial Carousel
+    *************************************************************/
     $('.testimonial-carousel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -153,8 +152,9 @@ jQuery(document).ready(function($){
 
     });
 
-    // testimonial type 02
-
+    
+    //Testimonial Carousel Type 02
+    
     $('.testimonial-carousel-type-02').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -162,7 +162,10 @@ jQuery(document).ready(function($){
         dots: true
     });
 
-    //  client  carousel 
+
+    /************************************************************
+        Client Carousel
+    *************************************************************/
     if($('section').hasClass('type-2')) {
 
       $('.client-carousel').slick({
@@ -201,9 +204,7 @@ jQuery(document).ready(function($){
       });
   } else {
 
-
     //client carosel type-2
-
     $('.client-carousel').slick({
         infinite: true,
         slidesToShow: 5,
@@ -240,7 +241,9 @@ jQuery(document).ready(function($){
   }
   
 
-  	//scroll to top
+  	/************************************************************
+        Scroll to Top JS 
+    *************************************************************/
     $(window).on('scroll',function () {
         if($(window).scrollTop()>200) {
             $("#toTop").fadeIn();
@@ -257,122 +260,4 @@ jQuery(document).ready(function($){
 	  });  //scrollup finished
 
 
-
-
-
-
-});
-
-
-    /*------------------------------------------
-        1. Jquery scroll hide plugin.
-    --------------------------------------------*/
-    (function(){
-        function Menu($element, options){
-
-            var handler,
-            defaults = {
-                domObj : $element,
-                position : '100px',
-                onIntellingenceMenu : function(){},
-                onNormalMenu : function(){}
-            },
-            config = $.extend({}, defaults, options),
-            coreFuns = {
-                displayMenu : function(){
-                    if ( config.domObj.hasClass(config.className) ) {
-                        config.domObj.removeClass(config.className);
-                    }
-                },
-                hideMenu : function(){
-                    if ( !config.domObj.hasClass(config.className) ) {
-                        config.domObj.addClass(config.className);
-                    }
-                }
-            },
-            publicFuns = {
-                intelligent_menu : function(){
-                    var int = $('.intelligent-header').height();
-                    var lastScrollTop = 0, direction;
-
-                    if ( handler != undefined ) {
-                        $(window).unbind('scroll', handler);
-                    }
-
-                    handler = function(e){
-                        if (e.currentTarget.scrollY > lastScrollTop){
-                            direction = 'down';
-                        } else {
-                            direction = 'up';
-                        }
-                        lastScrollTop = e.currentTarget.scrollY;
-
-                        // check is user scrolling to up or down?
-                        if ( direction == 'up' ) {
-                        // so you are scrolling to up...
-
-                            // lets display menu
-                            coreFuns.displayMenu();
-                             $('.intelligent-header').addClass('scrolling-up');   
-                            
-                             //var int = $('.intelligent-header').height();
-                             if ((e.currentTarget.scrollY < 220)) {
-                                 $('.intelligent-header').removeClass('scrolling-up');   
-                            //     $('.intelligent-header-space').removeClass('space-animation'); 
-                             }
-                            
-
-                        } else {
-                        // so you are scrolling to down...
-
-                            // se we have to hide only the small menu because the normal menu isn't sticky!
-                            coreFuns.hideMenu();
-                             $('.intelligent-header').removeClass('scrolling-up');
-                            // $('.intelligent-header-space').addClass('space-animation');
-                        }
-                    };
-                    $(window).bind('scroll', handler);
-
-                    config.onNormalMenu();
-                },
-                fixed_menu : function(){
-                    if ( handler != undefined ) {
-                        $(window).unbind('scroll', handler);
-                    }
-
-                    handler = function(e){
-                        // check have we display small menu or normal menu ?
-                        coreFuns.displayMenu();
-                    };
-
-                    $(window).bind('scroll', handler);
-
-                    config.onNormalMenu();
-                },
-                mobile_intelligent_menu : function(){
-
-                    if ( jQuery.browser.mobile === true ) {
-                        this.intelligent_menu();
-                    } else {
-                        this.fixed_menu();
-                    }
-                }
-            };
-
-            return publicFuns;
-        }
-
-        $.fn.menu = function( options ){
-            var $element = this.first();
-            var menuFuns = new Menu( $element, options );
-            return menuFuns;
-        };
-
-    })();
-    var menuFun = $('.intelligent-header').menu({
-        className : 'hide-menu',
-        position : '100px'
-    });
-
-    window.menuFun = menuFun;
-    menuFun.intelligent_menu();
+}); /****** End of Document.Ready Function ************/

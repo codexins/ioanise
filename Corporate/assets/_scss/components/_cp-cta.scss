@@ -117,6 +117,10 @@
 			text-align: center;
 			background-color: $cx-primary-color;
 		}
+
+		// @include media-only(notebook, max) {
+		// 	z-index: initial;
+		// }
 	}
 	&::before {
 		content: "";

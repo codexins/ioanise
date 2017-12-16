@@ -13690,7 +13690,7 @@ to a reusable component.
   background-repeat: no-repeat;
   background-attachment: scroll;
   margin-bottom: 90px;
-  z-index: 1 !important;
+  z-index: 1;
 }
 
 .fill-screen.attachment-fixed {
@@ -13753,7 +13753,7 @@ to a reusable component.
   height: 32px;
   border: 2px solid white;
   background-size: 14px auto;
-  z-index: 2;
+  z-index: 1;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -15917,8 +15917,11 @@ ul.address-card li.card-location::before {
   z-index: 1;
 }
 
-#header_full_screen_video .showcase-text,
 #header_full_screen_video .header-wrapper {
+  z-index: 2;
+}
+
+#header_full_screen_video .showcase-text {
   z-index: 1;
 }
 
@@ -16472,7 +16475,7 @@ ul.address-card li.card-location::before {
   transition: .3s;
   position: fixed;
   width: 100%;
-  z-index: 999 !important;
+  z-index: 999;
   transform: translateY(0%);
   top: 0;
   border-bottom: 1px solid #e5e5e5;

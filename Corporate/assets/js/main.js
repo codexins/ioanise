@@ -166,7 +166,7 @@ jQuery(document).ready(function($){
     /************************************************************
         Client Carousel
     *************************************************************/
-    if($('section').hasClass('type-2')) {
+    if($('.client-section').hasClass('type-2')) {
 
       $('.client-carousel').slick({
           infinite: true,
@@ -212,30 +212,31 @@ jQuery(document).ready(function($){
         dots: true,
         arrows: false ,
         autoplay :true,
-         responsive: [
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1, 
-              }
-            },
+           responsive: [
+              {
+                breakpoint: 992,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 1,
+                }
+              },
 
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1, 
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                }
+              },
+
+              {
+                breakpoint: 481,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1, 
+                }
               }
-            }
-        ]
+          ]
 
     });
   }

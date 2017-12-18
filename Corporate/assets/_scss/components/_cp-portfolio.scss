@@ -56,6 +56,10 @@
 	@include cx-centered(both);
 	max-width: 80%;
 	text-align: center;
+	@include respond-to(notebook) {
+		max-width:90%;
+		width:90%;
+	}
 	@extend %cx-transition ;
 		@include respond-to(mobile){
 			opacity:1;

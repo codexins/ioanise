@@ -79,6 +79,9 @@
 			margin-left: -25px;
 			margin-right: -25px;
 			padding: 15px 25px;
+			@include respond-to(notebook) {
+				padding:15px 10px;
+			}
 			a.read-more {
 				display: inline-block;
 				float:right;

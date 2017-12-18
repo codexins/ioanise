@@ -152,7 +152,7 @@
                         <div class="row"> 
                             <div class="col-sm-7 col-md-8 ">
                                 <div class="section-intro">
-                                    <h2 class="title-bar-left">About Us</h1>
+                                    <h2 class="title-bar-left">About Us</h2>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quas explicabo, eius dolor nemo ut modi itaque nesciunt suscipit veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat molestias a vero nesciunt tenetur aperiam voluptatem quo sed, quisquam doloribus in veniam doloremque voluptate debitis, quaerat ipsum officia ad exercitationem placeat quasi, nobis enim itaque saepe autem. Sequi eum, maiores quia fuga esse incidunt, quod, debitis nobis beatae eveniet accusantgqium.</p>
@@ -387,7 +387,7 @@
                 </div> <!-- end of container -->
             </section><!-- end recent-project   -->
 
-            <section id="counter_section" class="achievement-counters">
+            <div id="counter_section" class="achievement-counters">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
@@ -426,9 +426,9 @@
                         </div>
                     </div> <!-- end of row -->
                 </div> <!-- end of container -->
-            </section><!--end  counter_section  -->
+            </div><!--end  counter_section  -->
 
-            <section class="choose-us pb-full mb0">
+            <section class="choose-us vpadding mb0">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -704,7 +704,7 @@
                         <div class=" col-sm-4  ">
                             <div class="blog-item-grid type-02 type-02">
                                 <div class="post-image">
-                                    <a href="single-post-left-sidebar.html"><img src="assets/img/blog/blog-1.jpg" alt=""><i class="fa fa-plus"></i></a>
+                                    <a href="single-post-left-sidebar.html"><img src="assets/img/blog/blog-1.jpg" alt="Blog Image"><i class="fa fa-plus"></i></a>
                                 </div>
                                 <div class="post-content ">
                                     <div class="post-meta-wrapper">
@@ -724,7 +724,7 @@
                         <div class=" col-sm-4  ">
                             <div class="blog-item-grid type-02">
                                 <div class="post-image">
-                                    <a href="single-post-left-sidebar.html"><img src="assets/img/blog/blog-2.jpg" alt=""><i class="fa fa-plus"></i></a>
+                                    <a href="single-post-left-sidebar.html"><img src="assets/img/blog/blog-2.jpg" alt="Blog Image"><i class="fa fa-plus"></i></a>
                                 </div>
                                 <div class="post-content ">
                                     <div class="post-meta-wrapper">
@@ -744,7 +744,7 @@
                         <div class=" col-sm-4  ">
                             <div class="blog-item-grid type-02">
                                 <div class="post-image">
-                                    <a href="single-post-left-sidebar.html"><img src="assets/img/blog/blog-3.jpg" alt=""><i class="fa fa-plus"></i></a>
+                                    <a href="single-post-left-sidebar.html"><img src="assets/img/blog/blog-3.jpg" alt="Blog Image"><i class="fa fa-plus"></i></a>
                                 </div>
                                 <div class="post-content ">
                                     <div class="post-meta-wrapper">
@@ -777,26 +777,26 @@
                         <div class="col-sm-12">
                             <div class="client-carousel">
                                 <div class="item-brand">
-                                    <img src="assets/img/brand/client-logo-01.png" alt="">
+                                    <img src="assets/img/brand/client-logo-01.png" alt="Client Logo">
                                 </div>
                                 <div class="item-brand">
-                                    <img src="assets/img/brand/client-logo-02.png" alt="">
+                                    <img src="assets/img/brand/client-logo-02.png" alt="Client Logo">
                                 </div>
                                 <div class="item-brand">
-                                    <img src="assets/img/brand/client-logo-03.png" alt="">
+                                    <img src="assets/img/brand/client-logo-03.png" alt="Client Logo">
                                 </div>
                                 <div class="item-brand">
-                                    <img src="assets/img/brand/client-logo-04.png" alt="">
+                                    <img src="assets/img/brand/client-logo-04.png" alt="Client Logo">
                                 </div>
                                 <div class="item-brand">
-                                    <img src="assets/img/brand/client-logo-05.png" alt="">
+                                    <img src="assets/img/brand/client-logo-05.png" alt="Client Logo">
                                 </div>
                                 <div class="item-brand">
-                                    <img src="assets/img/brand/client-logo-06.png" alt="">
+                                    <img src="assets/img/brand/client-logo-06.png" alt="Client Logo">
                                 </div>
 
                                 <div class="item-brand">
-                                    <img src="assets/img/brand/client-logo-07.png" alt="">
+                                    <img src="assets/img/brand/client-logo-07.png" alt="Client Logo">
                                 </div>
                             </div>
                         </div>
@@ -862,9 +862,6 @@
                                      <li>
                                         <a href="single-post-right-sidebar.html">Single Post</a>
                                     </li>
-
-
-
                                 </ul>
                             </div>
                         </div>
@@ -883,16 +880,17 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div> 
+                    </div> <!-- end of row -->
+                </div>  <!-- end of container -->
             </div> <!-- end of footer-top -->
+
             <div class="copyright-section">
                 <div id="toTop" style="display: block;">
                     <i class="fa fa-chevron-up"></i>
                 </div>
                 <p>&copy; Copyright - 2017. All rights reserverd by <a href="http://themeitems.com" target="_blank">themeitems.com</a></p>
-            </div>    
-        </footer>
+            </div> <!-- end of copyright-section -->
+        </footer> <!-- end of footer -->
     </div><!-- /o-wrapper -->
 
     <div id="c-mask" class="c-mask"></div><!-- /c-mask -->
@@ -998,11 +996,9 @@
     ============================================ -->
     <script>
         jQuery(document).ready(function($){
-
-                $(window).on("load resize", function() {
-                    $(".fill-screen").css("height", window.innerHeight);
-                });
-
+            $(window).on("load resize", function() {
+                $(".fill-screen").css("height", window.innerHeight);
+            });
         });
     </script>
 

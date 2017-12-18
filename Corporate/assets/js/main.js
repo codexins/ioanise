@@ -1,5 +1,7 @@
 jQuery(document).ready(function($){
 
+    'use strict';
+
     /************************************************************
         Superfish Menu
     *************************************************************/
@@ -41,38 +43,43 @@ jQuery(document).ready(function($){
     /************************************************************
         Animated Counter
     *************************************************************/
-    $('.counter').counterUp({
-        delay: 100,
-        time: 3000
-    });
+    if($('body').find('.counter').length !== 0) {
+        $('.counter').counterUp({
+            delay: 100,
+            time: 3000
+        });
+    }
 
 
     /************************************************************
         Isotope Js for Portfolio Section
     *************************************************************/
-    var $isocontainer = $('.portfolio-wrapper');
+    if($('body').find('.portfolio-wrapper').length !== 0) {
 
-    $isocontainer.imagesLoaded(function() {
-        $isocontainer.isotope({
-             itemSelector: ".portfolio",
-             layoutMode: 'masonry',
+        var $isocontainer = $('.portfolio-wrapper');
+
+        $isocontainer.imagesLoaded(function() {
+            $isocontainer.isotope({
+                 itemSelector: ".portfolio",
+                 layoutMode: 'masonry',
+            });
+
         });
 
-    });
 
+        $('.portfolio-filter li').click(function(e) {
+            var $this = $(this);
+            var $filter = $this.attr('data-filter');
 
-    $('.portfolio-filter li').click(function(e) {
-        var $this = $(this);
-        var $filter = $this.attr('data-filter');
+            $isocontainer.isotope({
+                filter: $filter,
+            });
 
-        $isocontainer.isotope({
-            filter: $filter,
+            $('.portfolio-filter li').removeClass('active');
+            $this.addClass('active');
         });
 
-        $('.portfolio-filter li').removeClass('active');
-        $this.addClass('active');
-    });
-
+    }
 
     /************************************************************
         Slide left instantiation and action for Mobile Menu
@@ -95,72 +102,78 @@ jQuery(document).ready(function($){
     /************************************************************
         Reasons to Choose Carousel
     *************************************************************/
-    $('.reasons-to-choose').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: false ,
-        responsive: [
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-              }
-            },
-            {
-              breakpoint: 500,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-              }
-            }
-        ]
+    if($('body').find('.reasons-to-choose').length !== 0) {
+        $('.reasons-to-choose').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false ,
+            responsive: [
+                {
+                  breakpoint: 991,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                  }
+                },
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                  }
+                }
+            ]
 
-    });
+        });
+    }
 
 
     /************************************************************
         Testimonial Carousel
     *************************************************************/
-    $('.testimonial-carousel').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        asNavFor: '.testimonial-nav'
-    });
 
-    $('.testimonial-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.testimonial-carousel',
-        centerMode: true,
-        focusOnSelect: true,
-        responsive: [
-           
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1, 
-              }
-            }
-          ]
+    if($('body').find('.testimonial-carousel').length !== 0) { 
+        $('.testimonial-carousel').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            asNavFor: '.testimonial-nav'
+        });
 
-    });
+        $('.testimonial-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.testimonial-carousel',
+            centerMode: true,
+            focusOnSelect: true,
+            responsive: [
+               
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1, 
+                  }
+                }
+              ]
+
+        });
+    }
 
     
     //Testimonial Carousel Type 02
-    
-    $('.testimonial-carousel-type-02').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: true
-    });
+    if($('body').find('.testimonial-carousel-type-02').length !== 0) {
+        $('.testimonial-carousel-type-02').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true
+        });
+    }
 
 
     /************************************************************
@@ -202,9 +215,9 @@ jQuery(document).ready(function($){
           ]
 
       });
-  } else {
+    } else {
 
-    //client carosel type-2
+    //client carosel type-1
     $('.client-carousel').slick({
         infinite: true,
         slidesToShow: 5,
@@ -239,7 +252,7 @@ jQuery(document).ready(function($){
           ]
 
     });
-  }
+    }
   
 
   	/************************************************************

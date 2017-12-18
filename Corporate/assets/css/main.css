@@ -15685,10 +15685,12 @@ ul.address-card li.card-location::before {
   text-align: center;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
   .portfolio-mini-desc {
     max-width: 90%;
     width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -15841,9 +15843,22 @@ ul.address-card li.card-location::before {
   }
 }
 
+@media only screen and (max-width: 479px) {
+  .blog-item-grid.type-02 .post-bottom-meta {
+    min-height: 80px;
+  }
+}
+
 .blog-item-grid.type-02 .post-bottom-meta a.read-more {
   display: inline-block;
   float: right;
+}
+
+@media only screen and (max-width: 479px) {
+  .blog-item-grid.type-02 .post-bottom-meta a.read-more {
+    float: left;
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 991px) {

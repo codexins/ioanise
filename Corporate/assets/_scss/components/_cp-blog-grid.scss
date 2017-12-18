@@ -82,9 +82,16 @@
 			@include respond-to(notebook) {
 				padding:15px 10px;
 			}
+			@include respond-to(small-mobile) {
+				min-height: 80px;
+			}
 			a.read-more {
 				display: inline-block;
 				float:right;
+				@include respond-to(small-mobile) {
+					float: left;
+					display: block;
+				}
 			}
 		}
 	}

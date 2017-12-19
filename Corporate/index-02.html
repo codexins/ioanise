@@ -429,7 +429,7 @@
                             </div>
 
                             <div class="quote-form-wrapper">
-                                <form action="sendemail.php" method="post" class="primary-form" id="primary_form">
+                                <form action="sendquote.php" method="post" class="primary-form" id="primary_form">
                                     <div class="col-sm-6">
                                         <div class="full-width-input">
                                             <input type="text" name="name" placeholder="Name*" value="" required>
@@ -468,11 +468,10 @@
                                         <div class="full-width-input">
                                             <select name="service-type">
                                                 <option value="" disabled="" selected="selected">Service Type</option>
-                                                <option value="">Business Branding</option>
-                                                <option value="">Social Media Marketing</option>
-                                                <option value="">Website &amp; Online Presence</option>
-                                                <option value="">Organizational Structure</option>
-
+                                                <option value="bb">Business Branding</option>
+                                                <option value="smm">Social Media Marketing</option>
+                                                <option value="wop">Website &amp; Online Presence</option>
+                                                <option value="os">Organizational Structure</option>
                                             </select>
                                         </div>
                                     </div>
@@ -484,7 +483,7 @@
                                     </div>
 
                                     <div class="col-xs-12 text-center">
-                                        <input type="submit" name="contact" value="Send Message" class="full-width">
+                                        <input type="submit" name="send_quote" value="Send Message" class="full-width">
                                     </div>
                                 </form>
                             </div> <!-- end of quote-form-wrapper -->

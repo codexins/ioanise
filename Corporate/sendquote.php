@@ -169,140 +169,109 @@
         
         <div class="intelligent-header-space"></div> <!-- empty div with a height of header height-->
 
-        <div class="page-title contact-page-title-02 mb0">
-            <div class="container">
+        <div class="page-title faq-page-title">
+            <div class="container text-center">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h1>Contact Us</h1>
-                        <ul class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="active">Contact</li>
-                        </ul>
+                    <?php 
+                        if(!isset($_POST['send_quote'])) { ?>
+                            <h1>Form Not Submitted!</h1>
+                            <ul class="breadcrumb">
+                                <li class="active">Please try again</li>
+                            </ul>
+                        
+                        <?php
+                        } else { ?>
+
+                            <h1>Thanks for contacting us!</h1>
+                            <ul class="breadcrumb">
+                                <li class="active">We have received your submission</li>
+                            </ul>
+
+                        <?php
+                        }
+                     ?>
+
                     </div>
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
         </div> <!-- end of page-title -->
 
         <main class="whole-wrapper">
-            <section class="contact-promo">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <h2 class="h5">Explore</h2>
-                            <p class="focused-text">Different ways to Organize your Content</p>
-                        </div>
-                        <div class="col-sm-8">
-                            <p class="lead">Our long standing vision has been to bypass the usual admin dashboard structure, and move forward with a more sophisticated yet simple framework that would create a credible impact on the many conventional dashboard users.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam, eum necessitatibus ad ea! Vel.</p>
-                        </div>
-                    </div> <!-- end of row -->
-                </div> <!-- end of container -->
-            </section> <!-- end of contact-promo -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 text-center">
+                        <div class="feedback-page pb-half">
+                            <?php
 
-            <div id="map_location" class="map-location">
-                <div id="map">
-                    <div id="gmap-wrap">
-                        <div id="gmap">
-                        </div>
-                    </div>
-                </div> <!-- end of #map -->
-            </div>
+                                if(isset($_POST['send_quote'])) {
+                                    $status = 'Thanks for contacting us!';
+                                    $feedback = 'We will get back to you as quickly as possible.';
 
-            <section class="contact-us">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 form-wrapper">
-                            <h3>Contact Us</h3>
-                            <form action="sendemail.php" method="post" class="primary-form" id="primary_form">
-                                <div class="col-sm-4">
-                                    <div class="full-width-input">
-                                        <input type="text" name="name" placeholder="Name*" value="" required>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="full-width-input">
-                                        <input type="email" name="email" placeholder="Email*" value="" required>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="full-width-input">
-                                        <input type="text" name="phone" placeholder="Phone" value="" >
-                                    </div>
-                                </div>
+                                    $name = @trim(stripslashes($_POST['name'])); 
+                                    $email = @trim(stripslashes($_POST['email'])); 
+                                    $phone = @trim(stripslashes($_POST['phone']));
+                                    $besttime = @trim(stripslashes($_POST['best-time']));
+                                    $service_date = @trim(stripslashes($_POST['service-date']));
+                                    $service_type = @trim(stripslashes($_POST['service-type']));
+                                    $notes = 'This email was sent from '.$_SERVER['HTTP_HOST'];
+                                    $service_name= '';
+                                    switch ($service_type) {
+                                        case 'bb':
+                                            $service_name = 'Business Branding';
+                                            break;
+                                        case 'smn':
+                                            $service_name = 'Social Media Marketing';
+                                            break;
+                                        case 'os':
+                                            $service_name = 'Organizational Structure';
+                                            break;
+                                        case 'wop':
+                                            $service_name = 'Website & Online Presence';
+                                            break;
+                                        default:
+                                            $service_name = 'No service type selected by user';
+                                            break;
+                                    }
 
-                                <div class="col-xs-12">
-                                    <div class="full-width-input">
-                                        <input type="text" name="subject" placeholder="Subject*" value="" required>
-                                    </div>
-                                </div>
+                                    $location = @trim(stripslashes($_POST['location']));
+                                    $message = @trim(stripslashes($_POST['message'])); 
+                                    $subject = 'Free Quote Form Submission';
 
-                                <div class="col-sm-12">
-                                    <div class="full-width-input">
-                                        <textarea name="message" placeholder="Your Message*" required></textarea>
-                                    </div>
-                                </div>
+                                    $email_from = $email;
+                                    $email_to = 'aktarzaman866@gmail.com'; //replace with your email
 
-                                <div class="col-md-4 text-center">
-                                    <input type="submit" name="send_message" value="Send Message" class="full-width">
-                                </div>
-                            </form>
-                        </div> <!-- end of form-wrapper -->
+                                    $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Phone: ' . $phone . "\n\n" . 'Best Time to Call: ' . $besttime . "\n\n" . 'Service Date: ' . $service_date . "\n\n" . 'Service Type: ' . $service_name . "\n\n" . 'Location: ' . $location . "\n\n" .  'Message: ' ."\n". $message . "\n\n\n\n" . $notes;
+                                    $success = @mail($email_to, $subject, $body, 'From: <'.$name.'>'); ?>
 
-                        <div class="col-md-4 contact-info-wrapper">
-                            <h3>Lets Continue The Conversion</h3>
-                            <p>Please feel free to communicate with us if you are needed any types of support or information regarding our services and products.</p>
+                                    <h2 style="margin-bottom:5px"><?php  echo $status; ?></h2>
+                                    <p class="lead" style="margin-bottom:45px;"><?php  echo $feedback; ?></p>
+                                <?php
+                                } else { ?>
 
-                            <div class="contact-box">
-                                <div class="thumb-icon">                              
-                                    <span>
-                                        <i class="fi flaticon-man" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                                <div class="contact-item-wrapper">
-                                    <p>John Doe</p>
-                                    <p>General Manager</p>
-                                </div>
-                            </div> <!-- end of contact-box -->
+                                    <h2 style="margin-bottom:5px"><span class="warning">Form Not Submitted!</span></h2>
+                                    <p class="lead" style="margin-bottom:45px;">Please make sure you entered the form information correctly</p>
 
-                            <div class="contact-box">
-                                <div class="thumb-icon">                              
-                                    <span>
-                                        <i class="fi flaticon-smartphone-1" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                                <div class="contact-item-wrapper">
-                                    <p><a href="tel:+1234567890">+123 456 7890</a></p>
-                                    <p><a href="mailto:test@test.com">tes@tes.com</a></p>
-                                </div>
-                            </div> <!-- end of contact-box -->
+                                <?php
+                                }
+                            ?>
 
-                            <div class="contact-box">
-                                <div class="thumb-icon">                              
-                                    <span>
-                                        <i class="fi flaticon-location" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                                <div class="contact-item-wrapper">
-                                    <p>123 North Avenue,</p>
-                                    <p>Santa Rosa, California</p>
-                                </div>
-                            </div> <!-- end of contact-box -->
-
-                            <div class="social-icons">
-                                <h6>Connect With Us:</h6>
+                            
+                            <p class="lead" style="margin-bottom:10px;"><strong>Follow Us:</strong></p>
+                            <div class="social-icons" style="margin-top: 10px;">
                                 <ul>
                                     <li><a class="facebook" href=""><i class="fa fa-facebook"></i></a></li>
                                     <li><a class="twitter" href=""><i class="fa fa-twitter"></i></a></li>
                                     <li><a class="google-plus" href=""><i class="fa fa-google-plus"></i></a></li>
                                     <li><a class="instagram" href=""><i class="fa fa-instagram"></i></a></li>
-                                    <li><a class="pinterest"  href=""><i class="fa fa-pinterest"></i></a></li>
-                                    <li><a class="linkedin"  href=""><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a class="pinterest" href=""><i class="fa fa-pinterest"></i></a></li>
+                                    <li><a class="linkedin" href=""><i class="fa fa-linkedin"></i></a></li>
                                 </ul>
-                            </div> <!-- end of social-icons -->
+                            </div>
                         </div>
-                    </div> <!-- end of row -->
-                </div> <!-- end of container -->
-            </section> <!-- end contact-us -->
+                    </div>
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
         </main> <!-- end of main -->
 
         <footer>
@@ -409,7 +378,6 @@
     </div>
     <!-- Site Loader Finished-->
 
-
     <!-- jQuery
     ============================================ -->
     <script src="assets/js/jquery.1.12.4.min.js"></script>
@@ -431,94 +399,9 @@
     ============================================ -->
     <script src="assets/js/jquery.scroll-hide.plugin.js"></script>
 
-    <!-- google map api and gmaps JS
-    ============================================ -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzcEM8z2_imGO8TMRmJEpDEahvZ7KYY_U"></script>
-    <script src="assets/js/gmaps.js"></script>
-
     <!-- Main JS
     ============================================ -->
     <script src="assets/js/main.js"></script>
-
-    <!-- JS specific to this page only
-    ============================================ -->
-    <script>
-        jQuery(document).ready(function($){
-            'use strict';
-            var map;
-
-            map = new GMaps({
-                el: '#gmap',
-                lat: 23.761947,
-                lng: 90.435557,
-                scrollwheel:false,
-                zoom: 14,
-                zoomControl : true,
-                panControl : false,
-                streetViewControl : false,
-                mapTypeControl: true,
-                overviewMapControl: false,
-                clickable: false
-            });
-
-            var image = 'assets/img/contact/map-marker.png';
-            map.addMarker({
-                lat: 23.761947,
-                lng: 90.435557,
-                icon: image,
-                animation: google.maps.Animation.DROP,
-                verticalAlign: 'bottom',
-                horizontalAlign: 'center',
-                backgroundColor: '#3e8bff',
-            });
-
-
-            var styles = [ 
-
-            {
-                "featureType": "road",
-                "stylers": [
-                { "color": "#b4b4b4" }
-                ]
-            },{
-                "featureType": "water",
-                "stylers": [
-                { "color": "#d8d8d8" }
-                ]
-            },{
-                "featureType": "landscape",
-                "stylers": [
-                { "color": "#f1f1f1" }
-                ]
-            },{
-                "elementType": "labels.text.fill",
-                "stylers": [
-                { "color": "#000000" }
-                ]
-            },{
-                "featureType": "poi",
-                "stylers": [
-                { "color": "#d9d9d9" }
-                ]
-            },{
-                "elementType": "labels.text",
-                "stylers": [
-                { "saturation": 1 },
-                { "weight": 0.1 },
-                { "color": "#000000" }
-                ]
-            }
-
-            ];
-
-            map.addStyle({
-                styledMapName:"Styled Map",
-                styles: styles,
-                mapTypeId: "map_style"  
-            });
-
-            map.setStyle("map_style");
-        });
-    </script>
 </body>
 </html>
+<?php  die; ?>

@@ -13400,16 +13400,16 @@ input[type="button"]:hover {
   }
 }
 
-.whole-wrapper, .cx-pagination, .page-title, .post-meta-wrapper, .comments-area ol li {
+.whole-wrapper, .cx-pagination, .instagram-widget, .page-title, .post-meta-wrapper, .comments-area ol li {
   zoom: 1;
 }
 
-.whole-wrapper::before, .cx-pagination::before, .page-title::before, .post-meta-wrapper::before, .comments-area ol li::before, .whole-wrapper::after, .cx-pagination::after, .page-title::after, .post-meta-wrapper::after, .comments-area ol li::after {
+.whole-wrapper::before, .cx-pagination::before, .instagram-widget::before, .page-title::before, .post-meta-wrapper::before, .comments-area ol li::before, .whole-wrapper::after, .cx-pagination::after, .instagram-widget::after, .page-title::after, .post-meta-wrapper::after, .comments-area ol li::after {
   content: "";
   display: table;
 }
 
-.whole-wrapper::after, .cx-pagination::after, .page-title::after, .post-meta-wrapper::after, .comments-area ol li::after {
+.whole-wrapper::after, .cx-pagination::after, .instagram-widget::after, .page-title::after, .post-meta-wrapper::after, .comments-area ol li::after {
   clear: both;
 }
 
@@ -14435,6 +14435,7 @@ div#toTop:hover {
 .social-icons ul li {
   list-style-type: none;
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 .social-icons ul li a {
@@ -15262,11 +15263,17 @@ ul.address-card li.card-location::before {
   width: 100px;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .recent-posts-single > div {
+    display: table-cell;
+  }
+}
+
 .recent-posts-single .post-brief {
   padding-left: 10px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 479px) {
   .recent-posts-single .post-brief {
     padding-left: 0;
     margin-top: 10px;
@@ -17747,7 +17754,6 @@ footer {
 }
 
 .contact-us .social-icons {
-  margin-top: 45px;
   margin-bottom: 0;
 }
 

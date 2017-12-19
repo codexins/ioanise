@@ -82,9 +82,15 @@
 		width:100px;
 	}
 
+	&>div {
+		@include respond-to(large-mobile) {
+			display: table-cell;
+		}
+	}
+
 	.post-brief {
 		padding-left: 10px;
-		@include respond-to(mobile) {
+		@include respond-to(small-mobile) {
 			padding-left: 0;
 			margin-top: 10px;
 		}
@@ -201,6 +207,7 @@
 // Instagram Widget
 
 .instagram-widget {
+	@extend %clearfix;
 	ul {
 		margin: 0;
 		padding: 0;

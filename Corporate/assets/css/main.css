@@ -17796,6 +17796,13 @@ footer {
   margin-right: -30px;
 }
 
+@media only screen and (max-width: 767px) {
+  .contact-us.simple-type .container > .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
 .connect {
   margin-bottom: 0;
   padding-top: 45px;

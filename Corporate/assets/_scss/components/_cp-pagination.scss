@@ -1,10 +1,24 @@
 /**
- * Components Newsletter
+ * Components Pagination
  *
  */
 
 .pagination-wrapper {
-	margin-bottom: ($cx-section-spacing)-20px;
+	margin-bottom: ($cx-section-spacing)-20px; 
+
+
+	.pagination-lg {
+		&>li {
+			&>span,
+			&>a {
+				@include respond-to(small-mobile) {
+					padding:6px 12px;
+				}
+
+			}
+		}
+		
+	}
 }
 
 .pagination {

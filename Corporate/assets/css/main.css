@@ -15105,11 +15105,18 @@ ul.address-card li.card-location::before {
 }
 
 /**
- * Components Newsletter
+ * Components Pagination
  *
  */
 .pagination-wrapper {
   margin-bottom: 70px;
+}
+
+@media only screen and (max-width: 479px) {
+  .pagination-wrapper .pagination-lg > li > span,
+  .pagination-wrapper .pagination-lg > li > a {
+    padding: 6px 12px;
+  }
 }
 
 .pagination .active a,

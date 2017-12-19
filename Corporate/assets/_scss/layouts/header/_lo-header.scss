@@ -9,9 +9,55 @@
 		max-width:150px;
 	}
 	a{
-		display: inline-block;
+		display: block;
+		width:100%;
+	}
+
+	svg:not(:root) {
+		width:100%;
+		height:auto;
+		display: block;
+		 text {
+		 	font-family: $cx-heading-font !important;
+		 	letter-spacing: 10px !important;
+		 	fill: #fff !important;
+		 }
+
+		 g + rect {
+			fill: $cx-secondary-color !important;
+		 }
+			
+		 path,	
+		 line + rect {
+		 	fill: $cx-tertiary-color !important;
+		 }
 	}
 }
+
+
+.fill-screen {
+	.logo {
+		svg:not(:root) {
+			rect + text {
+				fill: $cx-tertiary-color !important;
+			}
+
+			line + rect + text {
+				fill: #fff !important;
+			}
+
+			 g + rect {
+				fill: #fff !important;
+			 }
+				
+			 path,	
+			 line + rect {
+			 	fill: $cx-tertiary-color !important;
+			 }
+		}
+	}
+}
+
 .header-wrapper {
 	background: lighten($cx-body-bg-color, 100%);
 	position:relative;

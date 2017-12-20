@@ -18106,7 +18106,7 @@ ul.address-card li.card-location::before {
 
 .fill-screen .logo svg:not(:root) path,
 .fill-screen .logo svg:not(:root) line + rect {
-  fill: #6B83A8 !important;
+  fill: #01578F !important;
 }
 
 .header-wrapper {

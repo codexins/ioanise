@@ -44,6 +44,7 @@ jQuery(document).ready(function($){
     /************************************************************
         Skin Switcher
     *************************************************************/
+
         $('#colorPanel').ColorPanel({
             styleSheet: '#cpswitch',
             //animateContainer: '#o-wrapper',
@@ -52,8 +53,7 @@ jQuery(document).ready(function($){
                 '#01578F': 'assets/css/main-florence.css',
             }
         });
-
-
+    
 
     /************************************************************
         Superfish Menu

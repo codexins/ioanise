@@ -51,6 +51,7 @@ jQuery(document).ready(function($){
             colors: {
                 '#1ca5b8': 'assets/css/main.css',
                 '#01578F': 'assets/css/main-florence.css',
+                '#E74C3C': 'assets/css/main-flat.css',
             }
         });
     

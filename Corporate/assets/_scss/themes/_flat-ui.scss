@@ -4,19 +4,19 @@
 
 
 // Colors
-$cx-text-color: 						#454545; // black
+$cx-text-color: 						#545454; // black
 $cx-body-bg-color: 						#fff; // white 
 
-$cx-primary-color:  					#01578F; // teal
-$cx-secondary-color: 					#F4B750; // light red
-$cx-tertiary-color:						#6B83A8; // dark teal
+$cx-primary-color:  					#2980B9; // teal
+$cx-secondary-color: 					#E74C3C; // light red
+$cx-tertiary-color:						#2C3E50; // dark teal
 $cx-fourth-color: 						#f9b808;  // Yellow type
 
-$cx-offset-color:						lighten($cx-tertiary-color, 41%); // offwhite
+$cx-offset-color:						lighten($cx-primary-color, 41%); // offwhite
 //$cx-offset-color:						lighten($cx-primary-color,52%); // offwhite
 
 
-$cx-border-color:						#aaa; // light gray
+$cx-border-color:						#ccc; // light gray
 
 $cx-link-color: 						$cx-primary-color;
 $cx-link-hover-color: 					$cx-secondary-color;

@@ -14841,7 +14841,7 @@ body {
 }
 
 section {
-  margin-bottom: 90px;
+  margin-bottom: 70px;
   display: block;
   width: 100%;
   float: none;
@@ -14850,7 +14850,7 @@ section {
 
 @media only screen and (max-width: 767px) {
   section {
-    margin-bottom: 67.5px;
+    margin-bottom: 52.5px;
   }
 }
 
@@ -14864,7 +14864,7 @@ section {
 
 #primary,
 #sidebar {
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
 .pswp button:hover {
@@ -14906,7 +14906,7 @@ section {
 *************************************************************/
 html,
 body {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body {
@@ -14918,27 +14918,27 @@ body {
 }
 
 h1 {
-  font-size: 32px;
-}
-
-h2 {
   font-size: 28px;
 }
 
-h3 {
-  font-size: 24px;
+h2 {
+  font-size: 24.5px;
 }
 
-h4 {
+h3 {
   font-size: 21px;
 }
 
+h4 {
+  font-size: 18.375px;
+}
+
 h5 {
-  font-size: 18px;
+  font-size: 15.75px;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14950,11 +14950,11 @@ p {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 ul, ol, table, dl, dd {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 address, blockquote {
@@ -14962,7 +14962,7 @@ address, blockquote {
 }
 
 blockquote {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 td, th {
@@ -15082,14 +15082,14 @@ input[type="button"]:hover {
 	c33 - Base - Placeholders
 *************************************************************/
 .vpadding, .cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial-slider, .get-quote, .achievement-counters, .newsletter-section, .testiminial-simple, .pricing-table-section, .about, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 @media only screen and (max-width: 767px) {
   .vpadding, .cta-centered, .call-to-action .cta-left, .call-to-action .cta-right, .services, .fun-facts, .testimonial-slider, .get-quote, .achievement-counters, .newsletter-section, .testiminial-simple, .pricing-table-section, .about, .skills, .service-promo, .contact-promo, .how-it-works, .inner-services {
-    padding-top: 67.5px;
-    padding-bottom: 67.5px;
+    padding-top: 52.5px;
+    padding-bottom: 52.5px;
   }
 }
 
@@ -15109,7 +15109,7 @@ input[type="button"]:hover {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2em;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .cta-section.has-bg, .page-title, .newsletter-section {
@@ -15272,35 +15272,35 @@ a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3,
 }
 
 .mb-full {
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
 .mt-full {
-  margin-top: 90px;
+  margin-top: 70px;
 }
 
 .pb-full {
-  padding-bottom: 90px;
+  padding-bottom: 70px;
 }
 
 .pt-full {
-  padding-top: 90px;
+  padding-top: 70px;
 }
 
 .mb-half {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .mt-half {
-  margin-top: 45px;
+  margin-top: 35px;
 }
 
 .pb-half {
-  padding-bottom: 45px;
+  padding-bottom: 35px;
 }
 
 .pt-half {
-  padding-top: 45px;
+  padding-top: 35px;
 }
 
 /*
@@ -15382,7 +15382,7 @@ to a reusable component.
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
   z-index: 1;
 }
 
@@ -15718,19 +15718,19 @@ div#toTop:hover {
   padding-bottom: 20px;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 28.8px;
-  margin-bottom: 25px;
+  font-size: 25.2px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .primary-title, .section-intro h2, .section-intro-left h2 {
-    font-size: 24px;
+    font-size: 21px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .primary-title, .section-intro h2, .section-intro-left h2 {
-    font-size: 20.8px;
+    font-size: 18.2px;
   }
 }
 
@@ -15742,7 +15742,7 @@ div#toTop:hover {
   text-align: center;
   display: block;
   max-width: 70%;
-  margin: 0px auto 50px;
+  margin: 0px auto 40px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -15824,7 +15824,7 @@ div#toTop:hover {
 @media only screen and (max-width: 767px) {
   .counter-item {
     width: 100%;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 
@@ -15902,7 +15902,7 @@ div#toTop:hover {
   .counter-item.type-03 {
     width: 50%;
     float: left;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 
@@ -15963,12 +15963,12 @@ div#toTop:hover {
  */
 .info-item {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 36px;
 }
 
 .info-item .thumb-icon {
   line-height: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .info-item .thumb-icon i {
@@ -16110,7 +16110,7 @@ div#toTop:hover {
 
 .social-icons {
   margin-top: 25px;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .social-icons p {
@@ -16356,7 +16356,7 @@ ul.address-card li.card-location::before {
 
 @media only screen and (max-width: 991px) {
   .team-member {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 
@@ -16674,7 +16674,7 @@ ul.address-card li.card-location::before {
 @media only screen and (max-width: 767px) {
   .processing-columns li {
     width: 100%;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 
@@ -16776,7 +16776,7 @@ ul.address-card li.card-location::before {
 .client-single {
   width: 100%;
   border: 1px solid #ccc;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   opacity: 0.7;
 }
 
@@ -16803,7 +16803,7 @@ ul.address-card li.card-location::before {
  *
  */
 .pagination-wrapper {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 479px) {
@@ -16853,7 +16853,7 @@ ul.address-card li.card-location::before {
   padding-bottom: 15px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .cx-pagination a {
@@ -16872,8 +16872,8 @@ ul.address-card li.card-location::before {
  *
  */
 .sidebar-widget {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .sidebar-widget:first-child {
@@ -16995,7 +16995,7 @@ ul.address-card li.card-location::before {
 }
 
 .tags-widget {
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 }
 
 .tags-widget ul {
@@ -17131,8 +17131,8 @@ ul.address-card li.card-location::before {
  *
  */
 .cta-section {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   margin-bottom: 0;
 }
 
@@ -17517,12 +17517,12 @@ ul.address-card li.card-location::before {
 
 @media only screen and (max-width: 767px) {
   .blog-item-grid {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 
 .blog-item-grid.type-02 {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .blog-item-grid.type-02 .post-content {
@@ -17570,7 +17570,7 @@ ul.address-card li.card-location::before {
 
 @media only screen and (max-width: 991px) {
   .blog-item-grid {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 
@@ -17701,7 +17701,7 @@ ul.address-card li.card-location::before {
 
 @media only screen and (max-width: 767px) {
   .image-info-wrapper {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 
@@ -17913,7 +17913,7 @@ ul.address-card li.card-location::before {
 
 @media only screen and (max-width: 991px) {
   .pricing-table-wrapper {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 
@@ -18596,9 +18596,9 @@ ul.address-card li.card-location::before {
  *
  */
 .page-title {
-  padding-top: 90px;
-  padding-bottom: 63px;
-  margin-bottom: 90px;
+  padding-top: 70px;
+  padding-bottom: 49px;
+  margin-bottom: 70px;
   background-color: #507192;
 }
 
@@ -18971,8 +18971,8 @@ ul.address-card li.card-location::before {
 }
 
 .client-section.type-2 {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .client-section.type-2 .client-carousel {
@@ -19015,7 +19015,7 @@ ul.address-card li.card-location::before {
 }
 
 .client-carousel .slick-list {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .client-carousel .slick-dots li.slick-active button:before {
@@ -19125,7 +19125,7 @@ ul.address-card li.card-location::before {
 }
 
 .team-section .member-wrapper {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 /************************************************************
@@ -19246,13 +19246,13 @@ ul.address-card li.card-location::before {
  *
  */
 footer {
-  padding-top: 90px;
+  padding-top: 70px;
   background: #2980B9;
   color: white;
 }
 
 .footer-top {
-  padding-bottom: 45px;
+  padding-bottom: 35px;
 }
 
 .footer-title {
@@ -19263,7 +19263,7 @@ footer {
 }
 
 .footer-widget {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .footer-widget a {
@@ -19314,7 +19314,7 @@ footer {
 
 @media only screen and (max-width: 767px) {
   .about .default-btn {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 
@@ -19375,7 +19375,7 @@ footer {
  *
  */
 .contact-intro {
-  padding-bottom: 90px;
+  padding-bottom: 70px;
 }
 
 .section-intro .social-icons, .section-intro-left .social-icons {
@@ -19537,8 +19537,8 @@ footer {
 
 .connect {
   margin-bottom: 0;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   background: #f6f6f6;
 }
 
@@ -19677,18 +19677,18 @@ footer {
 }
 
 .portfolio-images .row img {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .portfolio-images.bottom {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .portfolio-left {
   float: left;
   width: 815px;
   margin-right: 30px;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -19717,7 +19717,7 @@ footer {
 .portfolio-right {
   width: 295px;
   float: right;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -19749,7 +19749,7 @@ footer {
 }
 
 .image-wrapper.full {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .portfolio-featured {
@@ -19834,7 +19834,7 @@ footer {
 
 @media only screen and (max-width: 767px) {
   .portfolio-content .portfolio-left {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 
@@ -19854,13 +19854,13 @@ footer {
 
 @media only screen and (max-width: 767px) {
   .portfolio-content .portfolio-right {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .portfolio-content {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 
@@ -19887,11 +19887,11 @@ footer {
 }
 
 .post-single {
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
 .post-single .thumb-wrapper {
-  margin-bottom: 36px;
+  margin-bottom: 28px;
   padding-top: 15px;
   border-top: 1px solid #ccc;
 }
@@ -19943,7 +19943,7 @@ footer {
 }
 
 .posts-wrapper + .pagination-wrapper {
-  margin-top: 45px;
+  margin-top: 35px;
 }
 
 /**
@@ -19951,7 +19951,7 @@ footer {
  *
  */
 .blog-grid-section .blog-item-grid {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .blog-grid-section .pagination {
@@ -19964,7 +19964,7 @@ footer {
  *
  */
 .single-post-meta {
-  margin-top: 45px;
+  margin-top: 35px;
 }
 
 .single-post-meta p {
@@ -20003,7 +20003,7 @@ footer {
 }
 
 .single .post-single {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .comments-area .comment-list.nested {
@@ -20092,7 +20092,7 @@ footer {
 }
 
 .comments-area > ol {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .comments-area .comment-author-thumb img {

@@ -15952,6 +15952,10 @@ div#toTop:hover {
   }
 }
 
+.counter-item.type-03 .counter-title {
+  margin-bottom: 0;
+}
+
 .counter-item.type-03 .counter {
   font-size: 42px;
   margin-bottom: 2px;

@@ -242,6 +242,18 @@ jQuery(document).ready(function($){
     }
 
 
+     /************************************************************
+         Smooth Scroll to anchor tags
+     *************************************************************/
+
+    $('.explore').bind('click', function() {
+        $('html, body').stop().animate({
+            scrollTop: $($(this).attr('href')).offset().top + 30
+        }, 1000, 'easeOutCubic');
+        event.preventDefault();
+    });
+
+
     /************************************************************
         Client Carousel
     *************************************************************/

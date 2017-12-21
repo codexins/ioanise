@@ -50,6 +50,6 @@ footer{
     }
 
     a {
-    	color: $cx-secondary-color;
+    	color: lighten($cx-secondary-color, 10%);
     }
 }

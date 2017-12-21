@@ -77,8 +77,8 @@
 	h3{
 		text-transform: uppercase;
 		position:relative;
-		margin-bottom: 10px;
-		padding-top: 10px;
+		margin-bottom: 5px;
+		padding-top: 15px;
 		padding-bottom: 0;
 		font-size: 18px;
 		letter-spacing: 3px;
@@ -92,11 +92,11 @@
 		color:$cx-secondary-color ; 
 	}
 	p{
-		margin: 0 ;
-		text-transform: uppercase;
-		font-size: 14px;
-		letter-spacing: 3px;
-		font-weight: 300;
+	    margin: 0;
+	    text-transform: capitalize;
+	    font-size: 14px;
+	    letter-spacing: .05em;
+	    font-weight: 300;
 	}
 }
 

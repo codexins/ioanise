@@ -52,6 +52,7 @@ jQuery(document).ready(function($){
                 '#1ca5b8': 'assets/css/main.css',
                 '#01578F': 'assets/css/main-florence.css',
                 '#E74C3C': 'assets/css/main-flat.css',
+                '#2dd47c': 'assets/css/main-theme-4.css',
             }
         });
     
@@ -134,6 +135,17 @@ jQuery(document).ready(function($){
         });
 
     }
+
+    
+    //Targeting Portfolio a tag for click event
+
+    $(".portfolio .primary-title").click(function (e) {
+        $(this).find("a.clickable").first().click();
+    });
+
+    $(".portfolio .primary-title a.clickable").click(function (e) {
+        e.stopPropagation();
+    });
 
     /************************************************************
         Slide left instantiation and action for Mobile Menu

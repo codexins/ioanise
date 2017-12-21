@@ -53,6 +53,8 @@ jQuery(document).ready(function($){
                 '#01578F': 'assets/css/main-florence.css',
                 '#E74C3C': 'assets/css/main-flat.css',
                 'assets/img/skins/theme-4.png': 'assets/css/main-theme-4.css',
+                '#4d75a1': 'assets/css/main-theme-5.css',
+                '#E7717D': 'assets/css/main-theme-6.css',
             }
         });
     

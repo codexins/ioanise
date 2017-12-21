@@ -18089,6 +18089,7 @@ ul.address-card li.card-location::before {
   font-family: "PT Sans", sans-serif !important;
   letter-spacing: 10px !important;
   fill: #fff !important;
+  font-size: 82px;
 }
 
 .logo svg:not(:root) g + rect {
@@ -18758,7 +18759,7 @@ ul.address-card li.card-location::before {
 }
 
 .fun-facts:before {
-  background: rgba(11, 66, 73, 0.92);
+  background: rgba(28, 165, 184, 0.92);
   content: "";
   display: block;
   position: absolute;

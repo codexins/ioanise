@@ -49,10 +49,10 @@ jQuery(document).ready(function($){
             styleSheet: '#cpswitch',
             //animateContainer: '#o-wrapper',
             colors: {
-                '#1ca5b8': 'assets/css/main.css',
+                'assets/img/skins/default.png': 'assets/css/main.css',
                 '#01578F': 'assets/css/main-florence.css',
                 '#E74C3C': 'assets/css/main-flat.css',
-                '#2dd47c': 'assets/css/main-theme-4.css',
+                'assets/img/skins/theme-4.png': 'assets/css/main-theme-4.css',
             }
         });
     

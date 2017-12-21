@@ -25,7 +25,7 @@ footer{
 	a {
 		color: lighten($cx-text-color, 100%);
 		&:hover {
-			color: $cx-secondary-color;
+			color: lighten($cx-secondary-color, 10%);
 		}
 	}
 	::-webkit-input-placeholder {

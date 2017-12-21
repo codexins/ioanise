@@ -29,11 +29,23 @@
 
         if (colors) {
             $.each(colors, function (key, value) {
+                styleString = value;
+                themeStylesCss = styleString.split("/");
+                themeNameGenerator = themeStylesCss["2"];
+                if(themeNameGenerator == "main.css") {
+                    themeName = "Default";
+                } else {
+                    themeName = themeNameGenerator.slice(5, -4);
+                    themeName = themeName.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+                        return letter.toUpperCase();
+                    });
+                }
                 var li = $("<li/>");
                 var e = $("<a />", {
                     href: value
                     , "class": settings.linkClass, // you need to quote "class" since it's a reserved keyword
-                }).css('background-color', key);
+                    "title": themeName,
+                }).css('background-image', 'url('+ key +')');
                 li.append(e);
                 $(panelDiv).find('ul').append(li);
             });

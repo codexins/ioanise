@@ -47,14 +47,14 @@ jQuery(document).ready(function($){
 
         $('#colorPanel').ColorPanel({
             styleSheet: '#cpswitch',
-            //animateContainer: '#o-wrapper',
+            // animateContainer: '#o-wrapper',
             colors: {
                 'assets/img/skins/default.png': 'assets/css/main.css',
-                '#01578F': 'assets/css/main-florence.css',
-                '#E74C3C': 'assets/css/main-flat.css',
+                'assets/img/skins/florence.png': 'assets/css/main-florence.css',
+                'assets/img/skins/flat-ui.png': 'assets/css/main-flat.css',
                 'assets/img/skins/theme-4.png': 'assets/css/main-theme-4.css',
-                '#4d75a1': 'assets/css/main-theme-5.css',
-                '#E7717D': 'assets/css/main-theme-6.css',
+                'assets/img/skins/theme-5.png': 'assets/css/main-theme-5.css',
+                'assets/img/skins/theme-6.png': 'assets/css/main-theme-6.css',
             }
         });
     

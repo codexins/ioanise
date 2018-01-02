@@ -285,8 +285,12 @@ noscript p{
 	text-align:left;
 }
 #documenter_content code{
-	font-family:"Courier New", Courier, monospace;
-	font-size:12px;
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 #documenter_content .warning{
 	padding:10px 10px 10px 30px;

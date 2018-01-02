@@ -346,29 +346,47 @@
 
         <section id="miscellaneous">
             <div class="page-header"><h3>miscellaneous</h3><hr class="notop"></div>
-            <p>Both Contact Us page uses a eye catching google map to display map location.</p>
-            <p><strong>How to change the map location for "Contact Us 01"?</strong>--> You need to open the "contact-us-01.html" file and inside that file find the line: 456 where a script tag is opened to represent the javascript for map. Find lines: 463, 464 and 477, 478 and provide your own latitude and longitude there. lat=latitude and lng=longitude. The first lat/lng pair is for centering map location and the other lat/lng pair is for the map marker. If you need to change the URL for the map marker, please check the line: 475 and change the image URL.</p>
+            <p><strong>Method for changing the Google Map location for "Contact Us" Page:</strong></p>
+            <p>Both Contact Us page uses a eye catching google map to display map location. To change the map location, you need to open the "contact-us-01.html" or "contact-us-02.html" file and go to the end of the file where a <code>&lt;script&gt;</code> tag is opened to represent the javascript for map with a comment <code>JS specific to this page only</code>. Here find two pair of <code>lat</code>, <code>lng</code> and provide your own latitude and longitude there. lat=latitude and lng=longitude. The first lat/lng pair is for centering map location and the other lat/lng pair is for the map marker. If you need to change the URL for the map marker, please check the variable named <code>image</code> and change the image URL.</p>
             <img src="assets/images/gmap1.jpg"  alt="">
-           <p style="color: #f68e56;"><strong>**Note: </strong> <i>To use the map, as per google you need to use your own API Key and you can get this from here <a href="https://console.developers.google.com/" target="_blank">https://console.developers.google.com/</a>. Also here is the supporting doc how to obatin the API key <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">API Key</a></i></p>
+            <p style="color: #f68e56;"><strong>**Note: </strong> <i>To use the map, as per google you need to use your own API Key and you can get this from here <a href="https://console.developers.google.com/" target="_blank">https://console.developers.google.com/</a>. Also here is the supporting doc how to obatin the API key <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">API Key</a></i></p>
         
-           <p>A sample API key looks like <span style="background: #eee; color: 000; padding:10px">AIzaSyA6CKatrt34QhZKT5TyHqwerxM3hEiMpQ</span>. <br /><br /><br />After getting your own the API key</p> just copy and paste that API key at the last of this line: 447 like below screen shot:
+            <p>A sample API key looks like <span style="background: #eee; color: 000; padding:10px">AIzaSyA6CKatrt34QhZKT5TyHqwerxM3hEiMpQ</span>. <br /><br /><br />After getting your own the API key:</p>Find the <code>&lt;script&gt;</code> tag containing comment <code>google map api and gmaps JS</code> and just copy and paste that API key at the last of this line like below screen shot:
 
-           <p><strong>Before:</strong></p>
-           <img src="assets/images/api1.jpg" height="91" width="849" alt="">
+            <p><strong>Before:</strong></p>
+            <img src="assets/images/api1.jpg" height="91" width="849" alt="">
             <p><strong>After:</strong></p>
-           <img src="assets/images/api1-1.jpg" height="84" width="1058" alt="">
-           <br />
-           <br />
+            <img src="assets/images/api1-1.jpg" height="84" width="1058" alt="">
+            <br />
+            <br />
 
-            <p><strong>How to change the map location for "Contact Us 02"?</strong>--> You need to open the "contact-us-02.html" file and inside that file find the line: 461 where a script tag is opened to represent the javascript for map. Find lines: 468, 469 and 482, 483 and provide your own latitude and longitude there. lat=latitude and lng=longitude. The first lat/lng pair is for centering map location and the other lat/lng pair is for the map marker. If you need to change the URL for the map marker, please check the line: 480 and change the image URL.</p>
-            <img src="assets/images/gmap2.jpg"  alt="">
-        
-           <p>After getting your own the API key</p> just copy and paste that API key at the last of this line: 452 like below screen shot:
+            <p><strong>Method for disabling Header Top Bar:</strong></p>
+            <p>Most of the pages of this template uses a header top bar to show contact and social information. If you need to disable the "Top bar" for header, you need to open all the files containing the top bar HTML markup (except for index-02.html, index-03.html and index-04.html because these pages do not contain header top bar), <br />find the wrapper &lt;div&gt; tag <code>&lt;div class="header-top"&gt;</code> and the end tag <code>&lt;/div&gt; &lt;!-- end of header-top --&gt;</code> and delete the entire block. </p>
+            <p>The code block is located under <code>&lt;div id="o-wrapper" class="o-wrapper"&gt;</code> wrapper. A sample screenshot of the block is given below:</p>
+            <img src="assets/images/top-bar.jpg" alt="">
+            <br />
+            <br />
 
-           <p><strong>Before:</strong></p>
-           <img src="assets/images/api2.jpg" height="91" width="849" alt="">
-            <p><strong>After:</strong></p>
-           <img src="assets/images/api2-1.jpg" height="84" width="1058" alt="">
+            <p><strong>Method for changing/disabling Page Loader:</strong></p>
+            <p>The template uses a nice page loader animation that runs while the elements and the scripts of the page is being loaded.</p> 
+            <p>If you need to change/disable the page loader, you need to go to the end of every file and find the code block that starts with a comment of <code>&lt;!-- Site Loader started--&gt;</code> followed by a wrapper &lt;div&gt; <code>&lt;div class="cx-pageloader"&gt;</code>. The code block can be found after the ending tag of <code>&lt;footer&gt;</code>. A sample screenshot of the block is given below:</p>
+            <img src="assets/images/page-loader.jpg" alt="">
+            <br />
+            <br />
+            <p><strong>Disabling Page Loader: </strong>If you need to <strong>disable</strong> the page loader, you need to delete the entire code block to disable the page loader.</p> 
+            <p><strong>Changing Page Loader: </strong>Or if you need to <strong>change</strong> the page loader, you need to replace the HTML markup inside the wrapper tag contains the class <code>cx-pageloader</code>, keeping the wrapper tag/class intact as this wrapper class uses javascript for a fade out transition animation.</p>
+
+            <br />
+            <br />
+            <p><strong>Method for changing/disabling Back To Top Button:</strong></p>
+            <p>The template uses a nice page loader animation that runs while the elements and the scripts of the page is being populated.</p> 
+            <p>If you need to change/disable the page loader, you need to go to the end of every file and find the code block that starts with a comment of <code>&lt;!-- Site Loader started--&gt;</code> followed by a wrapper &lt;div&gt; <code>&lt;div class="cx-pageloader"&gt;</code>. The code block can be found after the ending tag of <code>&lt;footer&gt;</code>. A sample screenshot of the block is given below:</p>
+            <img src="assets/images/page-loader.jpg" alt="">
+            <br />
+            <br />
+            <p><strong>Disabling Page Loader: </strong>If you need to <strong>disable</strong> the page loader, you need to delete the entire code block to disable the page loader.</p> 
+            <p><strong>Changing Page Loader: </strong>Or if you need to <strong>change</strong> the page loader, you need to replace the HTML markup inside the wrapper tag contains the class <code>cx-pageloader</code>, keeping the wrapper tag/class intact as this wrapper class uses javascript for a transition animation.</p>
+
 
     
         </section>

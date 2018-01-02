@@ -15655,7 +15655,6 @@ to a reusable component.
 div#toTop {
   position: fixed;
   background: #ff646c;
-  text-align: center;
   right: 20px;
   bottom: 25px;
   margin: auto;
@@ -15667,6 +15666,7 @@ div#toTop {
   text-align: center;
   line-height: 40px;
   display: inline-block;
+  display: none;
 }
 
 div#toTop:hover {

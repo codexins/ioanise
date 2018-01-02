@@ -15097,6 +15097,18 @@ input[type="button"]:hover {
   }
 }
 
+.vmargin {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+@media only screen and (max-width: 767px) {
+  .vmargin {
+    margin-top: 67.5px;
+    margin-bottom: 67.5px;
+  }
+}
+
 .whole-wrapper, .cx-pagination, .instagram-widget, .page-title, .post-meta-wrapper, .comments-area ol li {
   zoom: 1;
 }
@@ -15250,6 +15262,10 @@ a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3,
 
 .color-white, .support-widget a, .newsletter-section, .pricing-table-section .section-intro, .pricing-table-section .section-intro-left {
   color: #fff;
+}
+
+.nomargin {
+  margin: 0 !important;
 }
 
 .nopadding {

@@ -105,7 +105,8 @@
             <li><a href="./#portfolio_section" title="Portfolio Section">Portfolio Section</a></li>
             <li><a href="./#testimonial_section" title="Testimonial Section">Testimonial Section</a></li>
             <li><a href="./#blog_section" title="Blog Section">Blog Section</a></li>
-			<li><a href="./#contact_section" title="Contact Section">Contact/Location Section</a></li>
+            <li><a href="./#contact_section" title="Contact Section">Contact/Location Section</a></li>
+			<li><a href="./#miscellaneous" title="miscellaneous">miscellaneous</a></li>
 			<li><a href="./#credit" title="Credit">Credit</a></li>
 			<li><a href="./#thank_you" title="Thank You">Thank You</a></li>
 
@@ -323,8 +324,34 @@
             <p><strong>How to get the messages to your own email address when user submit the form?</strong>--> Open the <strong>"sendmail.php"</strong> file provided with the template and replace the email addres there as per below screenshot</p>
             <img src="assets/images/email.jpg"  alt="">
         </section>
-        <section>
-            <p style="color: #f68e56;"><strong>**issues: </strong>parallex background are kept disabled on IE edge and IE version 9 and 10 for performance issue.</p>
+
+        <section id="miscellaneous">
+            <div class="page-header"><h3>miscellaneous</h3><hr class="notop"></div>
+            <p>Both Contact Us page uses a eye catching google map to display map location.</p>
+            <p><strong>How to change the map location for "Contact Us 01"?</strong>--> You need to open the "contact-us-01.html" file and inside that file find the line: 456 where a script tag is opened to represent the javascript for map. Find lines: 463, 464 and 477, 478 and provide your own latitude and longitude there. lat=latitude and lng=longitude. The first lat/lng pair is for centering map location and the other lat/lng pair is for the map marker. If you need to change the URL for the map marker, please check the line: 475 and change the image URL.</p>
+            <img src="assets/images/gmap1.jpg"  alt="">
+           <p style="color: #f68e56;"><strong>**Note: </strong> <i>To use the map, as per google you need to use your own API Key and you can get this from here <a href="https://console.developers.google.com/" target="_blank">https://console.developers.google.com/</a>. Also here is the supporting doc how to obatin the API key <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">API Key</a></i></p>
+        
+           <p>A sample API key looks like <span style="background: #eee; color: 000; padding:10px">AIzaSyA6CKatrt34QhZKT5TyHqwerxM3hEiMpQ</span>. <br /><br /><br />After getting your own the API key</p> just copy and paste that API key at the last of this line: 447 like below screen shot:
+
+           <p><strong>Before:</strong></p>
+           <img src="assets/images/api1.jpg" height="91" width="849" alt="">
+            <p><strong>After:</strong></p>
+           <img src="assets/images/api1-1.jpg" height="84" width="1058" alt="">
+           <br />
+           <br />
+
+            <p><strong>How to change the map location for "Contact Us 02"?</strong>--> You need to open the "contact-us-02.html" file and inside that file find the line: 461 where a script tag is opened to represent the javascript for map. Find lines: 468, 469 and 482, 483 and provide your own latitude and longitude there. lat=latitude and lng=longitude. The first lat/lng pair is for centering map location and the other lat/lng pair is for the map marker. If you need to change the URL for the map marker, please check the line: 480 and change the image URL.</p>
+            <img src="assets/images/gmap2.jpg"  alt="">
+        
+           <p>After getting your own the API key</p> just copy and paste that API key at the last of this line: 452 like below screen shot:
+
+           <p><strong>Before:</strong></p>
+           <img src="assets/images/api2.jpg" height="91" width="849" alt="">
+            <p><strong>After:</strong></p>
+           <img src="assets/images/api2-1.jpg" height="84" width="1058" alt="">
+
+    
         </section>
 
         <section id="credit">

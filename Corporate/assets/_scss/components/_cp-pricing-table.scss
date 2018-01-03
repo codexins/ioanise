@@ -93,6 +93,10 @@
 		background: $cx-secondary-color;
 		border-color: $cx-secondary-color;
 		color: lighten($cx-text-color, 100%);
+		&:hover {
+			background: $cx-primary-color;
+			border-color: $cx-primary-color;
+		}
 	}
 
 	.price-token {

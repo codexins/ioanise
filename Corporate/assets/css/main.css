@@ -15359,7 +15359,7 @@ to a reusable component.
  *
  */
 .fill-screen {
-  min-height: 700px;
+  min-height: 500px;
   height: 100Vh;
 }
 
@@ -15380,19 +15380,19 @@ to a reusable component.
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .fill-screen {
-    min-height: 600px;
+    min-height: 400px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .fill-screen {
-    min-height: 500px;
+    min-height: 350px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .fill-screen {
-    min-height: 450px;
+    min-height: 300px;
   }
 }
 
@@ -17913,6 +17913,11 @@ ul.address-card li.card-location::before {
   background: #ff646c;
   border-color: #ff646c;
   color: white;
+}
+
+.pricing-table-wrapper .default-btn:hover {
+  background: #1ca5b8;
+  border-color: #1ca5b8;
 }
 
 .pricing-table-wrapper .price-token {

@@ -102,7 +102,12 @@
             <li><a href="./#header_section" title="Header Section">Header Section</a></li>
             <li><a href="./#slider_section" title="About Section">Slider Section</a></li>
             <li><a href="./#portfolio_section" title="Portfolio Section">Portfolio Section</a></li>
-			<li><a href="./#miscellaneous" title="miscellaneous">miscellaneous</a></li>
+            <li><a href="./#google_map" title="Gooogle Map">Customizing Google Map</a></li>
+            <li><a href="./#top_bar" title="Header Top Bar">Disabling Header Top Bar</a></li>
+            <li><a href="./#page_loader" title="Page Loader">Changing Page Loader</a></li>
+            <li><a href="./#to_top" title="Scroll to Top">Disabling Scroll to Top</a></li>
+            <li><a href="./#color_switcher" title="Color Switcher">Disabling Color Switcher</a></li>
+			<li><a href="./#copy_element" title="Copy/Paste Elements">Copy/paste Elements</a></li>
             <li><a href="./#form_customization" title="Contact Section">Form Customization</a></li>
             <li><a href="./#portfolio_section" title="Portfolio Section">Portfolio Section</a></li>
             <li><a href="./#icons_used" title="Icons Used Section">Icons Used</a></li>
@@ -436,9 +441,25 @@
             <img src="assets/images/photoswipe-1.PNG" alt="">
         </section>
 
+        <section id="#icons_used">
+            <div class="page-header"><h3>Icons Used in this template</h3><hr class="notop"></div>
+            <p> We have used <b><a href="http://fontawesome.io/" target="_blank">FontAwesome</a></b> and <b><a href="https://www.flaticon.com/" target="_blank">Flaticons</a></b> in diffrent section of this HTML templates</p>
+            <p>You can find Fontawesome documentation/icon details from their official website. For Flaticons that we used in this template, please open the folder <strong>/assets/fonts/flaticon/flaticon.html</strong> and open the file in a browser, and you will get all the flaticons html markup there. You can use any icon as you want<br/> The HTML markup will be like this <br> <pre>&lt;i class="fi flaticon-pie-chart" aria-hidden="true"&gt;&lt;/i&gt;</pre><br> where 'flaticon-pie-chart' is the icon name</p>
+            <p>If you want to use the icons as a CSS before/after element, please open the file "assets/fonts/flaticon/flaticon.css" file in a file editor like notepad++ or sublime text and you will get all the CSS entity for the required icons.</p>
+            <img src="assets/images/flaticons-1.PNG" alt="">
+            <p> An example: <pre>
+                .faq-wrapper .panel-default .panel-heading a::before {
+                    content: "\f117";
+                    font-family: Flaticon;
+                    position: absolute;
+                    left: 10px;
+                    font-size: 15px;
+                    top: auto;
+                }
 
-
-
+            </pre></p>
+            <p>where "\f117" is the css entity of <b>flaticon-price-tag</b> icon</p>
+        </section>
 
         <section id="icons_used">
             <div class="page-header"><h3>Icons Used in this template</h3><hr class="notop"></div>
@@ -462,9 +483,8 @@
         </section>
 
 
-        <section id="miscellaneous">
-            <div class="page-header"><h3>miscellaneous</h3><hr class="notop"></div>
-            <p><strong>Method for changing the Google Map location for "Contact Us" Page:</strong></p>
+        <section id="google_map">
+            <div class="page-header"><h3>Customizing Google Map</h3><hr class="notop"></div>
             <p>Both Contact Us page uses a eye catching google map to display map location. To change the map location, you need to open the "contact-us-01.html" or "contact-us-02.html" file and go to the end of the file where a <code>&lt;script&gt;</code> tag is opened to represent the javascript for map with a comment <code>JS specific to this page only</code>. Here find two pair of <code>lat</code>, <code>lng</code> and provide your own latitude and longitude there. lat=latitude and lng=longitude. The first lat/lng pair is for centering map location and the other lat/lng pair is for the map marker. If you need to change the URL for the map marker, please check the variable named <code>image</code> and change the image URL.</p>
             <img src="assets/images/gmap1.jpg"  alt="">
             <p style="color: #f68e56;"><strong>**Note: </strong> <i>To use the map, as per google you need to use your own API Key and you can get this from here <a href="https://console.developers.google.com/" target="_blank">https://console.developers.google.com/</a>. Also here is the supporting doc how to obatin the API key <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">API Key</a></i></p>
@@ -475,17 +495,17 @@
             <img src="assets/images/api1.jpg" height="91" width="849" alt="">
             <p><strong>After:</strong></p>
             <img src="assets/images/api1-1.jpg" height="84" width="1058" alt="">
-            <br />
-            <br />
+        </section>
 
-            <p><strong>Method for disabling Header Top Bar:</strong></p>
+        <section id="top_bar">
+            <div class="page-header"><h3>Disabling Header Top Bar</h3><hr class="notop"></div>
             <p>Most of the pages of this template uses a header top bar to show contact and social information. If you need to disable the "Top bar" for header, you need to open all the files containing the top bar HTML markup (except for index-02.html, index-03.html and index-04.html because these pages do not contain header top bar), <br />find the wrapper &lt;div&gt; tag <code>&lt;div class="header-top"&gt;</code> and the end tag <code>&lt;/div&gt; &lt;!-- end of header-top --&gt;</code> and delete the entire block. </p>
             <p>The code block is located under <code>&lt;div id="o-wrapper" class="o-wrapper"&gt;</code> wrapper. A sample screenshot of the code block is given below:</p>
             <img src="assets/images/top-bar.jpg" alt="">
-            <br />
-            <br />
+        </section>
 
-            <p><strong>Method for changing/disabling Page Loader:</strong></p>
+        <section id="page_loader">
+            <div class="page-header"><h3>Changing/disabling Page Loader</h3><hr class="notop"></div>
             <p>The template uses a nice page loader animation that runs while the elements and the scripts of the page is being loaded.</p> 
             <p>If you need to change/disable the page loader, you need to go to the end of every file and find the code block that starts with a comment of <code>&lt;!-- Site Loader started--&gt;</code> followed by a wrapper &lt;div&gt; <code>&lt;div class="cx-pageloader"&gt;</code>. The code block can be found after the ending tag of <code>&lt;footer&gt;</code>. A sample screenshot of the code block is given below:</p>
             <img src="assets/images/page-loader.jpg" alt="">
@@ -496,27 +516,28 @@
                 <li><strong>Disabling Page Loader: </strong>If you need to <strong>disable</strong> the page loader, you need to delete the entire code block to disable the page loader.</li> 
                 <li><strong>Changing Page Loader: </strong>Or if you need to <strong>change</strong> the page loader, you need to replace the HTML markup inside the wrapper tag contains the class <code>cx-pageloader</code>, keeping the wrapper tag/class intact as this wrapper class uses javascript for a fade out transition animation.</li>
             </ol>
-            <br />
-            <br />
+        </section>
 
-            <p><strong>Method for disabling Scroll To Top Button:</strong></p>
+        <section id="to_top">
+            <div class="page-header"><h3>Disabling Scroll to Top</h3><hr class="notop"></div>
             <p>The template uses a Scroll to top button located at bottom right corner of every page.</p> 
             <p>If you need to disable the scroll to top button, you need to go to the end of every file and find the code block inside of <code>&lt;div class="copyright-section"&gt;</code> before the ending tag of <code>&lt;footer&gt;</code>. The code block contains an ID of <code>"toTop"</code>. A sample screenshot of the code block is given below:</p>
             <img src="assets/images/to-top.jpg" alt="">
             <br />
             <p>Deleting the code block will disable the scroll to top button.</p>
-            <br />
-            <br />
+        </section>
 
-            <p><strong>Method for disabling Color Switcher:</strong></p>
+        <section id="color_switcher">
+            <div class="page-header"><h3>Disabling Color Switcher</h3><hr class="notop"></div>
             <p>The template uses a Color Switcher located at left center position of every page. This Color Switcher swaps the colors with the help of six predefined skins used in the template.</p> 
             <p>If you need to disable the Color Switcher, you need to go to the end of every file and find the code block containing the Color Switcher HTML markup, <br /> find the code block that starts with a comment of <code>&lt;!-- Theme Switcher HTML code started --&gt;</code>  followed by a wrapper &lt;div&gt; <code>&lt;div id="colorPanel" class="colorPanel"&gt;</code>. A sample screenshot of the block is given below:</p>
             <img src="assets/images/color-switcher.jpg" alt="">
             <br />
             <p>Deleting the code block will disable the Color Switcher.</p>
-            <br />
-            <br />
+        </section>
 
+        <section id="copy_element">
+            <div class="page-header"><h3>Copy/paste Elements</h3><hr class="notop"></div>
             <p><strong>How to copy element from one page to another?</strong></p>
             <p>This template is designed and coded in such a way that you can copy/paste any of your desired section from one page to another without any kind of CSS modification/import.</p> 
             <p>If you need to copy any sections from one page to another, you just need to copy the whole HTML markup from that file and paste it in the desired file. Just make sure that the section has no javascript dependancy. If the section has any javascript library dependancies then the <code>&lt;script&gt;</code> tags containing the all the required javascript also need to be copied over to the destination file.</p> 

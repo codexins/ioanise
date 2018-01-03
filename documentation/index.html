@@ -424,25 +424,29 @@
 
 
 
-        <section id="contact_section">
-            <div class="page-header"><h3>Contact Section</h3><hr class="notop"></div>
-            <p>This section (line: 816 to line: 868) describes about the blog section. And has two parts. One is the eye catching Google Map Location of the business and second one is a fully functional contact form </p>
-            <img src="assets/images/contact.jpg" height="746" width="1290" alt="">
-            <p><strong>How to change the map location?</strong>--> You need to open the "js/main.js" file and inside that file find the lines: 198,199 and 212, 213 and provide your own latitude and longitude there. lat=latitude and lng=longitude</p>
-            <img src="assets/images/gmap.jpg"  alt="">
-           <p style="color: #f68e56;"><strong>**Note: </strong> <i>To use the map, as per google you need to use your own API Key and you can get this from here <a href="https://console.developers.google.com/" target="_blank">https://console.developers.google.com/</a>. Also here is the supporting doc how to obatin the API key <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">API Key</a></i></p>
-        
-           <p>A sample API key looks like <span style="background: #eee; color: 000; padding:10px">AIzaSyA6CKatrt34QhZKT5TyHqwerxM3hEiMpQ</span>. <br /><br /><br />After getting your own the API key</p> just copy and paste that API key at the last of this line: 1006 like below screen shot:
 
-           <p><strong>Before:</strong></p>
-           <img src="assets/images/api.jpg" height="91" width="849" alt="">
-            <p><strong>After:</strong></p>
-           <img src="assets/images/api-1.jpg" height="84" width="1058" alt="">
 
-    
-            <p><strong>How to get the messages to your own email address when user submit the form?</strong>--> Open the <strong>"sendmail.php"</strong> file provided with the template and replace the email addres there as per below screenshot</p>
-            <img src="assets/images/email.jpg"  alt="">
+        <section id="#icons_used">
+            <div class="page-header"><h3>Icons Used in this template</h3><hr class="notop"></div>
+            <p> We have used <b><a href="http://fontawesome.io/" target="_blank">FontAwesome</a></b> and <b><a href="https://www.flaticon.com/" target="_blank">Flaticons</a></b> in diffrent section of this HTML templates</p>
+            <p>You can find Fontawesome documentation/icon details from their official website. For Flaticons that we used in this template, please open the folder <strong>/assets/fonts/flaticon/flaticon.html</strong> and open the file in a browser, and you will get all the flaticons html markup there. You can use any icon as you want<br/> The HTML markup will be like this <br> <pre>&lt;i class="fi flaticon-pie-chart" aria-hidden="true"&gt;&lt;/i&gt;</pre><br> where 'flaticon-pie-chart' is the icon name</p>
+            <p>If you want to use the icons as a CSS before/after element, please open the file "assets/fonts/flaticon/flaticon.css" file in a file editor like notepad++ or sublime text and you will get all the CSS entity for the required icons.</p>
+            <img src="assets/images/flaticons-1.PNG" alt="">
+            <p> An example: <pre>
+                .faq-wrapper .panel-default .panel-heading a::before {
+                    content: "\f117";
+                    font-family: Flaticon;
+                    position: absolute;
+                    left: 10px;
+                    font-size: 15px;
+                    top: auto;
+                }
+
+            </pre></p>
+            <p>where "\f117" is the css entity of <b>flaticon-price-tag</b> icon</p>
+
         </section>
+
 
         <section id="miscellaneous">
             <div class="page-header"><h3>miscellaneous</h3><hr class="notop"></div>

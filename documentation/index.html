@@ -101,14 +101,7 @@
             <li><a href="./#modify_css" title="Editing css files">Modify/Edit CSS</a></li>
             <li><a href="./#header_section" title="Header Section">Header Section</a></li>
             <li><a href="./#slider_section" title="About Section">Slider Section</a></li>
-            <li><a href="./#about_section" title="About Section">About Section</a></li>
-            <li><a href="./#service_section" title="Service Section">Service Section</a></li>
-            <li><a href="./#events_section" title="Events Section">Events Section</a></li>
-            <li><a href="./#team_section" title="Team Section">Team Section</a></li>
             <li><a href="./#portfolio_section" title="Portfolio Section">Portfolio Section</a></li>
-            <li><a href="./#testimonial_section" title="Testimonial Section">Testimonial Section</a></li>
-            <li><a href="./#blog_section" title="Blog Section">Blog Section</a></li>
-            <li><a href="./#contact_section" title="Contact Section">Contact/Location Section</a></li>
 			<li><a href="./#miscellaneous" title="miscellaneous">miscellaneous</a></li>
             <li><a href="./#form_customization" title="Contact Section">Form Customization</a></li>
 			<li><a href="./#credit" title="Credit">Credit</a></li>
@@ -427,81 +420,19 @@
         </section>
 
 
-        <section id="about_section">
-            <div class="page-header"><h3>About Section</h3><hr class="notop"></div>
-            <p>This section (line: 87 to line: 172) describes about the agencies or farms or individuals and also have the counter of the company's/individual's  achievements </p>
-            <img src="assets/images/about-1.jpg"  alt="">
-            <p><strong>How to change the sub-title and title and description text?</strong>--> Line: 89 to line: 95. inside this code block, you can replace the text "Who we are", "Story about us" and the description text inside the &lt;p&gt: .</p>
-            <p><strong>How to change the images?</strong>--> line: 101, line: 115 and 129 has the &ltimg&gt; tag where you can change the images. Keep your images for this section inside "images/about" folder</p>
-
-            <p><strong>How to change the achievement counters and text?</strong>--> line: 144 to line: 171. You can change the counter number and texts by editing the class text "counter" and text inside &lt;p&gt; tag</p>
-            <img src="assets/images/achievents.jpg" alt="">
-
-        </section>
-
-        <section id="service_section">
-            <div class="page-header"><h3>Service Section</h3><hr class="notop"></div>
-            <p>This section (line: 176 to line: 289) describes about the services provided by the agencies or farms or individuals and also have a parallex backgrounded image to promote the business </p>
-            <img src="assets/images/service-1.jpg" height="577" width="1062"  alt="">
-            <p><strong>How to change the sub-title and title and description text?</strong>--> You can replace the texts inside Line: 180 to line: 181.</p>
-            <p><strong>How to change the service title?</strong>--> Find lines that has a class "media-heading" and replace the text inside that &lt;h4&gt; tag. To edit the description, replace the tetxt inside &lt;p&gt; tag just beneath the "media-heading" class</p>
-            <p><strong>How to change service icons?</strong>--> find class name "media-left (for example, line: 185, inside that class, you can see the required &lt;img&gt; tag and you can change the image icons by editing that. And keep your icon images inside "images/icons" folder)"</p>
-
-            <p><strong>How to change the parallex backgrund image?</strong>--> line: 275 to line: 288 has the required code for the parallex section. But to change the parallex background image (recommended image dimension 1920X1280), you are needed to open the "js/main.js" file and inside main.js, find the below lines and replace the imagepath there 'images/concept-bg.jpg'  </p>
-            <img src="assets/images/service-2.jpg" height="259" width="868" alt="">
-            <p>"js/main.js" file:</p>
-            <img src="assets/images/parallex.jpg" height="108" width="679" alt="">
-        </section>
-
-        <section id="events_section">
-            <div class="page-header"><h3>Events Section</h3><hr class="notop"></div>
-            <p>This section (line: 293 to line: 421) describes about the agencies or farms or individuals Events and also have a some main events descriptions in a accordion for. This section also has a testimonial slider just below the events description </p>
-            <img src="assets/images/events-1.jpg" height="703" width="843" alt="">
-            <p><strong>How to change the sub-title and title and description text?</strong>--> You can replace the texts inside Line: 297, line: 298 and line: 300.</p>
-            <p><strong>How to change the image?</strong>--> line: 306 has the &ltimg&gt; tag where you can change the image. Keep your images for this section inside "images/events" folder</p>
-            <p><strong>Which blocks have the testominial Slider?</strong>--> line: 366 to line: 420 has the <strong>testimonil or quote</strong> slider.</p>
+        <section id="#portfolio_section">
+            <div class="page-header"><h3>Modification of Portfolio section (Isotope)</h3><hr class="notop"></div>
+            <p>The portfolio section is built using <a href="https://isotope.metafizzy.co/" target="_blank">ISOTOPE</a> jquery library and <a href="https://imagesloaded.desandro.com/" target="_blank">ImagesLoaded</a> jquery library</p>
+            <p>The HTML part should be like below screenshot</p>
+            <img src="assets/images/portfolio-js-1.PNG" alt="">
+            <p>You will find the jquery responsible for filtering the portfolio on main.js file (inside assets/js folder)</p>
+            <img src="assets/images/portfolio-js.PNG" alt="">
+            <p><b>The "popup" functionality is provided using <a href="http://photoswipe.com/" target="_blank">photoswipe javascript library</a>.</b></p>
+            <p>The Photoswipe HTML markup is present at the very bottom of each page where Portfolio image POP UP is used</p>
+            <img src="assets/images/photoswipe-1.PNG" alt="">
         </section>
 
 
-
-        <section id="team_section">
-            <div class="page-header"><h3>Team Section</h3><hr class="notop"></div>
-            <p>This section (line: 426 to line: 510) describes about the Team Members and by hovering the tema member images, you can Ionize their social profiles as well </p>
-            <img src="assets/images/team-1.jpg" height="689" width="916" alt="">
-            <p><strong>How to change the sub-title and title and description text?</strong>--> You can replace the texts inside Line: 429, line: 430 and line: 432.</p>
-            <p><strong>How to change the image?</strong>--> Find class "single-team" and inside that class you will have the &lt;img&gt; tag (for example, line: 438)</p>
-            <p><strong>How to change the title and designation?</strong>--> Find class "team-description" and replace the title and designation there inside &lt;p&gt; tag (for example, line: 448 to line 451)</p>
-            
-        </section>
-
-
-        <section id="portfolio_section">
-            <div class="page-header"><h3>Portfolio Section</h3><hr class="notop"></div>
-            <p>This section (line: 514 to line: 673) describes and showcases about various types of services they are offering or they already completed and by hovering each portfolio, you can have a view of that project samples in a pop up form. if you dont like the "pop up" you can always remove that by removing the class that has a class "img-pop-up" . Also you can add an external link by editing the "href" attribute there.</p>
-            <img src="assets/images/portfolio-1.jpg"  alt="">
-            <p><strong>How to change the sub-title and title and description text?</strong>--> You can replace the texts inside Line: 517, line: 518 and line: 519.</p>
-            <p><strong>How to change the image?</strong>--> Find first &lt;img&gt; tag inside "portfolio" class and replace the image source accordingly</p>
-            <p>the javascript that are responsible for this portfolio section to filter the projects are Isotope.js</p>
-            <img src="assets/images/portfolio-2.jpg" height="223" width="704" alt="">     
-
-            <p>This section also has a <strong>client carousel</strong> started from line: 627 to line: 672 and uses the owl carousel JS</p>
-        </section>
-
-        <section id="testimonial_section">
-            <div class="page-header"><h3>Testimonial Section</h3><hr class="notop"></div>
-            <p>This section (line: 676 to line: 734) describes about the Testimonial or Happy clients section </p>
-            <img src="assets/images/testimonial-1.jpg" height="737" width="1118" alt="">
-            <p><strong>How to change the sub-title and title?</strong>--> You can replace the texts inside Line: 679, line: 680</p>
-            <p><strong>How to change the image?</strong>--> Find class "media-object" inside this code block and inside that class you will have the &lt;img&gt; tag to replace (for example, line: 684)</p>
-            <p><strong>How to change the title and designation?</strong>--> Find class "media-body inside this code block" and replace the title and designation and testominial quote accordingly (for example, line: 686 to line 690)</p>
-            
-        </section>
-
-        <section id="blog_section">
-            <div class="page-header"><h3>Blog Section</h3><hr class="notop"></div>
-            <p>This section (line: 737 to line: 812) describes about the blog section </p>
-            <img src="assets/images/blog-1.jpg" height="610" width="881" alt="">
-        </section>
 
         <section id="contact_section">
             <div class="page-header"><h3>Contact Section</h3><hr class="notop"></div>

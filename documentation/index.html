@@ -100,6 +100,7 @@
             <li><a href="./#modify_sass" title="Editing SASS files">Modify/Edit SASS</a></li>
             <li><a href="./#modify_css" title="Editing css files">Modify/Edit CSS</a></li>
             <li><a href="./#header_section" title="Header Section">Header Section</a></li>
+            <li><a href="./#slider_section" title="About Section">Slider Section</a></li>
             <li><a href="./#about_section" title="About Section">About Section</a></li>
             <li><a href="./#service_section" title="Service Section">Service Section</a></li>
             <li><a href="./#events_section" title="Events Section">Events Section</a></li>
@@ -348,13 +349,70 @@
 
         <section id="header_section">
             <div class="page-header"><h3>Header Section</h3><hr class="notop"></div>
-            <p>This section (line: 45 to line: 83) contains the <strong>Logo, Menu, and the welcome screen</strong> when user first visit the site</p>
+            <p>This section introduces an intelligent and smart header which detects mouse scrolling to show header contents. Also this section contains the <strong>Top Bar, Logo and Main Navigation Menu</strong> when user first visit the site. Note that header top bar is not included in Homepage version 2,3 and 4.</p>
             <img src="assets/images/header-1.jpg" alt="">
-            <p><strong>How to change the Logo?</strong>--> Go to line: 56 of index.html, and change the text "Ionize" to your own, You can also, include an image there, replace "Ionize" with the &lt;img&gt; tag, sample line will be like 
-            <pre>&lt;a class="navbar-brand" href="/">&lt;img src="your-logo.png" alt=""&gt;&lt;/a&gt;</pre></p>
-            <p><strong>How to change the Menu Text?</strong>--> Line: 62 to line: 69 are for Menu. you can change/alter the menu text there.</p>
-            <p><strong>How to change header or screen background image?</strong>--> go to images folder and there you will find "showcase.jpg" image with you own (image dimension 1920X1000). replace this image but keep the image name same and you are done!</p>
-            <p><strong>How to change welcome message?</strong>--> Line: 75 to line: 80 contains the welcome message. you can change/alter the text there.</p>
+            <br />
+            <br />
+            <p><strong>How to change header top bar?</strong></p>
+            <p>You need to search inside <code>&lt;header&gt;</code> tag and find the code block that is wrapped with a &lt;div&gt; like this: <code>&lt;div class="header-top"&gt;</code>. Top bar contains social and contact information. You can change/alter the these texts and links there.</p>
+            <br />
+            <p><strong>How to change the Logo?</strong></p>
+            <p>You need to search inside <code>&lt;header&gt;</code> tag and find the code block that is wrapped with a &lt;div&gt; like this: <code>&lt;div class="logo"&gt;</code> and inside that you will find an <code>&lt;img&gt;</code> tag with a source. You need to change the source by your own logo source demonstrated below:
+            <pre>&lt;a href="index.html">&lt;img src="your-logo.png" alt="Logo"&gt;&lt;/a&gt;</pre></p>
+            <br />
+            <p><strong>How to change the Main Navigation Menu Text?</strong></p>
+            <p>You need to search inside <code>&lt;header&gt;</code> tag and find the code block that is wrapped with an &lt;ul&gt; like this: <code>&lt;ul class="sf-menu"&gt;</code>. You can change/alter the menu text and links there.</p>
+            <br />
+            <p><strong>How to change the Mobile Navigation Menu Text?</strong></p>
+            <p>Mobile navigation menu is not inside &lt;header&gt; tag. You can find it just after the start of body tag and it is wrapped with an &lt;div&gt; like this: <code>&lt;div class="mobile-menu"&gt;</code>. You can change/alter the menu text and links there.</p>
+
+        </section>
+
+        <section id="slider_section">
+            <div class="page-header"><h3>Slider/Showcase Section</h3><hr class="notop"></div>
+            <p>This template uses the following sliders/showcase section to showcase your products/company information.</p>
+            <ul class="slider-showcase">
+                <li>Owl Slider (Homepage 01)</li>
+                <li>Video Showcase (Homepage 02)</li>
+                <li>Static Showcase (Homepage 03)</li>
+                <li>Backstretch Slider (Homepage 04)</li>
+            </ul>
+            <br />
+
+            <h4>Owl Slider (Homepage 01)</h4>
+            <p>You can find the code block contains Owl Slider in <code>index.html</code> just after the end tag of &lt;header&gt; wrapped around like this: <code>&lt;div class="primary-slider owl-carousel"&gt;</code>.</p>
+            <img src="assets/images/owl-slider.jpg" alt="">
+            <br />
+            <br />
+            <p><strong>How to change the Owl Slider images and texts?</strong></p>
+            <p>In the code block you can will see three &lt;div&gt; wrapper with class <code>slide-single</code> and inside each &lt;div&gt; there is an &lt;img&gt; tag. You can change the &lt;img&gt; src with your own images. Note that your images should have 1920x1080 dimension to match with the template.</p>
+            <p>Also there is a code block wrapped with <code>&lt;div class="slider-content"&gt;</code> in each <code>slide-single</code> wrapper. You can replace the heading and the texts with your own texts.</p>
+            <br />
+            <p><strong>Where to customize the JS for Owl Slider?</strong></p>
+            <p>To customize the Owl Slider JS, you need to go the end of <code>index.html</code> and find the <code>&lt;script&gt;</code> tag containing the javascript for Owl Slider, demonstrated below: </p>
+            <img src="assets/images/owl-js.jpg" alt="">
+            <br />
+            <br />
+
+            <h4>Video Showcase (Homepage 02)</h4>
+            <p>You can find the code block contains Video Showcase in <code>index-02.html</code> inside &lt;header&gt; tag wrapped around like this: <code>&lt;div class="showcase-text"&gt;</code>.</p>
+            <img src="assets/images/video-showcase.jpg" alt="">
+            <br />
+            <br />
+            <p><strong>How to change the Video?</strong></p>
+            <p>To change the video, you need to go the end of <code>index-02.html</code> and find the <code>&lt;script&gt;</code> tag containing the javascript for video source, demonstrated below: </p>
+            <img src="assets/images/video-js.jpg" alt="">
+            <p>Replace all three source such as <code>webm</code>, <code>mp4</code>, <code>ogg</code> with your own relevant video URL and change the <code>poster</code> with the relevant video image. Before changing the Video URL please check the video format to match with the Javascript.</p>
+            <br />
+
+            <h4>Static Showcase (Homepage 03)</h4>
+            <p>You can find the code block contains Static Showcase in <code>index-03.html</code> inside &lt;header&gt; tag wrapped around like this: <code>&lt;div class="showcase-text"&gt;</code>.</p>
+            <img src="assets/images/video-showcase.jpg" alt="">
+            <br />
+            <br />
+            <p><strong>How to change the Image Background?</strong></p>
+            <p>Go to <code>assets/img/slider/home-3</code> folder in the template and there you will find "slide-1.jpg" image (image dimension 1920X1080). Replace this image but keep the image name and dimension same and you are done!</p>
+            <br />
 
         </section>
 

@@ -347,6 +347,14 @@ noscript p{
 #documenter_content div.alert-block p + p {
   margin-top: 5px;
 }
+.slider-showcase li {
+    margin-bottom: 7px;
+}
+.slider-showcase li::before {
+    content: "\f105";
+    font-family: FontAwesome;
+    margin-right: 10px;
+}
 
 
 

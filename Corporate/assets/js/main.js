@@ -51,10 +51,10 @@ jQuery(document).ready(function($){
             colors: {
                 'assets/img/skins/default.png': 'assets/css/main.css',
                 'assets/img/skins/florence.png': 'assets/css/main-florence.css',
-                'assets/img/skins/flat-ui.png': 'assets/css/main-flat.css',
-                'assets/img/skins/theme-4.png': 'assets/css/main-theme-4.css',
-                'assets/img/skins/theme-5.png': 'assets/css/main-theme-5.css',
-                'assets/img/skins/theme-6.png': 'assets/css/main-theme-6.css',
+                'assets/img/skins/rose.png': 'assets/css/main-rose.css',
+                'assets/img/skins/antonio.png': 'assets/css/main-antonio.css',
+                'assets/img/skins/radcliffe.png': 'assets/css/main-radcliffe.css',
+                'assets/img/skins/periwinkle.png': 'assets/css/main-periwinkle.css',
             }
         });
     

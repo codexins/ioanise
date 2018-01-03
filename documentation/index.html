@@ -86,6 +86,13 @@
             margin-top: 0;
             margin-bottom: 20px;
         }
+
+        #documenter_sidebar #documenter_logo {
+            background-image: url(assets/images/logo.png);
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: center;
+        }
 	</style>
 	
 </head>
@@ -115,7 +122,7 @@
 			<li><a href="./#thank_you" title="Thank You">Thank You</a></li>
 
 		</ul>
-		<div id="documenter_copyright">@Copyright ThemeItems 2017<br>
+		<div id="documenter_copyright">@Copyright ThemeItems 2018<br>
 		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
 		</div>
 	</div> <!-- end of documenter_sidebar -->
@@ -130,8 +137,8 @@
             </div>
             <hr>
             <ul>
-                <li>Created: 28th Dec, 2017</li>
-                <li>Latest update: 28th Dec, 2017</li>
+                <li>Created: 3rd Jan, 2018</li>
+                <li>Latest update: 3rd Jan, 2018</li>
                 <li>by: ThemeItems</li>
                 <li>Author: Md Aktaruzzaman</li>
                 <li><a href=""></a></li>
@@ -584,20 +591,46 @@
                 <li><strong>main.js</strong>&nbsp;- &nbsp;Contains all custom script</li>
             </ul>
 
-            <h3>Icons</h3>
+            <h3>Icons</h3><br>
             <ul>
                 <li><a href="http://www.flaticon.com/">Flaticon</a> - Best icon Pack</li>
                 <li><a href="http://fontawesome.io/">Font Awesome</a> - Best Icon Font</li>
+            </ul>
+
+
+            <h3>Images and Videos Credit</h3><br>
+            <ul>
+                <li><a href="https://unsplash.com/">Unsplash</a> - Ohotos for everyone</li>
+                <li><a href="https://www.storyblocks.com/stock-image">Story Blocks</a> - Royalty Free Stock Images</li>
+                <li><a href="https://videos.pexels.com/">Pexels Videos</a> - Completely Free Stock Videos</li>
             </ul>
         </section>
 
 
         <section id="thank_you">
         	<div class="page-header"><h3>Thank You</h3><hr class="notop"></div>
-            <p>Finally thank you very much for purchasing this theme. Please keep that in mind that we are working very hard to providing better quality in coming days. If you love your work then appreciate us by writting a good review with 5 star.</p>
+            <p>Finally thank you very much for purchasing this HTML template. Please keep that in mind that we are working very hard to providing better quality in coming days. If you love your work then appreciate us by writting a good review with 5 star.</p>
         </section>
 
 	</div>
+
+
+    <script>
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+                || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                   if (target.length) {
+                     $('html,body').animate({
+                         scrollTop: target.offset().top
+                    }, 700);
+                    return false;
+                }
+            }
+        });
+    </script>
 
 
 </body>

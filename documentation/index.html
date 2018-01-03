@@ -473,14 +473,14 @@
 
             <p><strong>Method for disabling Header Top Bar:</strong></p>
             <p>Most of the pages of this template uses a header top bar to show contact and social information. If you need to disable the "Top bar" for header, you need to open all the files containing the top bar HTML markup (except for index-02.html, index-03.html and index-04.html because these pages do not contain header top bar), <br />find the wrapper &lt;div&gt; tag <code>&lt;div class="header-top"&gt;</code> and the end tag <code>&lt;/div&gt; &lt;!-- end of header-top --&gt;</code> and delete the entire block. </p>
-            <p>The code block is located under <code>&lt;div id="o-wrapper" class="o-wrapper"&gt;</code> wrapper. A sample screenshot of the block is given below:</p>
+            <p>The code block is located under <code>&lt;div id="o-wrapper" class="o-wrapper"&gt;</code> wrapper. A sample screenshot of the code block is given below:</p>
             <img src="assets/images/top-bar.jpg" alt="">
             <br />
             <br />
 
             <p><strong>Method for changing/disabling Page Loader:</strong></p>
             <p>The template uses a nice page loader animation that runs while the elements and the scripts of the page is being loaded.</p> 
-            <p>If you need to change/disable the page loader, you need to go to the end of every file and find the code block that starts with a comment of <code>&lt;!-- Site Loader started--&gt;</code> followed by a wrapper &lt;div&gt; <code>&lt;div class="cx-pageloader"&gt;</code>. The code block can be found after the ending tag of <code>&lt;footer&gt;</code>. A sample screenshot of the block is given below:</p>
+            <p>If you need to change/disable the page loader, you need to go to the end of every file and find the code block that starts with a comment of <code>&lt;!-- Site Loader started--&gt;</code> followed by a wrapper &lt;div&gt; <code>&lt;div class="cx-pageloader"&gt;</code>. The code block can be found after the ending tag of <code>&lt;footer&gt;</code>. A sample screenshot of the code block is given below:</p>
             <img src="assets/images/page-loader.jpg" alt="">
             <br />
             <br />
@@ -489,15 +489,30 @@
                 <li><strong>Disabling Page Loader: </strong>If you need to <strong>disable</strong> the page loader, you need to delete the entire code block to disable the page loader.</li> 
                 <li><strong>Changing Page Loader: </strong>Or if you need to <strong>change</strong> the page loader, you need to replace the HTML markup inside the wrapper tag contains the class <code>cx-pageloader</code>, keeping the wrapper tag/class intact as this wrapper class uses javascript for a fade out transition animation.</li>
             </ol>
+            <br />
+            <br />
 
-            <br />
-            <br />
             <p><strong>Method for disabling Scroll To Top Button:</strong></p>
             <p>The template uses a Scroll to top button located at bottom right corner of every page.</p> 
-            <p>If you need to disable the scroll to top button, you need to go to the end of every file and find the code block inside of <code>&lt;div class="copyright-section"&gt;</code> before the ending tag of <code>&lt;footer&gt;</code>. The code block contains an ID of <code>"toTop"</code>. A sample screenshot of the block is given below:</p>
+            <p>If you need to disable the scroll to top button, you need to go to the end of every file and find the code block inside of <code>&lt;div class="copyright-section"&gt;</code> before the ending tag of <code>&lt;footer&gt;</code>. The code block contains an ID of <code>"toTop"</code>. A sample screenshot of the code block is given below:</p>
             <img src="assets/images/to-top.jpg" alt="">
             <br />
-            <p>Deleting the code block will disable the scroll to top button.</p>    
+            <p>Deleting the code block will disable the scroll to top button.</p>
+            <br />
+            <br />
+
+            <p><strong>Method for disabling Color Switcher:</strong></p>
+            <p>The template uses a Color Switcher located at left center position of every page. This Color Switcher swaps the colors with the help of six predefined skins used in the template.</p> 
+            <p>If you need to disable the Color Switcher, you need to go to the end of every file and find the code block containing the Color Switcher HTML markup, <br /> find the code block that starts with a comment of <code>&lt;!-- Theme Switcher HTML code started --&gt;</code>  followed by a wrapper &lt;div&gt; <code>&lt;div id="colorPanel" class="colorPanel"&gt;</code>. A sample screenshot of the block is given below:</p>
+            <img src="assets/images/color-switcher.jpg" alt="">
+            <br />
+            <p>Deleting the code block will disable the Color Switcher.</p>
+            <br />
+            <br />
+
+            <p><strong>How to copy element from one page to another?</strong></p>
+            <p>This template is designed and coded in such a way that you can copy/paste any of your desired section from one page to another without any kind of CSS modification/import.</p> 
+            <p>If you need to copy any sections from one page to another, you just need to copy the whole HTML markup from that file and paste it in the desired file. Just make sure that the section has no javascript dependancy. If the section has any javascript library dependancies then the <code>&lt;script&gt;</code> tags containing the all the required javascript also need to be copied over to the destination file.</p> 
         </section>
 
         <section id="form_customization">

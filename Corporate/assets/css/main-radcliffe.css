@@ -16981,6 +16981,10 @@ ul.address-card li.card-location::before {
   width: 100px;
 }
 
+.recent-posts-single .img-thumb img {
+  width: 100%;
+}
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .recent-posts-single > div {
     display: table-cell;

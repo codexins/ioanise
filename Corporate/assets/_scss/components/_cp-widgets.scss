@@ -80,6 +80,9 @@
 	@include eqheight;
 	.img-thumb {
 		width:100px;
+		img {
+			width:100%;
+		}
 	}
 
 	&>div {

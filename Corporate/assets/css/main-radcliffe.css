@@ -15581,34 +15581,6 @@ to a reusable component.
   }
 }
 
-@-ms-keyframes bounce {
-  .scroll-down 0%,
-  .scroll-down 100%,
-  .scroll-down 20%,
-  .scroll-down 50%,
-  .scroll-down 80% {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-  }
-  .scroll-down 40% {
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  .scroll-down 60% {
-    -webkit-transform: translateY(-5px);
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-}
-
 @-o-keyframes bounce {
   0%,
   100%,

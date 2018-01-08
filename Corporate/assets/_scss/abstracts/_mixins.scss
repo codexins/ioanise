@@ -229,9 +229,7 @@
     @-moz-keyframes #{$animation-name} {
         @content;
     }  
-    @-ms-keyframes #{$animation-name} {
-        @content;
-    }
+
     @-o-keyframes #{$animation-name} {
         @content;
     }  

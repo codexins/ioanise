@@ -84,7 +84,7 @@ jQuery(document).ready(function($){
 
     
     /************************************************************
-        Page Loader & intelligent Header
+        Page Loader & intelligent Header Space
     *************************************************************/
 
     $(window).on('load', function() { 
@@ -95,6 +95,17 @@ jQuery(document).ready(function($){
         $('.intelligent-header-space').height(intHeight);
     });
 
+
+    /************************************************************
+        Headroom Js for Auto Hide the header on scroll
+    *************************************************************/
+
+    // grab an element
+    var myElement = document.querySelector(".intelligent-header");
+    // construct an instance of Headroom, passing the element
+    var headroom  = new Headroom(myElement);
+    // initialise
+    headroom.init();
 
     
     /************************************************************

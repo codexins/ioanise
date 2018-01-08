@@ -15015,7 +15015,7 @@ input[type="tel"] {
   padding: 8px 10px;
   border: 1px solid #919191;
   margin-bottom: 15px;
-  min-height: 40px;
+  min-height: 44px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -16921,6 +16921,7 @@ ul.address-card li.card-location::before {
   margin-bottom: 0;
 }
 
+.search-widget form input[type="text"],
 .search-widget form input[type="search"] {
   float: left;
   width: calc(100% - 95px);

@@ -22,7 +22,7 @@
 
     <!-- modernizr JS
     ============================================ -->
-    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+    <script src="assets/js/modernizr-custom.min.js"></script>
 </head>
 
 <body>

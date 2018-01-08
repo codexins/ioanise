@@ -114,7 +114,7 @@ jQuery(document).ready(function($){
     $(window).scroll(function() {
         var height = $(window).scrollTop();
 
-        if(height  < 220) {
+        if(height  < 200) {
             $('.intelligent-header').removeClass('scrolling-up'); 
         } else {
             $('.intelligent-header').addClass('scrolling-up'); 

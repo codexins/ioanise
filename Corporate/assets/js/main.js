@@ -108,6 +108,18 @@ jQuery(document).ready(function($){
     headroom.init();
 
     
+    
+    
+
+    $(window).scroll(function() {
+        var height = $(window).scrollTop();
+
+        if(height  < 220) {
+            $('.intelligent-header').removeClass('scrolling-up'); 
+        } else {
+            $('.intelligent-header').addClass('scrolling-up'); 
+        }
+    });
     /************************************************************
         Animated Counter
     *************************************************************/

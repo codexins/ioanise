@@ -498,7 +498,11 @@
             <p>If you need to disable the Color Switcher, you need to go to the end of every file and find the code block containing the Color Switcher HTML markup, <br /> find the code block that starts with a comment of <code>&lt;!-- Theme Switcher HTML code started --&gt;</code>  followed by a wrapper &lt;div&gt; <code>&lt;div id="colorPanel" class="colorPanel"&gt;</code>. A sample screenshot of the block is given below:</p>
             <img src="assets/images/color-switcher.jpg" alt="">
             <br />
-            <p>Deleting the code block will disable the Color Switcher.</p>
+            <p>After that you need to go to the end of every file where the scripts are enqueued, there you will see a &lt;script&gt; tag follow by the comment <code>ColorPanel JS for skin switch</code>, delete that code block.  A sample screenshot of the block is given below:</p>
+            <img src="assets/images/colorpanel-2.png" alt="">
+            <br />
+            <p>Finally delete the following code block from <code>main.js</code> file and you are done!</p>
+            <img src="assets/images/colorpanel-3.png" alt="">
         </section>
 
         <section id="copy_element">

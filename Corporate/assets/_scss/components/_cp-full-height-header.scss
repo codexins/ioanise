@@ -29,8 +29,11 @@
 		z-index: 1 !important;
 	}
 
-	&.attachment-fixed {
+	&.parallax-window {
 		background-attachment: fixed;
+		@include media-only(wide, max) {
+			background-attachment: scroll;
+		}
 	}
 
 	&#header_bg_slide {

@@ -16,7 +16,12 @@ $menu-height: 60px;
   position: fixed;
   z-index: 1001;
   background-color: lighten($cx-tertiary-color, 5%);
-  transition: transform 0.3s;
+-webkit-transition: transform 0.3s;
+-moz-transition: transform 0.3s;
+-ms-transition: transform 0.3s;
+-o-transition: transform 0.3s;
+transition: transform 0.3s;
+
 }
 
 .c-menu__items {
@@ -124,15 +129,27 @@ $menu-height: 60px;
 .c-menu--push-left {
   top: 0;
   left: 0;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
   transform: translateX(-100%);
 
   @media all and (min-width: $menu-break) {
-    transform: translateX(-$menu-width);
+  -webkit-transform: translateX(-$menu-width);
+  -moz-transform: translateX(-$menu-width);
+  -ms-transform: translateX(-$menu-width);
+  -o-transform: translateX(-$menu-width);
+  transform: translateX(-$menu-width);
   }
 }
 
 .c-menu--slide-left.is-active,
 .c-menu--push-left.is-active {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
   transform: translateX(0);
 }
 
@@ -144,16 +161,29 @@ $menu-height: 60px;
 .c-menu--push-right {
   top: 0;
   right: 0;
-  transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+
 
   @media all and (min-width: $menu-break) {
+    -webkit-transform: translateX($menu-width);
+    -moz-transform: translateX($menu-width);
+    -ms-transform: translateX($menu-width);
+    -o-transform: translateX($menu-width);
     transform: translateX($menu-width);
   }
 }
 
 .c-menu--slide-right.is-active,
 .c-menu--push-right.is-active {
-  transform: translateX(0);
+      -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
 }
 
 /**
@@ -224,12 +254,20 @@ $menu-height: 60px;
 .c-menu--push-top {
   top: 0;
   left: 0;
-  transform: translateY(-$menu-height);
+-webkit-transform: translateY(-$menu-height);
+-moz-transform: translateY(-$menu-height);
+-ms-transform: translateY(-$menu-height);
+-o-transform: translateY(-$menu-height);
+transform: translateY(-$menu-height);
 }
 
 .c-menu--slide-top.is-active,
 .c-menu--push-top.is-active {
-  transform: translateY(0);
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+-ms-transform: translateY(0);
+-o-transform: translateY(0);
+transform: translateY(0);
 }
 
 /**
@@ -240,12 +278,22 @@ $menu-height: 60px;
 .c-menu--push-bottom {
   bottom: 0;
   left: 0;
-  transform: translateY($menu-height);
+-webkit-transform: translateY($menu-height);
+-moz-transform: translateY($menu-height);
+-ms-transform: translateY($menu-height);
+-o-transform: translateY($menu-height);
+transform: translateY($menu-height);
+
 }
 
 .c-menu--slide-bottom.is-active,
 .c-menu--push-bottom.is-active {
-  transform: translateY(0);
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+-ms-transform: translateY(0);
+-o-transform: translateY(0);
+transform: translateY(0);
+
 }
 
 /**
@@ -256,27 +304,54 @@ $menu-height: 60px;
  */
 
 .o-wrapper.has-push-left {
-  transform: translateX(100%);
+-webkit-transform: translateX(100%);
+-moz-transform: translateX(100%);
+-ms-transform: translateX(100%);
+-o-transform: translateX(100%);
+transform: translateX(100%);
+
 
   @media all and (min-width: $menu-break) {
-    transform: translateX($menu-width);
+-webkit-transform: translateX($menu-width);
+-moz-transform: translateX($menu-width);
+-ms-transform: translateX($menu-width);
+-o-transform: translateX($menu-width);
+transform: translateX($menu-width);
+
   }
 }
 
 .o-wrapper.has-push-right {
-  transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+
 
   @media all and (min-width: $menu-break) {
+    -webkit-transform: translateX(-$menu-width);
+    -moz-transform: translateX(-$menu-width);
+    -ms-transform: translateX(-$menu-width);
+    -o-transform: translateX(-$menu-width);
     transform: translateX(-$menu-width);
   }
 }
 
 .o-wrapper.has-push-top {
-  transform: translateY($menu-height);
+    -webkit-transform: translateY($menu-height);
+    -moz-transform: translateY($menu-height);
+    -ms-transform: translateY($menu-height);
+    -o-transform: translateY($menu-height);
+    transform: translateY($menu-height);
 }
 
 .o-wrapper.has-push-bottom {
-  transform: translateY(-$menu-height);
+    -webkit-transform: translateY(-$menu-height);
+    -moz-transform: translateY(-$menu-height);
+    -ms-transform: translateY(-$menu-height);
+    -o-transform: translateY(-$menu-height);
+    transform: translateY(-$menu-height);
 }
 
 /**
@@ -295,18 +370,40 @@ body.has-active-menu {
  */
 
 .c-menu__close {
-  color: #fff;
-  background-color: $cx-primary-color;
-  font-size: $font-size--small;
-  border: none;
-  box-shadow: none;
-  border-radius: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
+    color: #fff;
+    background-color: $cx-primary-color;
+    font-size: $font-size--small;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
+    border-radius: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
 }
 
 .c-menu__close:focus {
-  outline: none;
+    outline: none;
+}
+
+/************************************************************
+    old browser support
+*************************************************************/
+
+.no-csstransforms .c-menu--slide-left.is-active, 
+.no-csstransforms .c-menu--push-left.is-active {
+    left:0;
+}
+
+.no-csstransforms .c-menu--slide-left, 
+.no-csstransforms .c-menu--push-left {
+    left:-300px;
 }

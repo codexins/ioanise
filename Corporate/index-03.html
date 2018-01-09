@@ -1040,10 +1040,18 @@
     ============================================ -->
     <script>
         jQuery(document).ready(function($){
-            $(window).on("load resize", function() {
-                $(".fill-screen").css("height", window.innerHeight);
-            });
+
+            if ( $(window).width() > 991) {      
+                $(window).on("load resize", function() {
+                    $(".fill-screen").css("height", window.innerHeight);
+                });
+            } 
+            else {
+              $(".fill-screen").css("height", "500px");
+            }
+
         });
+
     </script>
 
 </body>

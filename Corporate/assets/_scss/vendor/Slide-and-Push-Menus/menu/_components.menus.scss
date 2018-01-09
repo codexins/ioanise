@@ -110,6 +110,11 @@ transition: transform 0.3s;
   display: block;
   padding: 12px 24px;
   color: #fff;
+
+  &:hover,
+  &:focus {
+    color: $cx-secondary-color;
+  }
 }
 
 .c-menu--slide-left .c-menu__close,

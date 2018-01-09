@@ -11075,6 +11075,16 @@ button.close {
   color: #fff;
 }
 
+.c-menu--slide-left .c-menu__link:hover, .c-menu--slide-left .c-menu__link:focus,
+.c-menu--slide-right .c-menu__link:hover,
+.c-menu--slide-right .c-menu__link:focus,
+.c-menu--push-left .c-menu__link:hover,
+.c-menu--push-left .c-menu__link:focus,
+.c-menu--push-right .c-menu__link:hover,
+.c-menu--push-right .c-menu__link:focus {
+  color: #25BEA0;
+}
+
 .c-menu--slide-left .c-menu__close,
 .c-menu--slide-right .c-menu__close,
 .c-menu--push-left .c-menu__close,

@@ -4,19 +4,18 @@
 
 
 // Colors
-$cx-text-color: 						#545454; // black
-$cx-body-bg-color: 						#fff; // white 
+$cx-text-color: 						#545454;
+$cx-body-bg-color: 						#fff;
 
-$cx-primary-color:  					#2494e0; // Blue
-$cx-secondary-color: 					#fe7a4a; // light red
-$cx-tertiary-color:						#0c3e73; // dark blue
-$cx-fourth-color: 						#f9b808;  // Yellow type
+$cx-primary-color:  					#2494e0;
+$cx-secondary-color: 					#fe7a4a;
+$cx-tertiary-color:						#0c3e73;
+$cx-fourth-color: 						#f9b808;
 
-$cx-offset-color:						#f7f7f7; // offwhite
-//$cx-offset-color:						lighten($cx-primary-color,52%); // offwhite
+$cx-offset-color:						#f7f7f7;
 
 
-$cx-border-color:						#ccc; // light gray
+$cx-border-color:						#ccc;
 
 $cx-link-color: 						$cx-primary-color;
 $cx-link-hover-color: 					$cx-secondary-color;

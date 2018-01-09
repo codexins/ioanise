@@ -4,19 +4,15 @@
 
 
 // Colors
-$cx-text-color: 						#454545; // black
-$cx-body-bg-color: 						#fff; // white 
+$cx-text-color: 						#454545;
+$cx-body-bg-color: 						#fff;
 
-// $cx-primary-color:  					#01578F; // teal
-// $cx-secondary-color: 					#F4B750; // light red
-// $cx-tertiary-color:						#6B83A8; // dark teal
-$cx-primary-color:  					#919190; // Light Blue
-$cx-secondary-color: 					#25BEA0; // Light green
-$cx-tertiary-color:						#43423E; // sky blue
-$cx-fourth-color: 						#f9b808;  // Yellow type
+$cx-primary-color:  					#919190;
+$cx-secondary-color: 					#25BEA0;
+$cx-tertiary-color:						#43423E;
+$cx-fourth-color: 						#f9b808;
 
-$cx-offset-color:						lighten($cx-tertiary-color, 70%); // offwhite
-//$cx-offset-color:						lighten($cx-primary-color,52%); // offwhite
+$cx-offset-color:						lighten($cx-tertiary-color, 70%);
 
 
 $cx-border-color:						#aaa; // light gray

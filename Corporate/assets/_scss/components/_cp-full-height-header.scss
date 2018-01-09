@@ -8,15 +8,15 @@
 	height:100Vh;
 	@include cx-overlay(rgba(0,0,0,.6));
 	@include respond-to(notebook) {
-		min-height:400px;
+		min-height:450px;
 	}
 
 	@include respond-to(tablet) {
-		min-height:350px;
+		min-height:420px;
 	}
 
 	@include respond-to(mobile) {
-		min-height:300px;
+		min-height:390px;
 	}
 
 	&.header {

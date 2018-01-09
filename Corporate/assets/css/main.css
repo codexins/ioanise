@@ -15470,19 +15470,19 @@ to a reusable component.
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .fill-screen {
-    min-height: 400px;
+    min-height: 450px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .fill-screen {
-    min-height: 350px;
+    min-height: 420px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .fill-screen {
-    min-height: 300px;
+    min-height: 390px;
   }
 }
 
@@ -18435,6 +18435,10 @@ ul.address-card li.card-location::before {
 
 .fill-screen .intelligent-header.scrolling-up {
   background: rgba(38, 38, 38, 0.95);
+}
+
+.no-rgba .fill-screen .intelligent-header.scrolling-up {
+  background: #000;
 }
 
 .header--fixed {

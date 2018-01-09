@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords" content="Bootstrap 3, Clean, HTML5, Responsive, Corporate, Multipurpose, Simple, Office, Flat, Fast loading, Portfolio, Business, Multi Page, Professional, Agency">
-    <title>Ionize - Responsive Multipurpose Corporate Bootstrap Theme</title>
+    <title>Ionize - Responsive Multipurpose HTML Template</title>
 
     <!-- favicon
     ============================================ -->

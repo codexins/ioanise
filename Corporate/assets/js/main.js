@@ -79,7 +79,7 @@ jQuery(document).ready(function($) {
     });
 
     // Submenu Intelligent hover functionality
-    $('.sub-menu').hover(function() {
+    $('.sf-menu').on('mouseover', ".sub-menu", function() {
         var menu = $(this);
         var child_menu = $(this).find('ul');
         if ($(menu).offset().left + $(menu).width() + $(child_menu).width() > $(window).width()) {
@@ -118,7 +118,7 @@ jQuery(document).ready(function($) {
 
 
 
-    $(window).scroll(function() {
+    $(window).on('scroll', function() {
         var height = $(window).scrollTop();
 
         if (height < 200) {
@@ -154,7 +154,7 @@ jQuery(document).ready(function($) {
         });
 
 
-        $('.portfolio-filter li').click(function(e) {
+        $('.portfolio-filter li').on('click', function(e) {
             var $this = $(this);
             var $filter = $this.attr('data-filter');
 
@@ -171,11 +171,11 @@ jQuery(document).ready(function($) {
 
     //Targeting Portfolio a tag for click event
 
-    $(".portfolio .primary-title").click(function(e) {
+    $(".portfolio .primary-title").on('click', function(e) {
         $(this).find("a.clickable").first().click();
     });
 
-    $(".portfolio .primary-title a.clickable").click(function(e) {
+    $(".portfolio .primary-title a.clickable").on('click', function(e) {
         e.stopPropagation();
     });
 
@@ -277,11 +277,11 @@ jQuery(document).ready(function($) {
         Smooth Scroll to anchor tags
     *************************************************************/
 
-    $('.explore').bind('click', function() {
+    $('.explore').on('click', function() {
         $('html, body').stop().animate({
             scrollTop: $($(this).attr('href')).offset().top + 30
         }, 1000, 'easeOutCubic');
-        event.preventDefault();
+        event.preventDefault ? event.preventDefault() : (event.returnValue = false);
     });
 
 
@@ -391,29 +391,29 @@ jQuery(document).ready(function($) {
 
     $(function() {
         var input = document.createElement("input");
-        if (('placeholder' in input) == false) {
-            $('[placeholder]').focus(function() {
+        if (('placeholder' in input) === false) {
+            $('[placeholder]').on('focus', function() {
                 var i = $(this);
-                if (i.val() == i.attr('placeholder')) {
+                if (i.val() === i.attr('placeholder')) {
                     i.val('').removeClass('placeholder');
                     if (i.hasClass('password')) {
                         i.removeClass('password');
                         this.type = 'password';
                     }
                 }
-            }).blur(function() {
+            }).on('blur', function() {
                 var i = $(this);
-                if (i.val() == '' || i.val() == i.attr('placeholder')) {
-                    if (this.type == 'password') {
+                if (i.val() === '' || i.val() === i.attr('placeholder')) {
+                    if (this.type === 'password') {
                         i.addClass('password');
                         this.type = 'text';
                     }
                     i.addClass('placeholder').val(i.attr('placeholder'));
                 }
-            }).blur().parents('form').submit(function() {
+            }).blur().parents('form').on('submit', function() {
                 $(this).find('[placeholder]').each(function() {
                     var i = $(this);
-                    if (i.val() == i.attr('placeholder'))
+                    if (i.val() === i.attr('placeholder'))
                         i.val('');
                 })
             });

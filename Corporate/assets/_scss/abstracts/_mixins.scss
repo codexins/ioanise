@@ -201,7 +201,9 @@
     padding:$padding;
     display: inline-block;
     background: transparent;
-    border: 1px solid $cx-text-color;
+    border-width:1px;
+    border-style: solid;
+    border-color: $cx-border-color;
     color: $cx-text-color;
     @extend %cx-transition;
     &:hover {

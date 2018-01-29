@@ -76,4 +76,9 @@
 	@include respond-to(mobile) {
 		margin-top: $cx-col-spacing-mob;
 	}
+
+	.pagination {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }

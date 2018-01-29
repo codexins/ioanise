@@ -118,6 +118,11 @@
 			.contact-info-wrapper {
 				padding-top: 0;
 				padding-bottom: 0;
+				.contact-box {
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
 			}
 		}
 	}

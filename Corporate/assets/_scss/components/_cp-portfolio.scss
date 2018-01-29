@@ -24,7 +24,9 @@
 		    opacity: 0 ;
 			@extend %cx-transition ;
 			@include respond-to(mobile){
-
+				background:  rgba(darken($cx-text-color,100%), 0.55);
+				@include  abs-position(10px,10px,10px,10px);
+				opacity:1;
 			};
 		}
 		
@@ -36,7 +38,7 @@
 	&:hover{
 		.img {
 			&::before{
-				 @include  abs-position(10px,10px,10px,10px);
+				@include  abs-position(10px,10px,10px,10px);
 				opacity: 1 ;
 			}
 		}
@@ -44,8 +46,9 @@
 			opacity: 1 ;
 		}
 	}
-	@include respond-to(mobile) {
-		margin-bottom: 20px;
+	@include respond-to(large-mobile) {
+		margin-bottom: 0;
+		width:50%;
 	}
 }
 
@@ -62,11 +65,11 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	@extend %cx-transition ;
+	@extend %cx-transition;
 		@include respond-to(mobile){
 			opacity:1;
 			padding:30px;
-			background-color: rgba(0,0,0,.6);
+			// background-color: rgba(0,0,0,.6);
 		};
 	
 	i {
@@ -86,6 +89,11 @@
 		&:after{
 			height: 3px;
 		}
+
+		@include respond-to(mobile) {
+			font-size: 14px;
+			letter-spacing: 1px;
+		}	
 	}
 	
 	a{
@@ -97,6 +105,9 @@
 	    font-size: 14px;
 	    letter-spacing: .05em;
 	    font-weight: 300;
+	    @include respond-to(mobile) {
+	    	font-size: 13px;
+	    }
 	}
 }
 

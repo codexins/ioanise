@@ -15128,7 +15128,7 @@ input[type="tel"] {
   padding: 8px 10px;
   border: 1px solid #b3b3b3;
   margin-bottom: 15px;
-  min-height: 44px;
+  min-height: 40px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -15836,7 +15836,9 @@ div#toTop:hover {
   padding: 8px 20px;
   display: inline-block;
   background: transparent;
-  border: 1px solid #545454;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
   color: #545454;
   text-transform: uppercase;
   font-size: 14px;
@@ -16843,7 +16845,7 @@ ul.address-card li.card-location::before {
 }
 
 .contact-box .contact-item-wrapper a {
-  display: block;
+  display: inline-block;
 }
 
 .contact-box .contact-item-wrapper p {
@@ -17584,6 +17586,20 @@ ul.address-card li.card-location::before {
   opacity: 0;
 }
 
+@media only screen and (max-width: 767px) {
+  .portfolio-item .img:before {
+    background: rgba(0, 0, 0, 0.55);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    opacity: 1;
+  }
+}
+
 .portfolio-item .img img {
   width: 100%;
 }
@@ -17603,9 +17619,10 @@ ul.address-card li.card-location::before {
   opacity: 1;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio-item {
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    width: 50%;
   }
 }
 
@@ -17635,7 +17652,6 @@ ul.address-card li.card-location::before {
   .portfolio-mini-desc {
     opacity: 1;
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -17658,6 +17674,13 @@ ul.address-card li.card-location::before {
   height: 3px;
 }
 
+@media only screen and (max-width: 767px) {
+  .portfolio-mini-desc h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+
 .portfolio-mini-desc a {
   color: #fe7a4a;
 }
@@ -17668,6 +17691,12 @@ ul.address-card li.card-location::before {
   font-size: 14px;
   letter-spacing: .05em;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-mini-desc p {
+    font-size: 13px;
+  }
 }
 
 .portfolio-filter ul li {
@@ -18971,6 +19000,7 @@ ul.address-card li.card-location::before {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 0;
 }
 
 .page-title.contact-page-title-02 {
@@ -18978,6 +19008,7 @@ ul.address-card li.card-location::before {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 0;
 }
 
 /************************************************************
@@ -19868,6 +19899,10 @@ footer {
   padding-bottom: 0;
 }
 
+.contact-us.simple-type .container .contact-info-wrapper .contact-box:last-of-type {
+  margin-bottom: 0;
+}
+
 .connect {
   margin-bottom: 0;
   padding-top: 45px;
@@ -20320,6 +20355,11 @@ footer {
   .posts-wrapper + .pagination-wrapper {
     margin-top: 33.75px;
   }
+}
+
+.posts-wrapper + .pagination-wrapper .pagination {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /**

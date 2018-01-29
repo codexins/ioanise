@@ -71,10 +71,12 @@
 
 	&.contact-page-title-01 {
 		@include cx-background("../img/page-titles/contact-bg-1.jpg");
+		margin-bottom: 0;
 	}
 
 	&.contact-page-title-02 {
 		@include cx-background("../img/page-titles/contact-bg-2.jpg");
+		margin-bottom: 0;
 	}
 
 }

@@ -97,7 +97,9 @@ jQuery(document).ready(function($) {
 
     $(window).on('load', function() {
         $('.cx-pageloader').delay(300).fadeOut('fast');
+    });
 
+    $(window).on('load resize', function() {
         // intelligent header
         var intHeight = $('.intelligent-header').outerHeight();
         $('.intelligent-header-space').height(intHeight);

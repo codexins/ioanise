@@ -15,10 +15,11 @@
 	    list-style: none;
 	    text-align: center;
 	    margin:0;
+	    margin-bottom: $cx-col-spacing;
 	    padding: 0 15px;
 	    @include respond-to(mobile){
 			width: 100%;
-			margin-bottom: $cx-col-spacing;
+			margin-bottom: $cx-col-spacing-mob;
 	    }
 
 	    i {
@@ -84,6 +85,12 @@
 		    overflow: hidden;
 		    text-indent: -1px;
 		    @include border-radius(50%);
+		}
+
+		p {
+			&:last-of-type {
+				margin-bottom: 0;
+			}
 		}
 
 	}

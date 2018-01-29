@@ -25,8 +25,7 @@
 		background-position:center;
 		background-repeat: no-repeat;
 		background-attachment: scroll;
-		margin-bottom: $cx-section-spacing;
-		z-index: 1 !important;
+		z-index: 1;
 	}
 
 	&.parallax-window {
@@ -38,7 +37,6 @@
 
 	&#header_bg_slide {
 		background-image: none;
-
 	}
 
 	.header-wrapper {

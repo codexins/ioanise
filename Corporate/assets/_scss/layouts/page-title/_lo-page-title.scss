@@ -4,10 +4,15 @@
  */
 
 .page-title {
-	padding-top:1*1*$cx-section-spacing;
+	padding-top:$cx-section-spacing;
 	padding-bottom:.7*$cx-section-spacing;
 	margin-bottom: $cx-section-spacing;
 	background-color: lighten($cx-tertiary-color, 20%);
+	@include respond-to(mobile) {
+		padding-top: $cx-section-spacing-mob;
+		padding-bottom: .7*$cx-section-spacing-mob;
+		margin-bottom: $cx-section-spacing-mob;
+	}
 	@extend %overlay;
 	@extend %clearfix;
 	
@@ -37,6 +42,7 @@
 
 	&.service-page-title {
 		@include cx-background("../img/service/service-title-bg.jpg");
+		margin-bottom: 0;
 	}
 
 	&.about-page-title {

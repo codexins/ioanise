@@ -3,8 +3,8 @@
 	padding-top: $cx-section-spacing;
 	padding-bottom: $cx-section-spacing;
 	@include respond-to(mobile) {
-		padding-top: 0.75*$cx-section-spacing;
-		padding-bottom: 0.75*$cx-section-spacing;
+		padding-top: $cx-section-spacing-mob;
+		padding-bottom: $cx-section-spacing-mob;
 	}
 }
 
@@ -13,8 +13,8 @@
 	margin-top: $cx-section-spacing;
 	margin-bottom: $cx-section-spacing;
 	@include respond-to(mobile) {
-		margin-top: 0.75*$cx-section-spacing;
-		margin-bottom: 0.75*$cx-section-spacing;
+		margin-top: $cx-section-spacing-mob;
+		margin-bottom: $cx-section-spacing-mob;
 	}
 }
 
@@ -177,63 +177,87 @@
 // zero margin & padding
 
 %margin-0 {
-	margin:0 !important;
+	margin:0;
 }
 
 %padding-0 {
-	padding:0 !important;
+	padding:0;
 }
 
 %pt0 {
-	padding-top:0 !important;
+	padding-top:0;
 }
 
 %pb0 {
-	padding-bottom:0 !important;
+	padding-bottom:0;
 }
 
 %mt0 {
-	margin-top:0 !important;
+	margin-top:0;
 }
 
 %mb0 {
-	margin-bottom:0 !important;
+	margin-bottom:0;
 }
 
 // full margin & padding
 
 %mb-full {
 	margin-bottom: $cx-section-spacing;
+	@include respond-to(mobile) {
+		margin-bottom: $cx-section-spacing-mob;
+	}
 }
 
 %mt-full {
 	margin-top: $cx-section-spacing;
+	@include respond-to(mobile) {
+		margin-top: $cx-section-spacing-mob;
+	}
 }
 
 
 %pb-full {
 	padding-bottom: $cx-section-spacing;
+	@include respond-to(mobile) {
+		padding-bottom: $cx-section-spacing-mob;
+	}
 }
 
 %pt-full {
 	padding-top: $cx-section-spacing;
+	@include respond-to(mobile) {
+		padding-top: $cx-section-spacing-mob;
+	}
 }
 
 // half margin & padding
 
 %mb-half {
 	margin-bottom: $cx-col-spacing;
+	@include respond-to(mobile) {
+		margin-bottom: $cx-col-spacing-mob;
+	}
 }
 
 %mt-half {
 	margin-top: $cx-col-spacing;
+	@include respond-to(mobile) {
+		margin-top: $cx-col-spacing-mob;
+	}
 }
 
 
 %pb-half {
 	padding-bottom: $cx-col-spacing;
+	@include respond-to(mobile) {
+		padding-bottom: $cx-col-spacing-mob;
+	}
 }
 
 %pt-half {
 	padding-top: $cx-col-spacing;
+	@include respond-to(mobile) {
+		padding-top: $cx-col-spacing-mob;
+	}
 }

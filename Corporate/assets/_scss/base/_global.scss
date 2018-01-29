@@ -12,7 +12,7 @@ section {
 	float:none;
 	clear:both;
 	@include respond-to(mobile) {
-		margin-bottom: 0.75*$cx-section-spacing;
+		margin-bottom: $cx-section-spacing-mob;
 	}
 }
 
@@ -32,6 +32,9 @@ section {
 #primary,
 #sidebar {
 	margin-bottom: $cx-section-spacing;
+	@include respond-to(mobile) {
+		margin-bottom: $cx-section-spacing-mob;
+	}
 }
 
 .pswp button:hover {

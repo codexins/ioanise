@@ -73,4 +73,7 @@
 			color: $cx-link-hover-color;
 		}
 	}
+	@include respond-to(mobile) {
+		margin-bottom: $cx-col-spacing-mob;
+	}
 }

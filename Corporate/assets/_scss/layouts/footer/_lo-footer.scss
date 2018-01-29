@@ -7,10 +7,16 @@ footer{
 	padding-top: $cx-section-spacing;
 	background: $cx-primary-color;
 	color: lighten($cx-text-color, 100%);
+	@include respond-to(mobile) {
+		padding-top: $cx-section-spacing-mob;
+	}
 }
 
 .footer-top {
-	padding-bottom:0.5*$cx-section-spacing;
+	padding-bottom: $cx-col-spacing;
+	@include respond-to(mobile) {
+		padding-bottom: $cx-col-spacing-mob;
+	}
 }
 
 .footer-title{
@@ -18,6 +24,9 @@ footer{
 	color: lighten($cx-text-color, 100%);
 	font-size: 20px;
 	text-transform:uppercase;
+	@include respond-to(mobile) {
+		margin-bottom: 20px;
+	}
 }
 
 
@@ -37,6 +46,9 @@ footer{
 	}
 
 	margin-bottom: $cx-col-spacing;
+	@include respond-to(mobile) {
+		margin-bottom: $cx-col-spacing-mob;
+	}
 }
 
 .copyright-section {

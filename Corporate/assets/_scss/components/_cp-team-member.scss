@@ -34,8 +34,12 @@
 
 	}
 
-	@include media-only(notebook, max) {
+	@include respond-to(tablet) {
 		margin-bottom: $cx-col-spacing;
+	}
+
+	@include respond-to(mobile) {
+		margin-bottom: $cx-col-spacing-mob;
 	}
 
 	&.card-styled {

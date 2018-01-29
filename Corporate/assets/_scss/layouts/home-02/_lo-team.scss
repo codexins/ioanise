@@ -14,5 +14,8 @@
 
 	.member-wrapper {
 		margin-bottom: $cx-col-spacing;
+		@include respond-to(mobile) {
+			margin-bottom: $cx-col-spacing-mob;
+		}
 	}
 }

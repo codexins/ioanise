@@ -58,11 +58,14 @@
 	}
 
 	@include respond-to(mobile) {
-		margin-bottom: $cx-col-spacing;
+		margin-bottom: $cx-col-spacing-mob;
 	}
 
 	&.type-02 {
 		margin-bottom: $cx-col-spacing;
+		@include respond-to(mobile) {
+			margin-bottom: $cx-col-spacing-mob;
+		}
 		.post-content {
 			background: transparent;
 			border-color: $cx-border-color;
@@ -96,8 +99,12 @@
 		}
 	}
 
-	@include media-only(notebook, max) {
+	@include respond-to(tablet) {
 		margin-bottom: $cx-col-spacing;
+	}
+
+	@include respond-to(mobile) {
+		margin-bottom: $cx-col-spacing-mob;
 	}
 
 }

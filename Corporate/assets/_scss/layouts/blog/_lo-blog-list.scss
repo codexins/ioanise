@@ -13,6 +13,9 @@
 		margin-bottom: .8*$cx-col-spacing;
 		padding-top:15px;
 		border-top: 1px solid $cx-border-color;
+		@include respond-to(mobile) {
+			margin-bottom: .8*$cx-col-spacing-mob;
+		}
 	}
 
 	.post-content-wrapper {
@@ -70,4 +73,7 @@
 
 .posts-wrapper + .pagination-wrapper {
 	margin-top: $cx-col-spacing;
+	@include respond-to(mobile) {
+		margin-top: $cx-col-spacing-mob;
+	}
 }

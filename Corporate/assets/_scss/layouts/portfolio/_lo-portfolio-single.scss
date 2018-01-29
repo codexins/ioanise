@@ -8,12 +8,18 @@
 	.row {
 		img {
 			margin-bottom: $cx-col-spacing;
+			@include respond-to(mobile) {
+				margin-bottom: $cx-col-spacing-mob;
+			}
 		}
 
 	}
 
 	&.bottom {
 		margin-bottom: $cx-col-spacing;
+		@include respond-to(mobile) {
+			margin-bottom: $cx-col-spacing-mob;
+		}
 	}
 }
 
@@ -22,6 +28,7 @@
 	width:815px;
 	margin-right: 30px;
 	margin-bottom: $cx-col-spacing;
+
 	@include respond-to(notebook) {
 		width:670px;
 	}
@@ -57,6 +64,7 @@
 		float: none;
 		clear:both;
 		overflow: hidden;
+		margin-bottom: $cx-col-spacing-mob;
 	}
 }
 
@@ -66,7 +74,10 @@
 	background-position: center;
 	background-size:cover;
 	&.full {
-		margin-bottom: $cx-col-spacing;
+		margin-bottom: $cx-col-spacing + 15px;
+		@include respond-to(mobile) {
+			margin-bottom: $cx-col-spacing-mob + 15px;
+		}
 	}
 
 }
@@ -135,7 +146,7 @@
     overflow: hidden;
 	.portfolio-left {
 		@include respond-to(mobile) {
-			margin-bottom: $cx-col-spacing;
+			margin-bottom: $cx-col-spacing-mob;
 		}
 	}
 	.portfolio-right {
@@ -151,18 +162,24 @@
 			}
 		}
 		@include respond-to(mobile) {
-			margin-bottom: $cx-col-spacing;
+			margin-bottom: $cx-col-spacing-mob;
 		}
 	}
 
 	@include respond-to(mobile) {
-		margin-bottom: $cx-col-spacing;
+		margin-bottom: $cx-col-spacing-mob;
 	}
 
 	&.reversed {
 		.portfolio-right {
 			float: left;
+			margin-right: 30px;
 		}
+
+		.portfolio-left{
+			margin-right: 0;
+		}
+
 		@include respond-to(mobile) {
 			margin-bottom: 0;
 		}

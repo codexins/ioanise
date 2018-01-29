@@ -90,7 +90,6 @@
 	}
 
 	.social-icons {
-		// margin-top: $cx-col-spacing;
 		margin-bottom: 0;
 		h6 {
 			margin-bottom: 15px;
@@ -137,5 +136,9 @@
 	}
 	padding-top: $cx-col-spacing;
 	padding-bottom:  $cx-col-spacing;
-	background: #f6f6f6;
+	background: $cx-offset-color;
+	@include respond-to(mobile) {
+		padding-top: $cx-col-spacing-mob;
+		padding-bottom: $cx-col-spacing-mob;
+	}
 }

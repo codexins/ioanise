@@ -18,19 +18,19 @@
 		height:61px;
 		display: block;
 		 text {
-		 	font-family: $cx-heading-font !important;
-		 	letter-spacing: 10px !important;
-		 	fill: #fff !important;
+		 	font-family: $cx-heading-font;
+		 	letter-spacing: 10px;
+		 	fill: #fff;
 		 	font-size: 82px;
 		 }
 
 		 g + rect {
-			fill: $cx-secondary-color !important;
+			fill: $cx-secondary-color;
 		 }
 			
 		 path,	
 		 line + rect {
-		 	fill: $cx-tertiary-color !important;
+		 	fill: $cx-tertiary-color;
 		 }
 	}
 }
@@ -40,20 +40,20 @@
 	.logo {
 		svg:not(:root) {
 			rect + text {
-				fill: $cx-tertiary-color !important;
+				fill: $cx-tertiary-color;
 			}
 
 			line + rect + text {
-				fill: #fff !important;
+				fill: #fff;
 			}
 
 			 g + rect {
-				fill: #fff !important;
+				fill: #fff;
 			 }
 				
 			 path,	
 			 line + rect {
-			 	fill: $cx-primary-color !important;
+			 	fill: $cx-primary-color;
 			 }
 		}
 	}

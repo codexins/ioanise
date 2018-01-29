@@ -7,13 +7,14 @@
 	text-align:center;
 	display: block;
     max-width: 70%;
-    margin: 0px auto 2*$cx-heading-margin-bottom;
+    margin: 0 auto $cx-col-spacing;
 
     @include respond-to(tablet) {
     	max-width:85%;
     }
     @include respond-to(mobile) {
     	max-width:95%;
+        margin-bottom: $cx-col-spacing-mob;
     }
 
     h2 {

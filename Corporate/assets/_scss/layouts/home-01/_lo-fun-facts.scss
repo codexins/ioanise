@@ -20,6 +20,11 @@
     			border-color: lighten($cx-text-color, 100%);
     		}
     	}
+        &:last-of-type {
+            @include respond-to(mobile) {
+                margin-bottom: 0;
+            }
+        }
     }
     @extend %vpadding;
     @include cx-background("../img/background/counter-up.jpg");

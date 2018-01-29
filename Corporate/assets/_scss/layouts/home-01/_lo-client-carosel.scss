@@ -22,6 +22,10 @@
 		@extend %mb0;
 		padding-top:$cx-col-spacing;
 		padding-bottom:$cx-col-spacing;
+		@include respond-to(mobile) {
+			padding-top: $cx-col-spacing-mob;
+			padding-bottom: $cx-col-spacing-mob;
+		}
 		.slick-list {
 			@extend %pb0;
 		}
@@ -56,6 +60,9 @@
 
 	.slick-list {
 		padding-bottom: ($cx-col-spacing - 15px);
+		@include respond-to(mobile) {
+			padding-bottom: ($cx-col-spacing-mob - 15px);
+		}
 	}
 	.slick-dots li.slick-active button:before {
 		color: $cx-secondary-color;

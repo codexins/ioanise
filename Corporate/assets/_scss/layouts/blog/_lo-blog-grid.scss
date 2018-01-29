@@ -6,6 +6,9 @@
 .blog-grid-section {
 	.blog-item-grid {
 		margin-bottom: $cx-col-spacing;
+		@include respond-to(mobile) {
+			margin-bottom: $cx-col-spacing-mob;
+		}
 	}
 
 	.pagination {

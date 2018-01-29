@@ -1,0 +1,13 @@
+/**
+ * layouts home-04/ client-list
+ *
+ */
+
+section {
+	&.client-list {
+		margin-bottom: $cx-section-spacing - 25px;
+		@include respond-to(mobile) {
+			margin-bottom: $cx-section-spacing-mob - 25px;
+		}
+	}
+}

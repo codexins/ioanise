@@ -1,6 +1,9 @@
 html,
 body {
     font-size: $cx-body-font-size;
+    @include respond-to(mobile) {
+        font-size: 14px;
+    }
 }
 
 body {

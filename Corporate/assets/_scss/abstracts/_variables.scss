@@ -33,9 +33,14 @@ $cx-social-icon-size-large: 			35px !default;
 // default speacing 
 $cx-heading-margin-bottom : 			25px !default;
 
-
 $cx-section-spacing:	 				90px !default;
-$cx-col-spacing:						0.5*$cx-section-spacing !default; // will be used as bottom margin for the items on tablet and mobile
+$cx-col-spacing:						0.5*$cx-section-spacing !default; // will be used as bottom margin/padding
+
+
+// mobile spacing support
+$shrink-factor:							0.75 !default; // shrink spacing for mobile
+$cx-col-spacing-mob:					$shrink-factor*$cx-col-spacing !default; // shrink col spacing for mobile
+$cx-section-spacing-mob:				$shrink-factor*$cx-section-spacing !default; // shrink col spacing for mobile
 
 // default transition 
 $cx-transition: 						all 0.3s ease !default;

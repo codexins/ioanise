@@ -13,6 +13,11 @@
 	&:last-child {
 		padding-bottom: 0;
 	}
+
+	@include respond-to(mobile) {
+		padding-top: $cx-col-spacing-mob;
+		padding-bottom: $cx-col-spacing-mob;
+	}
 }
 
 

@@ -5,6 +5,9 @@
 
 .single-post-meta {
 	margin-top: $cx-col-spacing;
+	@include respond-to(mobile) {
+		margin-top: $cx-col-spacing-mob;
+	}
 	p {
 		display: inline-block;
 		margin-right: 10px;
@@ -48,6 +51,9 @@
 .single {
 	.post-single {
 		margin-bottom: $cx-col-spacing;
+		@include respond-to(mobile) {
+			margin-bottom: $cx-col-spacing-mob;
+		}
 	}
 }
 
@@ -124,6 +130,9 @@
 
 	& > ol {
 		margin-bottom: $cx-col-spacing;
+		@include respond-to(mobile) {
+			margin-bottom: $cx-col-spacing-mob;
+		}
 	}
 
 	.comment-author-thumb img {

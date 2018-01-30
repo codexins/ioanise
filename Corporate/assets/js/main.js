@@ -58,6 +58,52 @@ jQuery(document).ready(function($) {
         }
     });
 
+    /************************************************************
+        Full Screen header
+    *************************************************************/
+
+    if ( $(window).width() > 991) {      
+        $(window).on("load resize", function() {
+            $(".fill-screen").css("height", window.innerHeight);
+        });
+    } 
+    else {
+      $(".fill-screen").css("height", "500px");
+    }
+
+
+    /************************************************************
+        Header background video  for home 02
+    *************************************************************/
+    if ($('body').find('#header_full_screen_video').length !== 0) {
+        $("#header_full_screen_video").wallpaper({
+            source: {
+                poster: "assets/img/slider/home-2/poster.jpg",
+                webm: "assets/videos/video.webm",
+                mp4: "assets/videos/video.mp4",
+                ogg: "assets/videos/video.ogv"
+            }
+
+        });
+    }
+
+    /************************************************************
+        Header background slider for Home 04
+    *************************************************************/
+    if ($('body').find('#header_bg_slide').length !== 0) {
+        $("#header_bg_slide").backstretch([
+            "assets/img/slider/home-4/slide-1.jpg",
+            "assets/img/slider/home-4/slide-2.jpg",
+            "assets/img/slider/home-4/slide-3.jpg" 
+        ], 
+        {
+            duration: 4000,
+            fade: 750,
+            preload: 0,
+            start: 2
+
+        });
+    }
 
     /************************************************************
         Superfish Menu

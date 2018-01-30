@@ -16,7 +16,7 @@
     ============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CPT+Sans:400,700" rel="stylesheet">
 
-    <!-- All Vendor stylesheets (i.e. external stylesheets)
+    <!-- All Vendor stylesheets 
     ============================================ -->
     <link rel="stylesheet" href="assets/css/vendor.css">
 
@@ -1301,66 +1301,14 @@
     ============================================ -->
     <script src="assets/js/headroom.min.js"></script>
 
+    <!-- Primary slider scripts
+    ============================================ -->
+    <script src="assets/js/slider-custom.js"></script>
+
     <!-- Main JS
     ============================================ -->
     <script src="assets/js/main.js"></script>
 
-    <!-- JS specific to this page only
-    ============================================ -->
-    <script>
-    jQuery(document).ready(function($){
-
-        // Slide Section JS (owl carousel)
-        $('.primary-slider').owlCarousel({
-            smartSpeed:1000,
-            margin:0,
-            animateOut: 'fadeOut',
-            animateIn: 'fadeIn',
-            nav:true,
-            autoplay:false,
-            autoplayTimeout:3000,
-            loop:true,
-            mouseDrag: false,
-            dots: true,
-            navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-            responsive:{
-                0:{
-                    items:1
-                },
-                450:{
-                    items:1
-                },
-                678:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
-            }
-        });
-
-        //slider-section background setting function
-        function sliderBgSetting() {
-            if ($(".slider-section .slide-single").length) {
-                $(".slider-section .slide-single").each(function() {
-                    var $this = $(this);
-                    var img = $this.find(".slider-image").attr("src");
-
-                    $this.css({
-                        backgroundImage: "url("+ img +")",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center center"
-                    })
-                });
-            }
-        }
-
-        // call the function on windows load
-        $(window).on('load', function() {
-            sliderBgSetting();
-        });
-    }); // document.ready closed
-    </script>
 
 </body>
 </html>

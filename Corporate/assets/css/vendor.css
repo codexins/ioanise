@@ -2,21 +2,21 @@
 /******************************
 
 INDEX:
-	c00 - Vendor - Font Awesome
-	c01 - Vendor - Bootstrap
-	c03 - Vendor - Slide and Push Menu
-	c04 - Vendor - Slick CSS
-	c05 - Vendor - Flaticon CSS
-	c06 - Vendor - Owl Carousel
-	c07 - Vendor - Photoswipe
-	c08 - Vendor - Superfish
-	c09 - Vendor - Animate
-	c10 - Vendor - jQuery Wallpaper
-	c11 - Vendor - jQuery Colorpanel
+	v00 - Vendor - Font Awesome
+	v01 - Vendor - Bootstrap
+	v03 - Vendor - Slide and Push Menu
+	v04 - Vendor - Slick CSS
+	v05 - Vendor - Flaticon CSS
+	v06 - Vendor - Owl Carousel
+	v07 - Vendor - Photoswipe
+	v08 - Vendor - Superfish
+	v09 - Vendor - Animate
+	v10 - Vendor - jQuery Wallpaper
+	v11 - Vendor - jQuery Colorpanel
 
 ******************************/
 /************************************************************
-	c00 - Vendor - Font Awesome
+	v00 - Vendor - Font Awesome
 *************************************************************/
 /* FONT PATH
  * -------------------------- */
@@ -3063,7 +3063,7 @@ INDEX:
 }
 
 /************************************************************
-	c01 - Vendor - Bootstrap
+	v01 - Vendor - Bootstrap
 *************************************************************/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -10798,7 +10798,7 @@ button.close {
 }
 
 /************************************************************
-	c03 - Vendor - Slide and Push Menu
+	v03 - Vendor - Slide and Push Menu
 *************************************************************/
 /* -----------------------------------------------------------------------------
 
@@ -11439,7 +11439,7 @@ body.has-active-menu {
 }
 
 /************************************************************
-	c04 - Vendor - Slick CSS
+	v04 - Vendor - Slick CSS
 *************************************************************/
 /* Slider */
 .slick-slider {
@@ -11716,7 +11716,7 @@ body.has-active-menu {
 }
 
 /************************************************************
-	c05 - Vendor - Flaticon CSS
+	v05 - Vendor - Flaticon CSS
 *************************************************************/
 /*
     Flaticon icon font: Flaticon
@@ -12169,7 +12169,7 @@ body.has-active-menu {
 }
 
 /************************************************************
-	c06 - Vendor - Owl Carousel
+	v06 - Vendor - Owl Carousel
 *************************************************************/
 /*
  *  Owl Carousel - Core
@@ -12448,7 +12448,7 @@ body.has-active-menu {
 }
 
 /************************************************************
-	c07 - Vendor - Photoswipe
+	v07 - Vendor - Photoswipe
 *************************************************************/
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 /*
@@ -13186,7 +13186,7 @@ a.pswp__share--download:hover {
 }
 
 /************************************************************
-	c08 - Vendor - Superfish
+	v08 - Vendor - Superfish
 *************************************************************/
 /*** ESSENTIAL STYLES ***/
 .sf-menu, .sf-menu * {
@@ -13317,7 +13317,7 @@ a.pswp__share--download:hover {
 }
 
 /************************************************************
-	c09 - Vendor - Animate
+	v09 - Vendor - Animate
 *************************************************************/
 /*!
  * animate.css -http://daneden.me/animate
@@ -14744,7 +14744,7 @@ a.pswp__share--download:hover {
 }
 
 /************************************************************
-	c10 - Vendor - jQuery Wallpaper
+	v10 - Vendor - jQuery Wallpaper
 *************************************************************/
 /* 
  * Wallpaper v3.1.19 - 2015-04-04 
@@ -14832,7 +14832,7 @@ a.pswp__share--download:hover {
 }
 
 /************************************************************
-	c11 - Vendor - jQuery Colorpanel
+	v11 - Vendor - jQuery Colorpanel
 *************************************************************/
 .colorPanel {
   margin: 0px;

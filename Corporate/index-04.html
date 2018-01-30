@@ -16,7 +16,7 @@
     ============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CPT+Sans:400,700" rel="stylesheet">
 
-    <!-- All Vendor stylesheets (i.e. external stylesheets)
+    <!-- All Vendor stylesheets 
     ============================================ -->
     <link rel="stylesheet" href="assets/css/vendor.css">
 
@@ -1213,36 +1213,6 @@
     <!-- Main JS
     ============================================ -->
     <script src="assets/js/main.js"></script>
-
-    <!-- JS specific to this page only
-    ============================================ -->
-    <script>
-        jQuery(document).ready(function($){
-        
-            if ( $(window).width() > 991) {      
-                $(window).on("load resize", function() {
-                    $(".fill-screen").css("height", window.innerHeight);
-                });
-            } 
-            else {
-              $(".fill-screen").css("height", "500px");
-            }
-
-        
-            $("#header_bg_slide").backstretch([
-                "assets/img/slider/home-4/slide-1.jpg",
-                "assets/img/slider/home-4/slide-2.jpg",
-                "assets/img/slider/home-4/slide-3.jpg" 
-            ], 
-            {
-                duration: 4000,
-                fade: 750,
-                preload: 0,
-                start: 2
-
-            });
-        });
-    </script>
 
 </body>
 </html>

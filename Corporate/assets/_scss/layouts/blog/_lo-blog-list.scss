@@ -16,6 +16,20 @@
 		@include respond-to(mobile) {
 			margin-bottom: .8*$cx-col-spacing-mob;
 		}
+
+		a {
+			display: block;
+			width:100%;
+			height:100%;
+			opacity:1;
+			@extend %cx-transition;
+		}
+
+		&:hover {
+			a {
+				opacity: .85;
+			}
+		}
 	}
 
 	.post-content-wrapper {

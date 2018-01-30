@@ -15258,7 +15258,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a, div#toTop, .default-btn, .info-item, .info-item .thumb-icon i, .info-item h3, .social-icon a, .social-icon-large a, a.phone, a.phone::before, .team-member .team-image::before, .team-member.card-styled .social-icon-large, .team-member.flat-styled .social-icon-large, .team-details, .client-single, .portfolio-item .img:before, .portfolio-mini-desc, .portfolio-filter ul li, .blog-item-grid .post-content, .post-image a i, .post-image a::before, .image-info-wrapper .image-caption, .top-content a, .slider-section .owl-nav, .slider-section .owl-nav .owl-next,
-.slider-section .owl-nav .owl-prev, .testimonial-nav .nav-img img, .client-section .item-brand {
+.slider-section .owl-nav .owl-prev, .testimonial-nav .nav-img img, .client-section .item-brand, .post-single .thumb-wrapper a {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -17280,6 +17280,17 @@ ul.address-card li.card-location::before {
   width: 100%;
 }
 
+.recent-posts-single .img-thumb a {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.recent-posts-single .img-thumb a:hover {
+  opacity: .85;
+}
+
 @media only screen and (max-width: 767px) {
   .recent-posts-single > div {
     display: table-cell;
@@ -17288,6 +17299,14 @@ ul.address-card li.card-location::before {
 
 .recent-posts-single .post-brief {
   padding-left: 10px;
+}
+
+.recent-posts-single .post-brief a {
+  color: #454545;
+}
+
+.recent-posts-single .post-brief a:hover, .recent-posts-single .post-brief a:focus {
+  color: #25BEA0;
 }
 
 .recent-posts-single .post-brief h3 {
@@ -20559,6 +20578,17 @@ footer {
   .post-single .thumb-wrapper {
     margin-bottom: 27px;
   }
+}
+
+.post-single .thumb-wrapper a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.post-single .thumb-wrapper:hover a {
+  opacity: .85;
 }
 
 @media only screen and (max-width: 767px) {

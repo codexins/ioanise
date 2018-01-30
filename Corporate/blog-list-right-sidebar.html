@@ -16,6 +16,10 @@
     ============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CPT+Sans:400,700" rel="stylesheet">
 
+    <!-- All Vendor stylesheets (i.e. external stylesheets)
+    ============================================ -->
+    <link rel="stylesheet" href="assets/css/vendor.css">
+
     <!-- Master stylesheet
     ============================================ -->
     <link rel="stylesheet" id="cpswitch" href="assets/css/main.css">

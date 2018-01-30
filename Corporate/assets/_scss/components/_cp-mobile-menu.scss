@@ -1,0 +1,53 @@
+/**
+ * components mobile menu
+ *
+ */
+
+
+.c-menu {
+  background-color: lighten($cx-tertiary-color, 5%);
+}
+
+.c-button {
+  color: $cx-primary-color;
+  background: $cx-secondary-color;
+}
+
+
+.o-header-nav {
+  background-color: $cx-primary-color;
+}
+
+.o-header-nav__link:hover {
+  background-color: darken($cx-primary-color, 20%);
+}
+
+.o-sub-nav__link {
+  border: solid 2px $cx-primary-color;
+}
+
+.o-sub-nav__link:hover,
+.o-sub-nav__item.active .o-sub-nav__link {
+  background-color: $cx-primary-color;
+}
+
+.c-menu--slide-left .c-menu__item,
+.c-menu--slide-right .c-menu__item,
+.c-menu--push-left .c-menu__item,
+.c-menu--push-right .c-menu__item {
+  border-bottom: 1px solid lighten($cx-tertiary-color, 2%);
+}
+
+.c-menu--slide-left .c-menu__link,
+.c-menu--slide-right .c-menu__link,
+.c-menu--push-left .c-menu__link,
+.c-menu--push-right .c-menu__link {
+  &:hover,
+  &:focus {
+    color: $cx-secondary-color;
+  }
+}
+
+.c-menu__close {
+    background-color: $cx-primary-color;
+}

@@ -58,7 +58,6 @@
 .o-header-nav {
   display: flex;
   justify-content: space-between;
-  background-color: $color--theme;
 }
 
 .o-header-nav__link {
@@ -68,7 +67,6 @@
 
 .o-header-nav__link:hover {
   color: #fff;
-  background-color: $color--theme-dark;
 }
 
 .o-header__title {
@@ -136,13 +134,11 @@
   display: block;
   margin: 0;
   padding: 4px 24px;
-  border: solid 2px $color--theme;
 }
 
 .o-sub-nav__link:hover,
 .o-sub-nav__item.active .o-sub-nav__link {
   color: #fff;
-  background-color: $color--theme;
 }
 
 @media all and ( min-width: $breakpoint--medium ) {

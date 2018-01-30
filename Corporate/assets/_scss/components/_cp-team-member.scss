@@ -25,6 +25,12 @@
 				left: 20px;
 				right: 20px;
 				opacity: 1 ;
+				@include respond-to(mobile) {
+					top:15px;
+					bottom:15px;
+					left:15px;
+					right:15px;
+				}
 
 			}
 		}
@@ -34,9 +40,7 @@
 
 	}
 
-	@include respond-to(tablet) {
-		margin-bottom: $cx-col-spacing;
-	}
+	margin-bottom: $cx-col-spacing;
 
 	@include respond-to(mobile) {
 		margin-bottom: $cx-col-spacing-mob;
@@ -47,7 +51,8 @@
 			position: relative;
 			background: $cx-offset-color;
 			opacity:1;
-			height: 105px;
+			// height: 105px;
+			height: auto;
 		    padding: 20px;
 		    text-align: center;
 			a,p {
@@ -66,7 +71,7 @@
 
 		.social-icon-large {
 			position: absolute;
-			top:-85px;
+			top:-83px;
 			width:100%;
 			margin-top: 0;
 			padding-top: 25px;
@@ -81,11 +86,15 @@
 				color: lighten($cx-text-color, 100%);
 			}
 
+			@include respond-to(notebook) {
+				top:-77px;
+			}
+
 		}
 
 		@include respond-to(mobile) {
 			.social-icon-large {
-				top:-80px;
+				top:-75px;
 			}
 		}
 		&:hover {
@@ -186,15 +195,14 @@
 	h2{
 		margin-bottom: 7px;
 		text-transform: uppercase;
-		@include respond-to(tablet){
-			font-size: 20px;
-		};
-	}
-	a{
 		font-size: 20px;
+		
+	}
+	a {
 		color: lighten($cx-text-color,100%);
 	}
-	p{
+
+	p {
 		margin-bottom: 0 ;
 		text-transform: uppercase;
 		font-size: 14px;
@@ -233,22 +241,28 @@
 		a{
 			background:transparent ;
 			border: 1px solid lighten($cx-text-color,100%);
-			@include respond-to(mobile){
-				width: 30px;
-		    	height: 30px;
-		    	line-height: 30px;
-		    	margin-right: 6px;
+			@include respond-to(mobile) {
+				width: 26px;
+		    	height: 26px;
+		    	line-height: 26px;
+		    	margin-right: 5px;
 			}
-			@include respond-to(notebook){
-				
+
+			i {
+				@include respond-to(mobile) {
+					font-size: 13px;
+    				line-height: 26px;
+				}
+			}
+			@include respond-to(notebook) {
 		    	margin-right: 0px;
 			}
 			+a{
 				margin-left: 10px;
-				@include respond-to(notebook){
-					margin-left: 3px;
+				@include respond-to(notebook) {
+					margin-left: 5px;
 				}
-				@include respond-to(mobile){
+				@include respond-to(mobile) {
 					margin-left: 0px;
 			    }
 			}

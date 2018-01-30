@@ -77,8 +77,15 @@
 
 	h2 {
 		font-size: 46px;
+		@include respond-to(notebook) {
+			font-size: 42px;
+		}
+
+		@include respond-to(tablet) {
+			font-size: 38px;
+		}
 		@include respond-to(large-mobile) {
-			font-size: 40px;
+			font-size: 32px;
 		}
 		@include respond-to(small-mobile) {
 			font-size: 28px;

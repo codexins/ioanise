@@ -118,8 +118,6 @@ jQuery(document).ready(function($) {
     headroom.init();
 
 
-
-
     $(window).on('scroll', function() {
         var height = $(window).scrollTop();
 
@@ -129,6 +127,8 @@ jQuery(document).ready(function($) {
             $('.intelligent-header').addClass('scrolling-up');
         }
     });
+
+
     /************************************************************
         Animated Counter
     *************************************************************/
@@ -210,7 +210,7 @@ jQuery(document).ready(function($) {
             dots: true,
             arrows: false,
             responsive: [{
-                    breakpoint: 991,
+                    breakpoint: 992,
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1,

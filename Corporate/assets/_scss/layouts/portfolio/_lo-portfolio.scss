@@ -8,5 +8,12 @@
 	@extend %pb0;
 	.portfolio-item {
 		margin-bottom: 30px;
+		width: 100%;
+	}
+
+	.col-xs-6 {
+		@include respond-to(small-mobile) {
+			width:100%;
+		}
 	}
 }

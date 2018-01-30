@@ -8,8 +8,9 @@
 	padding-bottom: $cx-col-spacing;
 	margin-bottom: 0;
 	@include respond-to(mobile) {
-		padding-top: $cx-col-spacing-mob;
-		padding-bottom: $cx-col-spacing-mob;
+		padding-top: $cx-section-spacing-mob;
+		padding-bottom: $cx-section-spacing-mob;
+		text-align: center;
 	}
 
 	p,	
@@ -20,6 +21,9 @@
 
 	h2 {
 		margin-bottom: 5px;
+		@include respond-to(mobile) {
+			font-size: 24px;
+		}
 	}
 
 	.row {
@@ -36,11 +40,20 @@
 			text-align: right;
 			.btn-default {
 				padding:10px 25px;
+				display: inline-block;
+				@include media-only(tablet, min) {
+					margin-right: -30px;
+				}
 			}
 
 			@include respond-to(mobile) {
-				text-align: left;
+				text-align: center;
 			}
+		}
+
+		@include respond-to(mobile) {
+			display: block;
+			width:auto;
 		}
 
 	}
@@ -75,6 +88,12 @@
 
 		}
 	}
+
+	h2 {
+		@include respond-to(mobile) {
+			font-size: 24px;
+		}
+	}
 }
 
 
@@ -87,6 +106,12 @@
 	background-position: center;
 	color: lighten($cx-text-color, 100%);
 	z-index: 0;
+	h2 {
+		@include media-only(notebook, max) {
+			font-size: 24px;
+		}
+	}
+
 	.cta-left {
 		position:relative;
 		@extend %vpadding;
@@ -151,6 +176,11 @@
 		-ms-transform: skewX(-25deg);
 		-o-transform: skewX(-25deg);
 		transform: skewX(-25deg);
+		@include respond-to(tablet) {
+		    right: -80px;
+    		width: 55.5%;
+		}	
+
 		@include respond-to(mobile) {
 			display: none;
 		}

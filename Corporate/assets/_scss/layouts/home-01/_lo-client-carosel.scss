@@ -90,6 +90,10 @@
 		margin-right: auto;
 		max-height: 80px;
 		height: 100%;
+		@include respond-to(notebook) {
+			max-height: 60px;
+		}
+		
 		@include respond-to(tablet) {
 			max-height:60px;
 		}

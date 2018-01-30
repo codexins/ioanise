@@ -7,5 +7,12 @@
 	position: relative;
 	#gmap {
 		height:400px;
+		@include respond-to(tablet) {
+			height: 310px;
+		}
+
+		@include respond-to(mobile) {
+			height: 280px;
+		}
 	}
 }

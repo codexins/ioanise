@@ -9,6 +9,10 @@
 	.section-intro {
 		@extend %mb0;
 	}
+
+	@include respond-to(mobile) {
+		padding-bottom: $cx-section-spacing-mob;
+	}
 }
 
 .section-intro {
@@ -49,7 +53,25 @@
 
 		.form-wrapper {
 			h3 {
-				margin-left: 15px;
+				
+			}
+
+			@include respond-to(tablet) {
+				padding-top: $cx-section-spacing;
+				padding-bottom: $cx-section-spacing;
+			}
+
+			@include respond-to(mobile) {
+				padding-top: $cx-section-spacing-mob;
+				padding-bottom: $cx-section-spacing-mob;
+			}
+		}
+
+		.contact-info-wrapper {
+			@include media-only(notebook, max) {
+				padding-top: 0;
+				padding-bottom: 0;
+				margin-bottom: 0;
 			}
 		}
 
@@ -96,13 +118,6 @@
 		}
 	}
 
-	@include respond-to(tablet) {
-		padding-top: 15px;
-	}
-
-	@include respond-to(mobile) {
-		padding-top: 15px;
-	}
 
 	&.simple-type {
 		.container {
@@ -123,9 +138,19 @@
 						margin-bottom: 0;
 					}
 				}
+				@include respond-to(tablet) {
+					margin-bottom: $cx-section-spacing;
+				}
+
+				@include respond-to(mobile) {
+					margin-bottom: $cx-section-spacing-mob;
+				}
+
+
 			}
 		}
 	}
+
 }
 
 

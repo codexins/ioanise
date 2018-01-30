@@ -29,6 +29,10 @@
 	}
 
 	margin-bottom: $cx-section-spacing;
+	@include respond-to(mobile) {
+		margin-bottom: $cx-section-spacing-mob;
+	}
+
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -36,16 +40,28 @@
 
 
 .post-meta-wrapper {
-	margin-left: -20px;
 	span {
 		color: lighten($cx-text-color, 20%);
 		display: block;
 		float: left;
 		padding-left:20px;
 		padding-right:20px;
+		@include respond-to(tablet) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		@include respond-to(mobile) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
 		margin-bottom: 5px;
 		position: relative;
 		font-size: 90%;
+		&:first-child {
+			padding-left: 0;
+		}
 
 		i {
 			display: inline-block;

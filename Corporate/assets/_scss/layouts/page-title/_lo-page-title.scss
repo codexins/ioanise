@@ -19,6 +19,9 @@
 	h1 {
 		margin-bottom: 0;
 		color: lighten($cx-text-color, 100%);
+		@include respond-to(mobile) {
+			font-size: 28px;
+		}
 	}
 
 	.breadcrumb > .active {

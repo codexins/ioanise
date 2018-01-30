@@ -6,6 +6,10 @@
 .pagination-wrapper {
 	margin-bottom: ($cx-section-spacing)-20px; 
 
+	.pagination {
+		margin-bottom: 0;
+	}
+
 
 	.pagination-lg {
 		&>li {

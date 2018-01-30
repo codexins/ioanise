@@ -3,13 +3,16 @@
  *
  */
 
-.testiminial-simple {
+.testimonial-simple {
 	@extend %vpadding;
 	@include cx-overlay(rgba(0,0,0,.5));
 	@include cx-background("../img/slider/home-1/slide-2.jpg");
 	.testimonial-simple-wrapper {
 		padding:50px 20px;
-		
+		@include respond-to(mobile) {
+			text-align: center;
+			border-bottom: 1px solid $cx-border-color;
+		}
 	}
 
 	.testimonial-container {
@@ -17,7 +20,14 @@
 		background: rgba(255,255,255,0.92);
 		.row {
 			@include eqheight;
+			& > div {
+				@include respond-to(mobile) {
+					border:0;
+				}
+			} 
 		}
+
+
 
 	}
 

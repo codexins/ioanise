@@ -144,6 +144,12 @@
     width: 100%;
     float: none;
     overflow: hidden;
+    h2 {
+		@include respond-to(mobile) {
+			font-size: 24px;
+		}
+    }
+
 	.portfolio-left {
 		@include respond-to(mobile) {
 			margin-bottom: $cx-col-spacing-mob;

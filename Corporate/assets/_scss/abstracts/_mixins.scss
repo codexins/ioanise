@@ -169,6 +169,11 @@
                 display: block;
             }
     }
+
+    @include respond-to(mobile) {
+        display: block;
+        width:auto;
+    }
 }
 
 // Define vertical, horizontal, or both position

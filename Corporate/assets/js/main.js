@@ -58,6 +58,8 @@ jQuery(document).ready(function($) {
         }
     });
 
+
+
     /************************************************************
         Full Screen header
     *************************************************************/
@@ -143,6 +145,7 @@ jQuery(document).ready(function($) {
 
     $(window).on('load', function() {
         $('.cx-pageloader').delay(300).fadeOut('fast');
+
     });
 
     $(window).on('load resize', function() {

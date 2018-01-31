@@ -23,7 +23,7 @@
 		    color: #fff;
 		    opacity: 0 ;
 			@extend %cx-transition ;
-			@include respond-to(mobile){
+			@include respond-to(mobile) {
 				background:  rgba(darken($cx-text-color,100%), 0.55);
 				@include  abs-position(10px,10px,10px,10px);
 				opacity:1;
@@ -66,7 +66,7 @@
 		padding-right: 10px;
 	}
 	@extend %cx-transition;
-		@include respond-to(mobile){
+		@include respond-to(mobile) {
 			opacity:1;
 			padding:30px;
 			// background-color: rgba(0,0,0,.6);

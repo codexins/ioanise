@@ -18,11 +18,11 @@
 
     <!-- All Vendor stylesheets 
     ============================================ -->
-    <!-- <link rel="stylesheet" href="assets/css/vendor.css"> -->
+    <link rel="stylesheet" href="assets/css/vendor.css">
 
     <!-- Master stylesheet
     ============================================ -->
-    <link rel="stylesheet" id="cpswitch" href="assets/css/main.css">
+    <link rel="stylesheet" id="mastersheet" href="assets/css/main.css">
 
     <!-- modernizr JS
     ============================================ -->

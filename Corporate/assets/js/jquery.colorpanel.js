@@ -58,18 +58,18 @@
             $('ul',panelDiv).on('click', 'a', function (e) {
                 e.preventDefault();
                     var CssFile = $(this).attr('href') || 'assets/css/main.css';
-                    // if (settings.animateContainer) {
-                    //     $(settings.animateContainer).fadeOut(function () {
-                    //         $(settings.styleSheet).attr('href', CssFile);
-                    //         $.cookie(addStyle, $(this).attr('href')); // set the cookie addStyle's value
-                    //         // And then:
-                    //         $(this).fadeIn();
-                    //     });
-                    // }
-                    //else {
+                    if (settings.animateContainer) {
+                        $(settings.animateContainer).fadeOut(function () {
+                            $(settings.styleSheet).attr('href', CssFile);
+                            $.cookie(addStyle, $(this).attr('href')); // set the cookie addStyle's value
+                            // And then:
+                            $(this).fadeIn();
+                        });
+                    }
+                    else {
                         $(settings.styleSheet).attr('href', CssFile);
                         $.cookie(addStyle, $(this).attr('href')); // set the cookie addStyle's value
-                    //}
+                    }
             });
         }
     };

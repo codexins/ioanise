@@ -3347,6 +3347,7 @@ ul.address-card li.card-location::before {
 #header_full_screen_video.header {
   background-image: none;
   background: #f2f4f5;
+  overflow: inherit;
 }
 
 #header_full_screen_video.fill-screen::before {

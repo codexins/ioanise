@@ -7,6 +7,7 @@
 	&.header {
 		background-image: none;
 		background: $cx-offset-color;
+		overflow: inherit;
 	}
 	&.fill-screen {
 		&::before {

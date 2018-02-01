@@ -113,7 +113,6 @@
             <li><a href="./#top_bar" title="Header Top Bar">Disabling Header Top Bar</a></li>
             <li><a href="./#page_loader" title="Page Loader">Changing Page Loader</a></li>
             <li><a href="./#to_top" title="Scroll to Top">Disabling Scroll to Top</a></li>
-            <li><a href="./#color_switcher" title="Color Switcher">Disabling Color Switcher</a></li>
 			<li><a href="./#copy_element" title="Copy/Paste Elements">Copy/paste Elements</a></li>
             <li><a href="./#form_customization" title="Contact Section">Form Customization</a></li>
             <li><a href="./#icons_used" title="Icons Used Section">Icons Used</a></li>
@@ -151,14 +150,24 @@
 	
         <section id="template_structure">
             <div class="page-header"><h3>Template Structure</h3><hr class="notop"></div>
-            <p>After downloading the file from themeforest, you will find your template inside the <strong>"html"</strong> folder</p>
+            <p>After downloading the file from themeforest, you will find your template inside the <strong>"ionize"</strong> folder</p>
             <p><img src="assets/images/template-structure-1.PNG"></p>
             <p>This folder has below structure</p>
                 <ul>
                     <li><strong>assets (folder)</strong> <i class="fa fa-long-arrow-right"></i> contains all the supporting assets including <b>stylesheets/JS files/images/fonts</b> etc that are used in this template. Child folders are 
                         <ol>
-                            <li>_scss <i class="fa fa-long-arrow-right"></i> This template is built using SASS. All of the sass files are present in this folder. Please <a href="./modify_sass"><i>visit this section</i></a> to have a details idea if you want to customize the SASS files</li><br>
-                            <li>css <i class="fa fa-long-arrow-right"></i> This folder contains all the CSS files that has been generated dynamically using the SASS files. You will find 6 CSS files here. Each CSS file serves as one skin/theme for this template. Among these CSS files, only one CSS files is being used by the template for each skin/theme.<br> For example, main.css is the default skin/theme, main-flat.css is the skin for "Flat" color skin and so on. <br> In other words, if you need to use any specific color skin, just use the css file for that specific skin.M<br> You will find some files that have .map extension. These files are really not necessary to show your site in front end, but keep these files as it it because its a good choice for developers to identify/locate the origin of the CSS of an specific element.  </li><br>
+                            <li>_scss <i class="fa fa-long-arrow-right"></i> This template is built using SASS. All of the sass files are present in this folder. Please <a href="./#modify_sass"><i>visit this section</i></a> to have a details idea if you want to customize the SASS files</li><br>
+                            <li>css <i class="fa fa-long-arrow-right"></i> This folder contains all the CSS files that has been generated dynamically using the SASS files. You will find 7 CSS files here. <br>"<b>vendor.css</b>" file is responsible for all vendor related CSS file for example Bootstratp, Photoswipe, Owl Carousel, Slick Carousel etc. <br>
+                            The Rest 6 CSS files serve as skin/theme for this template. Each CSS file represents One color scheme. By Default "main.css" file is loaded on this template for the default color scheme. If you want to use any other color scheme (Check our demo to view the color schemes), then you have to use the respective css file. 
+
+                            For example, <br><br>1. <b>main.css</b> is the default skin/theme, <br>2. <b>main-florence.css</b> is the skin for "Florence" color skin <br>3. <b>main-rose.css</b> is the skin for "Rose" color skin<br>4. <b>main-antonio.css</b> is the skin for "Antonio" color skin <br>5. <b>main-radcliffe.css</b> is the skin for "Radcliffe" color skin<br>6. <b>main-periwinkle.css</b> is the skin for "Periwinkle" color skin<br> <br>
+                            
+                            Only one of these CSS file is loaded in the template. Please check this screenshot:<br><br>
+                            <img src="assets/images/css-skin-01.png" alt="CSS SKin">,<br> if you need to use any specific color skin, just use the css file for that specific skin.<br><br> 
+
+                            <p><b>Example</b>: If you want to use "Rose" Skin, Just replace the above red marked line like below: <br><br><img src="assets/images/css-skin-02.png" alt="Skin"></p>
+
+                            You will find some files that have .map extension. These files are really not necessary to show your site in front end, but keep these files as it it because its a good for developers to identify/locate the origin of the CSS of a specific element (SASS files origin).  </li><br>
                             <li>fonts <i class="fa fa-long-arrow-right"></i> contains fonts (font-awesome/glyphicons/flaticons)</li><br>
                             <li>img <i class="fa fa-long-arrow-right"></i>  contains images used in the template
                                 <ul>
@@ -198,9 +207,6 @@
                <p>Copy all of theses files and upload those in your domain's root directory and the site is live!</p> 
                <p style="color: #f68e56;"><strong>**Note: </strong> <i>Images used on the demo is not included in the template you downloaded, rather you will see preview images with the image dimension mentioned in the template. You can always replace those images. For somooth layout, use images with specified dimension and also please compare with the demo to have a better idea</i></p>
 
-               <p><strong>Once you placed all these files and your site is live, you will find a color/skin switcher icon at the left edge/side of your site. Click this icon and you can see there are 6 predefined color scheme/skin/theme present for your site.</strong> <a href="#disable_skin">To disable/remove color skins/themes/schemes, visit here</a></p>
-
-               <p><img src="assets/images/skin-image-1.PNG" alt=""></p>
 
                <p><strong>Fonts used:</strong></p>
                <ul>
@@ -278,7 +284,9 @@
                </ul>
 
                <p><strong>Javascripts used: You will find all necessary JS files at the bottom of every page's source code. Please note that, as this template contains multiple pages, <span style="color: #f68e56;"">so we have only enqueued the JS files that is necessray to run that specific page. Some of the pages have JS files that is spefic for that page only, which you will find on the source code (at the very bottom) of those pages</span>. Here is combined list of all JS files that has been used throughout all pages of this template </strong></p>
-               <img src="assets/images/js-files-1.PNG" alt="">
+               <img src="assets/images/js-file-1.PNG" alt="">
+               <img src="assets/images/js-file-2 .PNG" alt="">
+
 
 
         </section>
@@ -298,10 +306,11 @@
             <p><b>You will be needed a SASS proprocessor applications (for example <a href="https://prepros.io/" target="_blank">Prepros</a>, <a href="https://codekitapp.com/" target="_blank">Codekit</a> etc.) to complie the SCSS files and generatong the CSS files dynamically.</b></p>
             <p>As you can See there are 6 folders and one "style.scss" file. Each folder have different SASS files. <br>
             - All SASS variables are present inside "abstract/_variable.scss" file<br>
-            - All color scheme/skins are present inside "themes" folder.Each file on theme folder is overriding the variables that is present on "abstract/_variable.scss" file, thus generating different skins/themes/schemes.<br>
+            - All color scheme/skins are present inside "themes" folder. Each file on 'themes' folder have some variables that are overriding the default variables present on "abstract/_variable.scss" file, thus generating different skins/themes/schemes.<br>
             - All HTML components stylings are present inside "components" folder<br>
             - All HTML layouts stylings are present inside "layouts" folder<br>
             - Files under "themes" directory will be compiled to the "assets/css/main-{respective-file-name}.css" file.<br>
+            - Files under "vendor" directory will be compiled to the "assets/css/vendor.css" file.<br>
             - "style.scss" file will be compiled to "assets/css/main.css" file</p>
         </section>
 
@@ -372,7 +381,7 @@
             <p>You need to search inside <code>&lt;header&gt;</code> tag and find the code block that is wrapped with an &lt;ul&gt; like this: <code>&lt;ul class="sf-menu"&gt;</code>. You can change/alter the menu text and links there.</p>
             <br />
             <p><strong>How to change the Mobile Navigation Menu Text?</strong></p>
-            <p>Mobile navigation menu is not inside &lt;header&gt; tag. You can find it just after the start of body tag and it is wrapped with an &lt;div&gt; like this: <code>&lt;div class="mobile-menu"&gt;</code>. You can change/alter the menu text and links there.</p>
+            <p>Mobile navigation menu is not inside &lt;header&gt; tag. You can find it just after the start of &lt;body&gt; tag and it is wrapped with an &lt;div&gt; like this: <code>&lt;div class="mobile-menu"&gt;</code>. You can change/alter the menu text and links under <code>&lt;ul class="c-menu__items"&gt;</code>.</p>
 
         </section>
 
@@ -397,7 +406,7 @@
             <p>Also there is a code block wrapped with <code>&lt;div class="slider-content"&gt;</code> in each <code>slide-single</code> wrapper. You can replace the heading and the texts with your own texts.</p>
             <br />
             <p><strong>Where to customize the JS for Owl Slider?</strong></p>
-            <p>To customize the Owl Slider JS, you need to go the end of <code>index.html</code> and find the <code>&lt;script&gt;</code> tag containing the javascript for Owl Slider, demonstrated below: </p>
+            <p>To customize the Owl Slider JS, you need to go to <code>assets/js/slider-custom.js</code> which contains the javascript for Owl Slider, demonstrated below. You can edit the javascript as per your need. </p>
             <img src="assets/images/owl-js.jpg" alt="">
             <br />
             <br />
@@ -408,7 +417,7 @@
             <br />
             <br />
             <p><strong>How to change the Video?</strong></p>
-            <p>To change the video, you need to go the end of <code>index-02.html</code> and find the <code>&lt;script&gt;</code> tag containing the javascript for video source, demonstrated below: </p>
+            <p>To change the video, you need to go to <code>assets/js/main.js</code> and find the js code block starting with comment <code>Header background video  for home 02</code> which contains the javascript for video source, demonstrated below: </p>
             <img src="assets/images/video-js.jpg" alt="">
             <p>Replace all three source such as <code>webm</code>, <code>mp4</code>, <code>ogg</code> with your own relevant video URL and change the <code>poster</code> with the relevant video image. Before changing the Video URL please check the video format to match with the Javascript.</p>
             <br />
@@ -423,12 +432,12 @@
             <br />
 
             <h4>Backstretch Slider (Homepage 04)</h4>
-            <p>You can find the code block contains Backstretch Slider in <code>index-03.html</code> inside &lt;header&gt; tag wrapped around like this: <code>&lt;div class="showcase-text"&gt;</code>.</p>
+            <p>You can find the code block contains Backstretch Slider in <code>index-04.html</code> inside &lt;header&gt; tag wrapped around like this: <code>&lt;div class="showcase-text"&gt;</code>.</p>
             <img src="assets/images/video-showcase.jpg" alt="">
             <br />
             <br />
             <p><strong>How to change the Backstretch Slider Background Image?</strong></p>
-            <p>To change the Backstretch Slider Background Image, you need to go the end of <code>index-04.html</code> and find the <code>&lt;script&gt;</code> tag containing the javascript for Backstretch Slider, there you will see the image sources which is demonstrated below: </p>
+            <p>To change the Backstretch Slider Background Image, you need to go to <code>assets/js/main.js</code> and find the js code block starting with comment <code>Header background slider for Home 04</code> which contains the javascript for Backstretch Slider, there you will see the image sources which is demonstrated below: </p>
             <img src="assets/images/bslider-js.jpg" alt="">
             <p>Then replace the image sources with your own image URL.</p>
 
@@ -450,11 +459,11 @@
 
         <section id="google_map">
             <div class="page-header"><h3>Customizing Google Map</h3><hr class="notop"></div>
-            <p>Both Contact Us page uses a eye catching google map to display map location. To change the map location, you need to open the "contact-us-01.html" or "contact-us-02.html" file and go to the end of the file where a <code>&lt;script&gt;</code> tag is opened to represent the javascript for map with a comment <code>JS specific to this page only</code>. Here find two pair of <code>lat</code>, <code>lng</code> and provide your own latitude and longitude there. lat=latitude and lng=longitude. The first lat/lng pair is for centering map location and the other lat/lng pair is for the map marker. If you need to change the URL for the map marker, please check the variable named <code>image</code> and change the image URL.</p>
+            <p>Both Contact Us page uses an eye catching google map to display map location. To change the map location, you need to go to <code>assets/js/custom-map.js</code> which contains the javascript for Google Map. Here find two pair of <code>lat</code>, <code>lng</code> and provide your own latitude and longitude there. lat=latitude and lng=longitude. The first lat/lng pair is for centering map location and the other lat/lng pair is for the map marker. If you need to change the URL for the map marker, please check the variable named <code>image</code> and change the image URL.</p>
             <img src="assets/images/gmap1.jpg"  alt="">
             <p style="color: #f68e56;"><strong>**Note: </strong> <i>To use the map, as per google you need to use your own API Key and you can get this from here <a href="https://console.developers.google.com/" target="_blank">https://console.developers.google.com/</a>. Also here is the supporting doc how to obatin the API key <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">API Key</a></i></p>
         
-            <p>A sample API key looks like <span style="background: #eee; color: 000; padding:10px">AIzaSyA6CKatrt34QhZKT5TyHqwerxM3hEiMpQ</span>. <br /><br /><br />After getting your own the API key:</p>Find the <code>&lt;script&gt;</code> tag containing comment <code>google map api and gmaps JS</code> and just copy and paste that API key at the last of this line like below screen shot:
+            <p>A sample API key looks like <span style="background: #eee; color: 000; padding:10px">AIzaSyA6CKatrt34QhZKT5TyHqwerxM3hEiMpQ</span>. <br /><br /><br />After getting your own the API key:</p>Go to either <code>contact-us-01.html</code> or <code>contact-us-02.html</code> (depending on your choice) and find the <code>&lt;script&gt;</code> tag containing comment <code>google map api and gmaps JS</code> and just copy and paste that API key at the last of this line like below screen shot:
 
             <p><strong>Before:</strong></p>
             <img src="assets/images/api1.jpg" height="91" width="849" alt="">
@@ -472,7 +481,7 @@
         <section id="page_loader">
             <div class="page-header"><h3>Changing/disabling Page Loader</h3><hr class="notop"></div>
             <p>The template uses a nice page loader animation that runs while the elements and the scripts of the page is being loaded.</p> 
-            <p>If you need to change/disable the page loader, you need to go to the end of every file and find the code block that starts with a comment of <code>&lt;!-- Site Loader started--&gt;</code> followed by a wrapper &lt;div&gt; <code>&lt;div class="cx-pageloader"&gt;</code>. The code block can be found after the ending tag of <code>&lt;footer&gt;</code>. A sample screenshot of the code block is given below:</p>
+            <p>If you need to change/disable the page loader, you need to go to the start of every file and find the code block that starts with a comment of <code>&lt;!-- Site Loader started--&gt;</code> followed by a wrapper &lt;div&gt; <code>&lt;div class="cx-pageloader"&gt;</code>. The code block can be found after the start tag of <code>&lt;body&gt;</code>. A sample screenshot of the code block is given below:</p>
             <img src="assets/images/page-loader.jpg" alt="">
             <br />
             <br />
@@ -490,19 +499,6 @@
             <img src="assets/images/to-top.jpg" alt="">
             <br />
             <p>Deleting the code block will disable the scroll to top button.</p>
-        </section>
-
-        <section id="color_switcher">
-            <div class="page-header"><h3>Disabling Color Switcher</h3><hr class="notop"></div>
-            <p>The template uses a Color Switcher located at left center position of every page. This Color Switcher swaps the colors with the help of six predefined skins used in the template.</p> 
-            <p>If you need to disable the Color Switcher, you need to go to the end of every file and find the code block containing the Color Switcher HTML markup, <br /> find the code block that starts with a comment of <code>&lt;!-- Theme Switcher HTML code started --&gt;</code>  followed by a wrapper &lt;div&gt; <code>&lt;div id="colorPanel" class="colorPanel"&gt;</code>. A sample screenshot of the block is given below:</p>
-            <img src="assets/images/color-switcher.jpg" alt="">
-            <br />
-            <p>After that you need to go to the end of every file where the scripts are enqueued, there you will see a &lt;script&gt; tag follow by the comment <code>ColorPanel JS for skin switch</code>, delete that code block.  A sample screenshot of the block is given below:</p>
-            <img src="assets/images/colorpanel-2.png" alt="">
-            <br />
-            <p>Finally delete the following code block from <code>main.js</code> file and you are done!</p>
-            <img src="assets/images/colorpanel-3.png" alt="">
         </section>
 
         <section id="copy_element">
@@ -527,7 +523,7 @@
         <section id="icons_used">
             <div class="page-header"><h3>Icons Used in this template</h3><hr class="notop"></div>
             <p> We have used <b><a href="http://fontawesome.io/" target="_blank">FontAwesome</a></b> and <b><a href="https://www.flaticon.com/" target="_blank">Flaticons</a></b> in diffrent section of this HTML templates</p>
-            <p>You can find Fontawesome documentation/icon details from their official website. For Flaticons that we used in this template, please open the folder <strong>/assets/fonts/flaticon/flaticon.html</strong> and open the file in a browser, and you will get all the flaticons html markup there. You can use any icon as you want<br/> The HTML markup will be like this <br> <pre>&lt;i class="fi flaticon-pie-chart" aria-hidden="true"&gt;&lt;/i&gt;</pre><br> where 'flaticon-pie-chart' is the icon name</p>
+            <p>You can find Fontawesome documentation/icon details from their official website. For Flaticons that we used in this template, <span style="font-size: 24px;">please open the folder <strong>/assets/fonts/flaticon/flaticon.html</strong> and open the file in a browser</span>, and you will get all the flaticons html markup there. You can use any icon as you want<br/> The HTML markup will be like this <br> <pre>&lt;i class="fi flaticon-pie-chart" aria-hidden="true"&gt;&lt;/i&gt;</pre><br> where 'flaticon-pie-chart' is the icon name</p>
             <p>If you want to use the icons as a CSS before/after element, please open the file "assets/fonts/flaticon/flaticon.css" file in a file editor like notepad++ or sublime text and you will get all the CSS entity for the required icons.</p>
             <img src="assets/images/flaticons-1.PNG" alt="">
             <p> An example: <pre>
@@ -591,7 +587,7 @@
 
         <section id="thank_you">
         	<div class="page-header"><h3>Thank You</h3><hr class="notop"></div>
-            <p>Finally thank you very much for purchasing this HTML template. Please keep that in mind that we are working very hard to providing better quality in coming days. If you love your work then appreciate us by writting a good review with 5 star.</p>
+            <p>Finally, thank you very much for purchasing this HTML template. Please keep that in mind that we are working very hard to providing better quality in coming days. If you love our work then appreciate us by writing a good review with 5 star.</p>
         </section>
 
 	</div>

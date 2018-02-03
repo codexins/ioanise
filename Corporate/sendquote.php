@@ -10,19 +10,31 @@
 
     <!-- favicon
     ============================================ -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
     <!-- Google Fonts
     ============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CPT+Sans:400,700" rel="stylesheet">
 
-    <!-- All Vendor stylesheets 
-    ============================================ -->
-    <link rel="stylesheet" href="assets/css/vendor.css">
 
-    <!-- Master stylesheet
+    <!-- CSS files
     ============================================ -->
-    <link rel="stylesheet" id="mastersheet" href="assets/css/main.css">
+
+    <!-- Boostrap stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+
+    <!-- Plugin stylesheet -->
+    <link rel="stylesheet" href="assets/css/plugin.css">
+
+    <!-- Color Switcher stylesheet, This CSS file is used for demonstration purpose only on demo page -->
+    <link rel="stylesheet" href="assets/css/color-switcher.css">
+
+    <!-- Master stylesheet -->
+    <link rel="stylesheet" id="mastersheet" href="assets/css/style.css">
 
     <!-- modernizr JS
     ============================================ -->
@@ -413,37 +425,23 @@
     </div>
     <!-- Theme Switcher HTML code finished -->
 
-    <!-- jQuery
+    <!-- JS
     ============================================ -->
+
+    <!-- jQuery JS -->
     <script src="assets/js/jquery.1.12.4.min.js"></script>
 
-    <!-- Bootstrap JS
-    ============================================ -->
+    <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.min.js"></script>
 
-    <!-- jQuery Cookie PLugin JS
-    ============================================ -->
-    <script src="assets/js/jquery.cookie.js"></script>
+    <!-- jQuery Color Switcher Js for demonstration 
+    purpose only on demo page -->
+    <script src="assets/js/color-switcher.js"></script>
 
-    <!-- ColorPanel JS for skin switch
-    ============================================ -->
-    <script src="assets/js/jquery.colorpanel.js"></script>
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins.js"></script>
 
-    <!-- Superfish JS
-    ============================================ -->
-    <script src="assets/js/hoverIntent.js"></script>
-    <script src="assets/js/superfish.min.js"></script>
-
-    <!-- Menu JS
-    ============================================ -->
-    <script src="assets/js/menu.js"></script>
-
-    <!-- Headroom JS
-    ============================================ -->
-    <script src="assets/js/headroom.min.js"></script>
-
-    <!-- Main JS
-    ============================================ -->
+    <!-- Main JS -->
     <script src="assets/js/main.js"></script>
     
 </body>

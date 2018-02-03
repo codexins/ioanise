@@ -1,446 +1,514 @@
-jQuery(document).ready(function($) {
+/******************************
+
+INDEX:
+
+	s00 - Predefined Variables
+	s01 - Preloader
+	s02 - Primary Slider Settings
+	s03 - Primary Slider Background Settings
+	s04 - Full Screen Header
+	s05 - Header Background Video
+	s06 - Header Background Slider
+	s07 - Superfish Menu
+	s08 - Intelligent Header Space
+	s09 - Headroom Js for Auto Hide the header on scroll
+	s10 - Animated Counter
+	s11 - Isotope Js for Portfolio Section
+	s12 - Slide left action for Mobile Menu
+	s13 - Reasons to Choose Carousel
+	s14 - Testimonial Carousel
+	s15 - Client Carousel
+	s16 - Smooth Scroll to anchor tags
+	s17 - Scroll to Top JS
+	s18 - Placeholder JS
+
+
+******************************/
+
+(function($) {
 
     "use strict";
 
-    /************************************************************
-      image - SVG inline
-    *************************************************************/
-
-
-    $('.logo img').each(function() {
-        var $img = $(this);
-        var imgID = $img.attr('id');
-        var imgClass = $img.attr('class');
-        var imgURL = $img.attr('src');
-
-        $.get(imgURL, function(data) {
-            // Get the SVG tag, ignore the rest
-            var $svg = $(data).find('svg');
-
-            // Add replaced image's ID to the new SVG
-            if (typeof imgID !== 'undefined') {
-                $svg = $svg.attr('id', imgID);
-            }
-            // Add replaced image's classes to the new SVG
-            if (typeof imgClass !== 'undefined') {
-                $svg = $svg.attr('class', imgClass + ' replaced-svg');
-            }
-
-            // Remove any invalid XML tags as per http://validator.w3.org
-            $svg = $svg.removeAttr('xmlns:a');
-
-            // Check if the viewport is set, else we gonna set it if we can.
-            if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-                $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-            }
-
-            // Replace image with new SVG
-            $img.replaceWith($svg);
-
-        }, 'xml');
-
-    });
-
-    /************************************************************
-        Skin Switcher
-    *************************************************************/
-
-    $('#colorPanel').ColorPanel({
-        styleSheet: '#cpswitch',
-        // animateContainer: '#o-wrapper',
-        colors: {
-            'assets/img/skins/default.png': 'assets/css/main.css',
-            'assets/img/skins/florence.png': 'assets/css/main-florence.css',
-            'assets/img/skins/rose.png': 'assets/css/main-rose.css',
-            'assets/img/skins/antonio.png': 'assets/css/main-antonio.css',
-            'assets/img/skins/radcliffe.png': 'assets/css/main-radcliffe.css',
-            'assets/img/skins/periwinkle.png': 'assets/css/main-periwinkle.css',
-        }
-    });
-
+    // Declaring main variable
+    var CODEXIN = {};
 
 
     /************************************************************
-        Full Screen header
+        s00 - Predefined Variables
     *************************************************************/
 
-    if ( $(window).width() > 991) {      
-        $(window).on("load resize", function() {
-            $(".fill-screen").css("height", window.innerHeight);
-        });
-    } 
-    else {
-      $(".fill-screen").css("height", "500px");
-    }
+    var $window 			= $(window),
+        $document 			= $(document),
+        $owlSlider			= $(".primary-slider"),
+        $owlSliderSlide		= $(".slider-section .slide-single"),
+        $fillscreen 		= $(".fill-screen"),
+        $fullscreenVideo 	= $("#header_full_screen_video"),
+        $bgSlide 			= $("#header_bg_slide"),
+        $sfMenu 			= $(".sf-menu"),
+        $pageloader 		= $(".cx-pageloader"),
+        $intelHeader 		= $(".intelligent-header"),
+        $counter 			= $(".counter"),
+        $isoContainer 		= $(".portfolio-wrapper"),
+        $isoFilter	 		= $(".portfolio-filter li"),
+        $slickOne 			= $(".reasons-to-choose"),
+        $slickTwo 			= $(".testimonial-carousel"),
+        $slickNav 			= $(".testimonial-nav"),
+        $slickThree 		= $(".testimonial-carousel-type-02"),
+        $slickFour 			= $(".client-carousel"),
+        $toTop 				= $("#toTop");
+        
+    // Check if element exists
+    $.fn.cxExists = function() {
+        return this.length > 0;
+    };
 
 
     /************************************************************
-        Header background video  for home 02
+        s01 - Preloader
     *************************************************************/
-    if ($('body').find('#header_full_screen_video').length !== 0) {
-        $("#header_full_screen_video").wallpaper({
-            source: {
-                poster: "assets/img/slider/home-2/poster.jpg",
-                webm: "assets/videos/video.webm",
-                mp4: "assets/videos/video.mp4",
-                ogg: "assets/videos/video.ogv"
-            }
 
-        });
-    }
+    CODEXIN.preloader = function() {
+		$pageloader.delay(300).fadeOut('fast');
+    };
+
 
     /************************************************************
-        Header background slider for Home 04
+        s02 - Primary Slider Settings
     *************************************************************/
-    if ($('body').find('#header_bg_slide').length !== 0) {
-        $("#header_bg_slide").backstretch([
-            "assets/img/slider/home-4/slide-1.jpg",
-            "assets/img/slider/home-4/slide-2.jpg",
-            "assets/img/slider/home-4/slide-3.jpg" 
-        ], 
-        {
-            duration: 4000,
-            fade: 750,
-            preload: 0,
-            start: 2
 
-        });
-    }
+	CODEXIN.primarySlider = function() {
+		if ($owlSlider.cxExists()) {
+		    $owlSlider.owlCarousel({
+		        smartSpeed:1000,
+		        margin:0,
+		        animateOut: 'fadeOut',
+		        animateIn: 'fadeIn',
+		        items: 1,
+		        nav:true,
+		        autoplay:true,
+		        autoplayTimeout:5000,
+		        loop:true,
+		        mouseDrag: false,
+		        dots: true,
+		        navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
+		    });
+		}
+	};
+
 
     /************************************************************
-        Superfish Menu
+        s03 - Primary Slider Background Settings
     *************************************************************/
-    $(".sf-menu").superfish({
 
-        delay: 0, // one second delay on mouseout
-        animation: {
-            opacity: 'show',
-            height: 'show'
-        },
-        animationOut: {
-            opacity: 'hide'
-        },
-        speed: 'fast', // faster animation speed
-        autoArrows: false,
-        disableHI: true,
+	CODEXIN.primarySliderBgSetting = function() {
+        if ($owlSliderSlide.cxExists()) {
+            $owlSliderSlide.each(function() {
+                var $this = $(this);
+                var img = $this.find(".slider-image").attr("src");
 
-    });
-
-    // Submenu Intelligent hover functionality
-    $('.sf-menu').on('mouseover', ".sub-menu", function() {
-        var menu = $(this);
-        var child_menu = $(this).find('ul');
-        if ($(menu).offset().left + $(menu).width() + $(child_menu).width() > $(window).width()) {
-            $(child_menu).css({
-                "left": "inherit",
-                "right": "100%"
+                $this.css({
+                    backgroundImage: "url("+ img +")",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center center"
+                })
             });
         }
-    });
+	};
 
 
     /************************************************************
-        Page Loader & intelligent Header Space
+        s04 - Full Screen Header
     *************************************************************/
 
-    $(window).on('load', function() {
-        $('.cx-pageloader').delay(300).fadeOut('fast');
-
-    });
-
-    $(window).on('load resize', function() {
-        // intelligent header
-        var intHeight = $('.intelligent-header').outerHeight();
-        $('.intelligent-header-space').height(intHeight);
-    });
+    CODEXIN.fullscreenHeader = function() {
+	    if ( $window.width() > 991) {      
+			$fillscreen.css("height", window.innerHeight);
+	    } 
+	    else {
+	      	$fillscreen.css("height", "500px");
+	    }
+    };
 
 
     /************************************************************
-        Headroom Js for Auto Hide the header on scroll
+        s05 - Header Background Video
     *************************************************************/
 
-    // grab an element
-    var myElement = document.querySelector(".intelligent-header");
-    // construct an instance of Headroom, passing the element
-    var headroom = new Headroom(myElement);
-    // initialise
-    headroom.init();
+    CODEXIN.fullscreenVideoHeader = function() {
+	    if ($fullscreenVideo.cxExists()) {
+	        $fullscreenVideo.wallpaper({
+	            source: {
+	                poster: "assets/img/slider/home-2/poster.jpg",
+	                webm: "assets/videos/video.webm",
+	                mp4: "assets/videos/video.mp4",
+	                ogg: "assets/videos/video.ogv"
+	            }
 
-
-    $(window).on('scroll', function() {
-        var height = $(window).scrollTop();
-
-        if (height < 200) {
-            $('.intelligent-header').removeClass('scrolling-up');
-        } else {
-            $('.intelligent-header').addClass('scrolling-up');
-        }
-    });
+	        });
+	    }
+    };
 
 
     /************************************************************
-        Animated Counter
+        s06 - Header Background Slider
     *************************************************************/
-    if ($('body').find('.counter').length !== 0) {
-        $('.counter').counterUp({
-            delay: 100,
-            time: 3000
-        });
-    }
+
+	CODEXIN.backgroundSliderHeader = function() {
+	    if ($bgSlide.cxExists()) {
+	        $bgSlide.backstretch([
+	            "assets/img/slider/home-4/slide-1.jpg",
+	            "assets/img/slider/home-4/slide-2.jpg",
+	            "assets/img/slider/home-4/slide-3.jpg" 
+	        ], 
+	        {
+	            duration: 4000,
+	            fade: 750,
+	            preload: 0,
+	            start: 2
+
+	        });
+	    }
+	};
 
 
     /************************************************************
-        Isotope Js for Portfolio Section
+        s07 - Superfish Menu
     *************************************************************/
-    //if ($('body').find('.portfolio-wrapper').length !== 0) {
 
-        var $isocontainer = $('.portfolio-wrapper');
+    CODEXIN.mainNav = function() {
+	    $sfMenu.superfish({
+	        delay: 0, // one second delay on mouseout
+	        animation: {
+	            opacity: 'show',
+	            height: 'show'
+	        },
+	        animationOut: {
+	            opacity: 'hide'
+	        },
+	        speed: 'fast', // faster animation speed
+	        autoArrows: false,
+	        disableHI: true
+	    });
 
-        $isocontainer.imagesLoaded(function() {
-            $isocontainer.isotope({
-                itemSelector: ".portfolio",
-                layoutMode: 'masonry',
-            });
-
-        });
-
-
-        $('.portfolio-filter li').on('click', function(e) {
-            var $this = $(this);
-            var $filter = $this.attr('data-filter');
-
-            $isocontainer.isotope({
-                filter: $filter,
-            });
-
-            $('.portfolio-filter li').removeClass('active');
-            $this.addClass('active');
-        });
-
-    //}
-
-
-    //Targeting Portfolio a tag for click event
-
-    $(".portfolio .primary-title").on('click', function(e) {
-        $(this).find("a.clickable").first().click();
-    });
-
-    $(".portfolio .primary-title a.clickable").on('click', function(e) {
-        e.stopPropagation();
-    });
-
-    /************************************************************
-        Slide left instantiation and action for Mobile Menu
-    *************************************************************/
-    var slideLeft = new Menu({
-        wrapper: '#o-wrapper',
-        type: 'slide-left',
-        menuOpenerClass: '.c-button',
-        maskId: '#c-mask'
-    });
-
-    var slideLeftBtn = document.querySelector('#c-button--slide-left');
-
-    slideLeftBtn.addEventListener('click', function(e) {
-        e.preventDefault;
-        slideLeft.open();
-    });
+	    // Submenu Intelligent hover functionality
+	    $sfMenu.on('mouseover', ".sub-menu", function() {
+	        var menu = $(this);
+	        var child_menu = $(this).find('ul');
+	        if ($(menu).offset().left + $(menu).width() + $(child_menu).width() > $window.width()) {
+	            $(child_menu).css({
+	                "left": "inherit",
+	                "right": "100%"
+	            });
+	        }
+	    });
+	};
 
 
     /************************************************************
-        Reasons to Choose Carousel
+        s08 - Intelligent Header Space
     *************************************************************/
-    if ($('body').find('.reasons-to-choose').length !== 0) {
-        $('.reasons-to-choose').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: true,
-            arrows: false,
-            responsive: [{
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                    }
-                },
-                {
-                    breakpoint: 500,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                    }
-                }
-            ]
 
-        });
-    }
+	CODEXIN.headerPlaceholder = function() {
+        var intHeight = $intelHeader.outerHeight();
+        $(".intelligent-header-space").height(intHeight);
+    };
 
 
     /************************************************************
-        Testimonial Carousel
+        s09 - Headroom Js for Auto Hide the header on scroll
     *************************************************************/
 
-    if ($('body').find('.testimonial-carousel').length !== 0) {
-        $('.testimonial-carousel').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            asNavFor: '.testimonial-nav'
-        });
+    CODEXIN.headerAutoHide = function() {
+	    var navContainer = document.querySelector(".intelligent-header");
+	    // construct an instance of Headroom, passing the element
+	    var headroom = new Headroom(navContainer);
+	    // initialise
+	    headroom.init();
 
-        $('.testimonial-nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.testimonial-carousel',
-            centerMode: true,
-            focusOnSelect: true,
-            responsive: [
+	    $window.on('scroll', function() {
+	        var height = $window.scrollTop();
 
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                    }
-                }
-            ]
-
-        });
-    }
-
-
-    //Testimonial Carousel Type 02
-    if ($('body').find('.testimonial-carousel-type-02').length !== 0) {
-        $('.testimonial-carousel-type-02').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true
-        });
-    }
+	        if (height < 200) {
+	            $intelHeader.removeClass('scrolling-up');
+	        } else {
+	            $intelHeader.addClass('scrolling-up');
+	        }
+	    });
+	};
 
 
     /************************************************************
-        Smooth Scroll to anchor tags
+        s10 - Animated Counter
     *************************************************************/
 
-    $('.explore').on('click', function() {
-        $('html, body').stop().animate({
-            scrollTop: $($(this).attr('href')).offset().top + 30
-        }, 1000, 'easeOutCubic');
-        event.preventDefault ? event.preventDefault() : (event.returnValue = false);
-    });
+    CODEXIN.animatedCounter = function() {
+    	if ($counter.cxExists()) {
+	        $counter.counterUp({
+	            delay: 100,
+	            time: 3000
+	        });
+	    }
+    };
 
 
     /************************************************************
-        Client Carousel
+        s11 - Isotope Js for Portfolio Section
     *************************************************************/
-    if ($('body').find('.client-section').length !== 0) {
-        if ($('.client-section').hasClass('type-2')) {
 
-            $('.client-carousel').slick({
-                infinite: true,
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                dots: false,
-                arrows: true,
-                autoplay: true,
-                responsive: [{
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 1,
-                        }
-                    },
+    CODEXIN.portfolioIsotope = function() {
+    	if ($isoContainer.cxExists()) {
+	        $isoContainer.imagesLoaded(function() {
+	            $isoContainer.isotope({
+	                itemSelector: ".portfolio",
+	                layoutMode: 'masonry'
+	            });
+	        });
 
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                        }
-                    },
+	        $isoFilter.on('click', function(e) {
+	            var $this = $(this);
+	            var $filter = $this.attr('data-filter');
 
-                    {
-                        breakpoint: 481,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        }
-                    }
-                ]
+	            $isoContainer.isotope({
+	                filter: $filter
+	            });
 
-            });
-        } else {
+	            $isoFilter.removeClass('active');
+	            $this.addClass('active');
+	        });
 
-            //client carosel type-1
-            $('.client-carousel').slick({
-                infinite: true,
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                dots: true,
-                arrows: false,
-                autoplay: true,
-                responsive: [{
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 1,
-                        }
-                    },
+		    //Targeting Portfolio a tag for click event
+		    $(".portfolio .primary-title").on('click', function(e) {
+		        $(this).find("a.clickable").first().click();
+		    });
 
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                        }
-                    },
+		    $(".portfolio .primary-title a.clickable").on('click', function(e) {
+		        e.stopPropagation();
+		    });
 
-                    {
-                        breakpoint: 481,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        }
-                    }
-                ]
-
-            });
-        }
-    }
+	    }
+	};
 
 
     /************************************************************
-        Scroll to Top JS 
+        s12 - Slide left action for Mobile Menu
     *************************************************************/
-    $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 200) {
-            $("#toTop").fadeIn();
-        } else {
-            $("#toTop").fadeOut();
-        }
-    });
 
+    CODEXIN.responsiveMenu = function() {
+	    var slideLeft = new Menu({
+	        wrapper: "#o-wrapper",
+	        type: "slide-left",
+	        menuOpenerClass: ".c-button",
+	        maskId: "#c-mask"
+	    });
 
-    $("#toTop").on('click', function() {
-        $("html,body").animate({
-            scrollTop: 0
-        }, 800)
-    }); //scrollup finished
+	    var slideLeftBtn = document.querySelector("#c-button--slide-left");
+
+	    slideLeftBtn.addEventListener('click', function(e) {
+	        e.preventDefault;
+	        slideLeft.open();
+	    });
+	};
 
 
     /************************************************************
-        Placeholder JS
+        s13 - Reasons to Choose Carousel
     *************************************************************/
 
+    CODEXIN.reasonsCarousel = function() {
+	    if ($slickOne.cxExists()) {
+	        $slickOne.slick({
+	            infinite: true,
+	            slidesToShow: 3,
+	            slidesToScroll: 1,
+	            dots: true,
+	            arrows: false,
+	            responsive: [{
+	                    breakpoint: 992,
+	                    settings: {
+	                        slidesToShow: 2,
+	                        slidesToScroll: 1,
+	                        infinite: true
+	                    }
+	                },
+	                {
+	                    breakpoint: 500,
+	                    settings: {
+	                        slidesToShow: 1,
+	                        slidesToScroll: 1,
+	                        infinite: true
+	                    }
+	                }
+	            ]
+
+	        });
+	    }
+	};
 
 
-    $(function() {
+    /************************************************************
+        s14 - Testimonial Carousel
+    *************************************************************/
+
+	CODEXIN.testimonialCarousel = function() {
+		if ($slickTwo.cxExists()) {
+	        $slickTwo.slick({
+	            slidesToShow: 1,
+	            slidesToScroll: 1,
+	            arrows: false,
+	            asNavFor: ".testimonial-nav"
+	        });
+
+	        $slickNav.slick({
+	            slidesToShow: 3,
+	            slidesToScroll: 1,
+	            asNavFor: ".testimonial-carousel",
+	            centerMode: true,
+	            focusOnSelect: true,
+	            responsive: [
+	                {
+	                    breakpoint: 480,
+	                    settings: {
+	                        slidesToShow: 3,
+	                        slidesToScroll: 1
+	                    }
+	                }
+	            ]
+	        });
+	    }
+
+	    //Testimonial Carousel Type 02
+	    if ($slickThree.cxExists()) {
+	        $slickThree.slick({
+	            slidesToShow: 1,
+	            slidesToScroll: 1,
+	            arrows: false,
+	            dots: true
+	        });
+	    }
+	};
+
+
+    /************************************************************
+        s15 - Client Carousel
+    *************************************************************/
+
+    CODEXIN.clientCarousel = function() {
+    	if ($(".client-section").cxExists()) {
+	        if ($(".client-section").hasClass("type-2")) {
+	        	//client carosel type-2
+	            $slickFour.slick({
+	                infinite: true,
+	                slidesToShow: 5,
+	                slidesToScroll: 1,
+	                dots: false,
+	                arrows: true,
+	                autoplay: true,
+	                responsive: [{
+	                        breakpoint: 992,
+	                        settings: {
+	                            slidesToShow: 4,
+	                            slidesToScroll: 1
+	                        }
+	                    },
+
+	                    {
+	                        breakpoint: 768,
+	                        settings: {
+	                            slidesToShow: 3,
+	                            slidesToScroll: 1
+	                        }
+	                    },
+
+	                    {
+	                        breakpoint: 481,
+	                        settings: {
+	                            slidesToShow: 2,
+	                            slidesToScroll: 1
+	                        }
+	                    }
+	                ]
+
+	            });
+	        } else {
+	            //client carosel type-1
+	            $slickFour.slick({
+	                infinite: true,
+	                slidesToShow: 5,
+	                slidesToScroll: 1,
+	                dots: true,
+	                arrows: false,
+	                autoplay: true,
+	                responsive: [{
+	                        breakpoint: 992,
+	                        settings: {
+	                            slidesToShow: 4,
+	                            slidesToScroll: 1
+	                        }
+	                    },
+
+	                    {
+	                        breakpoint: 768,
+	                        settings: {
+	                            slidesToShow: 3,
+	                            slidesToScroll: 1
+	                        }
+	                    },
+
+	                    {
+	                        breakpoint: 481,
+	                        settings: {
+	                            slidesToShow: 2,
+	                            slidesToScroll: 1
+	                        }
+	                    }
+	                ]
+
+	            });
+	        }
+	    }
+	};
+
+
+    /************************************************************
+        s16 - Smooth Scroll to anchor tags
+    *************************************************************/
+
+	CODEXIN.explore = function() {
+	    $(".explore").on('click', function() {
+	        $("html, body").stop().animate({
+	            scrollTop: $($(this).attr('href')).offset().top + 30
+	        }, 1000, 'easeOutCubic');
+	        event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+	    });
+	};
+
+
+    /************************************************************
+        s17 - Scroll to Top JS
+    *************************************************************/
+
+    CODEXIN.scrollToTop = function() {
+	    $window.on('scroll', function() {
+	        if ($window.scrollTop() > 200) {
+	            $toTop.fadeIn();
+	        } else {
+	            $toTop.fadeOut();
+	        }
+	    });
+
+	    $toTop.on('click', function() {
+	        $("html,body").animate({
+	            scrollTop: 0
+	        }, 800)
+	    }); //scrollup finished
+	};
+
+
+    /************************************************************
+        s18 - Placeholder JS
+    *************************************************************/
+
+    CODEXIN.placeHolders = function() {
         var input = document.createElement("input");
         if (('placeholder' in input) === false) {
             $('[placeholder]').on('focus', function() {
@@ -469,9 +537,37 @@ jQuery(document).ready(function($) {
                 })
             });
         }
+    };
+
+
+    // Window load functions
+    $window.on('load', function() {
+        CODEXIN.preloader(),
+        CODEXIN.primarySliderBgSetting(),
+        CODEXIN.portfolioIsotope();
     });
 
+    // Document ready functions
+    $document.on('ready', function() {
+    	CODEXIN.primarySlider(),
+    	CODEXIN.fullscreenVideoHeader(),
+    	CODEXIN.backgroundSliderHeader(),
+    	CODEXIN.mainNav(),
+    	CODEXIN.headerAutoHide(),
+    	CODEXIN.animatedCounter(),
+    	CODEXIN.responsiveMenu(),
+    	CODEXIN.reasonsCarousel(),
+    	CODEXIN.testimonialCarousel(),
+    	CODEXIN.clientCarousel(),
+    	CODEXIN.explore(),
+    	CODEXIN.scrollToTop(),
+    	CODEXIN.placeHolders();
+    });
 
+    // Window load and resize functions
+    $window.on('load resize', function() {
+        CODEXIN.fullscreenHeader(),
+        CODEXIN.headerPlaceholder();
+    });
 
-
-}); /****** End of Document.Ready Function ************/
+})(jQuery);

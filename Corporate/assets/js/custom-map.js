@@ -1,9 +1,8 @@
-jQuery(window).load(function($){
+jQuery(window).on('load', function($){
 
-    'use strict';
+    "use strict";
 
     var map;
-
     map = new GMaps({
         el: '#gmap',
         lat: 23.761947,
@@ -26,7 +25,7 @@ jQuery(window).load(function($){
         animation: google.maps.Animation.DROP,
         verticalAlign: 'bottom',
         horizontalAlign: 'center',
-        backgroundColor: '#3e8bff',
+        backgroundColor: '#3e8bff'
     });
 
 

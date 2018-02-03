@@ -5,6 +5,22 @@
 
 .about{
 	@extend %vpadding;
+	.about-image {
+		float: right;
+		max-width: 400px;
+		margin-left: 20px;
+		display: block;
+		@include media-only(wide, max) {
+			margin-bottom: 20px;
+		}
+		@include respond-to(tablet) {
+			max-width:300px;
+		}
+
+		@include respond-to(mobile) {
+			display: none;
+		}	
+	}
 	.section-intro {
 		max-width:100%;
 		width:100%;
@@ -13,8 +29,12 @@
 	}
 
 	.default-btn {
-		@include respond-to(mobile) {
-			margin-bottom: $cx-col-spacing-mob;
+		margin-top: $cx-heading-margin-bottom;
+	}
+
+	p {
+		&:last-of-type {
+			margin-bottom: 0;
 		}
 	}
 }

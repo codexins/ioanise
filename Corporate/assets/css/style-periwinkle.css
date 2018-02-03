@@ -5129,6 +5129,31 @@ footer {
  * Layout about/about
  *
  */
+.about .about-image {
+  float: right;
+  max-width: 400px;
+  margin-left: 20px;
+  display: block;
+}
+
+@media only screen and (max-width: 1199px) {
+  .about .about-image {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about .about-image {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about .about-image {
+    display: none;
+  }
+}
+
 .about .section-intro, .about .section-intro-left {
   max-width: 100%;
   width: 100%;
@@ -5136,10 +5161,12 @@ footer {
   margin-bottom: 0;
 }
 
-@media only screen and (max-width: 767px) {
-  .about .default-btn {
-    margin-bottom: 33.75px;
-  }
+.about .default-btn {
+  margin-top: 25px;
+}
+
+.about p:last-of-type {
+  margin-bottom: 0;
 }
 
 /**

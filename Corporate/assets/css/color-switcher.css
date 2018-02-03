@@ -44,3 +44,10 @@
   background-image: url("../img/theme-switcher.png");
   background-size: cover;
 }
+
+
+@media only screen and (max-width: 991px) {
+  .colorPanel {
+    top:150px;
+  }
+}

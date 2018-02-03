@@ -192,7 +192,7 @@ jQuery(document).ready(function($) {
     /************************************************************
         Isotope Js for Portfolio Section
     *************************************************************/
-    if ($('body').find('.portfolio-wrapper').length !== 0) {
+    //if ($('body').find('.portfolio-wrapper').length !== 0) {
 
         var $isocontainer = $('.portfolio-wrapper');
 
@@ -217,7 +217,7 @@ jQuery(document).ready(function($) {
             $this.addClass('active');
         });
 
-    }
+    //}
 
 
     //Targeting Portfolio a tag for click event

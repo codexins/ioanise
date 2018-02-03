@@ -24,9 +24,7 @@
 		    opacity: 0 ;
 			@extend %cx-transition ;
 			@include respond-to(mobile) {
-				background:  rgba(darken($cx-text-color,100%), 0.55);
 				@include  abs-position(10px,10px,10px,10px);
-				opacity:1;
 			};
 		}
 		
@@ -50,6 +48,20 @@
 		margin-bottom: 0;
 		width:50%;
 	}
+
+	@include respond-to(small-mobile) {
+		margin-bottom: 15px;
+	}
+}
+
+.portfolio-wrapper {
+	.portfolio-item {
+		@include respond-to(small-mobile) {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 
@@ -67,9 +79,7 @@
 	}
 	@extend %cx-transition;
 		@include respond-to(mobile) {
-			opacity:1;
 			padding:30px;
-			// background-color: rgba(0,0,0,.6);
 		};
 	
 	i {
@@ -135,7 +145,9 @@
 
 			@include respond-to(mobile) {
 				margin-bottom: 8px;
+				padding:6px 10px;
 			}
+
 		}
 	}
 }

@@ -15,5 +15,10 @@
 			border-color: $cx-secondary-color;
 		}
 	}
+
+	@include respond-to(mobile) {
+		padding: 7px 15px;
+		font-size: 12px;
+	}
 }
 

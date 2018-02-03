@@ -1034,6 +1034,13 @@ div#toTop:hover {
   border-color: #2D9CCA;
 }
 
+@media only screen and (max-width: 767px) {
+  .default-btn {
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+}
+
 /**
  * Components Secondary title
  *
@@ -1181,7 +1188,7 @@ div#toTop:hover {
   border-radius: 50%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   .counter-item .counter-icon i {
     width: 60px;
     height: 60px;
@@ -1198,7 +1205,14 @@ div#toTop:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .counter-item .counter {
-    font-size: 35px;
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .counter-item .counter {
+    font-size: 38px;
+    margin-bottom: 5px;
   }
 }
 
@@ -1223,6 +1237,12 @@ div#toTop:hover {
 .counter-item.type-02 .counter {
   font-size: 54px;
   margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 991px) {
+  .counter-item.type-02 .counter {
+    font-size: 38px;
+  }
 }
 
 .counter-item.type-03 {
@@ -1464,6 +1484,12 @@ div#toTop:hover {
 
 @media only screen and (max-width: 767px) {
   .info-item.left-edged-icon {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .service-promo.type-02, .type-02.contact-promo {
     text-align: center;
   }
 }
@@ -1836,7 +1862,7 @@ ul.address-card li.card-location::before {
 
 .team-member.card-styled .social-icon-large a, .team-member.flat-styled .social-icon-large a {
   float: none;
-  margin-right: 0;
+  margin-right: 5px;
   color: white;
 }
 
@@ -2007,17 +2033,17 @@ ul.address-card li.card-location::before {
 
 @media only screen and (max-width: 767px) {
   .team-details .social-icon a, .team-details .social-icon-large a {
-    width: 26px;
-    height: 26px;
-    line-height: 26px;
-    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 7px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .team-details .social-icon a i, .team-details .social-icon-large a i {
     font-size: 13px;
-    line-height: 26px;
+    line-height: 30px;
   }
 }
 
@@ -2393,7 +2419,6 @@ ul.address-card li.card-location::before {
   bottom: 45px;
   left: 0;
   text-align: center;
-  font-size: 85%;
 }
 
 .support-widget a span {
@@ -2703,6 +2728,12 @@ ul.address-card li.card-location::before {
 }
 
 @media only screen and (max-width: 767px) {
+  .cta-section .row .cta-action .btn-default {
+    padding: 8px 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .cta-section .row .cta-action {
     text-align: center;
   }
@@ -2908,7 +2939,6 @@ ul.address-card li.card-location::before {
 
 @media only screen and (max-width: 767px) {
   .portfolio-item .img:before {
-    background: rgba(0, 0, 0, 0.55);
     content: "";
     display: block;
     position: absolute;
@@ -2916,7 +2946,6 @@ ul.address-card li.card-location::before {
     right: 10px;
     bottom: 10px;
     left: 10px;
-    opacity: 1;
   }
 }
 
@@ -2946,6 +2975,18 @@ ul.address-card li.card-location::before {
   }
 }
 
+@media only screen and (max-width: 479px) {
+  .portfolio-item {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .portfolio-wrapper .portfolio-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .portfolio-mini-desc {
   opacity: 0;
   color: #fff;
@@ -2970,7 +3011,6 @@ ul.address-card li.card-location::before {
 
 @media only screen and (max-width: 767px) {
   .portfolio-mini-desc {
-    opacity: 1;
     padding: 30px;
   }
 }
@@ -3042,6 +3082,7 @@ ul.address-card li.card-location::before {
 @media only screen and (max-width: 767px) {
   .portfolio-filter ul li {
     margin-bottom: 8px;
+    padding: 6px 10px;
   }
 }
 
@@ -4158,7 +4199,7 @@ ul.address-card li.card-location::before {
 
 @media only screen and (max-width: 767px) {
   .slider-section .slide-single .container .slider-content {
-    max-width: 95%;
+    max-width: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -4791,7 +4832,7 @@ ul.address-card li.card-location::before {
 
 @media only screen and (max-width: 479px) {
   .client-carousel .slick-slide img {
-    max-height: 35px;
+    max-height: 40px;
   }
 }
 
@@ -6104,3 +6145,5 @@ footer {
 .faq-page .cta-centered {
   background: #f7f7f7;
 }
+
+/*# sourceMappingURL=style-periwinkle.css.map */

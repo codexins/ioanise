@@ -119,3 +119,11 @@
 	}
 
 }
+
+.service-promo {
+	&.type-02 {
+		@include respond-to(mobile) {
+			text-align: center;
+		}
+	}
+}

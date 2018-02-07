@@ -3,51 +3,95 @@
  *
  */
 
-
 .c-menu {
-  background-color: lighten($cx-tertiary-color, 5%);
+    background-color: lighten($cx-tertiary-color, 5%);
 }
 
 .c-button {
-  color: $cx-primary-color;
-  background: $cx-secondary-color;
+    color: $cx-primary-color;
+    background: $cx-secondary-color;
 }
 
 
 .o-header-nav {
-  background-color: $cx-primary-color;
+    background-color: $cx-primary-color;
 }
 
 .o-header-nav__link:hover {
-  background-color: darken($cx-primary-color, 20%);
+    background-color: darken($cx-primary-color, 20%);
 }
 
 .o-sub-nav__link {
-  border: solid 2px $cx-primary-color;
+    border: solid 2px $cx-primary-color;
 }
 
 .o-sub-nav__link:hover,
 .o-sub-nav__item.active .o-sub-nav__link {
-  background-color: $cx-primary-color;
+    background-color: $cx-primary-color;
 }
 
 .c-menu--slide-left .c-menu__item,
 .c-menu--slide-right .c-menu__item,
 .c-menu--push-left .c-menu__item,
 .c-menu--push-right .c-menu__item {
-  border-bottom: 1px solid lighten($cx-tertiary-color, 2%);
+    border-bottom: 1px solid lighten($cx-tertiary-color, 2%);
 }
 
 .c-menu--slide-left .c-menu__link,
 .c-menu--slide-right .c-menu__link,
 .c-menu--push-left .c-menu__link,
 .c-menu--push-right .c-menu__link {
-  &:hover,
-  &:focus {
-    color: $cx-secondary-color;
-  }
+    &:hover,
+    &:focus {
+        color: $cx-secondary-color;
+    }
 }
 
 .c-menu__close {
     background-color: $cx-primary-color;
+}
+
+.mobile-menu {
+    .has-child {
+        position: relative;
+        > ul {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            width: auto;
+            display: none;
+            @include cx-transition(none);
+        }
+        .drawer-toggle {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0;
+            width: 60px;
+            height: 48px;
+            text-align: center;
+            z-index: 9999;
+            border: 0;
+            i {
+                position: absolute;
+                margin: auto;
+                top: 33%;
+                left: 0;
+                right: 0;
+                color: #fff;
+                @include cx-transition(transform .3s ease-out);
+            }
+        }
+        &.open {
+            > .drawer-toggle {
+                i {
+                    -webkit-transform: rotate(135deg);
+                    -ms-transform: rotate(135deg);
+                    -o-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                }
+            }
+        }
+    }
 }

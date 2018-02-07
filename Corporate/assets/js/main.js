@@ -14,7 +14,7 @@ INDEX:
 	s09 - Headroom Js for Auto Hide the header on scroll
 	s10 - Animated Counter
 	s11 - Isotope Js for Portfolio Section
-	s12 - Slide left action for Mobile Menu
+	s12 - Mobile Menu Actions
 	s13 - Reasons to Choose Carousel
 	s14 - Testimonial Carousel
 	s15 - Client Carousel
@@ -293,6 +293,7 @@ INDEX:
         s12 - Slide left action for Mobile Menu
     *************************************************************/
 
+    // Initializing mobile menu
     CODEXIN.responsiveMenu = function() {
 	    var slideLeft = new Menu({
 	        wrapper: "#o-wrapper",
@@ -308,6 +309,24 @@ INDEX:
 	        slideLeft.open();
 	    });
 	};
+
+	// Mobile menu sub-menu actions
+	CODEXIN.responsiveSubMenu = function() {
+		var nav = $(".mobile-menu");
+		// adds toggle button to li items that have children
+		nav.find('li a').each(function() {
+			if ($(this).next().length > 0) {
+				$(this).parent('li').addClass('has-child').append('<a class="drawer-toggle" href="#"><i class="fa fa-plus"></i></a>');
+			}
+		});
+
+		// expands the dropdown menu on each click 
+		nav.find('li .drawer-toggle').on('click', function(e) {
+			e.preventDefault();
+			$(this).parent('li').children('ul').stop(true, true).slideToggle(250);
+			$(this).parent('li').toggleClass('open');
+		});
+	}
 
 
     /************************************************************
@@ -556,6 +575,7 @@ INDEX:
     	CODEXIN.headerAutoHide(),
     	CODEXIN.animatedCounter(),
     	CODEXIN.responsiveMenu(),
+    	CODEXIN.responsiveSubMenu(),
     	CODEXIN.reasonsCarousel(),
     	CODEXIN.testimonialCarousel(),
     	CODEXIN.clientCarousel(),

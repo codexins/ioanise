@@ -662,6 +662,57 @@ to a reusable component.
   background-color: #919190;
 }
 
+.mobile-menu .has-child {
+  position: relative;
+}
+
+.mobile-menu .has-child > ul {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+  display: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.mobile-menu .has-child .drawer-toggle {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  width: 60px;
+  height: 48px;
+  text-align: center;
+  z-index: 9999;
+  border: 0;
+}
+
+.mobile-menu .has-child .drawer-toggle i {
+  position: absolute;
+  margin: auto;
+  top: 33%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+.mobile-menu .has-child.open > .drawer-toggle i {
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
 /**
  * Components Image
  *

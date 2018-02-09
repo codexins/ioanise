@@ -10,6 +10,7 @@
             background: darken(rgba($cx-text-color, 0.95), 5%);
             @include media-only(notebook, max) {
                 background: #fff;
+                background: rgba(255,255,255,.95);
                 border-bottom: 1px solid #e5e5e5;
             }
 		}
@@ -21,6 +22,7 @@
   background: #000;
      @include media-only(notebook, max) {
         background: #fff;
+        background: rgba(255,255,255,.95);
         border-bottom: 1px solid #e5e5e5;
      }
 }

@@ -147,6 +147,30 @@ section {
   }
 }
 
+.eqheight {
+  display: table;
+  width: 100%;
+}
+
+.eqheight > div {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+  .eqheight > div {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .eqheight {
+    display: block;
+    width: auto;
+  }
+}
+
 /************************************************************
 	c01 - Base - Typography
 *************************************************************/
@@ -4203,6 +4227,7 @@ ul.address-card li.card-location::before {
 @media only screen and (max-width: 991px) {
   .fill-screen .intelligent-header.scrolling-up {
     background: #fff;
+    background: rgba(255, 255, 255, 0.95);
     border-bottom: 1px solid #e5e5e5;
   }
 }
@@ -4214,6 +4239,7 @@ ul.address-card li.card-location::before {
 @media only screen and (max-width: 991px) {
   .no-rgba .fill-screen .intelligent-header.scrolling-up {
     background: #fff;
+    background: rgba(255, 255, 255, 0.95);
     border-bottom: 1px solid #e5e5e5;
   }
 }

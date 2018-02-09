@@ -316,7 +316,7 @@ INDEX:
 		// adds toggle button to li items that have children
 		nav.find('li a').each(function() {
 			if ($(this).next().length > 0) {
-				$(this).parent('li').addClass('has-child').append('<a class="drawer-toggle" href="#"><i class="fa fa-plus"></i></a>');
+				$(this).parent('li').addClass('has-child').append('<a class="drawer-toggle" href="#"><i class="fa fa-angle-down"></i></a>');
 			}
 		});
 

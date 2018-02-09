@@ -662,6 +662,40 @@ to a reusable component.
   background-color: #1ca5b8;
 }
 
+#c-menu--slide-left .c-menu__items ul {
+  background-color: #13727e;
+}
+
+#c-menu--slide-left .c-menu__items ul li {
+  padding-left: 0;
+  border-color: #126a75;
+}
+
+#c-menu--slide-left .c-menu__items ul li a {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+#c-menu--slide-left .c-menu__items ul li::before {
+  display: none;
+}
+
+#c-menu--slide-left .c-menu__items ul ul {
+  background-color: #157e8b;
+}
+
+#c-menu--slide-left .c-menu__items ul ul li {
+  border-color: #147683;
+}
+
+#c-menu--slide-left .c-menu__items ul ul ul {
+  background-color: #178a99;
+}
+
+#c-menu--slide-left .c-menu__items ul ul ul li {
+  border-color: #168290;
+}
+
 .mobile-menu .has-child {
   position: relative;
 }
@@ -707,10 +741,10 @@ to a reusable component.
 }
 
 .mobile-menu .has-child.open > .drawer-toggle i {
-  -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /**
@@ -6223,3 +6257,5 @@ footer {
 .faq-page .cta-centered {
   background: #f3f3f3;
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -51,6 +51,41 @@
     background-color: $cx-primary-color;
 }
 
+
+#c-menu--slide-left {
+    .c-menu__items {
+        ul {
+            background-color: lighten($cx-tertiary-color, 12%);
+            li {
+                padding-left: 0;
+                border-color: lighten($cx-tertiary-color, 10%);
+                a {
+                    padding-left: 24px;
+                    padding-right: 24px;
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            ul {
+                background-color: lighten($cx-tertiary-color, 15%);
+                li {
+                    border-color: lighten($cx-tertiary-color, 13%);
+                }
+
+                ul {
+                    background-color: lighten($cx-tertiary-color, 18%);
+                    li {
+                        border-color: lighten($cx-tertiary-color, 16%);
+                    }
+                }
+            }
+        }
+    }   
+}
+
 .mobile-menu {
     .has-child {
         position: relative;
@@ -86,10 +121,10 @@
         &.open {
             > .drawer-toggle {
                 i {
-                    -webkit-transform: rotate(135deg);
-                    -ms-transform: rotate(135deg);
-                    -o-transform: rotate(135deg);
-                    transform: rotate(135deg);
+                    -webkit-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
+                    transform: rotate(180deg);
                 }
             }
         }

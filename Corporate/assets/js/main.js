@@ -590,15 +590,4 @@ INDEX:
         CODEXIN.headerPlaceholder();
     });
 
-
-    // max-height
-	// var maxHeight = Math.max.apply(null, $(".info-item.border-collapsed").map(function () {
-	//     return $(this).outerHeight();
-	// }).get());
-	// console.log(maxHeight);
-
-	// $(".info-item.border-collapsed").css("height", maxHeight);
-
-
-
 })(jQuery);

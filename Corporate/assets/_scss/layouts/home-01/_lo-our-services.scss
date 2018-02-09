@@ -6,19 +6,27 @@
 .services {
 	@extend %vpadding;
 	margin-bottom: 0;
+}
 
-	@include media-only(notebook, max) {
-		.info-item {
-			&.rb-bordered,
-			&.bottom-bordered,
-			&.right-bordered,
-			&.left-bordered {
+.flex-eq-height {
+	@include media-only(notebook, min) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+
+.services {
+	.flex-eq-height {
+		.rb-bordered,
+		.bottom-bordered,
+		.right-bordered,
+		.left-bordered {
+			@include media-only(notebook, max) {
 				border:0;
 			}
 		}
 	}
-
 }
-
 
 

@@ -4683,8 +4683,18 @@ ul.address-card li.card-location::before {
   margin-bottom: 0;
 }
 
+@media only screen and (min-width: 992px) {
+  .flex-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 @media only screen and (max-width: 991px) {
-  .services .info-item.rb-bordered, .services .info-item.bottom-bordered, .services .info-item.right-bordered, .services .info-item.left-bordered {
+  .services .flex-eq-height .rb-bordered,
+  .services .flex-eq-height .bottom-bordered,
+  .services .flex-eq-height .right-bordered,
+  .services .flex-eq-height .left-bordered {
     border: 0;
   }
 }

@@ -7,7 +7,11 @@
 	.intelligent-header {
 		border-bottom:0;
 		&.scrolling-up {
-			 background: darken(rgba($cx-text-color, 0.95), 5%);
+            background: darken(rgba($cx-text-color, 0.95), 5%);
+            @include media-only(notebook, max) {
+                background: #fff;
+                border-bottom: 1px solid #e5e5e5;
+            }
 		}
 	}
 }
@@ -15,6 +19,10 @@
 
 .no-rgba .fill-screen .intelligent-header.scrolling-up {
   background: #000;
+     @include media-only(notebook, max) {
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+     }
 }
 
 
@@ -51,4 +59,11 @@
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
+  @include media-only(notebook, max) {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
 }

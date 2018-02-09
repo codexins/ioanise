@@ -257,6 +257,7 @@
 	}
 }
 
+// working hour widget
 .working-hour-widget {
 	ul {
 		margin: 0;
@@ -280,6 +281,10 @@
 		}
 		@include respond-to(notebook) {
 			max-width:100%;
+		}
+
+		@include respond-to(large-mobile) {
+			max-width: 400px;
 		}
 	}
 }

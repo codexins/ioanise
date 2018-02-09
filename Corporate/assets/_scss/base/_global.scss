@@ -240,3 +240,30 @@ section {
 	@extend %color-white;
 }
 
+.center-mobile {
+	@include respond-to(mobile) {
+		text-align: center;
+	}
+	.section-intro {
+		.subtitle {
+			@include respond-to(mobile) {
+				text-align: center;
+			}
+		}
+
+		.title-bar,
+		.title-bar-left {
+			@include respond-to(mobile) {
+				text-align: center;
+			}
+		}
+
+		.title-bar-left {
+			&::after {
+				@include respond-to(mobile) {
+					margin-left: auto;
+				}
+			}
+		}
+	}
+}

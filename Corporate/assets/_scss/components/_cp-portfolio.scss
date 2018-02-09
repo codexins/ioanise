@@ -5,9 +5,40 @@
 
 .portfolio-wrapper {
 	&.seperated {
+		margin-left: -10px;
+		@include respond-to(large-mobile) {
+			margin-left: -2%;
+		}
+		@include respond-to(small-mobile) {
+			margin-left: 0;
+		}
 		.portfolio-item {
-			padding:5px;
-		}		
+			margin-left: 10px;
+			margin-bottom: 10px;
+			width:275px;
+			@include respond-to(notebook) {
+				width:225px;
+				margin-left: 10px;
+			}
+
+			@include respond-to(tablet) {
+				width:350px;
+				margin-left: 10px;
+			}
+
+			@include respond-to(large-mobile) {
+				width:48%;
+				margin-left: 2%;
+			}
+
+			@include respond-to(small-mobile) {
+				width:100%;
+				margin-left: 0;
+				margin-bottom: 15px;
+			}
+		}
+
+
 	}
 }
 

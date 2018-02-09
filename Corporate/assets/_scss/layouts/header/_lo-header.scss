@@ -78,6 +78,9 @@
 
 .header-inline{
     padding: 15px 0;
+    @include respond-to(mobile) {
+    	padding: 10px 0;
+    }
 }
 
 
@@ -88,7 +91,7 @@
 	}
 
 	@include media-only(tablet, max) {
-		margin-top: 7px;
+		margin-top: 9px;
 	}
 	.icon-bar{
 		@extend %bgc-white;

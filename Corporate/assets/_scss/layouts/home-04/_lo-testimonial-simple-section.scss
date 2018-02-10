@@ -21,6 +21,7 @@
 		.row {
 			@include eqheight;
 			& > div {
+				vertical-align: top;
 				@include respond-to(mobile) {
 					border:0;
 				}

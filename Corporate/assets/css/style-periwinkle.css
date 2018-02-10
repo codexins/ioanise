@@ -171,6 +171,21 @@ section {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .flex-container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-justify-content: space-evenly;
+    -moz-justify-content: space-evenly;
+    -ms-justify-content: space-evenly;
+    -o-justify-content: space-evenly;
+    justify-content: space-evenly;
+  }
+}
+
 /************************************************************
 	c01 - Base - Typography
 *************************************************************/
@@ -817,7 +832,12 @@ to a reusable component.
  */
 .fill-screen {
   min-height: 500px;
-  height: 100Vh;
+}
+
+@media only screen and (min-width: 992px) {
+  .fill-screen {
+    height: 100Vh;
+  }
 }
 
 .fill-screen {
@@ -833,24 +853,6 @@ to a reusable component.
   right: 0;
   bottom: 0;
   left: 0;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .fill-screen {
-    min-height: 450px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .fill-screen {
-    min-height: 420px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .fill-screen {
-    min-height: 390px;
-  }
 }
 
 .fill-screen.header {
@@ -1387,6 +1389,17 @@ div#toTop:hover {
   padding: 0 40px;
 }
 
+@media only screen and (min-width: 992px) {
+  .counter-item.type-03 {
+    display: inline-block;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .counter-item.type-03 {
     padding: 0 20px;
@@ -1398,6 +1411,7 @@ div#toTop:hover {
     width: 50%;
     float: left;
     margin-bottom: 45px;
+    display: flex;
   }
 }
 
@@ -4764,6 +4778,11 @@ ul.address-card li.card-location::before {
   border: 0;
 }
 
+.reasons-to-choose .reason {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .slick-dots li.slick-active button:before {
   color: #2D9CCA;
   opacity: .8;
@@ -5227,6 +5246,10 @@ ul.address-card li.card-location::before {
     display: block;
     width: auto;
   }
+}
+
+.testimonial-simple .testimonial-container .row > div {
+  vertical-align: top;
 }
 
 @media only screen and (max-width: 767px) {

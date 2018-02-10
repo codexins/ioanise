@@ -271,3 +271,18 @@ section {
 .eqheight {
 	@include eqheight();
 }
+
+.flex-container {
+	@include media-only(notebook, min) {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-justify-content: space-evenly;
+		-moz-justify-content: space-evenly;
+		-ms-justify-content: space-evenly;
+		-o-justify-content: space-evenly;
+		justify-content: space-evenly;
+	}
+}

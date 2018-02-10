@@ -10,19 +10,20 @@
 	color: lighten($cx-text-color, 100%);
 
 	.social-icon {
-		@include respond-to(mobile){
+		@include respond-to(mobile) {
 			text-align: center;
 			margin-bottom: 10px;
 		} 
 		a {
 			background: transparent;
 			color: lighten($cx-text-color, 100%);
-			@include respond-to(mobile){
+			@include respond-to(mobile) {
 				float: none;
 			}
 			&:hover {
 				color: $cx-secondary-color;
 			}
+
 		}
 	}
 
@@ -35,7 +36,7 @@
 .top-content{
 	line-height: $cx-social-icon-size-small;
 	&.text-right{
-		@include respond-to(mobile){
+		@include respond-to(mobile) {
 			text-align: center;
 		} 
 	}
@@ -49,6 +50,10 @@
 		@extend %cx-transition ;
 		&:hover{
 			color: $cx-secondary-color ;
+		}
+
+		i {
+			margin-right: 8px;
 		}
 	}
 }

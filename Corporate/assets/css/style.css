@@ -3673,6 +3673,12 @@ ul.address-card li.card-location::before {
   padding-left: 20px;
 }
 
+@media only screen and (max-width: 767px) {
+  .testimonial-simple-wrapper .testimonial-simple-content {
+    padding-left: 0;
+  }
+}
+
 .testimonial-simple-wrapper .author-desc .author-name {
   font-weight: bold;
   display: block;
@@ -3800,6 +3806,10 @@ ul.address-card li.card-location::before {
   text-align: center;
   top: -15px;
   right: -100px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -4128,6 +4138,10 @@ ul.address-card li.card-location::before {
   color: #ff646c;
 }
 
+.top-content a i {
+  margin-right: 8px;
+}
+
 /**
  * Layout header/ Main Menu
  *
@@ -4254,7 +4268,13 @@ ul.address-card li.card-location::before {
 @media only screen and (max-width: 991px) {
   .fill-screen .intelligent-header.scrolling-up {
     background: #fff;
-    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .fill-screen .intelligent-header {
+    background: #fff;
     border-bottom: 1px solid #e5e5e5;
   }
 }
@@ -4266,7 +4286,6 @@ ul.address-card li.card-location::before {
 @media only screen and (max-width: 991px) {
   .no-rgba .fill-screen .intelligent-header.scrolling-up {
     background: #fff;
-    background: rgba(255, 255, 255, 0.95);
     border-bottom: 1px solid #e5e5e5;
   }
 }
@@ -6453,3 +6472,5 @@ footer {
 .faq-page .cta-centered {
   background: #f3f3f3;
 }
+
+/*# sourceMappingURL=style.css.map */

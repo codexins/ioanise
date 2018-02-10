@@ -130,9 +130,9 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="top-content text-right">
-                                    <a href="tel:+1123456789"><i class="fa fa-volume-control-phone"></i>&nbsp;&nbsp; (123) 456-7890</a>
+                                    <a href="tel:+1123456789"><i class="fa fa-volume-control-phone"></i> (123) 456-7890</a>
                                     <span class="bar">|</span>
-                                    <a href="mailto:test@example.com"><i class="fa fa-envelope"></i>&nbsp;&nbsp; test@example.com</a>
+                                    <a href="mailto:test@example.com"><i class="fa fa-envelope"></i> test@example.com</a>
                                 </div>
                             </div>
                         </div>

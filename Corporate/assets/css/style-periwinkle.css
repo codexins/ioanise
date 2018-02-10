@@ -2544,6 +2544,7 @@ ul.address-card li.card-location::before {
   display: table-cell;
   vertical-align: middle;
   margin-bottom: 0;
+  height: 43px;
 }
 
 .search-widget form input[type="text"],
@@ -2803,6 +2804,12 @@ ul.address-card li.card-location::before {
 
 .working-hour-widget ul li:last-child {
   border-bottom: 0;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .working-hour-widget ul li {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4742,6 +4749,10 @@ ul.address-card li.card-location::before {
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+}
+
+.no-flexbox .flex-eq-height {
+  display: block;
 }
 
 @media only screen and (max-width: 991px) {

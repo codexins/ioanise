@@ -32,6 +32,7 @@
 			display: table-cell;
 			vertical-align: middle;
 			margin-bottom: 0;
+			height:43px;
 		}
 		
 		input[type="text"],
@@ -282,6 +283,10 @@
 			}
 			&:last-child {
 				border-bottom:0;
+			}
+
+			@include respond-to(notebook) {
+				font-size: 14px;
 			}
 		}
 		@include respond-to(notebook) {

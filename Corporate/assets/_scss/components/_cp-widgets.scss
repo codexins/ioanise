@@ -75,6 +75,11 @@
 			bottom:30px;
 		}
 	}
+
+	@include respond-to(large-mobile) {
+		width: 400px;
+	}
+
 }
 
 

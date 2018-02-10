@@ -89,6 +89,7 @@
 		display: inline-block;
 		padding:0 40px;
 
+
 		@include media-only(notebook, min) {
 			display: inline-block;
 			display: -webkit-flex;
@@ -96,10 +97,16 @@
 			display: -ms-flex;
 			display: -o-flex;
 			display: flex;
+
+		}
+
+		@include respond-to(wide) {
+			min-width: 260px;
 		}
 
 		@include respond-to(notebook) {
 			padding:0 20px;
+			min-width: 215px;
 		}
 
 		@include respond-to(tablet) {

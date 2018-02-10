@@ -4819,6 +4819,10 @@ ul.address-card li.card-location::before {
  * layout home-01/ recent project
  *
  */
+.recent-project {
+  overflow: hidden;
+}
+
 .recent-project .portfolio {
   padding: 0;
 }

@@ -15,7 +15,7 @@
 		.portfolio-item {
 			margin-left: 10px;
 			margin-bottom: 10px;
-			width:275px;
+			 width:275px;
 			@include respond-to(notebook) {
 				width:225px;
 				margin-left: 10px;
